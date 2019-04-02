@@ -1,0 +1,141 @@
+* {
+ margin: 0;
+ padding: 0;
+}
+
+.clearfix::after {
+ content: "";
+ display: block;
+ clear: both;
+}
+
+body {
+ min-height: 350vh;
+
+ header {
+  height: 100vh;
+  background-image: url(../images/photo1.png);
+  background-attachment: fixed;
+  background-position: 100% 60%;
+  // background-size: 491px 647px;
+  background-repeat: no-repeat;
+
+  .welcome {
+   position: absolute;
+   top: 50%;
+   left: 0;
+   width: 100%;
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 18px;
+   color: #ccc;
+   text-shadow: 2px 2px 2px black;
+   font-family: 'Open Sans', sans-serif;
+
+   p {
+    position: absolute;
+    text-align: center;
+    top: 50px;
+    left: 0;
+    font-size: 11px;
+    letter-spacing: 2px;
+   }
+
+   .cursor {
+    opacity: 0;
+    transition: .2s;
+    color: #ccc;
+   }
+
+   .cursor.active {
+    opacity: 1;
+   }
+  }
+ }
+}
+
+// Nokia Lumia: landscape
+@media(orientation: landscape) AND (min-width: 532px) {
+ .wrap {
+  header {
+   background-position: 100% 20%;
+   background-size: 591px 347px;
+   background-color: #8786A5;
+  }
+ }
+}
+
+// Galaxy S5: portrait
+@media(orientation: portrait) AND (min-width: 360px) {
+ .wrap {
+  header {
+   background-position: 100% 50%;
+   background-size: 1421px 747px;
+  }
+ }
+}
+
+@media(orientation: landscape) AND (min-width: 640px) {
+ .wrap {
+  header {
+   background-position: 100% 60%;
+   background-size: 991px 447px;
+  }
+ }
+}
+
+@media(orientation: landscape) AND (min-width: 731px) {
+ .wrap {
+  header {
+   background-position: 100% 10%;
+   background-size: 991px 447px;
+  }
+ }
+}
+
+@media(orientation: portrait) AND (min-width: 768px) {
+ .wrap {
+  header {
+   background-position: 100% 30%;
+   background-size: 1851px 1117px;
+   background-color: rgb(136, 136, 185);
+
+   .welcome {
+    font-size: 36px;
+    margin-top: -114px;
+
+    .text {
+     display: inline-block;
+    }
+
+    p {
+     margin-top: 115px;
+     font-size: 17px;
+    }
+   }
+  }
+ }
+}
+
+@media(orientation: landscape) AND (min-width: 1024px) {
+ .wrap {
+  header {
+   background-position: 100% 70%;
+   background-size: 2091px 939px;
+
+   .welcome {
+    font-size: 36px;
+    margin-top: -114px;
+
+    .text {
+     display: inline-block;
+    }
+
+    p {
+     margin-top: 65px;
+     font-size: 17px;
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,302 @@
+.burger {
+ z-index: 1;
+ position: fixed;
+ top: 3%;
+ right: 5%;
+ width: 50px;
+ height: 40px;
+ color: #fff;
+ font-size: 26px;
+ background-color: #000;
+ text-align: center;
+ line-height: 50px;
+
+ i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }
+}
+
+aside {
+ z-index: 1;
+ display: none;
+ position: fixed;
+ top: 80px;
+ bottom: 300px;
+ left: 0;
+ right: 0;
+ background-color: #333333;
+
+ nav {
+
+  ul {
+   list-style: none;
+  }
+
+  li {
+   // float: left;
+   line-height: 2.2em;
+   // padding: 0 10px;
+  }
+
+  li:nth-child(1),
+  li:nth-child(2),
+  li:nth-child(3) {
+   border-bottom: 1px solid gray;
+   width: 100%;
+  }
+
+  li:nth-child(1) a {
+   padding: 13px 21.4em 13px 10px;
+  }
+
+  li:nth-child(2) a {
+   padding: 13px 254px 13px 10px;
+  }
+
+  li:nth-child(3) a,
+  li:nth-child(4) a {
+   padding: 13px 20em 13px 10px;
+  }
+
+  a {
+   font-size: 13px;
+   color: #fff;
+   text-align: center;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-family: 'Alegreya Sans SC', sans-serif;
+  }
+ }
+}
+
+.burger.active+aside {
+ display: block;
+ width: 100%;
+}
+
+
+
+// Nokia Lumia: landscape
+@media(orientation: landscape) AND (min-width: 533px) {
+ aside {
+
+  li:nth-child(1),
+  li:nth-child(2),
+  li:nth-child(3),
+  li:nth-child(4) {
+   background-color: #333333;
+  }
+
+  li:nth-child(1) a {
+   padding: 13px 37.7em 13px 10px;
+  }
+
+  li:nth-child(2) a {
+   padding: 13px 35.9em 13px 10px;
+  }
+
+  li:nth-child(3) a,
+  li:nth-child(4) a {
+   padding: 13px 37em 13px 10px;
+  }
+ }
+}
+
+// Galaxy S5: portrait
+@media(orientation: portrait) AND (min-width: 360px) {
+ aside {
+  top: 80px;
+  bottom: 408px;
+  left: 0;
+
+  li:nth-child(1) a {
+   padding: 13px 29.7em 13px 10px;
+  }
+
+  li:nth-child(2) a {
+   padding: 13px 22.5em 13px 10px;
+  }
+
+  li:nth-child(3) a,
+  li:nth-child(4) a {
+   padding: 13px 37em 13px 10px;
+  }
+ }
+}
+
+@media(orientation: landscape) AND (min-width: 640px) {
+ aside {
+
+  li:nth-child(1) a {
+   padding: 13px 45.9em 13px 10px;
+  }
+
+  li:nth-child(2) a {
+   padding: 13px 44.1em 13px 10px;
+  }
+
+  li:nth-child(3) a,
+  li:nth-child(4) a {
+   padding: 13px 44.6em 13px 10px;
+  }
+ }
+}
+
+// Pixel 2: portrait
+@media(orientation: portrait) AND (min-width: 411px) AND (min-height: 731px) {
+ aside {
+  bottom: 498px;
+
+  li:nth-child(1) a {
+   padding: 13px 28.3em 13px 10px;
+  }
+
+  li:nth-child(2) a {
+   padding: 13px 26.5em 13px 10px;
+  }
+
+  li:nth-child(3) a,
+  li:nth-child(4) a {
+   padding: 13px 44.6em 13px 10px;
+  }
+ }
+}
+
+@media(orientation: landscape) AND (min-width: 731px) {
+ aside {
+
+  li:nth-child(1) a {
+   padding: 13px 52.9em 13px 10px;
+  }
+
+  li:nth-child(2) a {
+   padding: 13px 51.1em 13px 10px;
+  }
+
+  li:nth-child(3) a,
+  li:nth-child(4) a {
+   padding: 13px 51.5em 13px 10px;
+  }
+ }
+}
+
+// Ipad: portrait
+@media(orientation: portrait) AND (min-width: 768px) {
+ .burger {
+  top: 1.5%;
+  width: 60px;
+  height: 50px;
+  font-size: 36px;
+ }
+
+ aside {
+  top: 80px;
+  bottom: 693px;
+
+  li:nth-child(1),
+  li:nth-child(2),
+  li:nth-child(3),
+  li:nth-child(4) {
+   padding: 13px 55.8em 13px 0;
+  }
+
+  li:nth-child(1) a {
+   padding: 20px 30em 20px 20px;
+  }
+
+  li:nth-child(2) a {
+   padding: 20px 28.2em 20px 20px;
+  }
+
+  li:nth-child(3) a,
+  li:nth-child(4) a {
+   padding: 20px 28.7em 20px 20px;
+  }
+
+  a {
+   font-size: 23px;
+   color: #fff;
+   text-align: center;
+   text-decoration: none;
+
+   text-transform: uppercase;
+   font-family: 'Alegreya Sans SC', sans-serif;
+  }
+ }
+}
+
+@media(orientation: landscape) AND (min-width: 1024px) {
+
+ .burger {
+  width: 0;
+  height: 0;
+  font-size: 0;
+ }
+
+ aside {
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+
+  nav {
+
+   ul {
+    display: inline-block;
+    position: absolute;
+    list-style: none;
+    top: 5%;
+    left: 35%;
+    width: 55%;
+   }
+
+   li {
+    float: left;
+    line-height: 0;
+    // width: 20%;
+   }
+
+   li:nth-child(1),
+   li:nth-child(2),
+   li:nth-child(3),
+   li:nth-child(4) {
+    border: none;
+    background-color: transparent;
+    width: 15%;
+    padding: 10px 0;
+   }
+
+   li:nth-child(1) a,
+   li:nth-child(2) a,
+   li:nth-child(3) a,
+   li:nth-child(4) a {
+    display: inline-block;
+    padding: 0;
+    width: 10%;
+   }
+
+   a {
+    font-size: 20px;
+    margin: 0;
+    color: black;
+   }
+  }
+
+
+ }
+
+ .burger.active+aside {
+  display: none;
+ }
+
+
+}
+
+// @media(max-width: 767px) — urządzenia bardzo małe (telefony),
+// @media(min-width: 768px) and (max-width: 991px) — urządzenia małe (tablety),
+// @media(min-width: 992px) and (max-width: 1199px) — urządzenia średnie,
+// @media(min-width: 1200px) — urządzenia duże (desktopy, monitory, tv).
