@@ -1,15 +1,27 @@
 // Pobierz elementy DOM
 const burger = document.querySelector(".burger");
-const li = document.querySelectorAll('aside li');
+const li = document.querySelectorAll('.nav li');
 const spnCursor = document.querySelector('.cursor');
 const spnText = document.querySelector('.text');
 // Utwórz zmienną przechowującą tablicę z wartościami
 const txt = ['Welcome', 'I like challenges', 'I\'m creative', 'I\'m Front-end Developer'];
 
-// Nasłuchuj na zdarzenie klknięcia w hamburger
+// Nasłuchuj na zdarzenie kliknięcia w hamburger
 burger.addEventListener("click", function () {
  // Przełączaj klasę aby wyświetlić menu burgera
  burger.classList.toggle("active");
+})
+// Nasłuchiwanie na zdarzenie scrolla aby pojawił się pasek przy nawigacji menu
+document.addEventListener('scroll', function () {
+
+ if (window.scrollY > 50) {
+  document.querySelector('.nav-block').classList.add('active');
+  document.querySelectorAll('nav a').forEach(item => item.style.color = 'grey');
+ } else {
+  document.querySelector('.nav-block').classList.remove('active');
+  document.querySelectorAll('nav a').forEach(item => item.style.color = '#222');
+ }
+ // console.log(window.scrollY);
 })
 
 // Nasłuchuj na zdarzenie kliknięcia iterując wszystkie elementy listy

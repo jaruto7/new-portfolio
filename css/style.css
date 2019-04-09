@@ -2,13 +2,15 @@
 
 .burger i { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 
+.burger.active + aside { display: block; width: 100%; }
+
 aside { z-index: 1; display: none; position: fixed; top: 80px; bottom: 300px; left: 0; right: 0; background-color: #333333; }
 
 aside nav ul { list-style: none; }
 
 aside nav li { line-height: 2.2em; }
 
-aside nav li:nth-child(1), aside nav li:nth-child(2), aside nav li:nth-child(3) { border-bottom: 1px solid gray; width: 100%; }
+aside nav li:nth-child(1), aside nav li:nth-child(2), aside nav li:nth-child(3) { border-bottom: 1px solid gray; }
 
 aside nav li:nth-child(1) a { padding: 13px 37.7em 13px 10px; }
 
@@ -17,8 +19,6 @@ aside nav li:nth-child(2) a { padding: 13px 19.4em 13px 10px; }
 aside nav li:nth-child(3) a, aside nav li:nth-child(4) a { padding: 13px 36.3em 13px 10px; }
 
 aside nav a { font-size: 13px; color: #fff; text-align: center; text-decoration: none; text-transform: uppercase; font-family: 'Alegreya Sans SC', sans-serif; }
-
-.burger.active + aside { display: block; width: 100%; }
 
 @media (orientation: landscape) and (min-width: 533px) { aside nav li { background-color: #333333; }
   aside nav li:nth-child(1) a { padding: 13px 37.7em 13px 10px; }
@@ -45,20 +45,24 @@ aside nav a { font-size: 13px; color: #fff; text-align: center; text-decoration:
 
 @media (orientation: portrait) and (min-width: 768px) { .burger { top: 1.5%; width: 60px; height: 50px; font-size: 36px; }
   aside { top: 80px; bottom: 693px; }
-  aside nav li { padding: 13px 55.8em 13px 0; }
-  aside nav li:nth-child(1) a { padding: 20px 30em 20px 20px; }
-  aside nav li:nth-child(2) a { padding: 20px 28.2em 20px 20px; }
+  aside nav li { padding: 13px 0 13px 0; }
+  aside nav li:nth-child(1) a { padding: 20px 36.9em 20px 20px; }
+  aside nav li:nth-child(2) a { padding: 20px 28.6em 20px 10px; }
   aside nav li:nth-child(3) a, aside nav li:nth-child(4) a { padding: 20px 28.7em 20px 20px; }
-  aside nav a { font-size: 23px; color: #fff; text-align: center; text-decoration: none; text-transform: uppercase; font-family: 'Alegreya Sans SC', sans-serif; } }
+  aside nav a { width: 100%; font-size: 23px; color: #fff; text-align: center; text-decoration: none; text-transform: uppercase; font-family: 'Alegreya Sans SC', sans-serif; } }
 
 @media (orientation: landscape) and (min-width: 1024px) { .burger { display: none; }
+  .burger.active + aside { display: none; }
+  .nav-block { z-index: 1; position: fixed; left: 0; top: 0; height: 71px; width: 100%; background-color: #fff; box-shadow: 0 0 5px 1px grey; top: -75px; transition: .3s; }
   aside { display: inline-block; top: 0; left: 0; background-color: transparent; }
-  aside nav ul { position: absolute; top: 5%; right: 15%; }
-  aside nav li { float: left; line-height: 0; border: none; background-color: transparent; }
+  aside nav ul { position: absolute; top: 3%; right: 22%; }
+  aside nav li { float: left; border: none; background-color: transparent; padding: 0 25px; }
   aside nav li:nth-child(1), aside nav li:nth-child(2), aside nav li:nth-child(3) { border: none; }
   aside nav li:nth-child(1) a, aside nav li:nth-child(2) a, aside nav li:nth-child(3) a, aside nav li:nth-child(4) a { padding: 0; }
-  aside nav a { font-size: 30px; color: black; }
-  .burger.active + aside { display: none; } }
+  aside nav a { font-size: 15px; color: #222; }
+  aside nav a:hover { text-decoration: line-through; } }
+
+.nav-block.active { top: 0; }
 
 * { margin: 0; padding: 0; }
 
@@ -92,4 +96,8 @@ body header .welcome .cursor.active { opacity: 1; }
 @media (orientation: landscape) and (min-width: 1024px) { .wrap header { background-position: 100% 70%; background-size: 2091px 939px; }
   .wrap header .welcome { font-size: 36px; margin-top: -114px; }
   .wrap header .welcome .text { display: inline-block; }
-  .wrap header .welcome p { margin-top: 65px; font-size: 17px; } }
+  .wrap header .welcome p { margin-top: 65px; text-align: center; font-size: 17px; }
+  .wrap header .mouse { position: absolute; bottom: 2%; left: 50%; width: 30px; height: 50px; border: 1px solid #fff; border-radius: 40%; }
+  .wrap header .mouse .scroll { position: relative; width: 3px; height: 15px; top: 15%; left: 50%; transform: translateX(-50%); background-color: #fff; border-radius: 30%; animation: move-scroll 2s linear infinite; }
+  @keyframes move-scroll { 50% { top: 30%; }
+    100% { top: 15%; } } }

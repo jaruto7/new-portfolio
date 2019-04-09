@@ -19,6 +19,11 @@
  }
 }
 
+.burger.active+aside {
+ display: block;
+ width: 100%;
+}
+
 aside {
  z-index: 1;
  display: none;
@@ -36,16 +41,13 @@ aside {
   }
 
   li {
-   // float: left; - an example
    line-height: 2.2em;
-   // padding: 0 10px;
   }
 
   li:nth-child(1),
   li:nth-child(2),
   li:nth-child(3) {
    border-bottom: 1px solid gray;
-   width: 100%;
   }
 
   li:nth-child(1) a {
@@ -72,12 +74,7 @@ aside {
  }
 }
 
-.burger.active+aside {
- display: block;
- width: 100%;
-}
-
-// Nokia Lumia: landscape
+//Nokia Lumia: landscape
 @media(orientation: landscape) AND (min-width: 533px) {
  aside {
 
@@ -125,8 +122,6 @@ aside {
     padding: 13px 37em 13px 10px;
    }
   }
-
-
  }
 }
 
@@ -211,15 +206,15 @@ aside {
   nav {
 
    li {
-    padding: 13px 55.8em 13px 0;
+    padding: 13px 0 13px 0;
    }
 
    li:nth-child(1) a {
-    padding: 20px 30em 20px 20px;
+    padding: 20px 36.9em 20px 20px;
    }
 
    li:nth-child(2) a {
-    padding: 20px 28.2em 20px 20px;
+    padding: 20px 28.6em 20px 10px;
    }
 
    li:nth-child(3) a,
@@ -228,11 +223,11 @@ aside {
    }
 
    a {
+    width: 100%;
     font-size: 23px;
     color: #fff;
     text-align: center;
     text-decoration: none;
-
     text-transform: uppercase;
     font-family: 'Alegreya Sans SC', sans-serif;
    }
@@ -246,26 +241,42 @@ aside {
   display: none;
  }
 
+ .burger.active+aside {
+  display: none;
+ }
+
+ .nav-block {
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 71px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 5px 1px grey;
+  top: -75px;
+  transition: .3s;
+ }
+
  aside {
   display: inline-block;
   top: 0;
   left: 0;
   background-color: transparent;
-  // width: 100%;
 
   nav {
 
    ul {
     position: absolute;
-    top: 5%;
-    right: 15%;
+    top: 3%;
+    right: 22%;
    }
 
    li {
     float: left;
-    line-height: 0;
     border: none;
     background-color: transparent;
+    padding: 0 25px;
    }
 
    li:nth-child(1),
@@ -281,24 +292,27 @@ aside {
     padding: 0;
    }
 
-   // li a {
-   //  // display: inline-block;
-   //  // width: 10%;
-   // }
    a {
-    font-size: 30px;
-    // margin: 0;
-    color: black;
+    font-size: 15px;
+    color: #222;
+
+    &:hover {
+     text-decoration: line-through;
+    }
    }
   }
  }
-
- .burger.active+aside {
-  display: none;
- }
-
-
 }
+
+.nav-block.active {
+ top: 0;
+}
+
+
+
+
+
+
 
 // @media(max-width: 767px) — urządzenia bardzo małe (telefony),
 // @media(min-width: 768px) and (max-width: 991px) — urządzenia małe (tablety),
