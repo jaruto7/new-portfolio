@@ -1,6 +1,6 @@
 // Pobierz elementy DOM
 const burger = document.querySelector(".burger");
-const li = document.querySelectorAll('.nav li');
+const li = document.querySelectorAll('li');
 const spnCursor = document.querySelector('.cursor');
 const spnText = document.querySelector('.text');
 // Utwórz zmienną przechowującą tablicę z wartościami

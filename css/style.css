@@ -52,7 +52,7 @@ aside nav a { font-size: 13px; color: #fff; text-align: center; text-decoration:
   aside nav a { width: 100%; font-size: 23px; color: #fff; text-align: center; text-decoration: none; text-transform: uppercase; font-family: 'Alegreya Sans SC', sans-serif; } }
 
 @media (orientation: landscape) and (min-width: 1024px) { .burger { display: none; }
-  .burger.active + aside { display: none; }
+  .burger.active { display: none; }
   .nav-block { z-index: 1; position: fixed; left: 0; top: 0; height: 71px; width: 100%; background-color: #fff; box-shadow: 0 0 5px 1px grey; top: -75px; transition: .3s; }
   aside { display: inline-block; top: 0; left: 0; background-color: transparent; }
   aside nav ul { position: absolute; top: 3%; right: 22%; }
