@@ -16,10 +16,10 @@ document.addEventListener('scroll', function () {
 
  if (window.scrollY > 50) {
   document.querySelector('.nav-block').classList.add('active');
-  document.querySelectorAll('nav a').forEach(item => item.style.color = 'grey');
+  document.querySelectorAll('.nav a').forEach(item => item.style.color = 'grey');
  } else {
   document.querySelector('.nav-block').classList.remove('active');
-  document.querySelectorAll('nav a').forEach(item => item.style.color = '#222');
+  document.querySelectorAll('.nav a').forEach(item => item.style.color = '#222');
  }
  // console.log(window.scrollY);
 })

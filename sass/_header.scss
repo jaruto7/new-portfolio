@@ -12,6 +12,7 @@
 body {
  min-height: 350vh;
 
+
  header {
   height: 100vh;
   background-image: url(../images/photo1.png);
@@ -27,7 +28,7 @@ body {
    width: 100%;
    text-align: center;
    text-transform: uppercase;
-   font-size: 18px;
+   font-size: 20px;
    color: #ccc;
    text-shadow: 2px 2px 2px black;
    font-family: 'Open Sans', sans-serif;
@@ -37,8 +38,9 @@ body {
     text-align: center;
     top: 50px;
     left: 0;
-    font-size: 11px;
+    font-size: 10px;
     letter-spacing: 2px;
+    margin: auto 5%;
    }
 
    .cursor {
@@ -51,8 +53,43 @@ body {
     opacity: 1;
    }
   }
+
+  .mouse {
+   position: absolute;
+   bottom: 2%;
+   left: 50%;
+   width: 22px;
+   height: 40px;
+   border: 1px solid #fff;
+   border-radius: 40%;
+   transform: translateX(-50%);
+
+   .scroll {
+    position: relative;
+    width: 2px;
+    height: 10px;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-radius: 30%;
+    animation: move-scroll 1.5s linear infinite;
+   }
+  }
+
+  @keyframes move-scroll {
+   50% {
+    top: 30%;
+   }
+
+   100% {
+    top: 15%;
+   }
+  }
  }
 }
+
+
 
 // Nokia Lumia: landscape
 @media(orientation: landscape) AND (min-width: 532px) {
@@ -84,11 +121,37 @@ body {
  }
 }
 
+// Pixel 2
+@media(orientation: portrait) AND (min-width: 411px) {
+ .wrap {
+
+  .mouse {
+   width: 25px;
+   height: 45px;
+
+   .scroll {
+    width: 2px;
+    height: 12px;
+   }
+  }
+ }
+}
+
 @media(orientation: landscape) AND (min-width: 731px) {
  .wrap {
   header {
    background-position: 100% 10%;
    background-size: 991px 447px;
+  }
+
+  .mouse {
+   width: 25px;
+   height: 45px;
+
+   .scroll {
+    width: 2px;
+    height: 12px;
+   }
   }
  }
 }
@@ -109,9 +172,31 @@ body {
     }
 
     p {
-     margin-top: 115px;
+     margin-top: 23px;
      font-size: 17px;
     }
+   }
+
+
+
+   @keyframes move-scroll {
+    50% {
+     top: 30%;
+    }
+
+    100% {
+     top: 15%;
+    }
+   }
+  }
+
+  .mouse {
+   width: 35px;
+   height: 55px;
+
+   .scroll {
+    width: 3px;
+    height: 14px;
    }
   }
  }
@@ -125,39 +210,11 @@ body {
 
    .welcome {
     font-size: 36px;
-    margin-top: -114px;
-
-    .text {
-     display: inline-block;
-    }
+    // margin-top: -114px;
 
     p {
-     margin-top: 65px;
-     // padding: auto 0;
-     text-align: center;
      font-size: 17px;
-    }
-   }
-
-   .mouse {
-    position: absolute;
-    bottom: 2%;
-    left: 50%;
-    width: 30px;
-    height: 50px;
-    border: 1px solid #fff;
-    border-radius: 40%;
-
-    .scroll {
-     position: relative;
-     width: 3px;
-     height: 15px;
-     top: 15%;
-     left: 50%;
-     transform: translateX(-50%);
-     background-color: #fff;
-     border-radius: 30%;
-     animation: move-scroll 2s linear infinite;
+     margin-top: 23px;
     }
    }
 
@@ -170,6 +227,18 @@ body {
      top: 15%;
     }
    }
+
+   .mouse {
+    width: 35px;
+    height: 55px;
+
+    .scroll {
+     width: 3px;
+     height: 13px;
+    }
+   }
   }
+
+
  }
 }
