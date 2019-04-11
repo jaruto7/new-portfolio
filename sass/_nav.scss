@@ -76,6 +76,11 @@ aside {
  }
 }
 
+.nav-block.active {
+ top: 0;
+ background-color: #fff;
+}
+
 //Nokia Lumia: landscape
 @media(orientation: landscape) AND (min-width: 533px) {
  aside {
@@ -216,7 +221,7 @@ aside {
    }
 
    li:nth-child(2) a {
-    padding: 20px 28.6em 20px 10px;
+    padding: 20px 28.2em 20px 20px;
    }
 
    li:nth-child(3) a,
@@ -239,25 +244,23 @@ aside {
 
 @media(orientation: landscape) AND (min-width: 1024px) {
 
+ .nav-block {
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  height: 71px;
+  width: 100%;
+  box-shadow: 0 0 5px 1px grey;
+  top: -75px;
+  transition: .2s;
+ }
+
  .burger {
   display: none;
  }
 
  .burger.active {
   display: none;
- }
-
- .nav-block {
-  z-index: 1;
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 71px;
-  width: 100%;
-  background-color: #fff;
-  box-shadow: 0 0 5px 1px grey;
-  top: -75px;
-  transition: .3s;
  }
 
  aside {
@@ -292,6 +295,7 @@ aside {
    li:nth-child(3) a,
    li:nth-child(4) a {
     padding: 0;
+    font-weight: bold;
    }
 
    a {
@@ -304,15 +308,11 @@ aside {
    }
   }
  }
+
+ .active .nav-link {
+  color: gray;
+ }
 }
-
-.nav-block.active {
- top: 0;
-}
-
-
-
-
 
 
 

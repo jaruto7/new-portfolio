@@ -1,10 +1,11 @@
 // Pobierz elementy DOM
+const navBlock = document.querySelector('.nav-block');
 const burger = document.querySelector(".burger");
 const li = document.querySelectorAll('li');
 const spnCursor = document.querySelector('.cursor');
 const spnText = document.querySelector('.text');
 // Utwórz zmienną przechowującą tablicę z wartościami
-const txt = ['Welcome', 'I like challenges', 'I\'m creative', 'I\'m Front-end Developer'];
+const txt = [`Welcome`, `I like challenges`, `I'm creative`, `I\'m Front-end Developer`];
 
 // Nasłuchuj na zdarzenie kliknięcia w hamburger
 burger.addEventListener("click", function () {
@@ -15,11 +16,9 @@ burger.addEventListener("click", function () {
 document.addEventListener('scroll', function () {
 
  if (window.scrollY > 50) {
-  document.querySelector('.nav-block').classList.add('active');
-  document.querySelectorAll('.nav a').forEach(item => item.style.color = 'grey');
+  navBlock.classList.add('active');
  } else {
-  document.querySelector('.nav-block').classList.remove('active');
-  document.querySelectorAll('.nav a').forEach(item => item.style.color = '#222');
+  navBlock.classList.remove('active');
  }
  // console.log(window.scrollY);
 })
