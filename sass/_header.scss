@@ -29,11 +29,11 @@ body {
    text-align: center;
    text-transform: uppercase;
    font-size: 20px;
-   color: #ccc;
-   text-shadow: 2px 2px 2px black;
+   color: #fff;
    font-family: 'Open Sans', sans-serif;
 
    p {
+    text-shadow: 2px 2px 2px black;
     position: absolute;
     text-align: center;
     top: 50px;
@@ -58,15 +58,15 @@ body {
    position: absolute;
    bottom: 2%;
    left: 50%;
-   width: 22px;
-   height: 40px;
-   border: 1px solid #fff;
+   width: 30px;
+   height: 48px;
+   border: 2px solid #fff;
    border-radius: 40%;
    transform: translateX(-50%);
 
    .scroll {
     position: relative;
-    width: 2px;
+    width: 5px;
     height: 10px;
     top: 15%;
     left: 50%;
@@ -89,8 +89,6 @@ body {
  }
 }
 
-
-
 // Nokia Lumia: landscape
 @media(orientation: landscape) AND (min-width: 532px) {
  .wrap {
@@ -98,6 +96,20 @@ body {
    background-position: 100% 20%;
    background-size: 591px 347px;
    background-color: #8786A5;
+
+   .welcome {
+    font-size: 25px;
+   }
+
+   .mouse {
+    width: 20px;
+    height: 32px;
+
+    .scroll {
+     width: 3px;
+     height: 8px;
+    }
+   }
   }
  }
 }
@@ -117,21 +129,29 @@ body {
   header {
    background-position: 100% 60%;
    background-size: 991px 447px;
+
+   .welcome {
+    font-size: 29px;
+   }
   }
  }
 }
 
-// Pixel 2
+// Pixel 2: portrait
 @media(orientation: portrait) AND (min-width: 411px) {
  .wrap {
 
+  .welcome {
+   font-size: 23px;
+  }
+
   .mouse {
-   width: 25px;
-   height: 45px;
+   width: 35px;
+   height: 55px;
 
    .scroll {
-    width: 2px;
-    height: 12px;
+    width: 5px;
+    height: 10px;
    }
   }
  }
@@ -142,20 +162,25 @@ body {
   header {
    background-position: 100% 10%;
    background-size: 991px 447px;
+
+   .welcome {
+    font-size: 29px;
+   }
   }
 
   .mouse {
-   width: 25px;
-   height: 45px;
+   width: 35px;
+   height: 55px;
 
    .scroll {
-    width: 2px;
-    height: 12px;
+    width: 5px;
+    height: 10px;
    }
   }
  }
 }
 
+// Ipad: portrait
 @media(orientation: portrait) AND (min-width: 768px) {
  .wrap {
   header {
@@ -176,32 +201,22 @@ body {
      font-size: 17px;
     }
    }
-
-
-
-   @keyframes move-scroll {
-    50% {
-     top: 30%;
-    }
-
-    100% {
-     top: 15%;
-    }
-   }
   }
 
   .mouse {
-   width: 35px;
-   height: 55px;
+   width: 45px;
+   height: 65px;
+
 
    .scroll {
-    width: 3px;
-    height: 14px;
+    width: 6px;
+    height: 13px;
    }
   }
  }
 }
 
+// desktop: landscape
 @media(orientation: landscape) AND (min-width: 1024px) {
  .wrap {
   header {
@@ -209,22 +224,13 @@ body {
    background-size: 2091px 939px;
 
    .welcome {
-    font-size: 36px;
-    // margin-top: -114px;
+    font-size: 48px;
+
 
     p {
-     font-size: 17px;
-     margin-top: 23px;
-    }
-   }
-
-   @keyframes move-scroll {
-    50% {
-     top: 30%;
-    }
-
-    100% {
-     top: 15%;
+     font-size: 19px;
+     margin: 50px 0 50px 0;
+     width: 100%;
     }
    }
 
@@ -233,12 +239,10 @@ body {
     height: 55px;
 
     .scroll {
-     width: 3px;
-     height: 13px;
+     width: 5px;
+     height: 10px;
     }
    }
   }
-
-
  }
 }
