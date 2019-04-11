@@ -17,7 +17,9 @@ body {
   height: 100vh;
   background-image: url(../images/photo1.png);
   background-attachment: fixed;
-  background-position: 100% 60%;
+  background-size: cover;
+  background-position: center;
+
   // background-size: 491px 647px;
   background-repeat: no-repeat;
 
@@ -93,9 +95,6 @@ body {
 @media(orientation: landscape) AND (min-width: 532px) {
  .wrap {
   header {
-   background-position: 100% 20%;
-   background-size: 591px 347px;
-   background-color: #8786A5;
 
    .welcome {
     font-size: 25px;
@@ -114,21 +113,12 @@ body {
  }
 }
 
-// Galaxy S5: portrait
-@media(orientation: portrait) AND (min-width: 360px) {
- .wrap {
-  header {
-   background-position: 100% 50%;
-   background-size: 1421px 747px;
-  }
- }
-}
-
+// Galaxy S5: landscape
 @media(orientation: landscape) AND (min-width: 640px) {
  .wrap {
   header {
-   background-position: 100% 60%;
-   background-size: 991px 447px;
+   background-size: cover;
+   background-position: center;
 
    .welcome {
     font-size: 29px;
@@ -160,8 +150,6 @@ body {
 @media(orientation: landscape) AND (min-width: 731px) {
  .wrap {
   header {
-   background-position: 100% 10%;
-   background-size: 991px 447px;
 
    .welcome {
     font-size: 29px;
@@ -184,9 +172,6 @@ body {
 @media(orientation: portrait) AND (min-width: 768px) {
  .wrap {
   header {
-   background-position: 100% 30%;
-   background-size: 1851px 1117px;
-   background-color: rgb(136, 136, 185);
 
    .welcome {
     font-size: 36px;
@@ -216,21 +201,21 @@ body {
  }
 }
 
-// desktop: landscape
+
 @media(orientation: landscape) AND (min-width: 1024px) {
  .wrap {
   header {
-   background-position: 100% 70%;
-   background-size: 2091px 939px;
 
    .welcome {
-    font-size: 48px;
+    font-size: 52px;
+    top: 55%;
+    left: -45%;
 
+    .text {}
 
     p {
-     font-size: 19px;
-     margin: 50px 0 50px 0;
-     width: 100%;
+     font-size: 14px;
+     margin: 49px 0 49px 68em;
     }
    }
 

@@ -248,10 +248,10 @@ aside {
   z-index: 1;
   position: fixed;
   left: 0;
-  height: 71px;
+  height: 95px;
   width: 100%;
   box-shadow: 0 0 5px 1px grey;
-  top: -75px;
+  top: -95px;
   transition: .2s;
  }
 
@@ -273,7 +273,7 @@ aside {
 
    ul {
     position: absolute;
-    top: 3%;
+    top: 4.5%;
     right: 22%;
    }
 
@@ -299,11 +299,11 @@ aside {
    }
 
    a {
-    font-size: 15px;
-    color: #222;
+    font-size: 14px;
+    color: #fff;
 
     &:hover {
-     text-decoration: line-through;
+     color: rgb(212, 218, 216);
     }
    }
   }
@@ -311,6 +311,10 @@ aside {
 
  .active .nav-link {
   color: gray;
+
+  &:hover {
+   color: black;
+  }
  }
 }
 
