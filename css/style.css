@@ -74,9 +74,11 @@ body { min-height: 350vh; }
 
 body header { height: 100vh; background-image: url(../images/photo1.png); background-attachment: fixed; background-size: cover; background-position: center; background-repeat: no-repeat; }
 
-body header .welcome { position: absolute; top: 50%; left: 0; width: 100%; text-align: center; text-transform: uppercase; font-size: 20px; color: #fff; font-family: 'Open Sans', sans-serif; }
+body header .welcome { position: absolute; top: 50%; left: 0; width: 100%; text-align: left; text-transform: uppercase; font-size: 20px; color: #fff; font-family: 'Open Sans', sans-serif; }
 
-body header .welcome p { text-shadow: 2px 2px 2px black; position: absolute; text-align: center; top: 50px; left: 0; font-size: 10px; letter-spacing: 2px; margin: auto 5%; }
+body header .welcome .text { display: inline-block; padding-left: 1.3em; }
+
+body header .welcome p { text-shadow: 2px 2px 2px black; position: absolute; top: 50px; left: 3%; font-size: 10px; letter-spacing: 2px; margin: auto 5%; }
 
 body header .welcome .cursor { opacity: 0; transition: .2s; color: #ccc; }
 
@@ -89,12 +91,18 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
 @keyframes move-scroll { 50% { top: 30%; }
   100% { top: 15%; } }
 
-@media (orientation: landscape) and (min-width: 532px) { .wrap header .welcome { font-size: 25px; }
-  .wrap header .mouse { width: 20px; height: 32px; }
-  .wrap header .mouse .scroll { width: 3px; height: 8px; } }
+@media (orientation: landscape) and (min-width: 533px) { body .wrap header .welcome { font-size: 25px; }
+  body .wrap header p { margin-left: 1.8em; }
+  body .wrap header .mouse { width: 20px; height: 32px; }
+  body .wrap header .mouse .scroll { width: 3px; height: 8px; } }
 
-@media (orientation: landscape) and (min-width: 640px) { .wrap header { background-size: cover; background-position: center; }
-  .wrap header .welcome { font-size: 29px; } }
+@media (orientation: portrait) and (min-width: 360px) { body .wrap header { background-size: cover; background-position: center; }
+  body .wrap header .welcome { font-size: 22px; }
+  body .wrap header p { margin-left: 2em; } }
+
+@media (orientation: landscape) and (min-width: 640px) { body .wrap header { background-size: cover; background-position: center; }
+  body .wrap header .welcome { font-size: 29px; }
+  body .wrap header p { margin-left: 2em; } }
 
 @media (orientation: portrait) and (min-width: 411px) { .wrap .welcome { font-size: 23px; }
   .wrap .mouse { width: 35px; height: 55px; }
@@ -104,13 +112,14 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   .wrap .mouse { width: 35px; height: 55px; }
   .wrap .mouse .scroll { width: 5px; height: 10px; } }
 
-@media (orientation: portrait) and (min-width: 768px) { .wrap header .welcome { font-size: 36px; margin-top: -114px; }
-  .wrap header .welcome .text { display: inline-block; }
-  .wrap header .welcome p { margin-top: 23px; font-size: 17px; }
-  .wrap .mouse { width: 45px; height: 65px; }
-  .wrap .mouse .scroll { width: 6px; height: 13px; } }
+@media (orientation: portrait) and (min-width: 768px) { body .wrap header .welcome { font-size: 36px; margin-top: -114px; }
+  body .wrap header .welcome .text { margin-left: .2em; }
+  body .wrap header .welcome p { margin-top: 23px; font-size: 17px; }
+  body .wrap .mouse { width: 45px; height: 65px; }
+  body .wrap .mouse .scroll { width: 6px; height: 13px; } }
 
-@media (orientation: landscape) and (min-width: 1024px) { .wrap header .welcome { font-size: 52px; top: 55%; left: -45%; }
-  .wrap header .welcome p { font-size: 14px; margin: 49px 0 49px 68em; }
-  .wrap header .mouse { width: 35px; height: 55px; }
-  .wrap header .mouse .scroll { width: 5px; height: 10px; } }
+@media (orientation: landscape) and (min-width: 1024px) and (min-height: 768px) { body .wrap header .welcome { font-size: 62px; top: 55%; left: 0%; text-align: left; }
+  body .wrap header .welcome .text { margin-left: .2em; }
+  body .wrap header .welcome p { font-size: 14px; margin: 49px 0 49px 3em; }
+  body .wrap header .mouse { width: 35px; height: 55px; }
+  body .wrap header .mouse .scroll { width: 5px; height: 10px; } }
