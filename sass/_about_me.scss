@@ -1,0 +1,247 @@
+.about-me {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	font-family: arial, sans-serif;
+
+	h1 {
+		text-align: center;
+		font-family: 'Alegreya Sans', sans-serif;
+		text-transform: uppercase;
+		margin-top: 16%;
+	}
+
+	.tech-left-1 {
+		width: 35%;
+		height: 100%;
+		box-shadow: 1px 1px 15px 1px lightgray;
+		padding: 5%;
+		margin: 20% 1%;
+
+		h6 {
+			font-family: 'Alegreya Sans', sans-serif;
+			font-size: 20px;
+		}
+
+		.description {
+			font-size: 14px;
+		}
+	}
+
+	.tech-left-2 {
+		position: absolute;
+		top: 190%;
+		left: 0;
+		width: 35%;
+		height: 100%;
+		box-shadow: 1px 1px 15px 1px lightgray;
+		padding: 5%;
+		margin: 20% 1%;
+
+		h6 {
+			font-family: 'Alegreya Sans', sans-serif;
+			font-size: 20px;
+		}
+
+		.description {
+			font-size: 14px;
+		}
+	}
+
+	.tech-right-1 {
+		position: absolute;
+		width: 35%;
+		height: 100%;
+		top: 80%;
+		left: 53%;
+		box-shadow: 1px 1px 15px 1px lightgray;
+		padding: 5%;
+		margin: 20% 1%;
+
+		h6 {
+			font-family: 'Alegreya Sans', sans-serif;
+			font-size: 21px;
+		}
+
+		.description {
+			top: 10%;
+			left: 40%;
+			height: 100%;
+			font-size: 14px;
+		}
+	}
+
+	.point-line {
+		position: absolute;
+		top: 27%;
+		left: 50%;
+		transform: translateX(-50%);
+		width: .5%;
+		height: 291.4%;
+		background-color: #000;
+	}
+
+	.pointer-1 {
+		position: absolute;
+		top: 33%;
+		left: 47.4%;
+		margin-right: 120px;
+		width: 5%;
+		height: 5%;
+		border-radius: 50%;
+		background-color: orangered;
+		margin-bottom: 250px;
+		margin-top: 80px;
+	}
+
+	.pointer-2 {
+		position: absolute;
+		top: 120%;
+		left: 47.4%;
+		margin-right: 120px;
+		width: 5%;
+		height: 5%;
+		border-radius: 50%;
+		background-color: orangered;
+		margin-bottom: 250px;
+		margin-top: 80px;
+	}
+
+	.pointer-3 {
+		position: absolute;
+		top: 235%;
+		left: 47.4%;
+		margin-right: 120px;
+		width: 5%;
+		height: 5%;
+		border-radius: 50%;
+		background-color: orangered;
+		margin-bottom: 250px;
+		margin-top: 80px;
+	}
+}
+
+@media(orientation: landscape) AND (min-width: 1024px) {
+	.about-me {
+		position: absolute;
+
+		h1 {
+			position: absolute;
+			bottom: 85%;
+			left: 50%;
+			transform: translateX(-50%);
+			font-family: 'Alegreya Sans', sans-serif;
+			text-transform: uppercase;
+			margin-top: 16%;
+		}
+
+		.tech-left-1 {
+			width: 20%;
+			height: 8%;
+			box-shadow: 1px 1px 15px 1px lightgray;
+			padding: 5%;
+			margin: 13.3% 14.5%;
+
+			h6 {
+				position: relative;
+				bottom: 60%;
+				left: 0;
+				font-family: 'Alegreya Sans',
+					sans-serif;
+				font-size: 20px;
+			}
+
+			.description {
+				position: relative;
+				bottom: 50%;
+				left: 0;
+				font-size: 14px;
+			}
+		}
+
+		.tech-left-2 {
+			position: absolute;
+			top: 43%;
+			left: 13.5%;
+			width: 20%;
+			height: 8%;
+			box-shadow: 1px 1px 15px 1px lightgray;
+			padding: 5%;
+
+			h6 {
+				position: relative;
+				bottom: 60%;
+				left: 0;
+				font-family: 'Alegreya Sans',
+					sans-serif;
+				font-size: 20px;
+			}
+
+			.description {
+				position: relative;
+				bottom: 50%;
+				left: 0;
+				font-size: 14px;
+			}
+		}
+
+		.tech-right-1 {
+			position: absolute;
+			top: 15%;
+			left: 54.4%;
+			width: 20%;
+			height: 8%;
+			box-shadow: 1px 1px 15px 1px lightgray;
+			padding: 5%;
+
+			h6 {
+				position: relative;
+				bottom: 60%;
+				left: 0;
+				font-family: 'Alegreya Sans',
+					sans-serif;
+				font-size: 20px;
+			}
+
+			.description {
+				position: relative;
+				bottom: 50%;
+				left: 0;
+				font-size: 14px;
+			}
+		}
+
+		.point-line {
+			top: 27%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: .2%;
+			height: 84.6%;
+			background-color: #000;
+		}
+
+		.pointer-1 {
+			top: 31%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 1.5%;
+			height: 3%;
+		}
+
+		.pointer-2 {
+			top: 58%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 1.5%;
+			height: 3%;
+		}
+
+		.pointer-3 {
+			top: 88%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 1.5%;
+			height: 3%;
+		}
+	}
+}
