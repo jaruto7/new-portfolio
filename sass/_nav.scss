@@ -242,6 +242,7 @@ aside {
  }
 }
 
+// desktop
 @media(orientation: landscape) AND (min-width: 1024px) {
 
  .nav-block {
@@ -250,7 +251,7 @@ aside {
   left: 0;
   height: 95px;
   width: 100%;
-  box-shadow: 0 0 5px 1px grey;
+  box-shadow: 0 0 85px 15px grey;
   top: -95px;
   transition: .2s;
  }
