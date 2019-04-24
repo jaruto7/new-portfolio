@@ -1,7 +1,7 @@
 .about-me {
+	position: absolute;
 	height: 100%;
 	width: 100%;
-	position: relative;
 	font-family: arial, sans-serif;
 
 	h1 {
@@ -12,202 +12,270 @@
 	}
 
 	.tech-left-1 {
-		width: 35%;
-		height: 100%;
+		position: absolute;
+		top: 23%;
+		left: 4%;
+		width: 37%;
+		height: 38%;
 		box-shadow: 1px 1px 15px 1px lightgray;
-		padding: 5%;
-		margin: 20% 1%;
+		padding: 1%;
 
 		h6 {
-			font-family: 'Alegreya Sans', sans-serif;
-			font-size: 20px;
+			font-size: 18px;
 		}
 
 		.description {
-			font-size: 14px;
+			font-size: 13px;
 		}
 	}
 
 	.tech-left-2 {
 		position: absolute;
-		top: 190%;
-		left: 0;
-		width: 35%;
-		height: 100%;
+		top: 101%;
+		left: 4%;
+		width: 37%;
+		height: 38%;
 		box-shadow: 1px 1px 15px 1px lightgray;
-		padding: 5%;
-		margin: 20% 1%;
+		padding: 1%;
 
 		h6 {
-			font-family: 'Alegreya Sans', sans-serif;
-			font-size: 20px;
+			font-size: 18px;
 		}
 
 		.description {
-			font-size: 14px;
+			font-size: 13px;
 		}
 	}
 
 	.tech-right-1 {
 		position: absolute;
-		width: 35%;
-		height: 100%;
-		top: 80%;
-		left: 53%;
+		top: 62%;
+		left: 57%;
+		width: 37%;
+		height: 38%;
 		box-shadow: 1px 1px 15px 1px lightgray;
-		padding: 5%;
-		margin: 20% 1%;
+		padding: 1%;
 
 		h6 {
-			font-family: 'Alegreya Sans', sans-serif;
-			font-size: 21px;
+			font-size: 18px;
 		}
 
 		.description {
-			top: 10%;
-			left: 40%;
-			height: 100%;
-			font-size: 14px;
+			font-size: 13px;
 		}
 	}
 
 	.point-line {
 		position: absolute;
-		top: 27%;
+		top: 23%;
 		left: 50%;
 		transform: translateX(-50%);
 		width: .5%;
-		height: 291.4%;
+		height: 117.4%;
 		background-color: #000;
 	}
 
 	.pointer-1 {
 		position: absolute;
-		top: 33%;
-		left: 47.4%;
-		margin-right: 120px;
-		width: 5%;
-		height: 5%;
+		top: 40%;
+		left: 42.8%;
+		transform: translateX(42.8%);
 		border-radius: 50%;
+		width: 25px;
+		height: 25px;
 		background-color: orangered;
-		margin-bottom: 250px;
-		margin-top: 80px;
 	}
 
 	.pointer-2 {
 		position: absolute;
-		top: 120%;
-		left: 47.4%;
-		margin-right: 120px;
-		width: 5%;
-		height: 5%;
+		top: 79%;
+		left: 42.8%;
+		transform: translateX(42.8%);
+		width: 25px;
+		height: 25px;
 		border-radius: 50%;
 		background-color: orangered;
-		margin-bottom: 250px;
-		margin-top: 80px;
 	}
 
 	.pointer-3 {
 		position: absolute;
-		top: 235%;
-		left: 47.4%;
-		margin-right: 120px;
-		width: 5%;
-		height: 5%;
+		top: 118%;
+		left: 42.8%;
+		transform: translateX(42.8%);
+		width: 25px;
+		height: 25px;
 		border-radius: 50%;
 		background-color: orangered;
-		margin-bottom: 250px;
-		margin-top: 80px;
 	}
 }
 
+// Nokia Lumia: landscape
+@media(orientation: landscape) AND (min-width: 533px) {
+	.about-me {
+
+		h1 {
+			position: absolute;
+			bottom: 80%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		.tech-left-1 {
+			top: 32%;
+			left: 2.5%;
+			width: 42%;
+			height: 46%;
+
+			h6 {
+				font-size: 20px;
+			}
+
+			.description {
+				font-size: 11.6px;
+			}
+		}
+
+		.tech-left-2 {
+			top: 130%;
+			left: 2.5%;
+			width: 42%;
+			height: 46%;
+
+			h6 {
+				font-size: 20px;
+			}
+
+			.description {
+				font-size: 11.6px;
+			}
+		}
+
+		.tech-right-1 {
+			top: 80.2%;
+			left: 53.6%;
+			width: 42%;
+			height: 46%;
+
+			h6 {
+				font-size: 20px;
+			}
+
+			.description {
+				font-size: 11.6px;
+			}
+		}
+
+		.point-line {
+			top: 32.2%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: .2%;
+			height: 147.8%;
+			background-color: #000;
+		}
+
+		.pointer-1 {
+			top: 52.5%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 20px;
+			height: 20px;
+		}
+
+		.pointer-2 {
+			top: 98.5%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 20px;
+			height: 20px;
+		}
+
+		.pointer-3 {
+			top: 152%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 20px;
+			height: 20px;
+		}
+	}
+}
+
+// Galaxy S5: portrait
+@media(orientation: portrait) AND (min-width: 360px) {
+	.about-me {
+		.pointer-1 {
+			top: 40.5%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		.pointer-2 {
+			top: 78.8%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		.pointer-3 {
+			top: 118%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}
+
+// desktop
 @media(orientation: landscape) AND (min-width: 1024px) {
 	.about-me {
-		position: absolute;
 
 		h1 {
 			position: absolute;
 			bottom: 85%;
 			left: 50%;
 			transform: translateX(-50%);
-			font-family: 'Alegreya Sans', sans-serif;
-			text-transform: uppercase;
-			margin-top: 16%;
 		}
 
 		.tech-left-1 {
-			width: 20%;
-			height: 8%;
-			box-shadow: 1px 1px 15px 1px lightgray;
-			padding: 5%;
-			margin: 13.3% 14.5%;
+			top: 27%;
+			left: 22.5%;
+			width: 22%;
+			height: 18%;
 
 			h6 {
-				position: relative;
-				bottom: 60%;
-				left: 0;
-				font-family: 'Alegreya Sans',
-					sans-serif;
 				font-size: 20px;
 			}
 
 			.description {
-				position: relative;
-				bottom: 50%;
-				left: 0;
-				font-size: 14px;
+				font-size: 11.6px;
 			}
 		}
 
 		.tech-left-2 {
-			position: absolute;
-			top: 43%;
-			left: 13.5%;
-			width: 20%;
-			height: 8%;
-			box-shadow: 1px 1px 15px 1px lightgray;
-			padding: 5%;
+			top: 71%;
+			left: 22.5%;
+			width: 22%;
+			height: 18%;
 
 			h6 {
-				position: relative;
-				bottom: 60%;
-				left: 0;
-				font-family: 'Alegreya Sans',
-					sans-serif;
 				font-size: 20px;
 			}
 
 			.description {
-				position: relative;
-				bottom: 50%;
-				left: 0;
-				font-size: 14px;
+				font-size: 11.6px;
 			}
 		}
 
 		.tech-right-1 {
-			position: absolute;
-			top: 15%;
-			left: 54.4%;
-			width: 20%;
-			height: 8%;
-			box-shadow: 1px 1px 15px 1px lightgray;
-			padding: 5%;
+			top: 49.2%;
+			left: 53.4%;
+			width: 22%;
+			height: 18%;
 
 			h6 {
-				position: relative;
-				bottom: 60%;
-				left: 0;
-				font-family: 'Alegreya Sans',
-					sans-serif;
 				font-size: 20px;
 			}
 
 			.description {
-				position: relative;
-				bottom: 50%;
-				left: 0;
-				font-size: 14px;
+				font-size: 11.6px;
 			}
 		}
 
@@ -216,32 +284,32 @@
 			left: 50%;
 			transform: translateX(-50%);
 			width: .2%;
-			height: 84.6%;
+			height: 66.1%;
 			background-color: #000;
 		}
 
 		.pointer-1 {
-			top: 31%;
+			top: 36.5%;
 			left: 50%;
 			transform: translateX(-50%);
-			width: 1.5%;
-			height: 3%;
+			width: 25px;
+			height: 25px;
 		}
 
 		.pointer-2 {
-			top: 58%;
+			top: 58.5%;
 			left: 50%;
 			transform: translateX(-50%);
-			width: 1.5%;
-			height: 3%;
+			width: 25px;
+			height: 25px;
 		}
 
 		.pointer-3 {
-			top: 88%;
+			top: 80%;
 			left: 50%;
 			transform: translateX(-50%);
-			width: 1.5%;
-			height: 3%;
+			width: 25px;
+			height: 25px;
 		}
 	}
 }
