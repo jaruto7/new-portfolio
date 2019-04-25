@@ -53,7 +53,7 @@ aside nav a { font-size: 13px; color: #fff; text-align: center; text-decoration:
   aside nav li:nth-child(3) a, aside nav li:nth-child(4) a { padding: 20px 28.7em 20px 20px; }
   aside nav a { width: 100%; font-size: 23px; color: #fff; text-align: center; text-decoration: none; text-transform: uppercase; font-family: 'Alegreya Sans SC', sans-serif; } }
 
-@media (orientation: landscape) and (min-width: 1024px) { .nav-block { z-index: 1; position: fixed; left: 0; height: 95px; width: 100%; box-shadow: 0 0 85px 15px grey; top: -95px; transition: .2s; }
+@media (orientation: landscape) and (min-width: 1024px) { .nav-block { z-index: 1; position: fixed; left: 0; height: 95px; width: 100%; box-shadow: 0 0 65px 5px grey; top: -95px; transition: .2s; }
   .burger { display: none; }
   .burger.active { display: none; }
   aside { display: inline-block; top: 0; left: 0; background-color: transparent; }
@@ -124,25 +124,27 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   body .wrap header .mouse { width: 35px; height: 55px; }
   body .wrap header .mouse .scroll { width: 5px; height: 10px; } }
 
-.about-me { position: absolute; height: 100%; width: 100%; font-family: arial, sans-serif; }
+.about-me { position: absolute; height: 100%; width: 100%; font-family: 'Montserrat', sans-serif; }
 
 .about-me h1 { text-align: center; font-family: 'Alegreya Sans', sans-serif; text-transform: uppercase; margin-top: 16%; }
 
+.about-me .description { color: grey; }
+
 .about-me .tech-left-1 { position: absolute; top: 23%; left: 4%; width: 37%; height: 38%; box-shadow: 1px 1px 15px 1px lightgray; padding: 1%; }
 
-.about-me .tech-left-1 h6 { font-size: 18px; }
+.about-me .tech-left-1 h6 { font-family: 'Roboto Condensed', sans-serif; font-size: 18px; }
 
 .about-me .tech-left-1 .description { font-size: 13px; }
 
 .about-me .tech-left-2 { position: absolute; top: 101%; left: 4%; width: 37%; height: 38%; box-shadow: 1px 1px 15px 1px lightgray; padding: 1%; }
 
-.about-me .tech-left-2 h6 { font-size: 18px; }
+.about-me .tech-left-2 h6 { font-family: 'Roboto Condensed', sans-serif; font-size: 18px; }
 
 .about-me .tech-left-2 .description { font-size: 13px; }
 
 .about-me .tech-right-1 { position: absolute; top: 62%; left: 57%; width: 37%; height: 38%; box-shadow: 1px 1px 15px 1px lightgray; padding: 1%; }
 
-.about-me .tech-right-1 h6 { font-size: 18px; }
+.about-me .tech-right-1 h6 { font-family: 'Roboto Condensed', sans-serif; font-size: 18px; }
 
 .about-me .tech-right-1 .description { font-size: 13px; }
 
