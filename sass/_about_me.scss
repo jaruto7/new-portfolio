@@ -467,41 +467,41 @@
 			height: 21%;
 
 			h6 {
-				font-size: 22px;
+				font-size: 16px;
 			}
 
 			.description {
-				font-size: 12.6px;
+				font-size: 9.7px;
 			}
 		}
 
 		.tech-left-2 {
-			top: 74%;
+			top: 78%;
 			left: 22.5%;
 			width: 22%;
 			height: 21%;
 
 			h6 {
-				font-size: 22px;
+				font-size: 18px;
 			}
 
 			.description {
-				font-size: 12.6px;
+				font-size: 9.7px;
 			}
 		}
 
 		.tech-right-1 {
-			top: 50.2%;
+			top: 52.2%;
 			left: 53.4%;
 			width: 22%;
 			height: 21%;
 
 			h6 {
-				font-size: 22px;
+				font-size: 18px;
 			}
 
 			.description {
-				font-size: 12.6px;
+				font-size: 9.7px;
 			}
 		}
 
@@ -510,7 +510,7 @@
 			left: 50%;
 			transform: translateX(-50%);
 			width: .2%;
-			height: 70.7%;
+			height: 76.4%;
 			background-color: black;
 		}
 
@@ -523,7 +523,7 @@
 		}
 
 		.pointer-2 {
-			top: 60%;
+			top: 62.5%;
 			left: 50%;
 			transform: translateX(-50%);
 			width: 30px;
@@ -531,49 +531,11 @@
 		}
 
 		.pointer-3 {
-			top: 83.5%;
+			top: 88.5%;
 			left: 50%;
 			transform: translateX(-50%);
 			width: 30px;
 			height: 30px;
-		}
-	}
-}
-
-@media(orientation: landscape) AND (min-width: 1366px) {
-	.about-me {
-		h1 {
-			font-size: 29px;
-		}
-
-		.tech-left-1 {
-			height: 25%;
-		}
-
-		.tech-left-2 {
-			top: 85.5%;
-			height: 25%;
-		}
-
-		.tech-right-1 {
-			top: 56.2%;
-			height: 25%;
-		}
-
-		.point-line {
-			height: 88%;
-		}
-
-		.pointer-1 {
-			top: 39.5%;
-		}
-
-		.pointer-2 {
-			top: 68.5%;
-		}
-
-		.pointer-3 {
-			top: 97%;
 		}
 	}
 }
