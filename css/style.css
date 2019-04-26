@@ -231,7 +231,7 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   .about-me .pointer-2 { top: 60%; left: 50%; transform: translateX(-50%); width: 30px; height: 30px; }
   .about-me .pointer-3 { top: 83.5%; left: 50%; transform: translateX(-50%); width: 30px; height: 30px; } }
 
-@media (orientation: landscape) and (min-width: 1366px) { .about-me h1 { font-size: 30px; }
+@media (orientation: landscape) and (min-width: 1366px) { .about-me h1 { font-size: 29px; }
   .about-me .tech-left-1 { height: 25%; }
   .about-me .tech-left-2 { top: 85.5%; height: 25%; }
   .about-me .tech-right-1 { top: 56.2%; height: 25%; }
