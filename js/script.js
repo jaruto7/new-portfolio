@@ -13,7 +13,7 @@ const imgModal = document.querySelector('.modal-bg .middle img');
 // Zadeklaruj funkcję anonimową która jest aktywna dopiero w momencie kliknięcia w ikonę lupy na hoverze obrazka danego projektu
 const clickModal = function () {
  // Pobierz dany obrazek który kliknął użytkownik biorąc jego atrybut
- const getImg = this.querySelector('.gal_item .img img').getAttribute('src');
+ const getImg = this.querySelector('.gal_item img').getAttribute('src');
  // Odwołaj się do pobranych elementów i podmień ich zawartość atrybutów aby zmienić ścieżki obrazka
  imgModal.src = getImg;
  // Do klasy modala przypisz klasę aby uaktywnić modal
