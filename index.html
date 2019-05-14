@@ -14,22 +14,22 @@
 </head>
 
 <body>
-  <div class="wrap">
-    <!-- NAVIGATION MENU -->
-    <div class="nav-block">
-      <div class="burger"><i class="fas fa-bars"></i></div>
-      <aside>
-        <nav>
-          <ul class="nav">
-            <li><a class="nav-link" href="#home">Home</a></li>
-            <li><a class="nav-link" href="#about-me">About Me</a></li>
-            <li><a class="nav-link" href="#">Projects</a></li>
-            <li><a class="nav-link" href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </aside>
-    </div>
+  <!-- NAVIGATION MENU -->
+  <div class="nav-block">
+    <div class="burger"><i class="fas fa-bars"></i></div>
+    <aside>
+      <nav>
+        <ul class="nav">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about-me">About Me</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
+  </div>
 
+  <div class="wrap">
     <!-- HEADER -->
     <header id="home">
       <div class="bg ">
@@ -83,8 +83,44 @@
       <div class="pointer-2"></div>
       <div class="pointer-3"></div>
     </section>
-  </div>
 
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="gallery clearfix">
+      <h1>Projects</h1>
+      <div class=" gal_item">
+        <div class="overlay">
+          <a href="https://github.com/jaruto7/rock-paper-scissors-game2"><div class="icon icon-left"><i
+              class="fas fa-code-branch"></i></div></a>
+          <div class="icon icon-right"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="img"><img src="../images/projects1.jpg" alt=""></div>
+      </div>
+      <div class="gal_item">
+        <div class="overlay">
+          <a href="https://github.com/jaruto7/task-create-list"><div class="icon icon-left"><i class="fas fa-code-branch"></i></div></a>
+          <div class="icon icon-right"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="img"><img src="../images/projects2.png" alt=""></div>
+      </div>
+      <div class="gal_item">
+        <div class="overlay">
+          <a href="https://github.com/jaruto7/country-app3/blob/master/public/index.html"><div class="icon icon-left"><i class="fas fa-code-branch"></i></div></a>
+          <div class="icon icon-right"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="img"><img src="../images/projects3.jpg" alt=""></div>
+      </div>
+    </section>
+  </div>
+  <section class="modal-bg">
+    <div class="modal">
+      <div class="top">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="middle">
+        <img src="images/photo1.png" alt="">
+      </div>
+    </div>
+  </section>
   <script src="js/script.js"></script>
 </body>
 

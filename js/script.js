@@ -7,6 +7,24 @@ const spnText = document.querySelector('.text');
 // Utwórz zmienną przechowującą tablicę z wartościami
 const txt = [`Welcome`, `I like challenges`, `I'm creative`, `I\'m Front-end Developer`];
 
+const projectsModal = document.querySelectorAll('.gal_item .overlay .icon-right');
+const imgModal = document.querySelector('.modal-bg .middle img');
+
+// Zadeklaruj funkcję anonimową która jest aktywna dopiero w momencie kliknięcia w ikonę lupy na hoverze obrazka danego projektu
+const clickModal = function () {
+ // Pobierz dany obrazek który kliknął użytkownik biorąc jego atrybut
+ const getImg = this.querySelector('.gal_item .img img').getAttribute('src');
+ // Odwołaj się do pobranych elementów i podmień ich zawartość atrybutów aby zmienić ścieżki obrazka
+ imgModal.src = getImg;
+ // Do klasy modala przypisz klasę aby uaktywnić modal
+ document.querySelector('.modal-bg').classList.toggle('active');
+ // Do klasy diva obejmującego całą treść przypisz klasę aby uaktywnić efekt blur
+ document.querySelector('.wrap').classList.toggle('blur');
+}
+
+projectsModal.forEach(img => img.addEventListener('click', clickModal));
+
+
 // Nasłuchuj na zdarzenie kliknięcia w hamburger
 burger.addEventListener("click", function () {
  // Przełączaj klasę aby wyświetlić menu burgera

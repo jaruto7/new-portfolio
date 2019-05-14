@@ -249,11 +249,11 @@ aside {
   z-index: 1;
   position: fixed;
   left: 0;
-  height: 95px;
+  height: 67px;
   width: 100%;
   box-shadow: 0 0 65px 5px grey;
   top: -95px;
-  transition: .2s;
+  transition: .7s;
  }
 
  .burger {
@@ -267,7 +267,7 @@ aside {
  aside {
   display: inline-block;
   top: 0;
-  left: 0;
+  bottom: 937px;
   background-color: transparent;
 
   nav {
@@ -296,6 +296,7 @@ aside {
    li:nth-child(3) a,
    li:nth-child(4) a {
     padding: 0;
+    line-height: 64px;
     font-weight: bold;
    }
 
