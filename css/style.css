@@ -53,14 +53,14 @@ aside nav a { font-size: 13px; color: #fff; text-align: center; text-decoration:
   aside nav li:nth-child(3) a, aside nav li:nth-child(4) a { padding: 20px 28.7em 20px 20px; }
   aside nav a { width: 100%; font-size: 23px; color: #fff; text-align: center; text-decoration: none; text-transform: uppercase; font-family: 'Alegreya Sans SC', sans-serif; } }
 
-@media (orientation: landscape) and (min-width: 1024px) { .nav-block { z-index: 1; position: fixed; left: 0; height: 95px; width: 100%; box-shadow: 0 0 65px 5px grey; top: -95px; transition: .2s; }
+@media (orientation: landscape) and (min-width: 1024px) { .nav-block { z-index: 1; position: fixed; left: 0; height: 67px; width: 100%; box-shadow: 0 0 65px 5px grey; top: -95px; transition: .7s; }
   .burger { display: none; }
   .burger.active { display: none; }
-  aside { display: inline-block; top: 0; left: 0; background-color: transparent; }
+  aside { display: inline-block; top: 0; bottom: 937px; background-color: transparent; }
   aside nav ul { position: absolute; top: 4.5%; right: 22%; }
   aside nav li { float: left; border: none; background-color: transparent; padding: 0 25px; }
   aside nav li:nth-child(1), aside nav li:nth-child(2), aside nav li:nth-child(3) { border: none; }
-  aside nav li:nth-child(1) a, aside nav li:nth-child(2) a, aside nav li:nth-child(3) a, aside nav li:nth-child(4) a { padding: 0; font-weight: bold; }
+  aside nav li:nth-child(1) a, aside nav li:nth-child(2) a, aside nav li:nth-child(3) a, aside nav li:nth-child(4) a { padding: 0; line-height: 64px; font-weight: bold; }
   aside nav a { font-size: 14px; color: #fff; }
   aside nav a:hover { color: #d4dad8; }
   .active .nav-link { color: gray; }
@@ -72,7 +72,7 @@ aside nav a { font-size: 13px; color: #fff; text-align: center; text-decoration:
 
 body { min-height: 350vh; }
 
-body header { height: 100vh; background-image: url(../images/photo1.png); background-attachment: fixed; background-size: cover; background-position: center; background-repeat: no-repeat; }
+body header { height: 100vh; background-image: url(../images/photo1.png); background-attachment: fixed; background-repeat: no-repeat; }
 
 body header .welcome { position: absolute; top: 50%; left: 0; width: 100%; text-align: left; text-transform: uppercase; font-size: 20px; color: #fff; font-family: 'Open Sans', sans-serif; }
 
@@ -230,3 +230,146 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   .about-me .pointer-1 { top: 36.9%; left: 50%; transform: translateX(-50%); width: 30px; height: 30px; }
   .about-me .pointer-2 { top: 62.5%; left: 50%; transform: translateX(-50%); width: 30px; height: 30px; }
   .about-me .pointer-3 { top: 88.5%; left: 50%; transform: translateX(-50%); width: 30px; height: 30px; } }
+
+.gallery { margin-top: 250%; max-width: 100%; }
+
+.gallery h1 { margin-bottom: 15%; text-align: center; text-transform: uppercase; font-family: 'Alegreya Sans', sans-serif; }
+
+.gallery .gal_item { position: relative; margin-left: 5%; top: 0; left: 0; padding-bottom: 3.5%; width: 45%; }
+
+.gallery .gal_item .overlay { display: none; position: absolute; background-color: rgba(128, 128, 128, 0.5); height: 20em; width: 200%; }
+
+.gallery .gal_item .overlay .icon { position: absolute; display: inline-block; top: 50%; width: 60px; height: 60px; line-height: 60px; text-align: center; background-color: rgba(0, 0, 0, 0.5); color: white; margin-top: -12px; border-radius: 20%; cursor: pointer; }
+
+.gallery .gal_item .overlay .icon .fas { padding-top: 18px; font-size: 25px; }
+
+.gallery .gal_item .overlay .icon-left { left: 15%; }
+
+.gallery .gal_item .overlay .icon-right { right: 15%; }
+
+.gallery .gal_item .img img { width: 200%; height: 20em; border: 2px solid silver; }
+
+.gallery .gal_item:hover .overlay { display: block; }
+
+.wrap.blur { position: absolute; filter: blur(2px); height: 100%; }
+
+.modal-bg { display: none; }
+
+.modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
+
+.modal-bg.active .modal { position: absolute; top: 40%; left: 10%; width: 15%; height: 15%; transform: translate(-50%, -70%); }
+
+.modal-bg.active .modal .top { position: relative; top: 8.5%; right: -10%; }
+
+.modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 560%; line-height: 24px; color: white; font-size: 35px; cursor: pointer; }
+
+.modal-bg.active .modal .top i.fa-times:hover { color: lightgray; }
+
+.modal-bg.active .modal .middle img { width: 19em; height: 14.8em; }
+
+@media (orientation: landscape) and (min-width: 533px) and (min-height: 320px) { .gallery { margin-top: 116%; }
+  .gallery h1 { margin-bottom: 8%; }
+  .modal-bg { display: none; }
+  .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
+  .modal-bg.active .modal { position: absolute; top: 30%; left: 10%; width: 15%; height: 15%; transform: translate(-50%, -70%); }
+  .modal-bg.active .modal .top { position: relative; top: 8.5%; right: -10%; }
+  .modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 584%; line-height: 24px; color: white; font-size: 35px; cursor: pointer; }
+  .modal-bg.active .modal .top i.fa-times:hover { color: lightgray; }
+  .modal-bg.active .modal .middle img { width: 31.7em; height: 15.2em; } }
+
+@media (orientation: portrait) and (min-width: 360px) and (min-height: 640px) { .gallery { margin-top: 267%; }
+  .gallery h1 { margin-bottom: 14%; }
+  .modal-bg { display: none; }
+  .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
+  .modal-bg.active .modal { position: absolute; top: 30%; left: 10%; width: 15%; height: 15%; transform: translate(-50%, -70%); }
+  .modal-bg.active .modal .top { position: relative; top: 8.5%; right: -10%; }
+  .modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 566%; line-height: 24px; color: white; font-size: 35px; cursor: pointer; }
+  .modal-bg.active .modal .top i.fa-times:hover { color: lightgray; }
+  .modal-bg.active .modal .middle img { width: 21.4em; height: 15.2em; } }
+
+@media (orientation: landscape) and (min-width: 640px) and (min-height: 360px) { .gallery { margin-top: 109%; }
+  .gallery h1 { margin-bottom: 7%; }
+  .modal-bg { display: none; }
+  .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
+  .modal-bg.active .modal { position: absolute; top: 28%; left: 10%; width: 15%; height: 15%; transform: translate(-50%, -70%); }
+  .modal-bg.active .modal .top { position: relative; top: 8.5%; right: -10%; }
+  .modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 592%; line-height: 24px; color: white; font-size: 35px; cursor: pointer; }
+  .modal-bg.active .modal .top i.fa-times:hover { color: lightgray; }
+  .modal-bg.active .modal .middle img { width: 38em; height: 17.5em; } }
+
+@media (orientation: portrait) and (min-width: 411px) and (min-height: 731px) { .gallery { margin-top: 267%; }
+  .gallery h1 { margin-bottom: 16%; }
+  .modal-bg { display: none; }
+  .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
+  .modal-bg.active .modal { position: absolute; top: 30%; left: 10%; width: 15%; height: 15%; transform: translate(-50%, -70%); }
+  .modal-bg.active .modal .top { position: relative; top: 8.5%; right: -10%; }
+  .modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 570%; line-height: 24px; color: white; font-size: 35px; cursor: pointer; }
+  .modal-bg.active .modal .top i.fa-times:hover { color: lightgray; }
+  .modal-bg.active .modal .middle img { width: 24.4em; height: 15.2em; } }
+
+@media (orientation: landscape) and (min-width: 731px) and (min-height: 411px) { .modal-bg { display: none; }
+  .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
+  .modal-bg.active .modal { position: absolute; top: 26%; left: 10%; width: 15%; height: 15%; transform: translate(-50%, -70%); }
+  .modal-bg.active .modal .top { position: relative; top: 8.5%; right: -10%; }
+  .modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 588%; line-height: 34px; color: white; font-size: 45px; cursor: pointer; }
+  .modal-bg.active .modal .top i.fa-times:hover { color: lightgray; }
+  .modal-bg.active .modal .middle img { width: 43.4em; height: 20.6em; } }
+
+@media (orientation: portrait) and (min-width: 411px) and (min-height: 823px) { .gallery { margin-top: 299%; }
+  .gallery h1 { margin-bottom: 18%; } }
+
+@media (orientation: landscape) and (min-width: 823px) and (min-height: 411px) { .gallery { margin-top: 96%; }
+  .gallery h1 { margin-bottom: 6%; } }
+
+@media (orientation: portrait) and (min-width: 375px) and (min-height: 812px) { .gallery { margin-top: 326%; }
+  .gallery h1 { margin-bottom: 22%; } }
+
+@media (orientation: landscape) and (min-width: 812px) and (min-height: 375px) { .gallery { margin-top: 90%; }
+  .gallery h1 { margin-bottom: 6%; }
+  .modal-bg { display: none; }
+  .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
+  .modal-bg.active .modal { position: absolute; top: 26%; left: 10%; width: 15%; height: 15%; transform: translate(-50%, -70%); }
+  .modal-bg.active .modal .top { position: relative; top: 8.5%; right: -10%; }
+  .modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 592%; line-height: 34px; color: white; font-size: 45px; cursor: pointer; }
+  .modal-bg.active .modal .top i.fa-times:hover { color: lightgray; }
+  .modal-bg.active .modal .middle img { width: 48.2em; height: 19.1em; } }
+
+@media (orientation: portrait) and (max-width: 1025px) and (min-height: 768px) { .gallery { margin-top: 202%; }
+  .gallery h1 { margin-bottom: 14%; font-size: 30px; }
+  .gallery .gal_item .overlay .icon { width: 80px; height: 80px; margin-top: -30px; }
+  .gallery .gal_item .overlay .icon .fas { font-size: 35px; line-height: 40px; }
+  .modal-bg { display: none; }
+  .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
+  .modal-bg.active .modal { position: absolute; top: 32%; left: 10%; width: 15%; height: 15%; transform: translate(-50%, -70%); }
+  .modal-bg.active .modal .top { position: relative; top: 8.5%; right: -10%; }
+  .modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 588%; line-height: 24px; color: white; font-size: 45px; cursor: pointer; }
+  .modal-bg.active .modal .top i.fa-times:hover { color: lightgray; }
+  .modal-bg.active .modal .middle img { width: 45.5em; height: 28em; } }
+
+@media (orientation: landscape) and (max-width: 1025px) and (min-height: 768px) { .gallery { margin-top: 86%; }
+  .gallery h1 { margin-bottom: 9%; font-size: 26px; }
+  .gallery .gal_item .overlay .icon { width: 80px; height: 80px; margin-top: -30px; }
+  .gallery .gal_item .overlay .icon .fas { font-size: 35px; line-height: 40px; }
+  .modal-bg { display: none; }
+  .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
+  .modal-bg.active .modal { position: absolute; top: 40%; left: 10%; width: 15%; height: 15%; transform: translate(-50%, -70%); }
+  .modal-bg.active .modal .top { position: relative; top: 8.5%; right: -10%; }
+  .modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 560%; line-height: 24px; color: white; font-size: 35px; cursor: pointer; }
+  .modal-bg.active .modal .top i.fa-times:hover { color: lightgray; }
+  .modal-bg.active .modal .middle img { width: 19em; height: 16.8em; } }
+
+@media (orientation: landscape) and (min-width: 1024px) { .gallery { margin-top: 57%; max-width: 100%; }
+  .gallery h1 { margin-bottom: 5.5%; }
+  .gallery .gal_item { margin-left: 12%; top: 0; left: 4.5%; float: left; width: 11%; }
+  .gallery .gal_item .overlay { display: none; position: absolute; background-color: rgba(128, 128, 128, 0.5); }
+  .gallery .gal_item .overlay .icon { top: 45%; }
+  .modal-bg.active .modal { top: 70%; left: 50%; width: 80%; height: 80%; }
+  .modal-bg.active .modal .top { position: absolute; top: 2.5%; right: 3%; }
+  .modal-bg.active .modal .top i.fa-times { font-size: 55px; line-height: 22px; }
+  .modal-bg.active .modal .middle img { width: 95.2em; height: 46.8em; } }
+
+@media (orientation: landscape) and (max-width: 1366px) and (min-height: 768px) { .gallery { margin-top: 65%; }
+  .modal-bg.active .modal { top: 70%; left: 45%; width: 80%; height: 80%; }
+  .modal-bg.active .modal .top { position: absolute; top: 2.5%; right: 3%; }
+  .modal-bg.active .modal .top i.fa-times { position: absolute; font-size: 55px; padding-left: 117px; }
+  .modal-bg.active .modal .middle img { width: 76.6em; height: 38.8em; } }
