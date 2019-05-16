@@ -8,12 +8,14 @@ const spnText = document.querySelector('.text');
 const txt = [`Welcome`, `I like challenges`, `I'm creative`, `I\'m Front-end Developer`];
 
 const projectsModal = document.querySelectorAll('.gal_item .overlay .icon-right');
+const iconX = document.querySelectorAll('.modal .top .fas');
 const imgModal = document.querySelector('.modal-bg .middle img');
 
 // Zadeklaruj funkcję anonimową która jest aktywna dopiero w momencie kliknięcia w ikonę lupy na hoverze obrazka danego projektu
 const clickModal = function () {
  // Pobierz dany obrazek który kliknął użytkownik biorąc jego atrybut
- const getImg = this.querySelector('.gal_item img').getAttribute('src');
+ const getImg = this.dataset.img;
+ // console.log(getImg);
  // Odwołaj się do pobranych elementów i podmień ich zawartość atrybutów aby zmienić ścieżki obrazka
  imgModal.src = getImg;
  // Do klasy modala przypisz klasę aby uaktywnić modal
@@ -22,7 +24,17 @@ const clickModal = function () {
  document.querySelector('.wrap').classList.toggle('blur');
 }
 
+// Zadeklaruj funkcję która zamknie modal i wyłączy blur
+const closeModal = () => {
+ // console.log('works');
+ // Przełączaj klasy po kliknięciu w ikonę
+ document.querySelector('.modal-bg').classList.toggle('active');
+ document.querySelector('.wrap').classList.toggle('blur');
+}
+
 projectsModal.forEach(img => img.addEventListener('click', clickModal));
+
+iconX.forEach(icon => icon.addEventListener('click', closeModal));
 
 
 // Nasłuchuj na zdarzenie kliknięcia w hamburger

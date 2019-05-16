@@ -22,8 +22,8 @@
    display: none;
    position: absolute;
    background-color: rgba(128, 128, 128, .5);
-   height: 20em;
-   width: 200%;
+   height: 20.2em;
+   width: 201%;
 
    .icon {
     position: absolute;
@@ -100,17 +100,18 @@
    top: 8.5%;
    right: -10%;
 
+   // close icon for modal
    i.fa-times {
     position: absolute;
     top: 0;
     left: 560%;
     line-height: 24px;
-    color: white;
+    color: #e55039;
     font-size: 35px;
     cursor: pointer;
 
     &:hover {
-     color: lightgray;
+     color: #eb2f06;
     }
    }
   }
@@ -160,19 +161,13 @@
     top: 8.5%;
     right: -10%;
 
-    // close icon for modal
     i.fa-times {
      position: absolute;
      top: 0;
      left: 584%;
      line-height: 24px;
-     color: white;
      font-size: 35px;
      cursor: pointer;
-
-     &:hover {
-      color: lightgray;
-     }
     }
    }
 
@@ -227,13 +222,8 @@
      top: 0;
      left: 566%;
      line-height: 24px;
-     color: white;
      font-size: 35px;
      cursor: pointer;
-
-     &:hover {
-      color: lightgray;
-     }
     }
    }
 
@@ -287,13 +277,8 @@
      top: 0;
      left: 592%;
      line-height: 24px;
-     color: white;
      font-size: 35px;
      cursor: pointer;
-
-     &:hover {
-      color: lightgray;
-     }
     }
    }
 
@@ -348,13 +333,8 @@
      top: 0;
      left: 570%;
      line-height: 24px;
-     color: white;
      font-size: 35px;
      cursor: pointer;
-
-     &:hover {
-      color: lightgray;
-     }
     }
    }
 
@@ -400,13 +380,8 @@
      top: 0;
      left: 588%;
      line-height: 34px;
-     color: white;
      font-size: 45px;
      cursor: pointer;
-
-     &:hover {
-      color: lightgray;
-     }
     }
    }
 
@@ -492,13 +467,8 @@
      top: 0;
      left: 592%;
      line-height: 34px;
-     color: white;
      font-size: 45px;
      cursor: pointer;
-
-     &:hover {
-      color: lightgray;
-     }
     }
    }
 
@@ -571,13 +541,8 @@
      top: 0;
      left: 588%;
      line-height: 24px;
-     color: white;
      font-size: 45px;
      cursor: pointer;
-
-     &:hover {
-      color: lightgray;
-     }
     }
    }
 
@@ -650,13 +615,8 @@
      top: 0;
      left: 560%;
      line-height: 24px;
-     color: white;
      font-size: 35px;
      cursor: pointer;
-
-     &:hover {
-      color: lightgray;
-     }
     }
    }
 

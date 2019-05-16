@@ -237,7 +237,7 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
 
 .gallery .gal_item { position: relative; margin-left: 5%; top: 0; left: 0; padding-bottom: 3.5%; width: 45%; }
 
-.gallery .gal_item .overlay { display: none; position: absolute; background-color: rgba(128, 128, 128, 0.5); height: 20em; width: 200%; }
+.gallery .gal_item .overlay { display: none; position: absolute; background-color: rgba(128, 128, 128, 0.5); height: 20.2em; width: 201%; }
 
 .gallery .gal_item .overlay .icon { position: absolute; display: inline-block; top: 50%; width: 60px; height: 60px; line-height: 60px; text-align: center; background-color: rgba(0, 0, 0, 0.5); color: white; margin-top: -12px; border-radius: 20%; cursor: pointer; }
 
@@ -261,9 +261,9 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
 
 .modal-bg.active .modal .top { position: relative; top: 8.5%; right: -10%; }
 
-.modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 560%; line-height: 24px; color: white; font-size: 35px; cursor: pointer; }
+.modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 560%; line-height: 24px; color: #e55039; font-size: 35px; cursor: pointer; }
 
-.modal-bg.active .modal .top i.fa-times:hover { color: lightgray; }
+.modal-bg.active .modal .top i.fa-times:hover { color: #eb2f06; }
 
 .modal-bg.active .modal .middle img { width: 19em; height: 14.8em; }
 
@@ -273,8 +273,7 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
   .modal-bg.active .modal { position: absolute; top: 30%; left: 10%; width: 15%; height: 15%; transform: translate(-50%, -70%); }
   .modal-bg.active .modal .top { position: relative; top: 8.5%; right: -10%; }
-  .modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 584%; line-height: 24px; color: white; font-size: 35px; cursor: pointer; }
-  .modal-bg.active .modal .top i.fa-times:hover { color: lightgray; }
+  .modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 584%; line-height: 24px; font-size: 35px; cursor: pointer; }
   .modal-bg.active .modal .middle img { width: 31.7em; height: 15.2em; } }
 
 @media (orientation: portrait) and (min-width: 360px) and (min-height: 640px) { .gallery { margin-top: 267%; }
@@ -283,8 +282,7 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
   .modal-bg.active .modal { position: absolute; top: 30%; left: 10%; width: 15%; height: 15%; transform: translate(-50%, -70%); }
   .modal-bg.active .modal .top { position: relative; top: 8.5%; right: -10%; }
-  .modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 566%; line-height: 24px; color: white; font-size: 35px; cursor: pointer; }
-  .modal-bg.active .modal .top i.fa-times:hover { color: lightgray; }
+  .modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 566%; line-height: 24px; font-size: 35px; cursor: pointer; }
   .modal-bg.active .modal .middle img { width: 21.4em; height: 15.2em; } }
 
 @media (orientation: landscape) and (min-width: 640px) and (min-height: 360px) { .gallery { margin-top: 109%; }
@@ -293,8 +291,7 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
   .modal-bg.active .modal { position: absolute; top: 28%; left: 10%; width: 15%; height: 15%; transform: translate(-50%, -70%); }
   .modal-bg.active .modal .top { position: relative; top: 8.5%; right: -10%; }
-  .modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 592%; line-height: 24px; color: white; font-size: 35px; cursor: pointer; }
-  .modal-bg.active .modal .top i.fa-times:hover { color: lightgray; }
+  .modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 592%; line-height: 24px; font-size: 35px; cursor: pointer; }
   .modal-bg.active .modal .middle img { width: 38em; height: 17.5em; } }
 
 @media (orientation: portrait) and (min-width: 411px) and (min-height: 731px) { .gallery { margin-top: 267%; }
@@ -303,16 +300,14 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
   .modal-bg.active .modal { position: absolute; top: 30%; left: 10%; width: 15%; height: 15%; transform: translate(-50%, -70%); }
   .modal-bg.active .modal .top { position: relative; top: 8.5%; right: -10%; }
-  .modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 570%; line-height: 24px; color: white; font-size: 35px; cursor: pointer; }
-  .modal-bg.active .modal .top i.fa-times:hover { color: lightgray; }
+  .modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 570%; line-height: 24px; font-size: 35px; cursor: pointer; }
   .modal-bg.active .modal .middle img { width: 24.4em; height: 15.2em; } }
 
 @media (orientation: landscape) and (min-width: 731px) and (min-height: 411px) { .modal-bg { display: none; }
   .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
   .modal-bg.active .modal { position: absolute; top: 26%; left: 10%; width: 15%; height: 15%; transform: translate(-50%, -70%); }
   .modal-bg.active .modal .top { position: relative; top: 8.5%; right: -10%; }
-  .modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 588%; line-height: 34px; color: white; font-size: 45px; cursor: pointer; }
-  .modal-bg.active .modal .top i.fa-times:hover { color: lightgray; }
+  .modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 588%; line-height: 34px; font-size: 45px; cursor: pointer; }
   .modal-bg.active .modal .middle img { width: 43.4em; height: 20.6em; } }
 
 @media (orientation: portrait) and (min-width: 411px) and (min-height: 823px) { .gallery { margin-top: 299%; }
@@ -330,8 +325,7 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
   .modal-bg.active .modal { position: absolute; top: 26%; left: 10%; width: 15%; height: 15%; transform: translate(-50%, -70%); }
   .modal-bg.active .modal .top { position: relative; top: 8.5%; right: -10%; }
-  .modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 592%; line-height: 34px; color: white; font-size: 45px; cursor: pointer; }
-  .modal-bg.active .modal .top i.fa-times:hover { color: lightgray; }
+  .modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 592%; line-height: 34px; font-size: 45px; cursor: pointer; }
   .modal-bg.active .modal .middle img { width: 48.2em; height: 19.1em; } }
 
 @media (orientation: portrait) and (max-width: 1025px) and (min-height: 768px) { .gallery { margin-top: 202%; }
@@ -342,8 +336,7 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
   .modal-bg.active .modal { position: absolute; top: 32%; left: 10%; width: 15%; height: 15%; transform: translate(-50%, -70%); }
   .modal-bg.active .modal .top { position: relative; top: 8.5%; right: -10%; }
-  .modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 588%; line-height: 24px; color: white; font-size: 45px; cursor: pointer; }
-  .modal-bg.active .modal .top i.fa-times:hover { color: lightgray; }
+  .modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 588%; line-height: 24px; font-size: 45px; cursor: pointer; }
   .modal-bg.active .modal .middle img { width: 45.5em; height: 28em; } }
 
 @media (orientation: landscape) and (max-width: 1025px) and (min-height: 768px) { .gallery { margin-top: 86%; }
@@ -354,8 +347,7 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
   .modal-bg.active .modal { position: absolute; top: 40%; left: 10%; width: 15%; height: 15%; transform: translate(-50%, -70%); }
   .modal-bg.active .modal .top { position: relative; top: 8.5%; right: -10%; }
-  .modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 560%; line-height: 24px; color: white; font-size: 35px; cursor: pointer; }
-  .modal-bg.active .modal .top i.fa-times:hover { color: lightgray; }
+  .modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 560%; line-height: 24px; font-size: 35px; cursor: pointer; }
   .modal-bg.active .modal .middle img { width: 19em; height: 16.8em; } }
 
 @media (orientation: landscape) and (min-width: 1024px) { .gallery { margin-top: 57%; max-width: 100%; }
