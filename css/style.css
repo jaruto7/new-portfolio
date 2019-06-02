@@ -77,13 +77,13 @@ aside nav a { font-size: 13px; color: #fff; text-align: center; text-decoration:
 
 .clearfix::after { content: ""; display: block; clear: both; }
 
-body header { height: 100vh; background-image: url(../images/photo1.png); background-attachment: fixed; background-repeat: no-repeat; }
+body header { height: 100vh; background-image: url(../images/photo1.png); background-attachment: fixed; background-repeat: no-repeat; background-position: center; background-size: cover; }
 
 body header .welcome { position: absolute; top: 50%; left: 0; width: 100%; text-align: left; text-transform: uppercase; font-size: 20px; color: #fff; font-family: 'Open Sans', sans-serif; }
 
 body header .welcome .text { display: inline-block; padding-left: 1.3em; }
 
-body header .welcome p { text-shadow: 2px 2px 2px black; position: absolute; top: 50px; left: 3%; font-size: 10px; letter-spacing: 2px; margin: auto 5%; }
+body header .welcome p { text-shadow: 2px 2px 2px black; position: absolute; top: 35px; left: 3%; font-size: 10px; letter-spacing: 2px; margin: auto 5%; }
 
 body header .welcome .cursor { opacity: 0; transition: .2s; color: #ccc; }
 
