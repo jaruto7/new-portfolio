@@ -10,14 +10,17 @@ const txt = [`Welcome`, `I like challenges`, `I'm creative`, `I\'m Front-end Dev
 const projectsModal = document.querySelectorAll('.gal_item .overlay .icon-right');
 const iconX = document.querySelectorAll('.modal .top .fas');
 const imgModal = document.querySelector('.modal-bg .middle img');
+const hrefModal = document.querySelector('.modal-bg .middle a');
 
 // Zadeklaruj funkcję anonimową która jest aktywna dopiero w momencie kliknięcia w ikonę lupy na hoverze obrazka danego projektu
 const clickModal = function () {
  // Pobierz dany obrazek który kliknął użytkownik biorąc jego atrybut
  const getImg = this.dataset.img;
+ const getHref = this.dataset.href;
  // console.log(getImg);
  // Odwołaj się do pobranych elementów i podmień ich zawartość atrybutów aby zmienić ścieżki obrazka
  imgModal.src = getImg;
+ hrefModal.href = getHref;
  // Do klasy modala przypisz klasę aby uaktywnić modal
  document.querySelector('.modal-bg').classList.toggle('active');
  // Do klasy diva obejmującego całą treść przypisz klasę aby uaktywnić efekt blur

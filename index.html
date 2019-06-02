@@ -15,21 +15,21 @@
 
 <body>
   <!-- NAVIGATION MENU -->
-  <div class="nav-block">
-    <div class="burger"><i class="fas fa-bars"></i></div>
-    <aside>
-      <nav>
-        <ul class="nav">
-          <li><a class="nav-link" href="#home">Home</a></li>
-          <li><a class="nav-link" href="#about-me">About Me</a></li>
-          <li><a class="nav-link" href="#projects">Projects</a></li>
-          <li><a class="nav-link" href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </aside>
-  </div>
-
   <div class="wrap">
+    <div class="nav-block">
+      <div class="burger"><i class="fas fa-bars"></i></div>
+      <aside>
+        <nav>
+          <ul class="nav">
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#about-me">About Me</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+
     <!-- HEADER -->
     <header id="home">
       <div class="bg ">
@@ -57,7 +57,7 @@
           <p>- Flexbox</p>
           <p>- Sass</p>
           <p>- RWD</p>
-          <p>- Javascript ES6</p>
+          <p>- Javascript - ES6</p>
           <p>- NodeJS & NPM</p>
           <p>- Git</p>
           <p>- Command Line Windows</p>
@@ -89,38 +89,67 @@
       <h1>Projects</h1>
       <div class=" gal_item">
         <div class="overlay">
-          <a href="https://github.com/jaruto7/rock-paper-scissors-game2/tree/master"><div class="icon icon-left"><i
+          <a href="https://github.com/jaruto7/rock-paper-scissors-game2/tree/master" target="_blank"><div class="icon icon-left"><i
               class="fas fa-code-branch"></i></div></a>
-          <div class="icon icon-right" data-img="images/projects1.jpg"><i class="fas fa-search-plus"></i></div>
+          <div class="icon icon-right" data-href="https://jaruto7.github.io/rock-paper-scissors-game2/"
+            data-img="images/projects1.png"><i class="fas fa-search-plus"></i></div>
         </div>
-        <div class="img"><img src="images/projects1.jpg" alt=""></div>
+        <div class="img"><img src="images/projects1.png" alt=""></div>
       </div>
       <div class="gal_item">
         <div class="overlay">
-          <a href="https://github.com/jaruto7/check-degree"><div class="icon icon-left"><i class="fas fa-code-branch"></i></div></a>
-          <div class="icon icon-right" data-img="images/projects2.png"><i class="fas fa-search-plus"></i></div>
+          <a href="https://github.com/jaruto7/check-degree" target="_blank"><div class="icon icon-left"><i class="fas fa-code-branch"></i></div></a>
+          <div class="icon icon-right" data-href="https://jaruto7.github.io/check-degree/"
+            data-img="images/projects2.png"><i class="fas fa-search-plus"></i>
+          </div>
         </div>
         <div class="img"><img src="images/projects2.png" alt=""></div>
+        <div class="link"><a href="https://jaruto7.github.io/check-degree/"></a></div>
       </div>
       <div class="gal_item">
         <div class="overlay">
-          <a href="https://github.com/jaruto7/new-portfolio/tree/master"><div class="icon icon-left"><i class="fas fa-code-branch"></i></div></a>
-          <div class="icon icon-right" data-img="images/projects3.jpg"><i class="fas fa-search-plus"></i></div>
+          <a href="https://github.com/jaruto7/new-portfolio/tree/master" target="_blank"><div class="icon icon-left"><i class="fas fa-code-branch"></i></div></a>
+          <div class="icon icon-right" data-href="https://jaruto7.github.io/new-portfolio/" data-img="
+            images/projects3.jpg"> <i class="fas fa-search-plus"></i></div>
+
         </div>
         <div class="img"><img src="images/projects3.jpg" alt=""></div>
+        <div class="link"><a href="https://jaruto7.github.io/new-portfolio/"></a></div>
       </div>
     </section>
+
+
+
+    <footer id="contact" class="footer">
+      <!-- FOOTER SECTION -->
+      <div class="row">
+        <div class="col-3">
+          <h3>Facebook</h3>
+          <p>moj facebook</p>
+        </div>
+        <div class="col-3">
+          <h3>Phone</h3>
+        </div>
+        <div class="col-3">
+          <h3>Email</h3>
+        </div>
+        <div class="col-3">
+          <h3>Twitter</h3>
+        </div>
+      </div>
+    </footer>
   </div>
-  <section class="modal-bg">
+
+  <div class="modal-bg">
     <div class="modal">
       <div class="top">
         <i class="fas fa-times"></i>
       </div>
       <div class="middle">
-        <img src="images/photo1.png" alt="">
+        <a href="https://jaruto7.github.io/new-portfolio/" target="_blank"><img src="images/photo1.png" alt="projects"></a>
       </div>
     </div>
-  </section>
+  </div>
   <script src="js/script.js"></script>
 </body>
 
