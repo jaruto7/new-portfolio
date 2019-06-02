@@ -13,6 +13,7 @@
 body {
 
  header {
+  position: relative;
   height: 100vh;
   background-image: url(../images/photo1.png);
   background-attachment: fixed;
@@ -104,6 +105,7 @@ body {
     }
 
     p {
+     top: 40px;
      margin-left: 1.8em;
     }
 
@@ -241,14 +243,15 @@ body {
  body {
   .wrap {
    header {
+
     .welcome {
      font-size: 62px;
      top: 55%;
-     left: 0%;
+     left: 0;
      text-align: left;
 
      .text {
-      margin-left: .2em;
+      margin-left: -.2em;
      }
 
      p {

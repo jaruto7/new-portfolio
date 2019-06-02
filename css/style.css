@@ -77,7 +77,7 @@ aside nav a { font-size: 13px; color: #fff; text-align: center; text-decoration:
 
 .clearfix::after { content: ""; display: block; clear: both; }
 
-body header { height: 100vh; background-image: url(../images/photo1.png); background-attachment: fixed; background-repeat: no-repeat; background-position: center; background-size: cover; }
+body header { position: relative; height: 100vh; background-image: url(../images/photo1.png); background-attachment: fixed; background-repeat: no-repeat; background-position: center; background-size: cover; }
 
 body header .welcome { position: absolute; top: 50%; left: 0; width: 100%; text-align: left; text-transform: uppercase; font-size: 20px; color: #fff; font-family: 'Open Sans', sans-serif; }
 
@@ -97,7 +97,7 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   100% { top: 15%; } }
 
 @media (orientation: landscape) and (min-width: 533px) { body .wrap header .welcome { font-size: 25px; }
-  body .wrap header p { margin-left: 1.8em; }
+  body .wrap header p { top: 40px; margin-left: 1.8em; }
   body .wrap header .mouse { width: 20px; height: 32px; }
   body .wrap header .mouse .scroll { width: 3px; height: 8px; } }
 
@@ -123,8 +123,8 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   body .wrap .mouse { width: 45px; height: 65px; }
   body .wrap .mouse .scroll { width: 6px; height: 13px; } }
 
-@media (orientation: landscape) and (min-width: 1024px) and (min-height: 768px) { body .wrap header .welcome { font-size: 62px; top: 55%; left: 0%; text-align: left; }
-  body .wrap header .welcome .text { margin-left: .2em; }
+@media (orientation: landscape) and (min-width: 1024px) and (min-height: 768px) { body .wrap header .welcome { font-size: 62px; top: 55%; left: 0; text-align: left; }
+  body .wrap header .welcome .text { margin-left: -.2em; }
   body .wrap header .welcome p { font-size: 14px; margin: 49px 0 49px 3em; }
   body .wrap header .mouse { width: 35px; height: 55px; }
   body .wrap header .mouse .scroll { width: 5px; height: 10px; } }
@@ -370,20 +370,3 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   .modal-bg.active .modal .top { position: absolute; top: 2.5%; right: 3%; }
   .modal-bg.active .modal .top i.fa-times { position: absolute; font-size: 55px; padding-left: 117px; }
   .modal-bg.active .modal .middle img { width: 76.6em; height: 38.8em; } }
-
-@media (min-width: 1024px) { .footer { max-width: 800px; margin-top: 60px; background-color: #222222; border-color: #1abc9c; padding-bottom: 100px; padding-left: 35em; padding-right: 35em; }
-  .row { position: relative; border-color: #34495e; overflow: auto; padding-bottom: 80px; border-bottom: 2px solid #333333; }
-  [class*="col"] { border-color: #f1c40f; float: left; margin-top: 50px; }
-  .col-1 { width: 8.334%; }
-  .col-2 { width: 16.667%; }
-  .col-3 { width: 25%; }
-  .col-3 h3 { color: #fff; }
-  .col-4 { width: 33.334%; }
-  .col-5 { width: 41.667%; }
-  .col-6 { width: 50%; }
-  .col-7 { width: 58.334%; }
-  .col-8 { width: 66.667%; }
-  .col-9 { width: 75%; }
-  .col-10 { width: 83.334%; }
-  .col-11 { width: 91.667%; }
-  .col-12 { width: 100%; } }
