@@ -15,7 +15,6 @@
   top: 0;
   left: 0;
   padding-bottom: 3.5%;
-  // float: left;
   width: 45%;
 
   .overlay {
@@ -630,7 +629,7 @@
  }
 }
 
-// Desktop: landscape
+// // Desktop: landscape
 @media(orientation: landscape) AND (min-width: 1024px) {
  .gallery {
   margin-top: 57%;
@@ -692,7 +691,7 @@
 // Desktop 1366px: landscape
 @media(orientation: landscape) AND (max-width: 1366px) AND (min-height: 768px) {
  .gallery {
-  margin-top: 65%;
+  margin-top: 141%;
  }
 
  .modal-bg.active {

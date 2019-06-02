@@ -467,6 +467,96 @@
 			height: 21%;
 
 			h6 {
+				font-size: 25px;
+			}
+
+			.description {
+				font-size: 15.8px;
+			}
+		}
+
+		.tech-left-2 {
+			top: 78%;
+			left: 22.5%;
+			width: 22%;
+			height: 21%;
+
+			h6 {
+				font-size: 25px;
+			}
+
+			.description {
+				font-size: 15.8px;
+			}
+		}
+
+		.tech-right-1 {
+			top: 52.2%;
+			left: 53.4%;
+			width: 22%;
+			height: 21%;
+
+			h6 {
+				font-size: 18px;
+			}
+
+			.description {
+				font-size: 19.8px;
+			}
+		}
+
+		.point-line {
+			top: 27%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: .2%;
+			height: 76.4%;
+			background-color: black;
+		}
+
+		.pointer-1 {
+			top: 36.9%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 30px;
+			height: 30px;
+		}
+
+		.pointer-2 {
+			top: 62.5%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 30px;
+			height: 30px;
+		}
+
+		.pointer-3 {
+			top: 88.5%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 30px;
+			height: 30px;
+		}
+	}
+}
+
+@media(orientation: landscape) AND (max-width: 1366px) AND (min-height: 768px) {
+	.about-me {
+
+		h1 {
+			position: absolute;
+			bottom: 85%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		.tech-left-1 {
+			top: 27%;
+			left: 22.5%;
+			width: 22%;
+			height: 21%;
+
+			h6 {
 				font-size: 16px;
 			}
 
