@@ -131,57 +131,75 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
 
 .about-me { position: absolute; height: 100%; width: 100%; font-family: 'Montserrat', sans-serif; }
 
-.about-me h1 { text-align: center; font-family: 'Alegreya Sans', sans-serif; text-transform: uppercase; margin-top: 16%; }
+.about-me h2 { position: relative; text-align: center; margin-top: 16%; font-size: 30px; }
+
+.about-me h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+.about-me .title-line { position: absolute; top: 19%; left: 43%; width: 15%; height: .3%; background-color: gray; }
 
 .about-me .description { color: grey; }
 
-.about-me .tech-left-1 { position: absolute; top: 23%; left: 4%; width: 37%; height: 38%; box-shadow: 1px 1px 15px 1px lightgray; padding: 1%; }
+.about-me .tech-left-1 { position: absolute; top: 32%; left: 4%; width: 37%; height: 38%; box-shadow: 1px 1px 15px 1px lightgray; padding: 1%; }
 
 .about-me .tech-left-1 h6 { font-family: 'Roboto Condensed', sans-serif; font-size: 18px; }
 
 .about-me .tech-left-1 .description { font-size: 11px; }
 
-.about-me .tech-left-2 { position: absolute; top: 101%; left: 4%; width: 37%; height: 38%; box-shadow: 1px 1px 15px 1px lightgray; padding: 1%; }
+.about-me .tech-left-2 { position: absolute; top: 111%; left: 4%; width: 37%; height: 38%; box-shadow: 1px 1px 15px 1px lightgray; padding: 1%; }
 
 .about-me .tech-left-2 h6 { font-family: 'Roboto Condensed', sans-serif; font-size: 18px; }
 
 .about-me .tech-left-2 .description { font-size: 11px; }
 
-.about-me .tech-right-1 { position: absolute; top: 62%; left: 57%; width: 37%; height: 38%; box-shadow: 1px 1px 15px 1px lightgray; padding: 1%; }
+.about-me .tech-right-1 { position: absolute; top: 71%; left: 57%; width: 37%; height: 38%; box-shadow: 1px 1px 15px 1px lightgray; padding: 1%; }
 
 .about-me .tech-right-1 h6 { font-family: 'Roboto Condensed', sans-serif; font-size: 18px; }
 
 .about-me .tech-right-1 .description { font-size: 11px; }
 
-.about-me .point-line { position: absolute; top: 23%; left: 50%; transform: translateX(-50%); width: .5%; height: 117.4%; background-color: #000; }
+.about-me .point-line { position: absolute; top: 32%; left: 50%; transform: translateX(-50%); width: .5%; height: 118.2%; background-color: #000; }
 
-.about-me .pointer-1 { position: absolute; top: 40%; left: 42.8%; transform: translateX(42.8%); border-radius: 50%; width: 25px; height: 25px; background-color: orangered; }
+.about-me .pointer-1 { position: absolute; top: 49%; left: 42.8%; transform: translateX(42.8%); border-radius: 50%; width: 25px; height: 25px; background-color: orangered; }
 
-.about-me .pointer-2 { position: absolute; top: 79%; left: 42.8%; transform: translateX(42.8%); width: 25px; height: 25px; border-radius: 50%; background-color: orangered; }
+.about-me .pointer-2 { position: absolute; top: 89%; left: 42.8%; transform: translateX(42.8%); width: 25px; height: 25px; border-radius: 50%; background-color: orangered; }
 
-.about-me .pointer-3 { position: absolute; top: 118%; left: 42.8%; transform: translateX(42.8%); width: 25px; height: 25px; border-radius: 50%; background-color: orangered; }
+.about-me .pointer-3 { position: absolute; top: 128%; left: 42.8%; transform: translateX(42.8%); width: 25px; height: 25px; border-radius: 50%; background-color: orangered; }
 
-@media (orientation: landscape) and (min-width: 533px) { .about-me h1 { position: absolute; bottom: 80%; left: 50%; transform: translateX(-50%); }
-  .about-me .tech-left-1 { top: 32%; left: 2.5%; width: 42%; height: 46%; }
+@media (orientation: landscape) and (min-width: 533px) { .about-me h2 { position: absolute; bottom: 80%; left: 50%; transform: translateX(-50%); }
+  .about-me .title-line { top: 23%; left: 45%; width: 10%; height: .6%; }
+  .about-me .tech-left-1 { top: 40%; left: 2.5%; width: 42%; height: 46%; }
   .about-me .tech-left-1 h6 { font-size: 20px; }
-  .about-me .tech-left-1 .description { font-size: 11px; }
-  .about-me .tech-left-2 { top: 130%; left: 2.5%; width: 42%; height: 46%; }
+  .about-me .tech-left-2 { top: 139%; left: 2.5%; width: 42%; height: 46%; }
   .about-me .tech-left-2 h6 { font-size: 20px; }
-  .about-me .tech-left-2 .description { font-size: 11px; }
-  .about-me .tech-right-1 { top: 80.2%; left: 53.6%; width: 42%; height: 46%; }
+  .about-me .tech-right-1 { top: 89%; left: 53.6%; width: 42%; height: 46%; }
   .about-me .tech-right-1 h6 { font-size: 20px; }
   .about-me .tech-right-1 .description { font-size: 11px; }
-  .about-me .point-line { top: 32.2%; left: 50%; transform: translateX(-50%); width: .2%; height: 147.8%; background-color: #000; }
-  .about-me .pointer-1 { top: 52.5%; left: 50%; transform: translateX(-50%); width: 20px; height: 20px; }
-  .about-me .pointer-2 { top: 98.5%; left: 50%; transform: translateX(-50%); width: 20px; height: 20px; }
-  .about-me .pointer-3 { top: 152%; left: 50%; transform: translateX(-50%); width: 20px; height: 20px; } }
+  .about-me .point-line { top: 40%; width: .5%; height: 148%; }
+  .about-me .pointer-1 { top: 62.5%; left: 50%; transform: translateX(-50%); width: 20px; height: 20px; }
+  .about-me .pointer-2 { top: 109.5%; left: 50%; transform: translateX(-50%); width: 20px; height: 20px; }
+  .about-me .pointer-3 { top: 160.5%; left: 50%; transform: translateX(-50%); width: 20px; height: 20px; } }
 
-@media (orientation: portrait) and (min-width: 411px) { .about-me .tech-left-1 h6 { font-size: 22px; }
+@media (orientation: portrait) and (min-width: 360px) { .about-me h2 { top: 1%; }
+  .about-me .title-line { top: 18.5%; }
+  .about-me .pointer-1 { top: 49.5%; left: 50%; transform: translateX(-50%); }
+  .about-me .pointer-2 { top: 88.8%; left: 50%; transform: translateX(-50%); }
+  .about-me .pointer-3 { top: 128%; left: 50%; transform: translateX(-50%); } }
+
+@media (orientation: portrait) and (min-width: 411px) { .about-me h2 { top: 1%; }
+  .about-me .title-line { top: 17%; left: 43%; }
+  .about-me .tech-left-1 { top: 29%; }
+  .about-me .tech-left-1 h6 { font-size: 22px; }
   .about-me .tech-left-1 .description { font-size: 13px; }
+  .about-me .tech-left-2 { top: 107%; }
   .about-me .tech-left-2 h6 { font-size: 22px; }
   .about-me .tech-left-2 .description { font-size: 13px; }
+  .about-me .tech-right-1 { top: 68%; }
   .about-me .tech-right-1 h6 { font-size: 22px; }
-  .about-me .tech-right-1 .description { font-size: 13px; } }
+  .about-me .tech-right-1 .description { font-size: 13px; }
+  .about-me .point-line { top: 29%; height: 116.8%; }
+  .about-me .pointer-1 { top: 46.5%; }
+  .about-me .pointer-2 { top: 85.8%; left: 50%; transform: translateX(-50%); }
+  .about-me .pointer-3 { top: 125%; left: 50%; transform: translateX(-50%); } }
 
 @media (orientation: landscape) and (min-width: 731px) { .about-me h1 { font-size: 25px; }
   .about-me .tech-left-1 h6 { font-size: 25px; }
@@ -190,10 +208,6 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   .about-me .tech-left-2 .description { font-size: 14px; }
   .about-me .tech-right-1 h6 { font-size: 25px; }
   .about-me .tech-right-1 .description { font-size: 14px; } }
-
-@media (orientation: portrait) and (min-width: 360px) { .about-me .pointer-1 { top: 40.5%; left: 50%; transform: translateX(-50%); }
-  .about-me .pointer-2 { top: 78.8%; left: 50%; transform: translateX(-50%); }
-  .about-me .pointer-3 { top: 118%; left: 50%; transform: translateX(-50%); } }
 
 @media (orientation: portrait) and (min-width: 373px) { .about-me .tech-left-1 h6 { font-size: 22px; }
   .about-me .tech-left-1 .description { font-size: 13px; }
@@ -209,19 +223,21 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   .about-me .tech-right-1 h6 { font-size: 24px; }
   .about-me .tech-right-1 .description { font-size: 13px; } }
 
-@media (orientation: portrait) and (min-width: 768px) { .about-me h1 { position: absolute; bottom: 87.5%; left: 50%; transform: translateX(-50%); font-size: 30px; }
+@media (orientation: portrait) and (min-width: 768px) { .about-me h2 { top: -5%; font-size: 40px; }
+  .about-me .title-line { top: 17%; width: 10%; left: 45%; }
   .about-me .tech-left-1 h6 { font-size: 28px; }
   .about-me .tech-left-1 .description { font-size: 18px; }
   .about-me .tech-left-2 h6 { font-size: 28px; }
   .about-me .tech-left-2 .description { font-size: 18px; }
   .about-me .tech-right-1 h6 { font-size: 28px; }
   .about-me .tech-right-1 .description { font-size: 18px; }
-  .about-me .point-line { width: .6%; }
+  .about-me .point-line { width: .6%; height: 117.5%; }
   .about-me .pointer-1 { width: 45px; height: 45px; }
   .about-me .pointer-2 { width: 45px; height: 45px; }
   .about-me .pointer-3 { width: 45px; height: 45px; } }
 
-@media (orientation: landscape) and (min-width: 1024px) { .about-me h1 { position: absolute; bottom: 85%; left: 50%; transform: translateX(-50%); }
+@media (orientation: landscape) and (min-width: 1024px) { .about-me h2 { bottom: 87%; font-size: 40px; }
+  .about-me .title-line { top: 15.5%; left: 48%; width: 4%; height: .3%; }
   .about-me .tech-left-1 { top: 27%; left: 22.5%; width: 22%; height: 21%; }
   .about-me .tech-left-1 h6 { font-size: 25px; }
   .about-me .tech-left-1 .description { font-size: 15.8px; }
@@ -231,20 +247,20 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   .about-me .tech-right-1 { top: 52.2%; left: 53.4%; width: 22%; height: 21%; }
   .about-me .tech-right-1 h6 { font-size: 18px; }
   .about-me .tech-right-1 .description { font-size: 19.8px; }
-  .about-me .point-line { top: 27%; left: 50%; transform: translateX(-50%); width: .2%; height: 76.4%; background-color: black; }
+  .about-me .point-line { top: 27%; left: 50%; transform: translateX(-50%); width: .2%; height: 76.2%; background-color: black; }
   .about-me .pointer-1 { top: 36.9%; left: 50%; transform: translateX(-50%); width: 30px; height: 30px; }
   .about-me .pointer-2 { top: 62.5%; left: 50%; transform: translateX(-50%); width: 30px; height: 30px; }
   .about-me .pointer-3 { top: 88.5%; left: 50%; transform: translateX(-50%); width: 30px; height: 30px; } }
 
-@media (orientation: landscape) and (max-width: 1366px) and (min-height: 768px) { .about-me h1 { position: absolute; bottom: 85%; left: 50%; transform: translateX(-50%); }
+@media (orientation: landscape) and (max-width: 1366px) and (min-height: 768px) { .about-me h2 { position: absolute; bottom: 87%; left: 50%; transform: translateX(-50%); }
   .about-me .tech-left-1 { top: 27%; left: 22.5%; width: 22%; height: 21%; }
-  .about-me .tech-left-1 h6 { font-size: 16px; }
+  .about-me .tech-left-1 h6 { font-size: 20px; }
   .about-me .tech-left-1 .description { font-size: 9.8px; }
   .about-me .tech-left-2 { top: 78%; left: 22.5%; width: 22%; height: 21%; }
-  .about-me .tech-left-2 h6 { font-size: 18px; }
+  .about-me .tech-left-2 h6 { font-size: 20px; }
   .about-me .tech-left-2 .description { font-size: 9.8px; }
   .about-me .tech-right-1 { top: 52.2%; left: 53.4%; width: 22%; height: 21%; }
-  .about-me .tech-right-1 h6 { font-size: 18px; }
+  .about-me .tech-right-1 h6 { font-size: 20px; }
   .about-me .tech-right-1 .description { font-size: 9.8px; }
   .about-me .point-line { top: 27%; left: 50%; transform: translateX(-50%); width: .2%; height: 76.4%; background-color: black; }
   .about-me .pointer-1 { top: 36.9%; left: 50%; transform: translateX(-50%); width: 30px; height: 30px; }
