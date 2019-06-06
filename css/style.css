@@ -267,23 +267,27 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   .about-me .pointer-2 { top: 62.5%; left: 50%; transform: translateX(-50%); width: 30px; height: 30px; }
   .about-me .pointer-3 { top: 88.5%; left: 50%; transform: translateX(-50%); width: 30px; height: 30px; } }
 
-.gallery { margin-top: 250%; max-width: 100%; }
+.gallery { margin-top: 265%; max-width: 100%; }
 
-.gallery h1 { margin-bottom: 15%; text-align: center; text-transform: uppercase; font-family: 'Alegreya Sans', sans-serif; }
+.gallery h2 { margin-bottom: 15%; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 30px; }
 
-.gallery .gal_item { position: relative; margin-left: 5%; top: 0; left: 0; padding-bottom: 3.5%; width: 45%; }
+.gallery h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
-.gallery .gal_item .overlay { display: none; position: absolute; background-color: rgba(128, 128, 128, 0.5); height: 20.2em; width: 201%; }
+.gallery .title-line2 { position: absolute; top: 269%; left: 43%; width: 15%; height: .4%; background-color: gray; }
 
-.gallery .gal_item .overlay .icon { position: absolute; display: inline-block; top: 50%; width: 60px; height: 60px; line-height: 60px; text-align: center; background-color: rgba(0, 0, 0, 0.5); color: white; margin-top: -12px; border-radius: 20%; cursor: pointer; }
+.gallery .gallery-items { list-style-type: none; }
 
-.gallery .gal_item .overlay .icon .fas { padding-top: 18px; font-size: 25px; }
+.gallery .gallery-items .gallery-item { position: relative; width: 14em; height: 8em; border: 1px solid gray; float: left; margin-left: 15%; margin-right: 15%; margin-top: 5%; overflow: hidden; }
 
-.gallery .gal_item .overlay .icon-left { left: 15%; }
+.gallery .gallery-items .gallery-item:hover p { top: 0; }
 
-.gallery .gal_item .overlay .icon-right { right: 15%; }
+.gallery .gallery-items .gallery-item p { position: absolute; top: 100%; left: 0; padding: 12px; width: 20em; height: 10.4em; color: #fff; background-color: rgba(255, 69, 0, 0.8); transition: .6s; text-shadow: 2px 1px 1px black; font-size: 10px; font-family: 'Montserrat', sans-serif; }
 
-.gallery .gal_item .img img { width: 200%; height: 20em; border: 2px solid silver; }
+.gallery .gallery-items .gallery-item p .redirect-button { position: absolute; top: 80%; left: 0; border-style: none; background-color: rgba(255, 69, 0, 0.7); border-top: 1px solid rgba(182, 25, 33, 0.6); width: 99.7%; height: 20%; }
+
+.gallery .gallery-items .gallery-item p .redirect-button .fa-search-plus { color: rgba(245, 179, 118, 0.9); font-size: 18px; margin-top: 1px; }
+
+.gallery .gallery-items .gallery-item .project-picture { width: 14em; height: 8em; }
 
 .gallery .gal_item:hover .overlay { display: block; }
 
@@ -293,15 +297,15 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
 
 .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
 
-.modal-bg.active .modal { position: absolute; top: 40%; left: 10%; width: 15%; height: 15%; transform: translate(-50%, -70%); }
+.modal-bg.active .modal { position: absolute; top: 25%; left: 3%; width: 15%; height: 15%; }
 
-.modal-bg.active .modal .top { position: relative; top: 8.5%; right: -10%; }
+.modal-bg.active .modal .top { position: relative; bottom: 150%; left: 10%; }
 
-.modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 560%; line-height: 24px; color: #e55039; font-size: 35px; cursor: pointer; }
+.modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 560%; line-height: 24px; color: lightgrey; font-size: 35px; cursor: pointer; }
 
-.modal-bg.active .modal .top i.fa-times:hover { color: #eb2f06; }
+.modal-bg.active .modal .top i.fa-times:hover { color: #fff; }
 
-.modal-bg.active .modal .middle img { width: 19em; height: 14.8em; }
+.modal-bg.active .modal .middle img { width: 18.8em; height: 12em; }
 
 @media (orientation: landscape) and (min-width: 533px) and (min-height: 320px) { .gallery { margin-top: 116%; }
   .gallery h1 { margin-bottom: 8%; }
@@ -388,15 +392,17 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
 
 @media (orientation: landscape) and (min-width: 1024px) { .gallery { margin-top: 57%; max-width: 100%; }
   .gallery h1 { margin-bottom: 5.5%; }
-  .gallery .gal_item { margin-left: 12%; top: 0; left: 4.5%; float: left; width: 11%; }
-  .gallery .gal_item .overlay { display: none; position: absolute; background-color: rgba(128, 128, 128, 0.5); }
-  .gallery .gal_item .overlay .icon { top: 45%; }
-  .modal-bg.active .modal { top: 70%; left: 50%; width: 80%; height: 80%; }
-  .modal-bg.active .modal .top { position: absolute; top: 2.5%; right: 3%; }
-  .modal-bg.active .modal .top i.fa-times { font-size: 55px; line-height: 22px; }
-  .modal-bg.active .modal .middle img { width: 95.2em; height: 46.8em; } }
+  .gallery .gallery-items { list-style-type: none; }
+  .gallery .gallery-items .gallery-item { position: relative; width: 30em; height: 20em; border: 1px solid red; float: left; margin-left: 1%; overflow: hidden; }
+  .gallery .gallery-items .gallery-item:hover p { top: 0; }
+  .gallery .gallery-items .gallery-item p { position: absolute; top: 100%; left: 0; width: 30em; height: 20em; color: #fff; background-color: rgba(128, 128, 128, 0.7); transition: .6s; }
+  .gallery .gallery-items .gallery-item .project-picture { width: 30em; height: 20em; }
+  .gallery .modal-bg.active .modal { top: 70%; left: 50%; width: 80%; height: 80%; }
+  .gallery .modal-bg.active .modal .top { position: absolute; top: 2.5%; right: 3%; }
+  .gallery .modal-bg.active .modal .top i.fa-times { font-size: 55px; line-height: 22px; }
+  .gallery .modal-bg.active .modal .middle img { width: 95.2em; height: 46.8em; } }
 
-@media (orientation: landscape) and (max-width: 1366px) and (min-height: 768px) { .gallery { margin-top: 141%; }
+@media (orientation: landscape) and (min-width: 1024px) and (orientation: landscape) and (max-width: 1366px) and (min-height: 768px) { .gallery { margin-top: 141%; }
   .modal-bg.active .modal { top: 70%; left: 45%; width: 80%; height: 80%; }
   .modal-bg.active .modal .top { position: absolute; top: 2.5%; right: 3%; }
   .modal-bg.active .modal .top i.fa-times { position: absolute; font-size: 55px; padding-left: 117px; }
