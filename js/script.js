@@ -37,10 +37,10 @@ const closeModal = () => {
 
 const clickRightIcon = function () {
  // console.log(this);
- const getHref = this.dataset.href;
+ let getHref = this.dataset.href;
  // console.log(getHref);
- projectRightIcons.href = getHref;
- console.log(projectRightIcons.href = getHref);
+ getHref = projectRightIcons.href;
+ console.log(getHref = projectRightIcons.href);
 }
 
 rightModalIcons.forEach(rightIcon => rightIcon.addEventListener('click', clickRightIcon));
