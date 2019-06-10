@@ -40,7 +40,7 @@ const clickRightIcon = function () {
  const getHref = this.dataset.href;
  // console.log(getHref);
  projectRightIcons.href = getHref;
- // console.log(hrefRightIcon.href = getHref);
+ console.log(projectRightIcons.href = getHref);
 }
 
 rightModalIcons.forEach(rightIcon => rightIcon.addEventListener('click', clickRightIcon));
