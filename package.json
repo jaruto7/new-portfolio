@@ -23,7 +23,7 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer-cli": "^1.0.0",
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.5",
     "globstar": "^1.0.0",
     "mkdirp": "^0.5.1",
     "node-sass": "^4.11.0",
@@ -32,6 +32,10 @@
     "onchange": "^5.2.0"
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.0",
+    "express-handlebars": "^3.1.0",
+    "nodemailer": "^6.2.1",
     "superagent": "^5.0.2",
     "tar": "^4.4.8"
   }
