@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Roboto+Condensed:400|Montserrat"
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:Roboto+Condensed:400:Montserrat"
     rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -15,21 +15,21 @@
 
 <body>
   <!-- NAVIGATION MENU -->
-  <div class="nav-block">
-    <div class="burger"><i class="fas fa-bars"></i></div>
-    <aside>
-      <nav>
-        <ul class="nav">
-          <li><a class="nav-link" href="#home">Home</a></li>
-          <li><a class="nav-link" href="#about-me">About Me</a></li>
-          <li><a class="nav-link" href="#projects">Projects</a></li>
-          <li><a class="nav-link" href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </aside>
-  </div>
-
   <div class="wrap">
+    <div class="nav-block">
+      <div class="burger"><i class="fas fa-bars"></i></div>
+      <aside>
+        <nav>
+          <ul class="nav">
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#about-me">About Me</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+
     <!-- HEADER -->
     <header id="home">
       <div class="bg ">
@@ -48,7 +48,8 @@
 
     <!-- ABOUT ME -->
     <section id="about-me" class="about-me">
-      <h1>About me</h1>
+      <h2>About<span>me</span></h2>
+      <div class="title-line"></div>
       <div class="tech-left-1">
         <h6>Technologies</h6>
         <div class="description">
@@ -71,10 +72,10 @@
         </div>
       </div>
       <div class="tech-right-1">
-        <h6>Completed Courses</h6>
+        <h6>Courses</h6>
         <div class="description">
           <p>- Web Developer Kodilla: 10.2018</p>
-          <p>- Websamuraj, 1-3 stages to become Front-End Developer: 03.2019</p>
+          <p>- WTF: Co ten frontend: Currently</p>
         </div>
       </div>
       <div class="point-line">
@@ -86,44 +87,122 @@
 
     <!-- PROJECTS SECTION -->
     <section id="projects" class="gallery clearfix">
-      <h1>Projects</h1>
-      <div class=" gal_item">
-        <div class="overlay">
-          <a href="https://github.com/jaruto7/rock-paper-scissors-game2/tree/master"><div class="icon icon-left"><i
-              class="fas fa-code-branch"></i></div></a>
-          <div class="icon icon-right" data-img="images/projects1.jpg"><i class="fas fa-search-plus"></i></div>
-        </div>
-        <div class="img"><img src="images/projects1.jpg" alt=""></div>
+      <h2>My<span>projects</span></h2>
+      <div class="title-line2"></div>
+      <ul class="gallery-items">
+        <li class="gallery-item">
+          <p>
+            A famous rock, paper scissors game is now possible virtually!<br> You can compete with computer and
+            set how many rounds you want to play.
+            <button class="redirect-button" data-img="images/projects1.png">
+              <i class="fas fa-search-plus"></i>
+            </button>
+          </p>
+          <a href="https://jaruto7.github.io/rock-paper-scissors-game2/" class="projectRightIcons"></a>
+          <img class="project-picture" src="images/projects1.png" alt="picture of second project">
+        </li>
+        <li class="gallery-item">
+          <p>Have you ever wonder how many degrees fahrenheit have celsius and in reverse? If so this is
+            application you are looking for. You can compare those two degrees and check what status they have.
+            <button class="redirect-button" data-img="images/projects2.png">
+              <i class="fas fa-search-plus"></i>
+            </button>
+          </p>
+          <a href="https://jaruto7.github.io/check-degree/" class="projectRightIcons"></a>
+          <img class="project-picture" src="images/projects2.png" alt="picture of second project">
+        </li>
+        <li class="gallery-item">
+          <p>My portofolio (which you are looking at) where you can check my code, how it's structured and how I build
+            functionality to make it all work.
+            <button class="redirect-button" data-img="images/projects3.jpg">
+              <i class="fas fa-search-plus"></i>
+            </button>
+          </p>
+          <a href="https://jaruto7.github.io/new-portfolio/" class="projectRightIcons"></a>
+          <img class="project-picture" src="images/projects3.jpg" alt="picture of third project">
+        </li>
+      </ul>
+      <!-- <div class=" gal_item">
+        <div class="overlay"> -->
+      <!--<div class="icon icon-left"></div> <a href="https://github.com/jaruto7/rock-paper-scissors-game2/tree/master" target="_blank"><div class="icon icon-left"></div></a> -->
+      <!-- <div class="icon icon-right" data-href="https://jaruto7.github.io/rock-paper-scissors-game2/"
+            data-img="images/projects1.png"></div> -->
+      <!-- </div>
+        <div class="img"><img src="images/projects1.png" alt=""></div>
+
+
       </div>
       <div class="gal_item">
         <div class="overlay">
-          <a href="https://github.com/jaruto7/check-degree"><div class="icon icon-left"><i class="fas fa-code-branch"></i></div></a>
-          <div class="icon icon-right" data-img="images/projects2.png"><i class="fas fa-search-plus"></i></div>
+          <a href="https://github.com/jaruto7/check-degree" target="_blank"><div class="icon icon-left"><i class="fas fa-code-branch"></i></div></a>
+          <div class="icon icon-right" data-href="https://jaruto7.github.io/check-degree/"
+            data-img="images/projects2.png">
+            <i class="fas fa-search-plus"></i>
+          </div>
         </div>
         <div class="img"><img src="images/projects2.png" alt=""></div>
+        <div class="link"><a href="https://jaruto7.github.io/check-degree/"></a></div>
       </div>
       <div class="gal_item">
         <div class="overlay">
-          <a href="https://github.com/jaruto7/new-portfolio/tree/master"><div class="icon icon-left"><i class="fas fa-code-branch"></i></div></a>
-          <div class="icon icon-right" data-img="images/projects3.jpg"><i class="fas fa-search-plus"></i></div>
+          <div class="modal-text">
+            <p>lorem ipsum</p>
+          </div>
+          <a href="https://github.com/jaruto7/new-portfolio/tree/master" target="_blank"><div class="icon icon-left"><i class="fas fa-code-branch"></i></div></a>
+          <div class="icon icon-right" data-href="https://jaruto7.github.io/new-portfolio/" data-img="
+            images/projects3.jpg"> <i class="fas fa-search-plus"></i></div>
+
         </div>
-        <div class="img"><img src="images/projects3.jpg" alt=""></div>
-      </div>
+        <div class="img"><img src="images/projects3.jpg" alt=""></div> -->
+      <!-- <div class="link"><a href="https://jaruto7.github.io/new-portfolio/"></a></div>
+  </div> -->
     </section>
 
+<<<<<<< HEAD
     <footer></footer>
+=======
+
+
+    <footer id="contact" class="footer">
+      <!-- FOOTER SECTION -->
+      <div class="row">
+        <div class="col-3">
+          <h3>Facebook</h3>
+          <p>moj facebook</p>
+        </div>
+        <div class="col-3">
+          <h3>Phone</h3>
+        </div>
+        <div class="col-3">
+          <h3>Email</h3>
+        </div>
+        <div class="col-3">
+          <h3>Twitter</h3>
+        </div>
+      </div>
+    </footer>
+>>>>>>> 71b8aa85126402d6f3e2d5d65649f08f592fe4fe
   </div>
-  <section class="modal-bg">
+
+  <div class="modal-bg">
     <div class="modal">
       <div class="top">
         <i class="fas fa-times"></i>
       </div>
       <div class="middle">
-        <img src="images/photo1.png" alt="">
+        <!-- <a href="" target="_blank"><i class="fas fa-code-branch icon icon-left"></i></a> -->
+        <i data-href="https://jaruto7.github.io/check-degree/" class="far fa-eye icon-right icon"></i>
+        <!-- <div class="gal-item" data-href="https://jaruto7.github.io/rock-paper-scissors-game2/"
+          data-img="images/projects1.png"></div> -->
+        <img class="img-modal" src="images/projects1.png" alt="">
       </div>
     </div>
+<<<<<<< HEAD
   </section>
   <script src="index.js"></script>
+=======
+  </div>
+>>>>>>> 71b8aa85126402d6f3e2d5d65649f08f592fe4fe
   <script src="js/script.js"></script>
 </body>
 

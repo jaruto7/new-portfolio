@@ -1,23 +1,26 @@
 // Pobierz elementy DOM
 const navBlock = document.querySelector('.nav-block');
-const burger = document.querySelector(".burger");
-const li = document.querySelectorAll('li');
+const burger = document.querySelector('.burger');
+const li = document.querySelectorAll('#home');
 const spnCursor = document.querySelector('.cursor');
 const spnText = document.querySelector('.text');
+const redirectButton = document.querySelectorAll('.gallery-item .redirect-button');
+const rightModalIcons = document.querySelectorAll('.icon-right');
+const iconX = document.querySelectorAll('.modal .top .fas');
+const imgModal = document.querySelector('.modal-bg .middle .img-modal');
+const projectRightIcons = document.querySelector('.projectRightIcons');
 // Utwórz zmienną przechowującą tablicę z wartościami
 const txt = [`Welcome`, `I like challenges`, `I'm creative`, `I\'m Front-end Developer`];
 
-const projectsModal = document.querySelectorAll('.gal_item .overlay .icon-right');
-const iconX = document.querySelectorAll('.modal .top .fas');
-const imgModal = document.querySelector('.modal-bg .middle img');
-
 // Zadeklaruj funkcję anonimową która jest aktywna dopiero w momencie kliknięcia w ikonę lupy na hoverze obrazka danego projektu
 const clickModal = function () {
- // Pobierz dany obrazek który kliknął użytkownik biorąc jego atrybut
+ // Pobierz dany obrazek który kliknął użytkownik biorąc jego atrybut dataset
  const getImg = this.dataset.img;
- // console.log(getImg);
+ // console.log(this);
+
  // Odwołaj się do pobranych elementów i podmień ich zawartość atrybutów aby zmienić ścieżki obrazka
  imgModal.src = getImg;
+
  // Do klasy modala przypisz klasę aby uaktywnić modal
  document.querySelector('.modal-bg').classList.toggle('active');
  // Do klasy diva obejmującego całą treść przypisz klasę aby uaktywnić efekt blur
@@ -32,9 +35,22 @@ const closeModal = () => {
  document.querySelector('.wrap').classList.toggle('blur');
 }
 
-projectsModal.forEach(img => img.addEventListener('click', clickModal));
+const clickRightIcon = function () {
+ // console.log(this);
+ let getHref = this.dataset.href;
+ // console.log(getHref);
+ getHref = projectRightIcons.href;
+ console.log(getHref = projectRightIcons.href);
+}
 
+rightModalIcons.forEach(rightIcon => rightIcon.addEventListener('click', clickRightIcon));
+
+// Zdarzenie odpowiedzialne za kliknięcie modala
+redirectButton.forEach(img => img.addEventListener('click', clickModal));
+// Zamknij modal
 iconX.forEach(icon => icon.addEventListener('click', closeModal));
+
+
 
 
 // Nasłuchuj na zdarzenie kliknięcia w hamburger
@@ -53,11 +69,13 @@ document.addEventListener('scroll', function () {
  // console.log(window.scrollY);
 })
 
-// Nasłuchuj na zdarzenie kliknięcia iterując wszystkie elementy listy
+// Nasłuchuj na zdarzenie kliknięcia burgera iterując wszystkie elementy listy
 li.forEach(li => li.addEventListener("click", function () {
  // Zamknij menu burgera 
  burger.classList.toggle("active");
 }))
+
+
 
 // Parametry do zmiany
 const time = 500;

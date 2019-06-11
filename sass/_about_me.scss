@@ -4,11 +4,26 @@
 	width: 100%;
 	font-family: 'Montserrat', sans-serif;
 
-	h1 {
+	h2 {
+		position: relative;
 		text-align: center;
-		font-family: 'Alegreya Sans', sans-serif;
-		text-transform: uppercase;
-		margin-top: 16%;
+		margin-top: 52px;
+		font-size: 30px;
+
+		span {
+			background: -webkit-linear-gradient(#eee, #333);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
+
+	.title-line {
+		position: absolute;
+		top: 19%;
+		left: 43%;
+		width: 15%;
+		height: .3%;
+		background-color: gray;
 	}
 
 	.description {
@@ -17,7 +32,7 @@
 
 	.tech-left-1 {
 		position: absolute;
-		top: 23%;
+		top: 32%;
 		left: 4%;
 		width: 37%;
 		height: 38%;
@@ -36,7 +51,7 @@
 
 	.tech-left-2 {
 		position: absolute;
-		top: 101%;
+		top: 111%;
 		left: 4%;
 		width: 37%;
 		height: 38%;
@@ -55,7 +70,7 @@
 
 	.tech-right-1 {
 		position: absolute;
-		top: 62%;
+		top: 71%;
 		left: 57%;
 		width: 37%;
 		height: 38%;
@@ -74,17 +89,17 @@
 
 	.point-line {
 		position: absolute;
-		top: 23%;
+		top: 32%;
 		left: 50%;
 		transform: translateX(-50%);
 		width: .5%;
-		height: 117.4%;
+		height: 118.2%;
 		background-color: #000;
 	}
 
 	.pointer-1 {
 		position: absolute;
-		top: 40%;
+		top: 49%;
 		left: 42.8%;
 		transform: translateX(42.8%);
 		border-radius: 50%;
@@ -95,7 +110,7 @@
 
 	.pointer-2 {
 		position: absolute;
-		top: 79%;
+		top: 89%;
 		left: 42.8%;
 		transform: translateX(42.8%);
 		width: 25px;
@@ -106,7 +121,7 @@
 
 	.pointer-3 {
 		position: absolute;
-		top: 118%;
+		top: 128%;
 		left: 42.8%;
 		transform: translateX(42.8%);
 		width: 25px;
@@ -120,30 +135,33 @@
 @media(orientation: landscape) AND (min-width: 533px) {
 	.about-me {
 
-		h1 {
+		h2 {
 			position: absolute;
 			bottom: 80%;
 			left: 50%;
 			transform: translateX(-50%);
 		}
 
+		.title-line {
+			top: 23%;
+			left: 45%;
+			width: 10%;
+			height: .6%;
+		}
+
 		.tech-left-1 {
-			top: 32%;
+			top: 40%;
 			left: 2.5%;
 			width: 42%;
 			height: 46%;
 
 			h6 {
 				font-size: 20px;
-			}
-
-			.description {
-				font-size: 11px;
 			}
 		}
 
 		.tech-left-2 {
-			top: 130%;
+			top: 139%;
 			left: 2.5%;
 			width: 42%;
 			height: 46%;
@@ -151,14 +169,10 @@
 			h6 {
 				font-size: 20px;
 			}
-
-			.description {
-				font-size: 11px;
-			}
 		}
 
 		.tech-right-1 {
-			top: 80.2%;
+			top: 89%;
 			left: 53.6%;
 			width: 42%;
 			height: 46%;
@@ -173,16 +187,13 @@
 		}
 
 		.point-line {
-			top: 32.2%;
-			left: 50%;
-			transform: translateX(-50%);
-			width: .2%;
-			height: 147.8%;
-			background-color: #000;
+			top: 40%;
+			width: .5%;
+			height: 148%;
 		}
 
 		.pointer-1 {
-			top: 52.5%;
+			top: 62.5%;
 			left: 50%;
 			transform: translateX(-50%);
 			width: 20px;
@@ -190,7 +201,7 @@
 		}
 
 		.pointer-2 {
-			top: 98.5%;
+			top: 109.5%;
 			left: 50%;
 			transform: translateX(-50%);
 			width: 20px;
@@ -198,7 +209,7 @@
 		}
 
 		.pointer-3 {
-			top: 152%;
+			top: 160.5%;
 			left: 50%;
 			transform: translateX(-50%);
 			width: 20px;
@@ -207,10 +218,53 @@
 	}
 }
 
+// Galaxy S5: portrait
+@media(orientation: portrait) AND (min-width: 360px) {
+	.about-me {
+
+		h2 {
+			top: 1%;
+		}
+
+		.title-line {
+			top: 18.5%;
+		}
+
+		.pointer-1 {
+			top: 49.5%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		.pointer-2 {
+			top: 88.8%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		.pointer-3 {
+			top: 128%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}
+
 // Pixel 2: portrait
 @media(orientation: portrait) AND (min-width: 411px) {
 	.about-me {
+
+		h2 {
+			top: 1%;
+		}
+
+		.title-line {
+			top: 17%;
+			left: 43%;
+		}
+
 		.tech-left-1 {
+			top: 29%;
 
 			h6 {
 				font-size: 22px;
@@ -222,6 +276,7 @@
 		}
 
 		.tech-left-2 {
+			top: 107%;
 
 			h6 {
 				font-size: 22px;
@@ -233,6 +288,7 @@
 		}
 
 		.tech-right-1 {
+			top: 68%;
 
 			h6 {
 				font-size: 22px;
@@ -241,6 +297,27 @@
 			.description {
 				font-size: 13px;
 			}
+		}
+
+		.point-line {
+			top: 29%;
+			height: 116.8%;
+		}
+
+		.pointer-1 {
+			top: 46.5%;
+		}
+
+		.pointer-2 {
+			top: 85.8%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		.pointer-3 {
+			top: 125%;
+			left: 50%;
+			transform: translateX(-50%);
 		}
 	}
 }
@@ -282,29 +359,6 @@
 			.description {
 				font-size: 14px;
 			}
-		}
-	}
-}
-
-// Galaxy S5: portrait
-@media(orientation: portrait) AND (min-width: 360px) {
-	.about-me {
-		.pointer-1 {
-			top: 40.5%;
-			left: 50%;
-			transform: translateX(-50%);
-		}
-
-		.pointer-2 {
-			top: 78.8%;
-			left: 50%;
-			transform: translateX(-50%);
-		}
-
-		.pointer-3 {
-			top: 118%;
-			left: 50%;
-			transform: translateX(-50%);
 		}
 	}
 }
@@ -387,12 +441,15 @@
 // Ipad: portrait
 @media(orientation: portrait) AND (min-width: 768px) {
 	.about-me {
-		h1 {
-			position: absolute;
-			bottom: 87.5%;
-			left: 50%;
-			transform: translateX(-50%);
-			font-size: 30px;
+		h2 {
+			top: -5%;
+			font-size: 40px;
+		}
+
+		.title-line {
+			top: 17%;
+			width: 10%;
+			left: 45%;
 		}
 
 		.tech-left-1 {
@@ -430,6 +487,7 @@
 
 		.point-line {
 			width: .6%;
+			height: 117.5%;
 		}
 
 		.pointer-1 {
@@ -453,9 +511,104 @@
 @media(orientation: landscape) AND (min-width: 1024px) {
 	.about-me {
 
-		h1 {
+		h2 {
+			bottom: 87%;
+			font-size: 40px;
+		}
+
+		.title-line {
+			top: 15.5%;
+			left: 48%;
+			width: 4%;
+			height: .3%;
+		}
+
+		.tech-left-1 {
+			top: 27%;
+			left: 22.5%;
+			width: 22%;
+			height: 21%;
+
+			h6 {
+				font-size: 25px;
+			}
+
+			.description {
+				font-size: 15.8px;
+			}
+		}
+
+		.tech-left-2 {
+			top: 78%;
+			left: 22.5%;
+			width: 22%;
+			height: 21%;
+
+			h6 {
+				font-size: 25px;
+			}
+
+			.description {
+				font-size: 15.8px;
+			}
+		}
+
+		.tech-right-1 {
+			top: 52.2%;
+			left: 53.4%;
+			width: 22%;
+			height: 21%;
+
+			h6 {
+				font-size: 18px;
+			}
+
+			.description {
+				font-size: 19.8px;
+			}
+		}
+
+		.point-line {
+			top: 27%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: .2%;
+			height: 76.2%;
+			background-color: black;
+		}
+
+		.pointer-1 {
+			top: 36.9%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 30px;
+			height: 30px;
+		}
+
+		.pointer-2 {
+			top: 62.5%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 30px;
+			height: 30px;
+		}
+
+		.pointer-3 {
+			top: 88.5%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 30px;
+			height: 30px;
+		}
+	}
+}
+
+@media(orientation: landscape) AND (max-width: 1366px) AND (min-height: 768px) {
+	.about-me {
+
+		h2 {
 			position: absolute;
-			bottom: 85%;
+			bottom: 87%;
 			left: 50%;
 			transform: translateX(-50%);
 		}
@@ -467,7 +620,7 @@
 			height: 21%;
 
 			h6 {
-				font-size: 16px;
+				font-size: 20px;
 			}
 
 			.description {
@@ -482,7 +635,7 @@
 			height: 21%;
 
 			h6 {
-				font-size: 18px;
+				font-size: 20px;
 			}
 
 			.description {
@@ -497,7 +650,7 @@
 			height: 21%;
 
 			h6 {
-				font-size: 18px;
+				font-size: 20px;
 			}
 
 			.description {

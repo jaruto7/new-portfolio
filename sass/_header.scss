@@ -1,6 +1,7 @@
 * {
  margin: 0;
  padding: 0;
+ scroll-behavior: smooth;
 }
 
 .clearfix::after {
@@ -10,16 +11,15 @@
 }
 
 body {
- min-height: 350vh;
-
 
  header {
+  position: relative;
   height: 100vh;
   background-image: url(../images/photo1.png);
   background-attachment: fixed;
-  // background-size: cover;
-  // background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   .welcome {
    position: absolute;
@@ -40,7 +40,7 @@ body {
    p {
     text-shadow: 2px 2px 2px black;
     position: absolute;
-    top: 50px;
+    top: 35px;
     left: 3%;
     font-size: 10px;
     letter-spacing: 2px;
@@ -105,6 +105,7 @@ body {
     }
 
     p {
+     top: 40px;
      margin-left: 1.8em;
     }
 
@@ -242,10 +243,11 @@ body {
  body {
   .wrap {
    header {
+
     .welcome {
      font-size: 62px;
      top: 55%;
-     left: 0%;
+     left: 0;
      text-align: left;
 
      .text {

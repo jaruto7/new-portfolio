@@ -8,8 +8,6 @@
  color: #fff;
  font-size: 26px;
  background-color: #000;
- text-align: center;
- line-height: 50px;
 
  i {
   position: absolute;
@@ -29,7 +27,6 @@ aside {
  display: none;
  position: fixed;
  top: 80px;
- bottom: 300px;
  left: 0;
  right: 0;
  background-color: #333333;
@@ -111,7 +108,6 @@ aside {
 @media(orientation: portrait) AND (min-width: 360px) {
  aside {
   top: 80px;
-  bottom: 408px;
   left: 0;
 
   nav {
@@ -156,7 +152,6 @@ aside {
 // Pixel 2: portrait
 @media(orientation: portrait) AND (min-width: 411px) AND (min-height: 731px) {
  aside {
-  bottom: 498px;
 
   nav {
 
@@ -197,6 +192,28 @@ aside {
  }
 }
 
+// //Pixel 2XL:landscape
+@media(orientation: landscape) AND (min-width: 823px) {
+ aside {
+
+  nav {
+
+   li:nth-child(1) a {
+    padding: 13px 60.3em 13px 10px;
+   }
+
+   li:nth-child(2) a {
+    padding: 13px 58.2em 13px 10px;
+   }
+
+   li:nth-child(3) a,
+   li:nth-child(4) a {
+    padding: 13px 58.7em 13px 10px;
+   }
+  }
+ }
+}
+
 // Ipad: portrait
 @media(orientation: portrait) AND (min-width: 768px) {
  .burger {
@@ -208,7 +225,6 @@ aside {
 
  aside {
   top: 80px;
-  bottom: 693px;
 
   nav {
 
@@ -242,6 +258,28 @@ aside {
  }
 }
 
+//Iphone 6/7/8 Plus:landscape
+@media(orientation: landscape) AND (min-width: 812px) {
+ aside {
+
+  nav {
+
+   li:nth-child(1) a {
+    padding: 13px 59.2em 13px 10px;
+   }
+
+   li:nth-child(2) a {
+    padding: 13px 57.3em 13px 10px;
+   }
+
+   li:nth-child(3) a,
+   li:nth-child(4) a {
+    padding: 13px 58.7em 13px 10px;
+   }
+  }
+ }
+}
+
 // desktop
 @media(orientation: landscape) AND (min-width: 1024px) {
 
@@ -267,7 +305,6 @@ aside {
  aside {
   display: inline-block;
   top: 0;
-  bottom: 937px;
   background-color: transparent;
 
   nav {
@@ -319,10 +356,3 @@ aside {
   }
  }
 }
-
-
-
-// @media(max-width: 767px) — urządzenia bardzo małe (telefony),
-// @media(min-width: 768px) and (max-width: 991px) — urządzenia małe (tablety),
-// @media(min-width: 992px) and (max-width: 1199px) — urządzenia średnie,
-// @media(min-width: 1200px) — urządzenia duże (desktopy, monitory, tv).
