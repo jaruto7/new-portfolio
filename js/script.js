@@ -5,10 +5,10 @@ const li = document.querySelectorAll('#home');
 const spnCursor = document.querySelector('.cursor');
 const spnText = document.querySelector('.text');
 const redirectButton = document.querySelectorAll('.gallery-item .redirect-button');
-const rightModalIcons = document.querySelectorAll('.icon-right');
+const rightModalIcons = document.querySelectorAll('.right');
 const iconX = document.querySelectorAll('.modal .top .fas');
 const imgModal = document.querySelector('.modal-bg .middle .img-modal');
-const projectRightIcons = document.querySelector('.projectRightIcons');
+const projectRightIcons = document.querySelectorAll('.projectRightIcons');
 // Utwórz zmienną przechowującą tablicę z wartościami
 const txt = [`Welcome`, `I like challenges`, `I'm creative`, `I\'m Front-end Developer`];
 
@@ -36,10 +36,9 @@ const closeModal = () => {
 }
 
 const clickRightIcon = function () {
- // console.log(this);
  const getHref = this.dataset.href;
  // console.log(getHref);
- projectRightIcons.setAttribute('href', getHref);
+ projectRightIcons.href = getHref;
  // console.log(projectRightIcons.href = getHref);
 }
 
@@ -49,8 +48,6 @@ rightModalIcons.forEach(rightIcon => rightIcon.addEventListener('click', clickRi
 redirectButton.forEach(img => img.addEventListener('click', clickModal));
 // Zamknij modal
 iconX.forEach(icon => icon.addEventListener('click', closeModal));
-
-
 
 
 // Nasłuchuj na zdarzenie kliknięcia w hamburger
