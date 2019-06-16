@@ -35,14 +35,19 @@ const closeModal = () => {
  document.querySelector('.wrap').classList.toggle('blur');
 }
 
-const clickRightIcon = function () {
+const clickRightIcon = function (event) {
  const getHref = this.dataset.href;
  // console.log(getHref);
- projectRightIcons.href = getHref;
+ // projectRightIcons.href = getHref;
  // console.log(projectRightIcons.href = getHref);
+ event = event || window.event;
+ const anchorUrl = event.target || event.getHref;
+ if (anchorUrl instanceof HTMLAnchorElement) {
+  console.log(anchorUrl.getAttribute('href'));
+ }
 }
 
-rightModalIcons.forEach(rightIcon => rightIcon.addEventListener('click', clickRightIcon));
+rightModalIcons.forEach(rightIcon => rightIcon.addEventListener('click', clickRightIcon), true);
 
 // Zdarzenie odpowiedzialne za kliknięcie modala
 redirectButton.forEach(img => img.addEventListener('click', clickModal));
