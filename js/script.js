@@ -41,7 +41,7 @@ const clickRightIcon = function (event) {
  // projectRightIcons.href = getHref;
  // console.log(projectRightIcons.href = getHref);
  event = event || window.event;
- const anchorUrl = event.target || event.getHref;
+ const anchorUrl = event.target || event.imgModal;
  if (anchorUrl instanceof HTMLAnchorElement) {
   console.log(anchorUrl.getAttribute('href'));
  }
