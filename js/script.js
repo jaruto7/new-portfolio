@@ -6,6 +6,7 @@ const spnCursor = document.querySelector('.cursor');
 const spnText = document.querySelector('.text');
 const redirectButton = document.querySelectorAll('.gallery-item .redirect-button');
 const rightModalIcons = document.querySelectorAll('.right');
+// const hrefUrl = document.querySelectorAll('hrefUrl');
 const iconX = document.querySelectorAll('.modal .top .fas');
 const imgModal = document.querySelector('.modal-bg .middle .img-modal');
 const projectRightIcons = document.querySelectorAll('.projectRightIcons');
@@ -16,7 +17,7 @@ const txt = [`Welcome`, `I like challenges`, `I'm creative`, `I\'m Front-end Dev
 const clickModal = function () {
  // Pobierz dany obrazek który kliknął użytkownik biorąc jego atrybut dataset
  const getImg = this.dataset.img;
- // console.log(this);
+//  console.log(this.dataset.img);
 
  // Odwołaj się do pobranych elementów i podmień ich zawartość atrybutów aby zmienić ścieżki obrazka
  imgModal.src = getImg;
@@ -35,19 +36,13 @@ const closeModal = () => {
  document.querySelector('.wrap').classList.toggle('blur');
 }
 
-const clickRightIcon = function (event) {
- const getHref = this.dataset.href;
- // console.log(getHref);
- // projectRightIcons.href = getHref;
- // console.log(projectRightIcons.href = getHref);
- event = event || window.event;
- const anchorUrl = event.target || event.imgModal;
- if (anchorUrl instanceof HTMLAnchorElement) {
-  console.log(anchorUrl.getAttribute('href'));
- }
+const clickRightIcon = function () {
+ const getHref = document.querySelector('.gallery-items a');
+ console.log(getHref);
+projectRightIcons.href = getHref.href;
 }
 
-rightModalIcons.forEach(rightIcon => rightIcon.addEventListener('click', clickRightIcon), true);
+rightModalIcons.forEach(rightIcon => rightIcon.addEventListener('click', clickRightIcon));
 
 // Zdarzenie odpowiedzialne za kliknięcie modala
 redirectButton.forEach(img => img.addEventListener('click', clickModal));
