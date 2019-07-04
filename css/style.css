@@ -209,12 +209,21 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   .about-me .tech-right-1 h6 { font-size: 25px; }
   .about-me .tech-right-1 .description { font-size: 14px; } }
 
-@media (orientation: portrait) and (min-width: 373px) { .about-me .tech-left-1 h6 { font-size: 22px; }
+@media (orientation: portrait) and (min-width: 375px) { .about-me h2 { position: absolute; top: 2%; left: 50%; transform: translateX(-50%); }
+  .about-me .title-line { top: 16.5%; left: 43%; width: 15%; height: .3%; }
+  .about-me .tech-left-1 { top: 27%; }
+  .about-me .tech-left-1 h6 { font-size: 22px; }
   .about-me .tech-left-1 .description { font-size: 13px; }
+  .about-me .tech-left-2 { top: 105%; }
   .about-me .tech-left-2 h6 { font-size: 22px; }
   .about-me .tech-left-2 .description { font-size: 13px; }
+  .about-me .tech-right-1 { top: 66%; }
   .about-me .tech-right-1 h6 { font-size: 22px; }
-  .about-me .tech-right-1 .description { font-size: 13px; } }
+  .about-me .tech-right-1 .description { font-size: 13px; }
+  .about-me .point-line { top: 27%; width: .5%; height: 117%; }
+  .about-me .pointer-1 { top: 45.5%; left: 50%; transform: translateX(-50%); width: 20px; height: 20px; }
+  .about-me .pointer-2 { top: 84%; left: 50%; transform: translateX(-50%); width: 20px; height: 20px; }
+  .about-me .pointer-3 { top: 123.5%; left: 50%; transform: translateX(-50%); width: 20px; height: 20px; } }
 
 @media (orientation: landscape) and (min-width: 667px) { .about-me .tech-left-1 h6 { font-size: 24px; }
   .about-me .tech-left-1 .description { font-size: 13px; }
@@ -223,8 +232,8 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   .about-me .tech-right-1 h6 { font-size: 24px; }
   .about-me .tech-right-1 .description { font-size: 13px; } }
 
-@media (orientation: portrait) and (min-width: 768px) { .about-me h2 { top: -5%; font-size: 40px; }
-  .about-me .title-line { top: 17%; width: 10%; left: 45%; }
+@media (orientation: portrait) and (min-width: 768px) { .about-me h2 { top: .8em; font-size: 40px; }
+  .about-me .title-line { top: 10.5em; width: 10%; left: 45%; }
   .about-me .tech-left-1 h6 { font-size: 28px; }
   .about-me .tech-left-1 .description { font-size: 18px; }
   .about-me .tech-left-2 h6 { font-size: 28px; }
@@ -267,25 +276,33 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   .about-me .pointer-2 { top: 62.5%; left: 50%; transform: translateX(-50%); width: 30px; height: 30px; }
   .about-me .pointer-3 { top: 88.5%; left: 50%; transform: translateX(-50%); width: 30px; height: 30px; } }
 
-.gallery { margin-top: 265%; max-width: 100%; }
+.gallery { margin-top: 54em; max-width: 100%; }
 
-.gallery h2 { margin-bottom: 14%; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 30px; }
+.gallery h2 { text-align: center; font-family: 'Montserrat', sans-serif; font-size: 30px; }
 
 .gallery h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
-.gallery .title-line2 { position: absolute; top: 268.7%; left: 43%; width: 15%; height: .4%; background-color: gray; }
+.gallery .title-line2 { position: absolute; top: 90.6em; left: 43%; width: 15%; height: .4%; background-color: gray; }
 
 .gallery .gallery-items { list-style-type: none; }
 
-.gallery .gallery-items .gallery-item { position: relative; width: 14em; height: 8em; border: 1px solid gray; float: left; margin-left: 15%; margin-right: 15%; margin-top: 5%; overflow: hidden; }
+.gallery .gallery-items .gallery-item { position: relative; width: 14em; height: 8em; border: 1px solid gray; float: left; margin-left: 10%; margin-right: 10%; margin-top: 7em; overflow: hidden; }
 
 .gallery .gallery-items .gallery-item:hover p { top: 0; }
 
 .gallery .gallery-items .gallery-item p { position: absolute; top: 100%; left: 0; padding: 12px; width: 16.7em; height: 8.7em; color: #fff; background-color: rgba(255, 69, 0, 0.8); transition: .6s; text-shadow: 2px 1px 1px black; font-size: 12px; font-family: 'Montserrat', sans-serif; }
 
-.gallery .gallery-items .gallery-item p .redirect-button { position: absolute; top: 80%; left: 0; border-style: none; background-color: rgba(255, 69, 0, 0.7); border-top: 1px solid rgba(182, 25, 33, 0.6); width: 99.7%; height: 20%; }
+.gallery .gallery-items .gallery-item p .code-button { position: absolute; top: 80.1%; left: .5%; border-style: none; background-color: rgba(255, 69, 0, 0.7); border: 2px solid rgba(182, 25, 33, 0.6); width: 33.5%; height: 20%; }
 
-.gallery .gallery-items .gallery-item p .redirect-button .fa-search-plus { color: rgba(245, 179, 118, 0.9); font-size: 18px; margin-top: 1px; }
+.gallery .gallery-items .gallery-item p .code-button .fa-code-branch { color: rgba(245, 179, 118, 0.9); font-size: 18px; margin-top: 1px; }
+
+.gallery .gallery-items .gallery-item p .zoom-button { position: absolute; top: 80.1%; left: 33.4%; border-style: none; background-color: rgba(255, 69, 0, 0.7); border: 2px solid rgba(182, 25, 33, 0.6); width: 33.5%; height: 20%; }
+
+.gallery .gallery-items .gallery-item p .zoom-button .fa-search-plus { color: rgba(245, 179, 118, 0.9); font-size: 18px; margin-top: 1px; }
+
+.gallery .gallery-items .gallery-item p .github-button { position: absolute; top: 80.1%; left: 66.2%; border-style: none; background-color: rgba(255, 69, 0, 0.7); border: 2px solid rgba(182, 25, 33, 0.6); width: 33.5%; height: 20%; }
+
+.gallery .gallery-items .gallery-item p .github-button .fa-eye { color: rgba(245, 179, 118, 0.9); font-size: 18px; margin-top: 1px; }
 
 .gallery .gallery-items .gallery-item .project-picture { width: 14em; height: 8em; }
 
@@ -317,11 +334,10 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
 
 .modal-bg.active .modal .middle:hover .icon { display: block; }
 
-@media (orientation: landscape) and (min-width: 533px) { .gallery { margin-top: 120%; }
-  .gallery h2 { margin-bottom: 4.8%; }
-  .gallery .title-line2 { top: 314.7%; left: 45%; width: 10%; height: .6%; }
-  .gallery .gallery-items .gallery-item { width: 10em; height: 7em; margin-left: 2%; margin-right: .2%; margin-top: 5%; }
-  .gallery .gallery-items .gallery-item:hover p { top: 0; }
+@media (orientation: landscape) and (min-width: 533px) { .gallery { margin-top: 40em; }
+  .gallery h2 { margin-bottom: 5.2%; }
+  .gallery .title-line2 { top: 63em; left: 45%; width: 10%; height: .6%; }
+  .gallery .gallery-items .gallery-item { width: 10em; height: 7em; margin-left: 1.1%; margin-right: 1%; }
   .gallery .gallery-items .gallery-item p { padding: 5px; width: 14.3em; height: 9.7em; font-size: 10.5px; }
   .gallery .gallery-items .gallery-item .project-picture { width: 10em; height: 7em; }
   .modal-bg.active .modal { top: 12%; left: 8%; }
@@ -329,36 +345,133 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   .modal-bg.active .modal .middle .icon-right { left: 420%; }
   .modal-bg.active .modal .middle img { width: 28em; height: 15em; } }
 
-@media (orientation: portrait) and (min-width: 360px) { .gallery { margin-top: 284%; max-width: 100%; }
-  .gallery h2 { margin-bottom: 14%; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 30px; }
+@media (orientation: portrait) and (min-width: 360px) { .gallery { margin-top: 63.5em; }
+  .gallery h2 { margin-bottom: 2.2em; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 30px; }
   .gallery h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-  .gallery .title-line2 { position: absolute; top: 268.7%; left: 43%; width: 15%; height: .4%; background-color: gray; }
+  .gallery .title-line2 { position: absolute; top: 107.5em; left: 43%; width: 15%; height: .3%; background-color: gray; }
   .gallery .gallery-items { list-style-type: none; }
-  .gallery .gallery-items .gallery-item { position: relative; width: 14em; height: 8em; border: 1px solid gray; float: left; margin-left: 15%; margin-right: 15%; margin-top: 5%; overflow: hidden; }
+  .gallery .gallery-items .gallery-item { position: relative; width: 14em; height: 8em; border: 1px solid gray; float: left; margin-left: 13%; margin-right: 15%; margin-top: 5%; overflow: hidden; }
   .gallery .gallery-items .gallery-item:hover p { top: 0; }
   .gallery .gallery-items .gallery-item p { position: absolute; top: 100%; left: 0; padding: 12px; width: 16.7em; height: 8.7em; color: #fff; background-color: rgba(255, 69, 0, 0.8); transition: .6s; text-shadow: 2px 1px 1px black; font-size: 12px; font-family: 'Montserrat', sans-serif; }
-  .gallery .gallery-items .gallery-item p .redirect-button { position: absolute; top: 80%; left: 0; border-style: none; background-color: rgba(255, 69, 0, 0.7); border-top: 1px solid rgba(182, 25, 33, 0.6); width: 99.7%; height: 20%; }
-  .gallery .gallery-items .gallery-item p .redirect-button .fa-search-plus { color: rgba(245, 179, 118, 0.9); font-size: 18px; margin-top: 1px; }
   .gallery .gallery-items .gallery-item .project-picture { width: 14em; height: 8em; }
   .gallery .gallery_items:hover .gallery-item { display: block; }
   .wrap.blur { position: absolute; filter: blur(2px); height: 100%; }
   .modal-bg { display: none; }
   .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
-  .modal-bg.active .modal { position: absolute; top: 25%; left: 3%; width: 15%; height: 15%; }
-  .modal-bg.active .modal .top { position: relative; bottom: 150%; left: 10%; }
-  .modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 560%; line-height: 24px; color: lightgrey; font-size: 35px; cursor: pointer; }
-  .modal-bg.active .modal .top i.fa-times:hover { color: #fff; }
-  .modal-bg.active .modal .middle { position: relative; }
-  .modal-bg.active .modal .middle .icon { display: none; position: absolute; top: 50%; transform: translateY(-50%); font-size: 35px; width: 50px; height: 50px; line-height: 50px; text-align: center; background-color: rgba(0, 0, 0, 0.6); border-radius: 15%; color: lightgray; }
-  .modal-bg.active .modal .middle .icon-left { left: 80%; }
-  .modal-bg.active .modal .middle .icon-right { left: 440%; }
-  .modal-bg.active .modal .middle img { width: 18.8em; height: 12em; }
+  .modal-bg.active .modal { position: absolute; top: 30%; left: 2%; width: 15%; height: 15%; }
+  .modal-bg.active .modal .top { position: relative; bottom: 185%; }
+  .modal-bg.active .modal .top i.fa-times { left: 570%; }
+  .modal-bg.active .modal .middle img { width: 21.6em; height: 13em; }
   .modal-bg.active .modal .middle:hover .icon { display: block; } }
 
-@media (orientation: landscape) and (min-width: 1024px) { .gallery { margin-top: 57%; max-width: 100%; }
-  .gallery h1 { margin-bottom: 5.5%; }
+@media (orientation: portrait) and (min-width: 375px) { .gallery { margin-top: 77.5em; }
+  .gallery h2 { margin-bottom: 2.6em; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 30px; }
+  .gallery h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .gallery .title-line2 { position: absolute; top: 132.6em; left: 43%; width: 15%; height: .3%; background-color: gray; }
   .gallery .gallery-items { list-style-type: none; }
-  .gallery .gallery-items .gallery-item { position: relative; width: 30em; height: 20em; border: 1px solid red; float: left; margin-left: 1%; overflow: hidden; }
+  .gallery .gallery-items .gallery-item { position: relative; width: 14em; height: 8em; border: 1px solid gray; float: left; margin-left: 13%; margin-right: 15%; margin-top: 5%; overflow: hidden; }
+  .gallery .gallery-items .gallery-item:hover p { top: 0; }
+  .gallery .gallery-items .gallery-item p { position: absolute; top: 100%; left: 0; padding: 12px; width: 16.7em; height: 8.7em; color: #fff; background-color: rgba(255, 69, 0, 0.8); transition: .6s; text-shadow: 2px 1px 1px black; font-size: 12px; font-family: 'Montserrat', sans-serif; }
+  .gallery .gallery-items .gallery-item .project-picture { width: 14em; height: 8em; }
+  .gallery .gallery_items:hover .gallery-item { display: block; }
+  .wrap.blur { position: absolute; filter: blur(2px); height: 100%; }
+  .modal-bg { display: none; }
+  .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
+  .modal-bg.active .modal { position: absolute; top: 30%; left: 4%; width: 15%; height: 15%; }
+  .modal-bg.active .modal .top { position: relative; bottom: 190%; }
+  .modal-bg.active .modal .top i.fa-times { left: 570%; }
+  .modal-bg.active .modal .middle img { width: 21.6em; height: 13em; }
+  .modal-bg.active .modal .middle:hover .icon { display: block; } }
+
+@media (orientation: landscape) and (min-width: 640px) { .gallery { margin-top: 45em; }
+  .gallery h2 { margin-bottom: .6em; }
+  .gallery .title-line2 { top: 70.5em; left: 45%; width: 10%; height: .5%; }
+  .gallery .gallery-items .gallery-item { width: 12em; height: 8em; margin-left: 1.2%; margin-right: .8%; }
+  .gallery .gallery-items .gallery-item:hover p { top: 0; }
+  .gallery .gallery-items .gallery-item p { position: absolute; top: 100%; left: 0; padding: 12px; width: 15.3em; height: 9.5em; font-size: 11px; }
+  .gallery .gallery-items .gallery-item p .code-button { top: 80.1%; left: 0; width: 34%; height: 20%; }
+  .gallery .gallery-items .gallery-item p .code-button .fa-code-branch { color: rgba(245, 179, 118, 0.9); font-size: 18px; margin-top: 1px; }
+  .gallery .gallery-items .gallery-item p .zoom-button { position: absolute; top: 80.1%; left: 33.4%; border-style: none; background-color: rgba(255, 69, 0, 0.7); border: 2px solid rgba(182, 25, 33, 0.6); width: 34%; height: 20%; }
+  .gallery .gallery-items .gallery-item p .zoom-button .fa-search-plus { color: rgba(245, 179, 118, 0.9); font-size: 18px; margin-top: 1px; }
+  .gallery .gallery-items .gallery-item p .github-button { position: absolute; top: 80.1%; left: 66.5%; border-style: none; background-color: rgba(255, 69, 0, 0.7); border: 2px solid rgba(182, 25, 33, 0.6); width: 34%; height: 20%; }
+  .gallery .gallery-items .gallery-item p .github-button .fa-eye { color: rgba(245, 179, 118, 0.9); font-size: 18px; margin-top: 1px; }
+  .gallery .gallery-items .gallery-item .project-picture { width: 12em; height: 8em; }
+  .gallery .gallery_items:hover .gallery-item { display: block; }
+  .wrap.blur { position: absolute; filter: blur(2px); height: 100%; }
+  .modal-bg { display: none; }
+  .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
+  .modal-bg.active .modal { position: absolute; top: 12%; left: 14%; width: 12%; height: 15%; }
+  .modal-bg.active .modal .top { position: relative; bottom: 60%; left: 108%; }
+  .modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 560%; line-height: 24px; color: lightgrey; font-size: 35px; cursor: pointer; }
+  .modal-bg.active .modal .top i.fa-times:hover { color: #fff; }
+  .modal-bg.active .modal .middle img { width: 28.8em; height: 17em; } }
+
+@media (orientation: portrait) and (min-width: 411px) { .gallery { margin-top: 70.8em; }
+  .gallery h2 { margin-bottom: 2.3em; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 30px; }
+  .gallery h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .gallery .title-line2 { position: absolute; top: 120.3em; left: 43%; width: 15%; height: .3%; background-color: gray; }
+  .gallery .gallery-items { list-style-type: none; }
+  .gallery .gallery-items .gallery-item { position: relative; width: 14em; height: 8em; border: 1px solid gray; margin-left: 16%; margin-right: 16%; }
+  .gallery .gallery-items .gallery-item:hover p { top: 0; }
+  .gallery .gallery-items .gallery-item p { position: absolute; top: 100%; left: 0; padding: 12px; width: 16.7em; height: 8.7em; color: #fff; background-color: rgba(255, 69, 0, 0.8); transition: .6s; text-shadow: 2px 1px 1px black; font-size: 12px; font-family: 'Montserrat', sans-serif; }
+  .gallery .gallery-items .gallery-item .project-picture { width: 14em; height: 8em; }
+  .gallery .gallery_items:hover .gallery-item { display: block; }
+  .wrap.blur { position: absolute; filter: blur(2px); height: 100%; }
+  .modal-bg { display: none; }
+  .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
+  .modal-bg.active .modal { position: absolute; top: 30%; left: 2.5%; width: 15%; height: 15%; }
+  .modal-bg.active .modal .top { position: relative; bottom: 185%; }
+  .modal-bg.active .modal .top i.fa-times { left: 570%; }
+  .modal-bg.active .modal .middle img { width: 24.6em; height: 15em; }
+  .modal-bg.active .modal .middle:hover .icon { display: block; } }
+
+@media (orientation: landscape) and (min-width: 731px) { .gallery { margin-top: 51.8em; }
+  .gallery h2 { margin-bottom: .8em; }
+  .gallery .title-line2 { top: 80.7em; left: 45%; width: 10%; height: .5%; }
+  .gallery .gallery-items .gallery-item { width: 12em; height: 8em; margin-left: 3.2%; }
+  .gallery .gallery-items .gallery-item:hover p { top: 0; }
+  .gallery .gallery-items .gallery-item p { position: absolute; top: 100%; left: 0; padding: 12px; width: 15.3em; height: 9.5em; font-size: 11px; }
+  .gallery .gallery-items .gallery-item p .code-button { top: 80.1%; left: 0; width: 34%; height: 20%; }
+  .gallery .gallery-items .gallery-item p .code-button .fa-code-branch { color: rgba(245, 179, 118, 0.9); font-size: 18px; margin-top: 1px; }
+  .gallery .gallery-items .gallery-item p .zoom-button { position: absolute; top: 80.1%; left: 33.4%; border-style: none; background-color: rgba(255, 69, 0, 0.7); border: 2px solid rgba(182, 25, 33, 0.6); width: 34%; height: 20%; }
+  .gallery .gallery-items .gallery-item p .zoom-button .fa-search-plus { color: rgba(245, 179, 118, 0.9); font-size: 18px; margin-top: 1px; }
+  .gallery .gallery-items .gallery-item p .github-button { position: absolute; top: 80.1%; left: 66.5%; border-style: none; background-color: rgba(255, 69, 0, 0.7); border: 2px solid rgba(182, 25, 33, 0.6); width: 34%; height: 20%; }
+  .gallery .gallery-items .gallery-item p .github-button .fa-eye { color: rgba(245, 179, 118, 0.9); font-size: 18px; margin-top: 1px; }
+  .gallery .gallery-items .gallery-item .project-picture { width: 12em; height: 8em; }
+  .gallery .gallery_items:hover .gallery-item { display: block; }
+  .wrap.blur { position: absolute; filter: blur(2px); height: 100%; }
+  .modal-bg { display: none; }
+  .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
+  .modal-bg.active .modal { position: absolute; top: 12%; left: 11%; width: 12%; height: 15%; }
+  .modal-bg.active .modal .top { position: relative; bottom: 55%; left: 138%; }
+  .modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 560%; line-height: 24px; color: lightgrey; font-size: 35px; cursor: pointer; }
+  .modal-bg.active .modal .top i.fa-times:hover { color: #fff; }
+  .modal-bg.active .modal .middle img { width: 35.8em; height: 20em; } }
+
+@media (orientation: portrait) and (min-width: 768px) { .gallery { margin-top: 97.8em; }
+  .gallery h2 { margin-bottom: 2.3em; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 40px; }
+  .gallery h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .gallery .title-line2 { position: absolute; top: 167.7em; left: 45%; width: 10%; height: .3%; background-color: gray; }
+  .gallery .gallery-items { list-style-type: none; }
+  .gallery .gallery-items .gallery-item { position: relative; width: 14em; height: 8em; border: 1px solid gray; float: left; margin-left: 1.6%; margin-right: 1%; }
+  .gallery .gallery-items .gallery-item:hover p { top: 0; }
+  .gallery .gallery-items .gallery-item p { position: absolute; top: 100%; left: 0; padding: 12px; width: 16.7em; height: 8.7em; color: #fff; background-color: rgba(255, 69, 0, 0.8); transition: .6s; text-shadow: 2px 1px 1px black; font-size: 12px; font-family: 'Montserrat', sans-serif; }
+  .gallery .gallery-items .gallery-item .project-picture { width: 14em; height: 8em; }
+  .gallery .gallery_items:hover .gallery-item { display: block; }
+  .wrap.blur { position: absolute; filter: blur(2px); height: 100%; }
+  .modal-bg { display: none; }
+  .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
+  .modal-bg.active .modal { position: absolute; top: 30%; left: 2.5%; width: 15%; height: 15%; }
+  .modal-bg.active .modal .top { position: relative; bottom: 185%; left: 35%; }
+  .modal-bg.active .modal .top i.fa-times { left: 570%; font-size: 50px; }
+  .modal-bg.active .modal .middle img { width: 45.7em; height: 25em; }
+  .modal-bg.active .modal .middle:hover .icon { display: block; } }
+
+@media (orientation: landscape) and (min-width: 1024px) { .gallery { margin-top: 65.5em; max-width: 100%; }
+  .gallery h2 { margin-bottom: 0; font-size: 40px; }
+  .gallery .title-line2 { position: absolute; top: 128.7em; left: 48%; width: 4%; height: .3%; background-color: gray; }
+  .gallery .gallery-items { list-style-type: none; }
+  .gallery .gallery-items .gallery-item { position: relative; width: 30em; height: 20em; border: 1px solid gray; float: left; margin-left: 4%; }
   .gallery .gallery-items .gallery-item:hover p { top: 0; }
   .gallery .gallery-items .gallery-item p { position: absolute; top: 100%; left: 0; width: 30em; height: 20em; color: #fff; background-color: rgba(128, 128, 128, 0.7); transition: .6s; }
   .gallery .gallery-items .gallery-item .project-picture { width: 30em; height: 20em; }
@@ -367,7 +480,7 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   .gallery .modal-bg.active .modal .top i.fa-times { font-size: 55px; line-height: 22px; }
   .gallery .modal-bg.active .modal .middle img { width: 95.2em; height: 46.8em; } }
 
-@media (orientation: landscape) and (min-width: 1024px) and (orientation: landscape) and (max-width: 1366px) and (min-height: 768px) { .gallery { margin-top: 141%; }
+@media (orientation: landscape) and (min-width: 1024px) and (orientation: portrait) and (max-width: 1366px) and (min-height: 768px) { .gallery { margin-top: 141%; }
   .modal-bg.active .modal { top: 70%; left: 45%; width: 80%; height: 80%; }
   .modal-bg.active .modal .top { position: absolute; top: 2.5%; right: 3%; }
   .modal-bg.active .modal .top i.fa-times { position: absolute; font-size: 55px; padding-left: 117px; }

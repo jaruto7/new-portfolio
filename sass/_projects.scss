@@ -1,9 +1,9 @@
 .gallery {
-	margin-top: 265%;
+	margin-top: 54em;
 	max-width: 100%;
 
 	h2 {
-		margin-bottom: 14%;
+		// margin-bottom: 2.7em;
 		text-align: center;
 		font-family: 'Montserrat', sans-serif;
 		font-size: 30px;
@@ -17,7 +17,7 @@
 
 	.title-line2 {
 		position: absolute;
-		top: 268.7%;
+		top: 90.6em;
 		left: 43%;
 		width: 15%;
 		height: .4%;
@@ -33,9 +33,9 @@
 			height: 8em;
 			border: 1px solid gray;
 			float: left;
-			margin-left: 15%;
-			margin-right: 15%;
-			margin-top: 5%;
+			margin-left: 10%;
+			margin-right: 10%;
+			margin-top: 7em;
 			overflow: hidden;
 
 
@@ -57,17 +57,51 @@
 				font-size: 12px;
 				font-family: 'Montserrat', sans-serif;
 
-				.redirect-button {
+				.code-button {
 					position: absolute;
-					top: 80%;
-					left: 0;
+					top: 80.1%;
+					left: .5%;
 					border-style: none;
 					background-color: rgba(orangered, .7);
-					border-top: 1px solid rgba(rgb(182, 25, 33), .6);
-					width: 99.7%;
+					border: 2px solid rgba(rgb(182, 25, 33), .6);
+					width: 33.5%;
 					height: 20%;
 
-					.fa-search-plus {
+					.fa-code-branch {
+						color: rgba(rgb(245, 179, 118), .9);
+						font-size: 18px;
+						margin-top: 1px;
+					}
+				}
+
+				.zoom-button {
+					position: absolute;
+					top: 80.1%;
+					left: 33.4%;
+					border-style: none;
+					background-color: rgba(orangered, .7);
+					border: 2px solid rgba(rgb(182, 25, 33), .6);
+					width: 33.5%;
+					height: 20%;
+
+					.fa-search-plus  {
+						color: rgba(rgb(245, 179, 118), .9);
+						font-size: 18px;
+						margin-top: 1px;
+					}
+				}
+
+				.github-button {
+					position: absolute;
+					top: 80.1%;
+					left: 66.2%;
+					border-style: none;
+					background-color: rgba(orangered, .7);
+					border: 2px solid rgba(rgb(182, 25, 33), .6);
+					width: 33.5%;
+					height: 20%;
+
+					.fa-eye  {
 						color: rgba(rgb(245, 179, 118), .9);
 						font-size: 18px;
 						margin-top: 1px;
@@ -140,16 +174,16 @@
 			.icon {
 				display: none;
 				position: absolute;
-			top: 50%;
-			transform: translateY(-50%);
-			font-size: 35px;
-			width: 50px;
-			height: 50px;
-			line-height: 50px;
-			text-align: center;
-			background-color: rgba(0, 0, 0, .6);
-			border-radius: 15%;
-			color: lightgray;
+				top: 50%;
+				transform: translateY(-50%);
+				font-size: 35px;
+				width: 50px;
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+				background-color: rgba(0, 0, 0, .6);
+				border-radius: 15%;
+				color: lightgray;
 			}
 
 			.icon-left {
@@ -173,14 +207,14 @@
 // Nokia Lumia: landscape
 @media(orientation: landscape) AND (min-width: 533px) {
 	.gallery {
-		margin-top: 120%;
+		margin-top: 40em;
 	
 		h2 {
-			margin-bottom: 4.8%;
+			margin-bottom: 5.2%;
 		}
 	
 		.title-line2 {
-			top: 314.7%;
+			top: 63em;
 			left: 45%;
 			width: 10%;
 			height: .6%;
@@ -191,14 +225,8 @@
 			.gallery-item {
 				width: 10em;
 				height: 7em;
-				margin-left: 2%;
-				margin-right: .2%;
-				margin-top: 5%;
-	
-	
-				&:hover p {
-					top: 0;
-				}
+				margin-left: 1.1%;
+				margin-right: 1%;
 	
 				p {
 					padding: 5px;
@@ -241,11 +269,10 @@
 // Galaxy S5: portrait
 @media(orientation: portrait) AND (min-width: 360px) {
 	.gallery {
-		margin-top: 284%;
-		max-width: 100%;
+		margin-top: 63.5em;
 	
 		h2 {
-			margin-bottom: 14%;
+			margin-bottom: 2.2em;
 			text-align: center;
 			font-family: 'Montserrat', sans-serif;
 			font-size: 30px;
@@ -259,10 +286,10 @@
 	
 		.title-line2 {
 			position: absolute;
-			top: 268.7%;
+			top: 107.5em;
 			left: 43%;
 			width: 15%;
-			height: .4%;
+			height: .3%;
 			background-color: gray;
 		}
 	
@@ -275,7 +302,7 @@
 				height: 8em;
 				border: 1px solid gray;
 				float: left;
-				margin-left: 15%;
+				margin-left: 13%;
 				margin-right: 15%;
 				margin-top: 5%;
 				overflow: hidden;
@@ -298,23 +325,6 @@
 					text-shadow: 2px 1px 1px black;
 					font-size: 12px;
 					font-family: 'Montserrat', sans-serif;
-	
-					.redirect-button {
-						position: absolute;
-						top: 80%;
-						left: 0;
-						border-style: none;
-						background-color: rgba(orangered, .7);
-						border-top: 1px solid rgba(rgb(182, 25, 33), .6);
-						width: 99.7%;
-						height: 20%;
-	
-						.fa-search-plus {
-							color: rgba(rgb(245, 179, 118), .9);
-							font-size: 18px;
-							margin-top: 1px;
-						}
-					}
 				}
 	
 				.project-picture {
@@ -350,15 +360,289 @@
 	
 		.modal {
 			position: absolute;
-			top: 25%;
-			left: 3%;
+			top: 30%;
+			left: 2%;
 			width: 15%;
 			height: 15%;
 	
 			.top {
 				position: relative;
-				bottom: 150%;
-				left: 10%;
+				bottom: 185%;
+				// left: 10%;
+	
+				// close icon for modal
+				i.fa-times {
+					left: 570%;
+				}
+			}
+	
+			.middle {
+
+				img {
+					width: 21.6em;
+					height: 13em;
+				}
+	
+				&:hover .icon {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+// iPhone X
+@media(orientation: portrait) AND (min-width: 375px) {
+	.gallery {
+		margin-top: 77.5em;
+	
+		h2 {
+			margin-bottom: 2.6em;
+			text-align: center;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 30px;
+	
+			span {
+				background: -webkit-linear-gradient(#eee, #333);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+	
+		.title-line2 {
+			position: absolute;
+			top: 132.6em;
+			left: 43%;
+			width: 15%;
+			height: .3%;
+			background-color: gray;
+		}
+	
+		.gallery-items {
+			list-style-type: none;
+	
+			.gallery-item {
+				position: relative;
+				width: 14em;
+				height: 8em;
+				border: 1px solid gray;
+				float: left;
+				margin-left: 13%;
+				margin-right: 15%;
+				margin-top: 5%;
+				overflow: hidden;
+	
+	
+				&:hover p {
+					top: 0;
+				}
+	
+				p {
+					position: absolute;
+					top: 100%;
+					left: 0;
+					padding: 12px;
+					width: 16.7em;
+					height: 8.7em;
+					color: #fff;
+					background-color: rgba(orangered, .8);
+					transition: .6s;
+					text-shadow: 2px 1px 1px black;
+					font-size: 12px;
+					font-family: 'Montserrat', sans-serif;
+				}
+	
+				.project-picture {
+					width: 14em;
+					height: 8em;
+				}
+			}
+		}
+	
+		.gallery_items:hover .gallery-item {
+			display: block;
+		}
+	}
+	
+	.wrap.blur {
+		position: absolute;
+		filter: blur(2px);
+		height: 100%;
+	}
+	
+	.modal-bg {
+		display: none;
+	}
+	
+	.modal-bg.active {
+		position: fixed;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, .6);
+	
+		.modal {
+			position: absolute;
+			top: 30%;
+			left: 4%;
+			width: 15%;
+			height: 15%;
+	
+			.top {
+				position: relative;
+				bottom: 190%;
+				// left: 10%;
+	
+				// close icon for modal
+				i.fa-times {
+					left: 570%;
+				}
+			}
+	
+			.middle {
+
+				img {
+					width: 21.6em;
+					height: 13em;
+				}
+	
+				&:hover .icon {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+@media(orientation: landscape) AND (min-width: 640px) {
+	.gallery {
+		margin-top: 45em;
+	
+		h2 {
+			margin-bottom: .6em;
+		}
+	
+		.title-line2 {
+			top: 70.5em;
+			left: 45%;
+			width: 10%;
+			height: .5%;
+		}
+	
+		.gallery-items {
+
+			.gallery-item {
+				width: 12em;
+				height: 8em;
+				margin-left: 1.2%;
+				margin-right: .8%;
+	
+	
+				&:hover p {
+					top: 0;
+				}
+	
+				p {
+					position: absolute;
+					top: 100%;
+					left: 0;
+					padding: 12px;
+					width: 15.3em;
+					height: 9.5em;
+					font-size: 11px;
+	
+					.code-button {
+						top: 80.1%;
+						left: 0;
+						width: 34%;
+						height: 20%;
+	
+						.fa-code-branch {
+							color: rgba(rgb(245, 179, 118), .9);
+							font-size: 18px;
+							margin-top: 1px;
+						}
+					}
+	
+					.zoom-button {
+						position: absolute;
+						top: 80.1%;
+						left: 33.4%;
+						border-style: none;
+						background-color: rgba(orangered, .7);
+						border: 2px solid rgba(rgb(182, 25, 33), .6);
+						width: 34%;
+						height: 20%;
+	
+						.fa-search-plus  {
+							color: rgba(rgb(245, 179, 118), .9);
+							font-size: 18px;
+							margin-top: 1px;
+						}
+					}
+	
+					.github-button {
+						position: absolute;
+						top: 80.1%;
+						left: 66.5%;
+						border-style: none;
+						background-color: rgba(orangered, .7);
+						border: 2px solid rgba(rgb(182, 25, 33), .6);
+						width: 34%;
+						height: 20%;
+	
+						.fa-eye  {
+							color: rgba(rgb(245, 179, 118), .9);
+							font-size: 18px;
+							margin-top: 1px;
+						}
+					}
+				}
+	// ustawianie rozmiarów obrazka wewnątrz ramki
+				.project-picture {
+					width: 12em;
+					height: 8em;
+				}
+			}
+		}
+	
+		.gallery_items:hover .gallery-item {
+			display: block;
+		}
+	}
+	
+	.wrap.blur {
+		position: absolute;
+		filter: blur(2px);
+		height: 100%;
+	}
+	
+	.modal-bg {
+		display: none;
+	}
+	
+	.modal-bg.active {
+		position: fixed;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, .6);
+	
+		.modal {
+			position: absolute;
+			top: 12%;
+			left: 14%;
+			width: 12%;
+			height: 15%;
+	
+			.top {
+				position: relative;
+				bottom: 60%;
+				left: 108%;
 	
 				// close icon for modal
 				i.fa-times {
@@ -377,33 +661,408 @@
 			}
 	
 			.middle {
-				position: relative;
-				
-				.icon {
-					display: none;
-					position: absolute;
-				top: 50%;
-				transform: translateY(-50%);
-				font-size: 35px;
-				width: 50px;
-				height: 50px;
-				line-height: 50px;
-				text-align: center;
-				background-color: rgba(0, 0, 0, .6);
-				border-radius: 15%;
-				color: lightgray;
-				}
-	
-				.icon-left {
-					left: 80%;
-				}
-	
-				.icon-right {
-					left: 440%;
-				}
+
 				img {
-					width: 18.8em;
-					height: 12em;
+					width: 28.8em;
+					height: 17em;
+				}
+			}
+		}
+	}
+}
+
+// Pixel2: portrait
+@media(orientation: portrait) AND (min-width: 411px) {
+	.gallery {
+		margin-top: 70.8em;
+	
+		h2 {
+			margin-bottom: 2.3em;
+			text-align: center;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 30px;
+	
+			span {
+				background: -webkit-linear-gradient(#eee, #333);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+	
+		.title-line2 {
+			position: absolute;
+			top: 120.3em;
+			left: 43%;
+			width: 15%;
+			height: .3%;
+			background-color: gray;
+		}
+	
+		.gallery-items {
+			list-style-type: none;
+	
+			.gallery-item {
+				position: relative;
+				width: 14em;
+				height: 8em;
+				border: 1px solid gray;
+				// float: left;
+				margin-left: 16%;
+				margin-right: 16%;
+	
+	
+				&:hover p {
+					top: 0;
+				}
+	
+				p {
+					position: absolute;
+					top: 100%;
+					left: 0;
+					padding: 12px;
+					width: 16.7em;
+					height: 8.7em;
+					color: #fff;
+					background-color: rgba(orangered, .8);
+					transition: .6s;
+					text-shadow: 2px 1px 1px black;
+					font-size: 12px;
+					font-family: 'Montserrat', sans-serif;
+				}
+	
+				.project-picture {
+					width: 14em;
+					height: 8em;
+				}
+			}
+		}
+	
+		.gallery_items:hover .gallery-item {
+			display: block;
+		}
+	}
+	
+	.wrap.blur {
+		position: absolute;
+		filter: blur(2px);
+		height: 100%;
+	}
+	
+	.modal-bg {
+		display: none;
+	}
+	
+	.modal-bg.active {
+		position: fixed;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, .6);
+	
+		.modal {
+			position: absolute;
+			top: 30%;
+			left: 2.5%;
+			width: 15%;
+			height: 15%;
+	
+			.top {
+				position: relative;
+				bottom: 185%;
+				// left: 10%;
+	
+				// close icon for modal
+				i.fa-times {
+					left: 570%;
+				}
+			}
+	
+			.middle {
+
+				img {
+					width: 24.6em;
+					height: 15em;
+				}
+	
+				&:hover .icon {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+@media(orientation: landscape) AND (min-width: 731px) {
+	.gallery {
+		margin-top: 51.8em;
+	
+		h2 {
+			margin-bottom: .8em;
+		}
+	
+		.title-line2 {
+			top: 80.7em;
+			left: 45%;
+			width: 10%;
+			height: .5%;
+		}
+	
+		.gallery-items {
+
+			.gallery-item {
+				width: 12em;
+				height: 8em;
+				margin-left: 3.2%;
+				// margin-right: 0;
+	
+	
+				&:hover p {
+					top: 0;
+				}
+	
+				p {
+					position: absolute;
+					top: 100%;
+					left: 0;
+					padding: 12px;
+					width: 15.3em;
+					height: 9.5em;
+					font-size: 11px;
+	
+					.code-button {
+						top: 80.1%;
+						left: 0;
+						width: 34%;
+						height: 20%;
+	
+						.fa-code-branch {
+							color: rgba(rgb(245, 179, 118), .9);
+							font-size: 18px;
+							margin-top: 1px;
+						}
+					}
+	
+					.zoom-button {
+						position: absolute;
+						top: 80.1%;
+						left: 33.4%;
+						border-style: none;
+						background-color: rgba(orangered, .7);
+						border: 2px solid rgba(rgb(182, 25, 33), .6);
+						width: 34%;
+						height: 20%;
+	
+						.fa-search-plus  {
+							color: rgba(rgb(245, 179, 118), .9);
+							font-size: 18px;
+							margin-top: 1px;
+						}
+					}
+	
+					.github-button {
+						position: absolute;
+						top: 80.1%;
+						left: 66.5%;
+						border-style: none;
+						background-color: rgba(orangered, .7);
+						border: 2px solid rgba(rgb(182, 25, 33), .6);
+						width: 34%;
+						height: 20%;
+	
+						.fa-eye  {
+							color: rgba(rgb(245, 179, 118), .9);
+							font-size: 18px;
+							margin-top: 1px;
+						}
+					}
+				}
+	// ustawianie rozmiarów obrazka wewnątrz ramki
+				.project-picture {
+					width: 12em;
+					height: 8em;
+				}
+			}
+		}
+	
+		.gallery_items:hover .gallery-item {
+			display: block;
+		}
+	}
+	
+	.wrap.blur {
+		position: absolute;
+		filter: blur(2px);
+		height: 100%;
+	}
+	
+	.modal-bg {
+		display: none;
+	}
+	
+	.modal-bg.active {
+		position: fixed;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, .6);
+	
+		.modal {
+			position: absolute;
+			top: 12%;
+			left: 11%;
+			width: 12%;
+			height: 15%;
+	
+			.top {
+				position: relative;
+				bottom: 55%;
+				left: 138%;
+	
+				// close icon for modal
+				i.fa-times {
+					position: absolute;
+					top: 0;
+					left: 560%;
+					line-height: 24px;
+					color: lightgrey;
+					font-size: 35px;
+					cursor: pointer;
+	
+					&:hover {
+						color: #fff;
+					}
+				}
+			}
+	
+			.middle {
+
+				img {
+					width: 35.8em;
+					height: 20em;
+				}
+			}
+		}
+	}
+}
+
+// Desktop: portrait
+@media(orientation: portrait) AND (min-width: 768px) {
+	.gallery {
+		margin-top: 97.8em;
+	
+		h2 {
+			margin-bottom: 2.3em;
+			text-align: center;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 40px;
+	
+			span {
+				background: -webkit-linear-gradient(#eee, #333);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+	
+		.title-line2 {
+			position: absolute;
+			top: 167.7em;
+			left: 45%;
+			width: 10%;
+			height: .3%;
+			background-color: gray;
+		}
+	
+		.gallery-items {
+			list-style-type: none;
+	
+			.gallery-item {
+				position: relative;
+				width: 14em;
+				height: 8em;
+				border: 1px solid gray;
+				float: left;
+				margin-left: 1.6%;
+				margin-right: 1%;
+	
+	
+				&:hover p {
+					top: 0;
+				}
+	
+				p {
+					position: absolute;
+					top: 100%;
+					left: 0;
+					padding: 12px;
+					width: 16.7em;
+					height: 8.7em;
+					color: #fff;
+					background-color: rgba(orangered, .8);
+					transition: .6s;
+					text-shadow: 2px 1px 1px black;
+					font-size: 12px;
+					font-family: 'Montserrat', sans-serif;
+				}
+	
+				.project-picture {
+					width: 14em;
+					height: 8em;
+				}
+			}
+		}
+	
+		.gallery_items:hover .gallery-item {
+			display: block;
+		}
+	}
+	
+	.wrap.blur {
+		position: absolute;
+		filter: blur(2px);
+		height: 100%;
+	}
+	
+	.modal-bg {
+		display: none;
+	}
+	
+	.modal-bg.active {
+		position: fixed;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, .6);
+	
+		.modal {
+			position: absolute;
+			top: 30%;
+			left: 2.5%;
+			width: 15%;
+			height: 15%;
+	
+			.top {
+				position: relative;
+				bottom: 185%;
+				left: 35%;
+	
+				// close icon for modal
+				i.fa-times {
+					left: 570%;
+					font-size: 50px;
+				}
+			}
+	
+			.middle {
+
+				img {
+					width: 45.7em;
+					height: 25em;
 				}
 	
 				&:hover .icon {
@@ -417,11 +1076,21 @@
 // // Desktop: landscape
 @media(orientation: landscape) AND (min-width: 1024px) {
 	.gallery {
-		margin-top: 57%;
+		margin-top: 65.5em;
 		max-width: 100%;
 
-		h1 {
-			margin-bottom: 5.5%;
+		h2 {
+			margin-bottom: 0;
+			font-size: 40px;
+		}
+
+		.title-line2 {
+			position: absolute;
+			top: 128.7em;
+			left: 48%;
+			width: 4%;
+			height: .3%;
+			background-color: gray;
 		}
 
 		.gallery-items {
@@ -431,10 +1100,9 @@
 				position: relative;
 				width: 30em;
 				height: 20em;
-				border: 1px solid red;
+				border: 1px solid gray;
 				float: left;
-				margin-left: 1%;
-				overflow: hidden;
+				margin-left: 4%;
 
 
 				&:hover p {
@@ -488,8 +1156,8 @@
 		}
 	}
 
-	// Desktop 1366px: landscape
-	@media(orientation: landscape) AND (max-width: 1366px) AND (min-height: 768px) {
+	// Desktop 768px: portrait
+	@media(orientation: portrait) AND (max-width: 1366px) AND (min-height: 768px) {
 		.gallery {
 			margin-top: 141%;
 		}

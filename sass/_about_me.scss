@@ -364,9 +364,25 @@
 }
 
 // Iphone 6/7/8: portrait
-@media(orientation: portrait) AND (min-width: 373px) {
+@media(orientation: portrait) AND (min-width: 375px) {
 	.about-me {
+
+		h2 {
+			position: absolute;
+			top: 2%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		.title-line {
+			top: 16.5%;
+			left: 43%;
+			width: 15%;
+			height: .3%;
+		}
+
 		.tech-left-1 {
+			top: 27%;
 
 			h6 {
 				font-size: 22px;
@@ -378,6 +394,7 @@
 		}
 
 		.tech-left-2 {
+			top: 105%;
 
 			h6 {
 				font-size: 22px;
@@ -389,6 +406,7 @@
 		}
 
 		.tech-right-1 {
+			top: 66%;
 
 			h6 {
 				font-size: 22px;
@@ -397,6 +415,36 @@
 			.description {
 				font-size: 13px;
 			}
+		}
+
+		.point-line {
+			top: 27%;
+			width: .5%;
+			height: 117%;
+		}
+
+		.pointer-1 {
+			top: 45.5%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 20px;
+			height: 20px;
+		}
+
+		.pointer-2 {
+			top: 84%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 20px;
+			height: 20px;
+		}
+
+		.pointer-3 {
+			top: 123.5%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 20px;
+			height: 20px;
 		}
 	}
 }
@@ -442,12 +490,12 @@
 @media(orientation: portrait) AND (min-width: 768px) {
 	.about-me {
 		h2 {
-			top: -5%;
+			top: .8em;
 			font-size: 40px;
 		}
 
 		.title-line {
-			top: 17%;
+			top: 10.5em;
 			width: 10%;
 			left: 45%;
 		}

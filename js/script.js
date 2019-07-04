@@ -4,12 +4,12 @@ const burger = document.querySelector('.burger');
 const li = document.querySelectorAll('#home');
 const spnCursor = document.querySelector('.cursor');
 const spnText = document.querySelector('.text');
-const redirectButton = document.querySelectorAll('.gallery-item .redirect-button');
+const zoomButton = document.querySelectorAll('.gallery-item .zoom-button');
 const rightModalIcons = document.querySelectorAll('.right');
 // const hrefUrl = document.querySelectorAll('hrefUrl');
 const iconX = document.querySelectorAll('.modal .top .fas');
 const imgModal = document.querySelector('.modal-bg .middle .img-modal');
-const projectRightIcons = document.querySelectorAll('.projectRightIcons');
+// const projectRightIcons = document.querySelectorAll('.projectRightIcons');
 // Utwórz zmienną przechowującą tablicę z wartościami
 const txt = [`Welcome`, `I like challenges`, `I'm creative`, `I\'m Front-end Developer`];
 
@@ -36,16 +36,16 @@ const closeModal = () => {
  document.querySelector('.wrap').classList.toggle('blur');
 }
 
-const clickRightIcon = function () {
- const getHref = document.querySelector('.gallery-items a');
- console.log(getHref);
-projectRightIcons.href = getHref.href;
-}
+// const clickRightIcon = function () {
+//  const getHref = document.querySelector('.modal-bg a');
+//  console.log(getHref);
+// projectRightIcons.href = getHref;
+// }
 
-rightModalIcons.forEach(rightIcon => rightIcon.addEventListener('click', clickRightIcon));
+// rightModalIcons.forEach(rightIcon => rightIcon.addEventListener('click', clickRightIcon));
 
 // Zdarzenie odpowiedzialne za kliknięcie modala
-redirectButton.forEach(img => img.addEventListener('click', clickModal));
+zoomButton.forEach(img => img.addEventListener('click', clickModal));
 // Zamknij modal
 iconX.forEach(icon => icon.addEventListener('click', closeModal));
 
