@@ -1,9 +1,9 @@
 .gallery {
-	margin-top: 54em;
+	margin-top: 53.5em;
 	max-width: 100%;
 
 	h2 {
-		// margin-bottom: 2.7em;
+		margin-bottom: 2em;
 		text-align: center;
 		font-family: 'Montserrat', sans-serif;
 		font-size: 30px;
@@ -17,10 +17,10 @@
 
 	.title-line2 {
 		position: absolute;
-		top: 90.6em;
+		top: 90.4em;
 		left: 43%;
 		width: 15%;
-		height: .4%;
+		height: .3%;
 		background-color: gray;
 	}
 
@@ -29,13 +29,13 @@
 
 		.gallery-item {
 			position: relative;
+			left: 15%;
+			top: 0;
 			width: 14em;
 			height: 8em;
 			border: 1px solid gray;
 			float: left;
-			margin-left: 10%;
-			margin-right: 10%;
-			margin-top: 7em;
+			margin-top: 1.5em;
 			overflow: hidden;
 
 
@@ -121,14 +121,13 @@
 	}
 }
 
-.wrap.blur {
-	position: absolute;
-	filter: blur(2px);
-	height: 100%;
-}
-
 .modal-bg {
 	display: none;
+}
+
+.wrap.blur {
+	filter: blur(3px);
+	height: 100vh;
 }
 
 .modal-bg.active {
@@ -150,7 +149,7 @@
 		.top {
 			position: relative;
 			bottom: 150%;
-			left: 10%;
+			left: 12%;
 
 			// close icon for modal
 			i.fa-times {
@@ -185,14 +184,7 @@
 				border-radius: 15%;
 				color: lightgray;
 			}
-
-			.icon-left {
-				left: 80%;
-			}
-
-			.icon-right {
-				left: 440%;
-			}
+			
 			img {
 				width: 18.8em;
 				height: 12em;
@@ -204,13 +196,14 @@
 		}
 	}
 }
+
 // Nokia Lumia: landscape
 @media(orientation: landscape) AND (min-width: 533px) {
 	.gallery {
 		margin-top: 40em;
 	
 		h2 {
-			margin-bottom: 5.2%;
+			margin-bottom: 1.2em;
 		}
 	
 		.title-line2 {
@@ -225,6 +218,8 @@
 			.gallery-item {
 				width: 10em;
 				height: 7em;
+				left: 1%;
+				top: 0;
 				margin-left: 1.1%;
 				margin-right: 1%;
 	
@@ -254,10 +249,6 @@
 			}
 	
 			.middle {
-	
-				.icon-right {
-					left: 420%;
-				}
 				img {
 					width: 28em;
 					height: 15em;
@@ -266,6 +257,7 @@
 		}
 	}
 }
+
 // Galaxy S5: portrait
 @media(orientation: portrait) AND (min-width: 360px) {
 	.gallery {
@@ -298,12 +290,12 @@
 	
 			.gallery-item {
 				position: relative;
+				left: 18%;
+				top: 0;
 				width: 14em;
 				height: 8em;
 				border: 1px solid gray;
 				float: left;
-				margin-left: 13%;
-				margin-right: 15%;
 				margin-top: 5%;
 				overflow: hidden;
 	
@@ -337,12 +329,6 @@
 		.gallery_items:hover .gallery-item {
 			display: block;
 		}
-	}
-	
-	.wrap.blur {
-		position: absolute;
-		filter: blur(2px);
-		height: 100%;
 	}
 	
 	.modal-bg {
@@ -391,13 +377,13 @@
 	}
 }
 
-// iPhone X
-@media(orientation: portrait) AND (min-width: 375px) {
+// Galaxy S5: landscape
+@media(orientation: landscape) AND (min-width: 640px) {
 	.gallery {
-		margin-top: 77.5em;
+		margin-top: 45.5em;
 	
 		h2 {
-			margin-bottom: 2.6em;
+			margin-bottom: 1.4em;
 			text-align: center;
 			font-family: 'Montserrat', sans-serif;
 			font-size: 30px;
@@ -411,10 +397,10 @@
 	
 		.title-line2 {
 			position: absolute;
-			top: 132.6em;
-			left: 43%;
-			width: 15%;
-			height: .3%;
+			top: 71.2em;
+			left: 45%;
+			width: 10%;
+			height: .4%;
 			background-color: gray;
 		}
 	
@@ -423,13 +409,347 @@
 	
 			.gallery-item {
 				position: relative;
+				left: 1.4%;
+				top: 0;
+				width: 12em;
+				height: 8em;
+				border: 1px solid gray;
+				float: left;
+				margin-top: 5%;
+				overflow: hidden;
+	
+	
+				&:hover p {
+					top: 0;
+				}
+	
+				p {
+					position: absolute;
+					top: 100%;
+					left: 0;
+					padding: 5px;
+					width: 15.2em;
+					height: 9.8em;
+					color: #fff;
+					background-color: rgba(orangered, .8);
+					transition: .6s;
+					text-shadow: 2px 1px 1px black;
+					font-size: 12px;
+					font-family: 'Montserrat', sans-serif;
+				}
+	
+				.project-picture {
+					width: 12em;
+					height: 8em;
+				}
+			}
+		}
+	
+		.gallery_items:hover .gallery-item {
+			display: block;
+		}
+	}
+	
+	.modal-bg {
+		display: none;
+	}
+	
+	.modal-bg.active {
+		position: fixed;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, .6);
+	
+		.modal {
+			position: absolute;
+			top: 10%;
+			left: 8%;
+			width: 15%;
+			height: 15%;
+	
+			.top {
+				position: relative;
+				bottom: 50%;
+				left: 8%;
+	
+				// close icon for modal
+				i.fa-times {
+					left: 570%;
+				}
+			}
+	
+			.middle {
+
+				img {
+					width: 33.6em;
+					height: 18em;
+				}
+	
+				&:hover .icon {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+// Pixel 2: portrait
+@media(orientation: portrait) AND (min-width: 411px) {
+	.gallery {
+		margin-top: 70.5em;
+	
+		h2 {
+			margin-bottom: 2.6em;
+			text-align: center;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 30px;
+		}
+	
+		.title-line2 {
+			position: absolute;
+			top: 119.8em;
+			left: 43%;
+			width: 15%;
+			height: .3%;
+			background-color: gray;
+		}
+	
+		.gallery-items {
+	
+			.gallery-item {
+				position: relative;
+				left: 22.5%;
+				top: 0;
 				width: 14em;
 				height: 8em;
 				border: 1px solid gray;
 				float: left;
-				margin-left: 13%;
-				margin-right: 15%;
 				margin-top: 5%;
+				overflow: hidden;
+	
+	
+				&:hover p {
+					top: 0;
+				}
+	
+				p {
+					position: absolute;
+					top: 100%;
+					left: 0;
+					padding: 12px;
+					width: 16.7em;
+					height: 8.7em;
+					color: #fff;
+					background-color: rgba(orangered, .8);
+					transition: .6s;
+					text-shadow: 2px 1px 1px black;
+					font-size: 12px;
+					font-family: 'Montserrat', sans-serif;
+				}
+	
+				.project-picture {
+					width: 14em;
+					height: 8em;
+				}
+			}
+		}
+	
+		.gallery_items:hover .gallery-item {
+			display: block;
+		}
+	}
+	
+	.modal-bg {
+		display: none;
+	}
+	
+	.modal-bg.active {
+		position: fixed;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, .6);
+	
+		.modal {
+			position: absolute;
+			top: 30%;
+			left: 2%;
+			width: 15%;
+			height: 15%;
+	
+			.top {
+				position: relative;
+				bottom: 185%;
+				// left: 10%;
+	
+				// close icon for modal
+				i.fa-times {
+					left: 570%;
+				}
+			}
+	
+			.middle {
+
+				img {
+					width: 24.7em;
+					height: 15em;
+				}
+	
+				&:hover .icon {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+// Pixel 2: landscape
+@media(orientation: landscape) AND (min-width: 731px) {
+	.gallery {
+		margin-top: 51.5em;
+	
+		h2 {
+			margin-bottom: 1.4em;
+			text-align: center;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 30px;
+		}
+	
+		.title-line2 {
+			position: absolute;
+			top: 80.3em;
+			left: 45%;
+			width: 10%;
+			height: .5%;
+			background-color: gray;
+		}
+	
+		.gallery-items {
+	
+			.gallery-item {
+				position: relative;
+				left: 7%;
+				top: 0;
+				width: 12em;
+				height: 8em;
+				border: 1px solid gray;
+				float: left;
+				margin-top: 5%;
+				overflow: hidden;
+	
+	
+				&:hover p {
+					top: 0;
+				}
+	
+				p {
+					position: absolute;
+					top: 100%;
+					left: 0;
+					padding: 5px;
+					width: 15.2em;
+					height: 9.8em;
+					color: #fff;
+					background-color: rgba(orangered, .8);
+					transition: .6s;
+					text-shadow: 2px 1px 1px black;
+					font-size: 12px;
+					font-family: 'Montserrat', sans-serif;
+				}
+	
+				.project-picture {
+					width: 12em;
+					height: 8em;
+				}
+			}
+		}
+	
+		.gallery_items:hover .gallery-item {
+			display: block;
+		}
+	}
+	
+	.modal-bg {
+		display: none;
+	}
+	
+	.modal-bg.active {
+		position: fixed;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, .6);
+	
+		.modal {
+			position: absolute;
+			top: 15%;
+			left: 14%;
+			width: 15%;
+			height: 15%;
+	
+			.top {
+				position: relative;
+				bottom: 80%;
+				left: -30%;
+	
+				// close icon for modal
+				i.fa-times {
+					left: 570%;
+				}
+			}
+	
+			.middle {
+
+				img {
+					width: 33.6em;
+					height: 18em;
+				}
+	
+				&:hover .icon {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+// iPhone X: portrait
+@media(orientation: portrait) AND (min-width: 375px) AND (min-height: 812px) {
+	.gallery {
+		margin-top: 77.5em;
+	
+		h2 {
+			margin-bottom: 2.6em;
+			text-align: center;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 30px;
+		}
+	
+		.title-line2 {
+			position: absolute;
+			top: 132.6em;
+			left: 43%;
+			width: 15%;
+			height: .3%;
+		}
+	
+		.gallery-items {
+	
+			.gallery-item {
+				position: relative;
+				width: 14em;
+				height: 8em;
+				border: 1px solid gray;
+				float: left;
+				top: 0;
+				left: 19%;
 				overflow: hidden;
 	
 	
@@ -516,28 +836,38 @@
 	}
 }
 
-@media(orientation: landscape) AND (min-width: 640px) {
+@media(orientation: landscape) AND (min-width: 812px) {
 	.gallery {
-		margin-top: 45em;
+		margin-top: 47.2em;
 	
 		h2 {
-			margin-bottom: .6em;
+			margin-bottom: 1.2em;
+			text-align: center;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 30px;
 		}
 	
 		.title-line2 {
-			top: 70.5em;
+			position: absolute;
+			top: 74.3em;
 			left: 45%;
 			width: 10%;
-			height: .5%;
+			height: .9%;
+			background-color: gray;
 		}
 	
 		.gallery-items {
-
+	
 			.gallery-item {
+				position: relative;
+				left: 10.5%;
+				top: 0;
 				width: 12em;
 				height: 8em;
-				margin-left: 1.2%;
-				margin-right: .8%;
+				border: 1px solid gray;
+				float: left;
+				margin-top: 5%;
+				overflow: hidden;
 	
 	
 				&:hover p {
@@ -548,59 +878,17 @@
 					position: absolute;
 					top: 100%;
 					left: 0;
-					padding: 12px;
-					width: 15.3em;
-					height: 9.5em;
-					font-size: 11px;
-	
-					.code-button {
-						top: 80.1%;
-						left: 0;
-						width: 34%;
-						height: 20%;
-	
-						.fa-code-branch {
-							color: rgba(rgb(245, 179, 118), .9);
-							font-size: 18px;
-							margin-top: 1px;
-						}
-					}
-	
-					.zoom-button {
-						position: absolute;
-						top: 80.1%;
-						left: 33.4%;
-						border-style: none;
-						background-color: rgba(orangered, .7);
-						border: 2px solid rgba(rgb(182, 25, 33), .6);
-						width: 34%;
-						height: 20%;
-	
-						.fa-search-plus  {
-							color: rgba(rgb(245, 179, 118), .9);
-							font-size: 18px;
-							margin-top: 1px;
-						}
-					}
-	
-					.github-button {
-						position: absolute;
-						top: 80.1%;
-						left: 66.5%;
-						border-style: none;
-						background-color: rgba(orangered, .7);
-						border: 2px solid rgba(rgb(182, 25, 33), .6);
-						width: 34%;
-						height: 20%;
-	
-						.fa-eye  {
-							color: rgba(rgb(245, 179, 118), .9);
-							font-size: 18px;
-							margin-top: 1px;
-						}
-					}
+					padding: 5px;
+					width: 15.2em;
+					height: 9.8em;
+					color: #fff;
+					background-color: rgba(orangered, .8);
+					transition: .6s;
+					text-shadow: 2px 1px 1px black;
+					font-size: 12px;
+					font-family: 'Montserrat', sans-serif;
 				}
-	// ustawianie rozmiarów obrazka wewnątrz ramki
+	
 				.project-picture {
 					width: 12em;
 					height: 8em;
@@ -613,12 +901,6 @@
 		}
 	}
 	
-	.wrap.blur {
-		position: absolute;
-		filter: blur(2px);
-		height: 100%;
-	}
-	
 	.modal-bg {
 		display: none;
 	}
@@ -634,144 +916,15 @@
 	
 		.modal {
 			position: absolute;
-			top: 12%;
+			top: 15%;
 			left: 14%;
-			width: 12%;
-			height: 15%;
-	
-			.top {
-				position: relative;
-				bottom: 60%;
-				left: 108%;
-	
-				// close icon for modal
-				i.fa-times {
-					position: absolute;
-					top: 0;
-					left: 560%;
-					line-height: 24px;
-					color: lightgrey;
-					font-size: 35px;
-					cursor: pointer;
-	
-					&:hover {
-						color: #fff;
-					}
-				}
-			}
-	
-			.middle {
-
-				img {
-					width: 28.8em;
-					height: 17em;
-				}
-			}
-		}
-	}
-}
-
-// Pixel2: portrait
-@media(orientation: portrait) AND (min-width: 411px) {
-	.gallery {
-		margin-top: 70.8em;
-	
-		h2 {
-			margin-bottom: 2.3em;
-			text-align: center;
-			font-family: 'Montserrat', sans-serif;
-			font-size: 30px;
-	
-			span {
-				background: -webkit-linear-gradient(#eee, #333);
-				-webkit-background-clip: text;
-				-webkit-text-fill-color: transparent;
-			}
-		}
-	
-		.title-line2 {
-			position: absolute;
-			top: 120.3em;
-			left: 43%;
-			width: 15%;
-			height: .3%;
-			background-color: gray;
-		}
-	
-		.gallery-items {
-			list-style-type: none;
-	
-			.gallery-item {
-				position: relative;
-				width: 14em;
-				height: 8em;
-				border: 1px solid gray;
-				// float: left;
-				margin-left: 16%;
-				margin-right: 16%;
-	
-	
-				&:hover p {
-					top: 0;
-				}
-	
-				p {
-					position: absolute;
-					top: 100%;
-					left: 0;
-					padding: 12px;
-					width: 16.7em;
-					height: 8.7em;
-					color: #fff;
-					background-color: rgba(orangered, .8);
-					transition: .6s;
-					text-shadow: 2px 1px 1px black;
-					font-size: 12px;
-					font-family: 'Montserrat', sans-serif;
-				}
-	
-				.project-picture {
-					width: 14em;
-					height: 8em;
-				}
-			}
-		}
-	
-		.gallery_items:hover .gallery-item {
-			display: block;
-		}
-	}
-	
-	.wrap.blur {
-		position: absolute;
-		filter: blur(2px);
-		height: 100%;
-	}
-	
-	.modal-bg {
-		display: none;
-	}
-	
-	.modal-bg.active {
-		position: fixed;
-		display: block;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0, 0, 0, .6);
-	
-		.modal {
-			position: absolute;
-			top: 30%;
-			left: 2.5%;
 			width: 15%;
 			height: 15%;
 	
 			.top {
 				position: relative;
-				bottom: 185%;
-				// left: 10%;
+				bottom: 80%;
+				left: -30%;
 	
 				// close icon for modal
 				i.fa-times {
@@ -782,167 +935,12 @@
 			.middle {
 
 				img {
-					width: 24.6em;
-					height: 15em;
+					width: 33.6em;
+					height: 18em;
 				}
 	
 				&:hover .icon {
 					display: block;
-				}
-			}
-		}
-	}
-}
-
-@media(orientation: landscape) AND (min-width: 731px) {
-	.gallery {
-		margin-top: 51.8em;
-	
-		h2 {
-			margin-bottom: .8em;
-		}
-	
-		.title-line2 {
-			top: 80.7em;
-			left: 45%;
-			width: 10%;
-			height: .5%;
-		}
-	
-		.gallery-items {
-
-			.gallery-item {
-				width: 12em;
-				height: 8em;
-				margin-left: 3.2%;
-				// margin-right: 0;
-	
-	
-				&:hover p {
-					top: 0;
-				}
-	
-				p {
-					position: absolute;
-					top: 100%;
-					left: 0;
-					padding: 12px;
-					width: 15.3em;
-					height: 9.5em;
-					font-size: 11px;
-	
-					.code-button {
-						top: 80.1%;
-						left: 0;
-						width: 34%;
-						height: 20%;
-	
-						.fa-code-branch {
-							color: rgba(rgb(245, 179, 118), .9);
-							font-size: 18px;
-							margin-top: 1px;
-						}
-					}
-	
-					.zoom-button {
-						position: absolute;
-						top: 80.1%;
-						left: 33.4%;
-						border-style: none;
-						background-color: rgba(orangered, .7);
-						border: 2px solid rgba(rgb(182, 25, 33), .6);
-						width: 34%;
-						height: 20%;
-	
-						.fa-search-plus  {
-							color: rgba(rgb(245, 179, 118), .9);
-							font-size: 18px;
-							margin-top: 1px;
-						}
-					}
-	
-					.github-button {
-						position: absolute;
-						top: 80.1%;
-						left: 66.5%;
-						border-style: none;
-						background-color: rgba(orangered, .7);
-						border: 2px solid rgba(rgb(182, 25, 33), .6);
-						width: 34%;
-						height: 20%;
-	
-						.fa-eye  {
-							color: rgba(rgb(245, 179, 118), .9);
-							font-size: 18px;
-							margin-top: 1px;
-						}
-					}
-				}
-	// ustawianie rozmiarów obrazka wewnątrz ramki
-				.project-picture {
-					width: 12em;
-					height: 8em;
-				}
-			}
-		}
-	
-		.gallery_items:hover .gallery-item {
-			display: block;
-		}
-	}
-	
-	.wrap.blur {
-		position: absolute;
-		filter: blur(2px);
-		height: 100%;
-	}
-	
-	.modal-bg {
-		display: none;
-	}
-	
-	.modal-bg.active {
-		position: fixed;
-		display: block;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0, 0, 0, .6);
-	
-		.modal {
-			position: absolute;
-			top: 12%;
-			left: 11%;
-			width: 12%;
-			height: 15%;
-	
-			.top {
-				position: relative;
-				bottom: 55%;
-				left: 138%;
-	
-				// close icon for modal
-				i.fa-times {
-					position: absolute;
-					top: 0;
-					left: 560%;
-					line-height: 24px;
-					color: lightgrey;
-					font-size: 35px;
-					cursor: pointer;
-	
-					&:hover {
-						color: #fff;
-					}
-				}
-			}
-	
-			.middle {
-
-				img {
-					width: 35.8em;
-					height: 20em;
 				}
 			}
 		}
@@ -955,21 +953,15 @@
 		margin-top: 97.8em;
 	
 		h2 {
-			margin-bottom: 2.3em;
+			margin-bottom: 2.4em;
 			text-align: center;
 			font-family: 'Montserrat', sans-serif;
 			font-size: 40px;
-	
-			span {
-				background: -webkit-linear-gradient(#eee, #333);
-				-webkit-background-clip: text;
-				-webkit-text-fill-color: transparent;
-			}
 		}
 	
 		.title-line2 {
 			position: absolute;
-			top: 167.7em;
+			top: 167.5em;
 			left: 45%;
 			width: 10%;
 			height: .3%;
@@ -985,8 +977,9 @@
 				height: 8em;
 				border: 1px solid gray;
 				float: left;
-				margin-left: 1.6%;
-				margin-right: 1%;
+				top: 0;
+				left: 2%;
+				margin-left: 2%;
 	
 	
 				&:hover p {
@@ -1072,121 +1065,282 @@
 		}
 	}
 }
-
-// // Desktop: landscape
+	
+// Desktop: landscape
 @media(orientation: landscape) AND (min-width: 1024px) {
 	.gallery {
-		margin-top: 65.5em;
-		max-width: 100%;
-
+		margin-top: 54.2em;
+	
 		h2 {
-			margin-bottom: 0;
+			margin-bottom: 1.6em;
+			text-align: center;
+			font-family: 'Montserrat', sans-serif;
 			font-size: 40px;
 		}
-
+	
 		.title-line2 {
 			position: absolute;
-			top: 128.7em;
-			left: 48%;
-			width: 4%;
-			height: .3%;
+			top: 106.4em;
+			left: 46.5%;
+			width: 8%;
+			height: .2%;
 			background-color: gray;
 		}
-
+	
 		.gallery-items {
-			list-style-type: none;
-
+	
 			.gallery-item {
 				position: relative;
-				width: 30em;
-				height: 20em;
+				left: 10.5%;
+				top: 0;
+				width: 16em;
+				height: 11em;
 				border: 1px solid gray;
 				float: left;
-				margin-left: 4%;
-
-
+				top: 0;
+				left: 8.8%;
+				overflow: hidden;
+	
+	
 				&:hover p {
 					top: 0;
 				}
-
+	
 				p {
 					position: absolute;
 					top: 100%;
 					left: 0;
-					width: 30em;
-					height: 20em;
+					padding: 5px;
+					width: 15.2em;
+					height: 10.2em;
 					color: #fff;
-					background-color: rgba(gray, .7s);
+					background-color: rgba(orangered, .8);
 					transition: .6s;
+					text-shadow: 2px 1px 1px black;
+					font-size: 16.2px;
+					font-family: 'Montserrat', sans-serif;
 				}
-
+	
 				.project-picture {
-					width: 30em;
-					height: 20em;
+					width: 16em;
+					height: 11em;
 				}
 			}
 		}
-
-		.modal-bg.active {
-
-			.modal {
-				top: 70%;
-				left: 50%;
-				width: 80%;
-				height: 80%;
-
-				.top {
-					position: absolute;
-					top: 2.5%;
-					right: 3%;
-
-					i.fa-times {
-						font-size: 55px;
-						line-height: 22px;
-					}
+	
+		.gallery_items:hover .gallery-item {
+			display: block;
+		}
+	}
+	
+	.modal-bg {
+		display: none;
+	}
+	
+	.modal-bg.active {
+		position: fixed;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, .6);
+	
+		.modal {
+			position: absolute;
+			top: 16.2%;
+			left: 6.4%;
+			width: 15%;
+			height: 15%;
+	
+			.top {
+				position: relative;
+				bottom: 90%;
+				left: 25%;
+	
+				// close icon for modal
+				i.fa-times {
+					// left: 620%;
+					font-size: 45px;
 				}
+			}
+	
+			.middle {
 
-				.middle {
-					img {
-						width: 95.2em;
-						height: 46.8em;
-					}
+				img {
+					width: 56em;
+					height: 32em;
+				}
+	
+				&:hover .icon {
+					display: block;
 				}
 			}
 		}
 	}
+}
 
-	// Desktop 768px: portrait
-	@media(orientation: portrait) AND (max-width: 1366px) AND (min-height: 768px) {
-		.gallery {
-			margin-top: 141%;
+@media(orientation: landscape) AND (min-width: 1920px) {
+	.gallery {
+		margin-top: 66em;
+	
+		h2 {
+			margin-bottom: 1.2em;
+			text-align: center;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 40px;
 		}
-
-		.modal-bg.active {
-
-			.modal {
-				top: 70%;
-				left: 45%;
-				width: 80%;
-				height: 80%;
-
-				.top {
+	
+		.title-line2 {
+			position: absolute;
+			top: 129.2em;
+			left: 47%;
+			width: 6%;
+			height: .3%;
+			background-color: gray;
+		}
+	
+		.gallery-items {
+	
+			.gallery-item {
+				position: relative;
+				left: 10.5%;
+				top: 0;
+				width: 25em;
+				height: 17em;
+				border: 1px solid gray;
+				float: left;
+				top: 0;
+				left: 15%;
+				overflow: hidden;
+	
+	
+				&:hover p {
+					top: 0;
+				}
+	
+				p {
 					position: absolute;
-					top: 2.5%;
-					right: 3%;
+					top: 100%;
+					left: -.6%;
+					padding: 15px;
+					width: 16.2em;
+					height: 10.5em;
+					color: #fff;
+					background-color: rgba(orangered, .8);
+					transition: .6s;
+					text-shadow: 2px 1px 1px black;
+					font-size: 23px;
+					font-family: 'Montserrat', sans-serif;
 
-					i.fa-times {
+					.code-button {
 						position: absolute;
-						font-size: 55px;
-						padding-left: 117px;
+						top: 80.1%;
+						left: .5%;
+						border-style: none;
+						background-color: rgba(orangered, .7);
+						border: 2px solid rgba(rgb(182, 25, 33), .6);
+						width: 33.5%;
+						height: 20%;
+						cursor: pointer;
+	
+						.fa-code-branch {
+							color: rgba(rgb(245, 179, 118), .9);
+							font-size: 28px;
+							margin-top: 1px;
+						}
+					}
+	
+					.zoom-button {
+						position: absolute;
+						top: 80.1%;
+						left: 33.4%;
+						border-style: none;
+						background-color: rgba(orangered, .7);
+						border: 2px solid rgba(rgb(182, 25, 33), .6);
+						width: 33.5%;
+						height: 20%;
+						cursor: pointer;
+	
+						.fa-search-plus  {
+							color: rgba(rgb(245, 179, 118), .9);
+							font-size: 28px;
+							margin-top: 1px;
+						}
+					}
+	
+					.github-button {
+						position: absolute;
+						top: 80.1%;
+						left: 66.2%;
+						border-style: none;
+						background-color: rgba(orangered, .7);
+						border: 2px solid rgba(rgb(182, 25, 33), .6);
+						width: 33.5%;
+						height: 20%;
+						cursor: pointer;
+	
+						.fa-eye  {
+							color: rgba(rgb(245, 179, 118), .9);
+							font-size: 28px;
+							margin-top: 1px;
+						}
 					}
 				}
 
-				.middle {
-					img {
-						width: 76.6em;
-						height: 38.8em;
-					}
+				.project-picture {
+					width: 25em;
+					height: 17em;
+				}
+			}
+		}
+	
+		.gallery_items:hover .gallery-item {
+			display: block;
+		}
+	}
+	
+	.modal-bg {
+		display: none;
+	}
+	
+	.modal-bg.active {
+		position: fixed;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, .6);
+	
+		.modal {
+			position: absolute;
+			top: 7.2%;
+			left: 13.4%;
+			width: 15%;
+			height: 15%;
+	
+			.top {
+				position: relative;
+				top: -25%;
+				left: -15%;
+	
+				// close icon for modal
+				i.fa-times {
+					// left: 620%;
+					font-size: 45px;
+				}
+			}
+	
+			.middle {
+
+				img {
+					width: 85em;
+					height: 50em;
+				}
+	
+				&:hover .icon {
+					display: block;
 				}
 			}
 		}

@@ -1,14 +1,14 @@
 // Pobierz elementy DOM
 const navBlock = document.querySelector('.nav-block');
 const burger = document.querySelector('.burger');
-const li = document.querySelectorAll('#home');
+const li = document.querySelectorAll('aside .nav');
 const spnCursor = document.querySelector('.cursor');
 const spnText = document.querySelector('.text');
 const zoomButton = document.querySelectorAll('.gallery-item .zoom-button');
 const rightModalIcons = document.querySelectorAll('.right');
 // const hrefUrl = document.querySelectorAll('hrefUrl');
 const iconX = document.querySelectorAll('.modal .top .fas');
-const imgModal = document.querySelector('.modal-bg .middle .img-modal');
+const imgModal = document.querySelector('.img-modal');
 // const projectRightIcons = document.querySelectorAll('.projectRightIcons');
 // Utwórz zmienną przechowującą tablicę z wartościami
 const txt = [`Welcome`, `I like challenges`, `I'm creative`, `I\'m Front-end Developer`];
@@ -72,8 +72,6 @@ li.forEach(li => li.addEventListener("click", function () {
  burger.classList.toggle("active");
 }))
 
-
-
 // Parametry do zmiany
 const time = 500;
 
@@ -81,7 +79,6 @@ const time = 500;
 let activeText = 0;
 // Pierwsza litera słowa
 let activeLetter = -15;
-
 
 // Implementacja
 // Zadeklaruj funkcję która dodające zawartość tablicy
