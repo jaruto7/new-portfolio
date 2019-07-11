@@ -129,17 +129,17 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   body .wrap header .mouse { width: 35px; height: 55px; }
   body .wrap header .mouse .scroll { width: 5px; height: 10px; } }
 
-.about-me { position: absolute; height: 100%; width: 100%; font-family: 'Montserrat', sans-serif; }
+.about-me { font-family: 'Montserrat', sans-serif; height: 100%; position: absolute; width: 100%; }
 
-.about-me h2 { position: relative; text-align: center; margin-top: 52px; font-size: 30px; }
+.about-me h2 { font-size: 30px; left: 50%; margin-top: 60px; position: relative; top: 0; text-align: center; transform: translateX(-50%); }
 
 .about-me h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
-.about-me .title-line { position: absolute; top: 19%; left: 43%; width: 15%; height: .3%; background-color: gray; }
+.about-me .title-line { border-bottom: 2px solid gray; left: 8.5em; position: absolute; top: 7em; width: 3em; }
 
 .about-me .description { color: grey; }
 
-.about-me .tech-left-1 { position: absolute; top: 32%; left: 4%; width: 37%; height: 38%; box-shadow: 1px 1px 15px 1px lightgray; padding: 1%; }
+.about-me .tech-left-1 { box-shadow: 1px 1px 15px 1px lightgray; position: absolute; top: 32%; left: 4%; width: 37%; height: 38%; padding: 1%; }
 
 .about-me .tech-left-1 h6 { font-family: 'Roboto Condensed', sans-serif; font-size: 18px; }
 
@@ -157,7 +157,7 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
 
 .about-me .tech-right-1 .description { font-size: 11px; }
 
-.about-me .point-line { position: absolute; top: 32%; left: 50%; transform: translateX(-50%); width: .5%; height: 118.2%; background-color: #000; }
+.about-me .point-line { position: absolute; top: 11em; left: 50%; transform: translateX(-50%); width: .5%; height: 118.2%; background-color: #000; }
 
 .about-me .pointer-1 { position: absolute; top: 49%; left: 42.8%; transform: translateX(42.8%); border-radius: 50%; width: 25px; height: 25px; background-color: orangered; }
 
@@ -165,132 +165,19 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
 
 .about-me .pointer-3 { position: absolute; top: 128%; left: 42.8%; transform: translateX(42.8%); width: 25px; height: 25px; border-radius: 50%; background-color: orangered; }
 
-@media (orientation: landscape) and (min-width: 533px) { .about-me h2 { position: absolute; bottom: 80%; left: 50%; transform: translateX(-50%); }
-  .about-me .title-line { top: 23%; left: 45%; width: 10%; height: .6%; }
-  .about-me .tech-left-1 { top: 40%; left: 2.5%; width: 42%; height: 46%; }
+@media (orientation: landscape) and (min-width: 533px) { .about-me h2 { position: absolute; top: -.9em; }
+  .about-me .title-line { top: 5em; left: 45.5%; }
+  .about-me .tech-left-1 { top: 8em; left: 2.5%; width: 42%; height: 46%; }
   .about-me .tech-left-1 h6 { font-size: 20px; }
-  .about-me .tech-left-2 { top: 139%; left: 2.5%; width: 42%; height: 46%; }
+  .about-me .tech-left-2 { top: 28em; left: 2.5%; width: 42%; height: 46%; }
   .about-me .tech-left-2 h6 { font-size: 20px; }
-  .about-me .tech-right-1 { top: 89%; left: 53.6%; width: 42%; height: 46%; }
+  .about-me .tech-right-1 { top: 18em; left: 53.6%; width: 42%; height: 46%; }
   .about-me .tech-right-1 h6 { font-size: 20px; }
-  .about-me .tech-right-1 .description { font-size: 11px; }
-  .about-me .point-line { top: 40%; width: .5%; height: 148%; }
-  .about-me .pointer-1 { top: 62.5%; left: 50%; transform: translateX(-50%); width: 20px; height: 20px; }
-  .about-me .pointer-2 { top: 109.5%; left: 50%; transform: translateX(-50%); width: 20px; height: 20px; }
-  .about-me .pointer-3 { top: 160.5%; left: 50%; transform: translateX(-50%); width: 20px; height: 20px; } }
-
-@media (orientation: portrait) and (min-width: 360px) { .about-me h2 { top: 1%; }
-  .about-me .title-line { top: 18.5%; }
-  .about-me .pointer-1 { top: 49.5%; left: 50%; transform: translateX(-50%); }
-  .about-me .pointer-2 { top: 88.8%; left: 50%; transform: translateX(-50%); }
-  .about-me .pointer-3 { top: 128%; left: 50%; transform: translateX(-50%); } }
-
-@media (orientation: portrait) and (min-width: 411px) { .about-me h2 { top: 1%; }
-  .about-me .title-line { top: 17%; left: 43%; }
-  .about-me .tech-left-1 { top: 29%; }
-  .about-me .tech-left-1 h6 { font-size: 22px; }
-  .about-me .tech-left-1 .description { font-size: 13px; }
-  .about-me .tech-left-2 { top: 107%; }
-  .about-me .tech-left-2 h6 { font-size: 22px; }
-  .about-me .tech-left-2 .description { font-size: 13px; }
-  .about-me .tech-right-1 { top: 68%; }
-  .about-me .tech-right-1 h6 { font-size: 22px; }
-  .about-me .tech-right-1 .description { font-size: 13px; }
-  .about-me .point-line { top: 29%; height: 116.8%; }
-  .about-me .pointer-1 { top: 46.5%; }
-  .about-me .pointer-2 { top: 85.8%; left: 50%; transform: translateX(-50%); }
-  .about-me .pointer-3 { top: 125%; left: 50%; transform: translateX(-50%); } }
-
-@media (orientation: landscape) and (min-width: 731px) { .about-me h1 { font-size: 25px; }
-  .about-me .tech-left-1 h6 { font-size: 25px; }
-  .about-me .tech-left-1 .description { font-size: 14px; }
-  .about-me .tech-left-2 h6 { font-size: 25px; }
-  .about-me .tech-left-2 .description { font-size: 14px; }
-  .about-me .tech-right-1 h6 { font-size: 25px; }
-  .about-me .tech-right-1 .description { font-size: 14px; } }
-
-@media (orientation: portrait) and (min-width: 375px) { .about-me h2 { position: absolute; top: 2%; left: 50%; transform: translateX(-50%); }
-  .about-me .title-line { top: 16.5%; left: 43%; width: 15%; height: .3%; }
-  .about-me .tech-left-1 { top: 27%; }
-  .about-me .tech-left-1 h6 { font-size: 22px; }
-  .about-me .tech-left-1 .description { font-size: 13px; }
-  .about-me .tech-left-2 { top: 105%; }
-  .about-me .tech-left-2 h6 { font-size: 22px; }
-  .about-me .tech-left-2 .description { font-size: 13px; }
-  .about-me .tech-right-1 { top: 66%; }
-  .about-me .tech-right-1 h6 { font-size: 22px; }
-  .about-me .tech-right-1 .description { font-size: 13px; }
-  .about-me .point-line { top: 27%; width: .5%; height: 117%; }
-  .about-me .pointer-1 { top: 45.5%; left: 50%; transform: translateX(-50%); width: 20px; height: 20px; }
-  .about-me .pointer-2 { top: 84%; left: 50%; transform: translateX(-50%); width: 20px; height: 20px; }
-  .about-me .pointer-3 { top: 123.5%; left: 50%; transform: translateX(-50%); width: 20px; height: 20px; } }
-
-@media (orientation: landscape) and (min-width: 667px) { .about-me .tech-left-1 h6 { font-size: 24px; }
-  .about-me .tech-left-1 .description { font-size: 13px; }
-  .about-me .tech-left-2 h6 { font-size: 24px; }
-  .about-me .tech-left-2 .description { font-size: 13px; }
-  .about-me .tech-right-1 h6 { font-size: 24px; }
-  .about-me .tech-right-1 .description { font-size: 13px; } }
-
-@media (orientation: portrait) and (min-width: 768px) { .about-me h2 { top: .8em; font-size: 40px; }
-  .about-me .title-line { top: 10.5em; width: 10%; left: 45%; }
-  .about-me .tech-left-1 h6 { font-size: 28px; }
-  .about-me .tech-left-1 .description { font-size: 18px; }
-  .about-me .tech-left-2 h6 { font-size: 28px; }
-  .about-me .tech-left-2 .description { font-size: 18px; }
-  .about-me .tech-right-1 h6 { font-size: 28px; }
-  .about-me .tech-right-1 .description { font-size: 18px; }
-  .about-me .point-line { width: .6%; height: 117.5%; }
-  .about-me .pointer-1 { width: 45px; height: 45px; }
-  .about-me .pointer-2 { width: 45px; height: 45px; }
-  .about-me .pointer-3 { width: 45px; height: 45px; } }
-
-@media (orientation: landscape) and (min-width: 1024px) { .about-me h2 { bottom: 87%; font-size: 40px; }
-  .about-me .title-line { top: 15.5%; left: 46%; width: 8%; height: .3%; }
-  .about-me .tech-left-1 { top: 27%; left: 22.5%; width: 22%; height: 21%; }
-  .about-me .tech-left-1 h6 { font-size: 25px; }
-  .about-me .tech-left-1 .description { font-size: 15.8px; }
-  .about-me .tech-left-2 { top: 78%; left: 22.5%; width: 22%; height: 21%; }
-  .about-me .tech-left-2 h6 { font-size: 25px; }
-  .about-me .tech-left-2 .description { font-size: 15.8px; }
-  .about-me .tech-right-1 { top: 52.2%; left: 53.4%; width: 22%; height: 21%; }
-  .about-me .tech-right-1 h6 { font-size: 18px; }
-  .about-me .tech-right-1 .description { font-size: 19.8px; }
-  .about-me .point-line { top: 27%; left: 50%; transform: translateX(-50%); width: .2%; height: 76.2%; background-color: black; }
-  .about-me .pointer-1 { top: 36.9%; left: 50%; transform: translateX(-50%); width: 30px; height: 30px; }
-  .about-me .pointer-2 { top: 62.5%; left: 50%; transform: translateX(-50%); width: 30px; height: 30px; }
-  .about-me .pointer-3 { top: 88.5%; left: 50%; transform: translateX(-50%); width: 30px; height: 30px; } }
-
-@media (orientation: landscape) and (max-width: 1366px) and (min-height: 768px) { .about-me h2 { position: absolute; bottom: 87%; left: 50%; transform: translateX(-50%); }
-  .about-me .tech-left-1 { top: 27%; left: 22.5%; width: 22%; height: 21%; }
-  .about-me .tech-left-1 h6 { font-size: 20px; }
-  .about-me .tech-left-1 .description { font-size: 9.8px; }
-  .about-me .tech-left-2 { top: 78%; left: 22.5%; width: 22%; height: 21%; }
-  .about-me .tech-left-2 h6 { font-size: 20px; }
-  .about-me .tech-left-2 .description { font-size: 9.8px; }
-  .about-me .tech-right-1 { top: 52.2%; left: 53.4%; width: 22%; height: 21%; }
-  .about-me .tech-right-1 h6 { font-size: 20px; }
-  .about-me .tech-right-1 .description { font-size: 9.8px; }
-  .about-me .point-line { top: 27%; left: 50%; transform: translateX(-50%); width: .2%; height: 76.4%; background-color: black; }
-  .about-me .pointer-1 { top: 36.9%; left: 50%; transform: translateX(-50%); width: 30px; height: 30px; }
-  .about-me .pointer-2 { top: 62.5%; left: 50%; transform: translateX(-50%); width: 30px; height: 30px; }
-  .about-me .pointer-3 { top: 88.5%; left: 50%; transform: translateX(-50%); width: 30px; height: 30px; } }
-
-@media (orientation: landscape) and (min-width: 1920px) { .about-me h2 { bottom: 87%; font-size: 40px; }
-  .about-me .title-line { top: 15.5%; left: 47%; width: 6%; height: .3%; }
-  .about-me .tech-left-1 { top: 27%; left: 22.5%; width: 22%; height: 21%; }
-  .about-me .tech-left-1 h6 { font-size: 25px; }
-  .about-me .tech-left-1 .description { font-size: 15.8px; }
-  .about-me .tech-left-2 { top: 78%; left: 22.5%; width: 22%; height: 21%; }
-  .about-me .tech-left-2 h6 { font-size: 25px; }
-  .about-me .tech-left-2 .description { font-size: 15.8px; }
-  .about-me .tech-right-1 { top: 52.2%; left: 53.4%; width: 22%; height: 21%; }
-  .about-me .tech-right-1 h6 { font-size: 18px; }
-  .about-me .tech-right-1 .description { font-size: 19.8px; }
-  .about-me .point-line { top: 27%; left: 50%; transform: translateX(-50%); width: .2%; height: 76.2%; background-color: black; }
-  .about-me .pointer-1 { top: 36.9%; left: 50%; transform: translateX(-50%); width: 30px; height: 30px; }
-  .about-me .pointer-2 { top: 62.5%; left: 50%; transform: translateX(-50%); width: 30px; height: 30px; }
-  .about-me .pointer-3 { top: 88.5%; left: 50%; transform: translateX(-50%); width: 30px; height: 30px; } }
+  .about-me .point-line { top: 8em; height: 29.9em; }
+  .about-me .pointer-1, .about-me .pointer-2, .about-me .pointer-3 { left: 50%; transform: translateX(-50%); width: 20px; height: 20px; }
+  .about-me .pointer-1 { top: 12.3em; }
+  .about-me .pointer-2 { top: 22.3em; }
+  .about-me .pointer-3 { top: 32.3em; } }
 
 .gallery { margin-top: 53.5em; max-width: 100%; }
 
@@ -339,8 +226,6 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
 .modal-bg.active .modal .top i.fa-times:hover { color: #fff; }
 
 .modal-bg.active .modal .middle { position: relative; }
-
-.modal-bg.active .modal .middle .icon { display: none; position: absolute; top: 50%; transform: translateY(-50%); font-size: 35px; width: 50px; height: 50px; line-height: 50px; text-align: center; background-color: rgba(0, 0, 0, 0.6); border-radius: 15%; color: lightgray; }
 
 .modal-bg.active .modal .middle img { width: 18.8em; height: 12em; }
 
@@ -491,6 +376,22 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   .modal-bg.active .modal .middle img { width: 56em; height: 32em; }
   .modal-bg.active .modal .middle:hover .icon { display: block; } }
 
+@media (orientation: landscape) and (min-width: 1366px) { .gallery { margin-top: 54.2em; }
+  .gallery h2 { margin-bottom: 1.6em; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 40px; }
+  .gallery .title-line2 { position: absolute; top: 106.4em; left: 46.5%; width: 8%; height: .2%; background-color: gray; }
+  .gallery .gallery-items .gallery-item { position: relative; width: 16em; height: 11em; border: 1px solid gray; float: left; top: 0; left: 17%; overflow: hidden; }
+  .gallery .gallery-items .gallery-item:hover p { top: 0; }
+  .gallery .gallery-items .gallery-item p { position: absolute; top: 100%; left: 0; padding: 5px; width: 15.2em; height: 10.2em; color: #fff; background-color: rgba(255, 69, 0, 0.8); transition: .6s; text-shadow: 2px 1px 1px black; font-size: 16.2px; font-family: 'Montserrat', sans-serif; }
+  .gallery .gallery-items .gallery-item .project-picture { width: 16em; height: 11em; }
+  .gallery .gallery_items:hover .gallery-item { display: block; }
+  .modal-bg { display: none; }
+  .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
+  .modal-bg.active .modal { position: absolute; top: 16.5%; left: 17.4%; width: 15%; height: 15%; }
+  .modal-bg.active .modal .top { position: relative; bottom: 92%; left: -42%; }
+  .modal-bg.active .modal .top i.fa-times { font-size: 45px; }
+  .modal-bg.active .modal .middle img { width: 56em; height: 32em; }
+  .modal-bg.active .modal .middle:hover .icon { display: block; } }
+
 @media (orientation: landscape) and (min-width: 1920px) { .gallery { margin-top: 66em; }
   .gallery h2 { margin-bottom: 1.2em; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 40px; }
   .gallery .title-line2 { position: absolute; top: 129.2em; left: 47%; width: 6%; height: .3%; background-color: gray; }
@@ -512,3 +413,45 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   .modal-bg.active .modal .top i.fa-times { font-size: 45px; }
   .modal-bg.active .modal .middle img { width: 85em; height: 50em; }
   .modal-bg.active .modal .middle:hover .icon { display: block; } }
+
+.contact { position: relative; }
+
+.contact h2 { margin-top: 2em; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 30px; }
+
+.contact h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+.contact .title-line3 { position: absolute; top: 3.5em; left: 43%; width: 15%; border: 1px solid gray; }
+
+.footer { margin-top: 5.7em; background-color: #222222; color: #fff; width: 100%; text-align: center; }
+
+.footer .col-3 { padding-top: 20px; }
+
+.footer .col-3 .fa-facebook, .footer .col-3 .fa-twitter-square, .footer .col-3 .fa-envelope, .footer .col-3 .fa-phone-square { font-size: 24px; }
+
+.footer .col-3 .fa-facebook p, .footer .col-3 .fa-twitter-square p, .footer .col-3 .fa-envelope p, .footer .col-3 .fa-phone-square p { position: relative; display: inline-block; padding-left: 6px; font-size: 13px; top: -4px; left: 0; font-family: Arial, Helvetica, sans-serif; font-weight: normal; }
+
+.footer-title { margin-top: 2em; border-top: 1.5px solid #333333; margin-left: 16px; margin-right: 16px; line-height: 10em; color: #929292; }
+
+@media (orientation: landscape) and (min-width: 533px) { .contact { position: relative; }
+  .contact h2 { margin-top: 1.2em; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 30px; }
+  .contact h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .contact .title-line3 { position: absolute; top: 3em; left: 45%; width: 10%; border: 1px solid gray; }
+  .footer { margin-top: 4em; } }
+
+@media (min-width: 1920px) { .footer { margin-top: 8em; height: 18.1em; background-color: #222222; color: #fff; width: 100%; text-align: center; }
+  .footer-title { position: relative; margin-top: 8em; margin-left: 25em; margin-right: 30em; color: #929292; text-align: center; }
+  .row { width: 55%; margin: 0 auto; padding-top: .5px; }
+  [class*="col"] { float: left; margin-top: 25px; }
+  .col-1 { width: 8.334%; }
+  .col-2 { width: 16.667%; }
+  .col-3 { width: 25%; }
+  .col-3 h3 { color: #fff; }
+  .col-4 { width: 33.334%; }
+  .col-5 { width: 41.667%; }
+  .col-6 { width: 50%; }
+  .col-7 { width: 58.334%; }
+  .col-8 { width: 66.667%; }
+  .col-9 { width: 75%; }
+  .col-10 { width: 83.334%; }
+  .col-11 { width: 91.667%; }
+  .col-12 { width: 100%; } }
