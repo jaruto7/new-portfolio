@@ -1,7 +1,7 @@
   .contact {
     position: relative;
     h2 {
-      margin-top: 2em;
+      margin-top: 1.7em;
       text-align: center;
       font-family: 'Montserrat', sans-serif;
       font-size: 30px;
@@ -13,20 +13,19 @@
       }
     }
     .title-line3 {
-      position: absolute;
-			top: 3.5em;
-			left: 43%;
-			width: 15%;
-      border: 1px solid gray;
+      // position: absolute;
+      margin: 1em 0 3.6em 8.5em;
+			width: 3em;
+      border-bottom: 2px solid gray;
 		}
   }
   
   .footer {
     // do zmiany marginesu przy nagłowku contact
-    margin-top: 5.7em;
+    margin-top: 4em;
     background-color: #222222;
     color: #fff;
-    width: 100%;
+    // width: 100%;
     text-align: center;
     
     .col-3 {
@@ -90,7 +89,7 @@
 @media(min-width: 1920px) {
  .footer {
     margin-top: 8em;
-    height: 18.1em;
+    // height: 18.1em;
     background-color: #222222;
     color: #fff;
     width: 100%;

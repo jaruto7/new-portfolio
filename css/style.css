@@ -129,67 +129,132 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   body .wrap header .mouse { width: 35px; height: 55px; }
   body .wrap header .mouse .scroll { width: 5px; height: 10px; } }
 
-.about-me { font-family: 'Montserrat', sans-serif; height: 100%; position: absolute; width: 100%; }
+.about-me { font-family: 'Montserrat', sans-serif; position: relative; }
 
-.about-me h2 { font-size: 30px; left: 50%; margin-top: 60px; position: relative; top: 0; text-align: center; transform: translateX(-50%); }
+.about-me h2 { font-size: 30px; padding: 1.7em 0 0 0; text-align: center; }
 
 .about-me h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
-.about-me .title-line { border-bottom: 2px solid gray; left: 8.5em; position: absolute; top: 7em; width: 3em; }
+.about-me .title-line { border-bottom: 2px solid gray; margin: 1em 0 3.6em 8.5em; width: 3em; }
 
-.about-me .description { color: grey; }
+.about-me h6 { box-sizing: border-box; font-size: 18px; }
 
-.about-me .tech-left-1 { box-shadow: 1px 1px 15px 1px lightgray; position: absolute; top: 32%; left: 4%; width: 37%; height: 38%; padding: 1%; }
+.about-me .description { color: grey; font-size: 11px; padding: 8px; }
 
-.about-me .tech-left-1 h6 { font-family: 'Roboto Condensed', sans-serif; font-size: 18px; }
+.about-me .description li { list-style-type: none; }
 
-.about-me .tech-left-1 .description { font-size: 11px; }
+.about-me .tech-left-1, .about-me .tech-left-2, .about-me .tech-right-1 { box-shadow: 1px 1px 15px 1px lightgray; height: 12.5em; padding: 3px; width: 37%; }
 
-.about-me .tech-left-2 { position: absolute; top: 111%; left: 4%; width: 37%; height: 38%; box-shadow: 1px 1px 15px 1px lightgray; padding: 1%; }
+.about-me .tech-left-1, .about-me .tech-left-2 { margin-left: .8em; }
 
-.about-me .tech-left-2 h6 { font-family: 'Roboto Condensed', sans-serif; font-size: 18px; }
+.about-me .tech-right-1 { margin-left: 11.4em; }
 
-.about-me .tech-left-2 .description { font-size: 11px; }
+.about-me .point-line { position: absolute; top: 10.1em; left: 50%; transform: translateX(-50%); width: 3px; height: 38.5em; background-color: #000; }
 
-.about-me .tech-right-1 { position: absolute; top: 71%; left: 57%; width: 37%; height: 38%; box-shadow: 1px 1px 15px 1px lightgray; padding: 1%; }
+.about-me .pointer-1, .about-me .pointer-2, .about-me .pointer-3 { border-radius: 50%; background-color: orangered; height: 25px; left: 50%; position: absolute; transform: translateX(-50%); width: 25px; }
 
-.about-me .tech-right-1 h6 { font-family: 'Roboto Condensed', sans-serif; font-size: 18px; }
+.about-me .pointer-1 { top: 15.5em; }
 
-.about-me .tech-right-1 .description { font-size: 11px; }
+.about-me .pointer-2 { top: 28.5em; }
 
-.about-me .point-line { position: absolute; top: 11em; left: 50%; transform: translateX(-50%); width: .5%; height: 118.2%; background-color: #000; }
+.about-me .pointer-3 { top: 41.5em; }
 
-.about-me .pointer-1 { position: absolute; top: 49%; left: 42.8%; transform: translateX(42.8%); border-radius: 50%; width: 25px; height: 25px; background-color: orangered; }
+@media (orientation: landscape) and (min-width: 533px) { .about-me .title-line { margin: 1em 0 3.6em 15.2em; }
+  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 1.7em; }
+  .about-me .tech-right-1 { margin-left: 18.9em; } }
 
-.about-me .pointer-2 { position: absolute; top: 89%; left: 42.8%; transform: translateX(42.8%); width: 25px; height: 25px; border-radius: 50%; background-color: orangered; }
+@media (orientation: portrait) and (min-width: 360px) { .about-me .title-line { margin: 1em 0 3.6em 9.8em; }
+  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 1em; }
+  .about-me .tech-right-1 { margin-left: 12.7em; } }
 
-.about-me .pointer-3 { position: absolute; top: 128%; left: 42.8%; transform: translateX(42.8%); width: 25px; height: 25px; border-radius: 50%; background-color: orangered; }
+@media (orientation: landscape) and (min-width: 640px) { .about-me .title-line { margin: 1em 0 3.6em 18.5em; }
+  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 2.2em; }
+  .about-me .tech-right-1 { margin-left: 22.7em; } }
 
-@media (orientation: landscape) and (min-width: 533px) { .about-me h2 { position: absolute; top: -.9em; }
-  .about-me .title-line { top: 5em; left: 45.5%; }
-  .about-me .tech-left-1 { top: 8em; left: 2.5%; width: 42%; height: 46%; }
-  .about-me .tech-left-1 h6 { font-size: 20px; }
-  .about-me .tech-left-2 { top: 28em; left: 2.5%; width: 42%; height: 46%; }
-  .about-me .tech-left-2 h6 { font-size: 20px; }
-  .about-me .tech-right-1 { top: 18em; left: 53.6%; width: 42%; height: 46%; }
-  .about-me .tech-right-1 h6 { font-size: 20px; }
-  .about-me .point-line { top: 8em; height: 29.9em; }
-  .about-me .pointer-1, .about-me .pointer-2, .about-me .pointer-3 { left: 50%; transform: translateX(-50%); width: 20px; height: 20px; }
-  .about-me .pointer-1 { top: 12.3em; }
-  .about-me .pointer-2 { top: 22.3em; }
-  .about-me .pointer-3 { top: 32.3em; } }
+@media (orientation: portrait) and (min-width: 411px) { .about-me .title-line { margin: 1em 0 3.6em 11.5em; }
+  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 1.2em; }
+  .about-me .tech-right-1 { margin-left: 14.5em; } }
 
-.gallery { margin-top: 53.5em; max-width: 100%; }
+@media (orientation: landscape) and (min-width: 731px) { .about-me .title-line { margin: 1em 0 3.6em 21.5em; }
+  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 2.5em; }
+  .about-me .tech-right-1 { margin-left: 25.7em; } }
 
-.gallery h2 { margin-bottom: 2em; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 30px; }
+@media (orientation: portrait) and (min-width: 375px) and (min-height: 812px) { .about-me .title-line { margin: 1em 0 3.6em 10.4em; }
+  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 1.1em; }
+  .about-me .tech-right-1 { margin-left: 13.3em; } }
+
+@media (orientation: landscape) and (min-width: 812px) { .about-me h6 { font-size: 20px; }
+  .about-me .description { font-size: 12px; }
+  .about-me .title-line { margin: 1em 0 3.6em 24em; }
+  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 2.8em; }
+  .about-me .tech-right-1 { margin-left: 28.6em; } }
+
+@media (orientation: portrait) and (min-width: 768px) { .about-me h2 { font-size: 40px; }
+  .about-me .title-line { margin: 1em 0 3.6em 22.5em; }
+  .about-me h6 { box-sizing: border-box; font-size: 22px; }
+  .about-me .description { font-size: 15px; }
+  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 2.5em; }
+  .about-me .tech-right-1 { margin-left: 27.2em; }
+  .about-me .point-line { top: 11.8em; height: 38.5em; width: 4px; }
+  .about-me .pointer-1, .about-me .pointer-2, .about-me .pointer-3 { height: 30px; width: 30px; }
+  .about-me .pointer-1 { top: 17.5em; }
+  .about-me .pointer-2 { top: 30.5em; }
+  .about-me .pointer-3 { top: 42.8em; } }
+
+@media (orientation: landscape) and (min-width: 1024px) { .about-me .title-line { margin: 1em 0 3.6em 30.6em; }
+  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 3.8em; }
+  .about-me .tech-right-1 { margin-left: 36em; } }
+
+@media (orientation: portrait) and (min-width: 1024px) and (min-height: 1366px) { .about-me .title-line { margin: 1em 0 3.6em 30.5em; }
+  .about-me h6 { font-size: 26px; }
+  .about-me .description { font-size: 17px; }
+  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 3.7em; }
+  .about-me .tech-right-1 { margin-left: 35.9em; } }
+
+@media (orientation: landscape) and (min-width: 1366px) and (min-height: 1024px) { .about-me h2 { font-size: 40px; }
+  .about-me .title-line { margin: 1em 0 3.6em 41.3em; }
+  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 4.8em; }
+  .about-me .tech-right-1 { margin-left: 48em; }
+  .about-me .point-line { top: 11.8em; height: 38.5em; width: 4px; }
+  .about-me .pointer-1, .about-me .pointer-2, .about-me .pointer-3 { height: 30px; width: 30px; }
+  .about-me .pointer-1 { top: 17.5em; }
+  .about-me .pointer-2 { top: 30.5em; }
+  .about-me .pointer-3 { top: 42.8em; } }
+
+@media (orientation: landscape) and (max-width: 1366px) and (min-height: 768px) { .about-me h2 { font-size: 40px; }
+  .about-me .title-line { margin: 1em 0 3.6em 41.3em; }
+  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 4.8em; }
+  .about-me .tech-right-1 { margin-left: 48em; }
+  .about-me .point-line { top: 11.8em; height: 38.5em; width: 4px; }
+  .about-me .pointer-1, .about-me .pointer-2, .about-me .pointer-3 { height: 30px; width: 30px; }
+  .about-me .pointer-1 { top: 17.5em; }
+  .about-me .pointer-2 { top: 30.5em; }
+  .about-me .pointer-3 { top: 42.8em; } }
+
+@media (orientation: landscape) and (min-width: 1920px) { .about-me h2 { font-size: 40px; }
+  .about-me .title-line { margin: 1em 0 5em 58em; }
+  .about-me .description { font-size: 16px; padding: 16px; }
+  .about-me h6 { font-size: 28px; }
+  .about-me .point-line { top: 13.2em; height: 76.4em; width: 5px; }
+  .about-me .tech-left-1, .about-me .tech-left-2, .about-me .tech-right-1 { box-sizing: border-box; height: 25.5em; padding: 16px; width: 37%; }
+  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 7.2em; }
+  .about-me .tech-right-1 { margin-left: 67.2em; }
+  .about-me .pointer-1, .about-me .pointer-2, .about-me .pointer-3 { height: 35px; width: 35px; }
+  .about-me .pointer-1 { top: 24.5em; }
+  .about-me .pointer-2 { top: 50.5em; }
+  .about-me .pointer-3 { top: 75.5em; } }
+
+.gallery { margin-top: 3em; max-width: 100%; }
+
+.gallery h2 { text-align: center; font-family: 'Montserrat', sans-serif; font-size: 30px; }
 
 .gallery h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
-.gallery .title-line2 { position: absolute; top: 90.4em; left: 43%; width: 15%; height: .3%; background-color: gray; }
+.gallery .title-line2 { margin: 1.3em 0 3.5em 8.5em; width: 3em; border-bottom: 2px solid gray; }
 
 .gallery .gallery-items { list-style-type: none; }
 
-.gallery .gallery-items .gallery-item { position: relative; left: 15%; top: 0; width: 14em; height: 8em; border: 1px solid gray; float: left; margin-top: 1.5em; overflow: hidden; }
+.gallery .gallery-items .gallery-item { position: relative; margin: 1em 0 0 3em; width: 14em; height: 8em; border: 1px solid gray; overflow: hidden; }
 
 .gallery .gallery-items .gallery-item:hover p { top: 0; }
 
@@ -233,7 +298,7 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
 
 @media (orientation: landscape) and (min-width: 533px) { .gallery { margin-top: 40em; }
   .gallery h2 { margin-bottom: 1.2em; }
-  .gallery .title-line2 { top: 63em; left: 45%; width: 10%; height: .6%; }
+  .gallery .title-line2 { top: 63em; margin-left: 1em; width: 10%; height: .6%; }
   .gallery .gallery-items .gallery-item { width: 10em; height: 7em; left: 1%; top: 0; margin-left: 1.1%; margin-right: 1%; }
   .gallery .gallery-items .gallery-item p { padding: 5px; width: 14.3em; height: 9.7em; font-size: 10.5px; }
   .gallery .gallery-items .gallery-item .project-picture { width: 10em; height: 7em; }
@@ -416,13 +481,13 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
 
 .contact { position: relative; }
 
-.contact h2 { margin-top: 2em; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 30px; }
+.contact h2 { margin-top: 1.7em; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 30px; }
 
 .contact h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
-.contact .title-line3 { position: absolute; top: 3.5em; left: 43%; width: 15%; border: 1px solid gray; }
+.contact .title-line3 { margin: 1em 0 3.6em 8.5em; width: 3em; border-bottom: 2px solid gray; }
 
-.footer { margin-top: 5.7em; background-color: #222222; color: #fff; width: 100%; text-align: center; }
+.footer { margin-top: 4em; background-color: #222222; color: #fff; text-align: center; }
 
 .footer .col-3 { padding-top: 20px; }
 
@@ -438,7 +503,7 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   .contact .title-line3 { position: absolute; top: 3em; left: 45%; width: 10%; border: 1px solid gray; }
   .footer { margin-top: 4em; } }
 
-@media (min-width: 1920px) { .footer { margin-top: 8em; height: 18.1em; background-color: #222222; color: #fff; width: 100%; text-align: center; }
+@media (min-width: 1920px) { .footer { margin-top: 8em; background-color: #222222; color: #fff; width: 100%; text-align: center; }
   .footer-title { position: relative; margin-top: 8em; margin-left: 25em; margin-right: 30em; color: #929292; text-align: center; }
   .row { width: 55%; margin: 0 auto; padding-top: .5px; }
   [class*="col"] { float: left; margin-top: 25px; }

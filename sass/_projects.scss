@@ -1,9 +1,8 @@
 .gallery {
-	margin-top: 53.5em;
+	margin-top: 3em;
 	max-width: 100%;
 
 	h2 {
-		margin-bottom: 2em;
 		text-align: center;
 		font-family: 'Montserrat', sans-serif;
 		font-size: 30px;
@@ -16,12 +15,9 @@
 	}
 
 	.title-line2 {
-		position: absolute;
-		top: 90.4em;
-		left: 43%;
-		width: 15%;
-		height: .3%;
-		background-color: gray;
+		margin: 1.3em 0 3.5em 8.5em;
+		width: 3em;
+		border-bottom: 2px solid gray;
 	}
 
 	.gallery-items {
@@ -29,13 +25,11 @@
 
 		.gallery-item {
 			position: relative;
-			left: 15%;
-			top: 0;
+			margin: 1em 0 0 3em;
 			width: 14em;
 			height: 8em;
 			border: 1px solid gray;
-			float: left;
-			margin-top: 1.5em;
+			// float: left;
 			overflow: hidden;
 
 
@@ -193,7 +187,7 @@
 	
 		.title-line2 {
 			top: 63em;
-			left: 45%;
+			margin-left: 1em;
 			width: 10%;
 			height: .6%;
 		}
