@@ -227,6 +227,7 @@
 
 		h2 {
 			font-size: 40px;
+			padding: 1.2em 0 0 0;
 		}
 	
 		.title-line {
@@ -250,7 +251,7 @@
 		}
 
 		.point-line {
-			top: 11.8em;
+			top: 10.7em;
 			width: 4px;
 		}
 
@@ -260,15 +261,15 @@
 		}
 	
 		.pointer-1 {
-			top: 17.5em;
+			top: 16em;
 		}
 	
 		.pointer-2 {
-			top: 30.5em;
+			top: 28.5em;
 		}
 	
 		.pointer-3 {
-			top: 42.8em;
+			top: 41em;
 		}
 	}
 
@@ -423,7 +424,7 @@
 
 		.title-line {
 			margin: 1em 0 5em 73em;
-		
+			border-bottom: 3px solid gray;
 		}
 
 		h6 {
@@ -474,3 +475,64 @@
 	}
 	
 }
+
+// // Nokia Lumia: landscape
+// @media(orientation: landscape) AND (min-width: 533px) {
+	
+// }
+
+// // Galaxy S5: portrait
+// @media(orientation: portrait) AND (min-width: 360px) {
+	
+// }
+
+// // Galaxy S5: landscape
+// @media(orientation: landscape) AND (min-width: 640px) {
+	
+// }
+
+// // Pixel 2: portrait
+// @media(orientation: portrait) AND (min-width: 411px) {
+
+// }
+
+// @media(orientation: landscape) AND (min-width: 731px) {
+	
+// }
+
+// // Iphone X: portrait
+// @media(orientation: portrait) AND (min-width: 375px) AND (min-height: 812px) {
+	
+// }
+
+// @media(orientation: landscape) AND (min-width: 812px) {
+
+// }
+
+// // Ipad: portrait
+// @media(orientation: portrait) AND (min-width: 768px) {
+	
+// }
+
+// //Ipad: landscape
+// @media(orientation: landscape) AND (min-width: 1024px) {
+
+// }
+
+// // Ipad Pro: portrait
+// @media(orientation: portrait) AND (min-width: 1024px) AND (min-height: 1366px) {
+	
+// }
+
+// @media(orientation: landscape) AND (min-width: 1366px) {
+	
+// }
+
+// @media(orientation: landscape) AND (min-width: 1366px) AND (min-height: 768px) {
+	
+// }
+
+// // desktop: landscape
+// @media(orientation: landscape) AND (min-width: 1920px) {
+		
+// }

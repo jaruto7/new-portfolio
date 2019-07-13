@@ -189,17 +189,17 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 3.2em; }
   .about-me .tech-right-1 { margin-left: 28.6em; } }
 
-@media (orientation: portrait) and (min-width: 768px) { .about-me h2 { font-size: 40px; }
+@media (orientation: portrait) and (min-width: 768px) { .about-me h2 { font-size: 40px; padding: 1.2em 0 0 0; }
   .about-me .title-line { margin: 1em 0 3.6em 22.5em; }
   .about-me h6 { font-size: 22px; }
   .about-me .description { font-size: 15px; }
   .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 3.2em; }
   .about-me .tech-right-1 { margin-left: 27.1em; }
-  .about-me .point-line { top: 11.8em; width: 4px; }
+  .about-me .point-line { top: 10.7em; width: 4px; }
   .about-me .pointer-1, .about-me .pointer-2, .about-me .pointer-3 { height: 30px; width: 30px; }
-  .about-me .pointer-1 { top: 17.5em; }
-  .about-me .pointer-2 { top: 30.5em; }
-  .about-me .pointer-3 { top: 42.8em; } }
+  .about-me .pointer-1 { top: 16em; }
+  .about-me .pointer-2 { top: 28.5em; }
+  .about-me .pointer-3 { top: 41em; } }
 
 @media (orientation: landscape) and (min-width: 1024px) { .about-me .title-line { margin: 1em 0 3.6em 30.6em; }
   .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 3.9em; }
@@ -233,7 +233,7 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   .about-me .pointer-3 { top: 41.5em; } }
 
 @media (orientation: landscape) and (min-width: 1920px) { .about-me h2 { font-size: 40px; }
-  .about-me .title-line { margin: 1em 0 5em 73em; }
+  .about-me .title-line { margin: 1em 0 5em 73em; border-bottom: 3px solid gray; }
   .about-me h6 { font-size: 30px; }
   .about-me .description { font-size: 19px; padding: 16px; }
   .about-me .point-line { top: 12.8em; height: 76.2em; width: 5px; }
@@ -245,35 +245,33 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   .about-me .pointer-2 { top: 50.5em; }
   .about-me .pointer-3 { top: 75.5em; } }
 
-.gallery { margin-top: 3em; max-width: 100%; }
+.gallery { margin-top: 3em; }
 
-.gallery h2 { text-align: center; font-family: 'Montserrat', sans-serif; font-size: 30px; }
+.gallery h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; text-align: center; }
 
 .gallery h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
-.gallery .title-line2 { margin: 1.3em 0 3.5em 8.5em; width: 3em; border-bottom: 2px solid gray; }
+.gallery .title-line2 { border-bottom: 2px solid gray; margin: 1.3em 0 3.5em 8.5em; width: 3em; }
 
 .gallery .gallery-items { list-style-type: none; }
 
-.gallery .gallery-items .gallery-item { position: relative; margin: 1em 0 0 3em; width: 14em; height: 8em; border: 1px solid gray; overflow: hidden; }
+.gallery .gallery-items .gallery-item { border: 1px solid gray; height: 9em; margin: 1em 0 0 3em; overflow: hidden; position: relative; width: 14em; }
 
-.gallery .gallery-items .gallery-item:hover p { top: 0; }
+.gallery .gallery-items .gallery-item:hover p { left: 0; top: 0; }
 
-.gallery .gallery-items .gallery-item p { position: absolute; top: 100%; left: 0; padding: 12px; width: 16.7em; height: 8.7em; color: #fff; background-color: rgba(255, 69, 0, 0.8); transition: .6s; text-shadow: 2px 1px 1px black; font-size: 12px; font-family: 'Montserrat', sans-serif; }
+.gallery .gallery-items .gallery-item p { background-color: rgba(255, 69, 0, 0.8); color: #fff; font-size: 12px; font-family: 'Montserrat', sans-serif; height: 11.8em; left: 0; position: absolute; padding: 12px; top: 100%; transition: .6s; text-shadow: 2px 1px 1px black; width: 18.5em; }
 
-.gallery .gallery-items .gallery-item p .code-button { position: absolute; top: 80.1%; left: .5%; border-style: none; background-color: rgba(255, 69, 0, 0.7); border: 2px solid rgba(182, 25, 33, 0.6); width: 33.5%; height: 20%; }
+.gallery .gallery-items .gallery-item p .code-button, .gallery .gallery-items .gallery-item p .zoom-button, .gallery .gallery-items .gallery-item p .github-button { border-style: none; background-color: rgba(255, 69, 0, 0.7); border: 2px solid rgba(182, 25, 33, 0.6); height: 20%; position: absolute; top: 80.1%; width: 33.5%; }
 
-.gallery .gallery-items .gallery-item p .code-button .fa-code-branch { color: rgba(245, 179, 118, 0.9); font-size: 18px; margin-top: 1px; }
+.gallery .gallery-items .gallery-item p .code-button .fa-code-branch, .gallery .gallery-items .gallery-item p .code-button .fa-search-plus, .gallery .gallery-items .gallery-item p .code-button .fa-eye, .gallery .gallery-items .gallery-item p .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item p .zoom-button .fa-search-plus, .gallery .gallery-items .gallery-item p .zoom-button .fa-eye, .gallery .gallery-items .gallery-item p .github-button .fa-code-branch, .gallery .gallery-items .gallery-item p .github-button .fa-search-plus, .gallery .gallery-items .gallery-item p .github-button .fa-eye { color: rgba(245, 179, 118, 0.9); font-size: 18px; margin-top: 1px; }
 
-.gallery .gallery-items .gallery-item p .zoom-button { position: absolute; top: 80.1%; left: 33.4%; border-style: none; background-color: rgba(255, 69, 0, 0.7); border: 2px solid rgba(182, 25, 33, 0.6); width: 33.5%; height: 20%; }
+.gallery .gallery-items .gallery-item p .code-button { left: 0; }
 
-.gallery .gallery-items .gallery-item p .zoom-button .fa-search-plus { color: rgba(245, 179, 118, 0.9); font-size: 18px; margin-top: 1px; }
+.gallery .gallery-items .gallery-item p .zoom-button { left: 33%; }
 
-.gallery .gallery-items .gallery-item p .github-button { position: absolute; top: 80.1%; left: 66.2%; border-style: none; background-color: rgba(255, 69, 0, 0.7); border: 2px solid rgba(182, 25, 33, 0.6); width: 33.5%; height: 20%; }
+.gallery .gallery-items .gallery-item p .github-button { left: 66.4%; }
 
-.gallery .gallery-items .gallery-item p .github-button .fa-eye { color: rgba(245, 179, 118, 0.9); font-size: 18px; margin-top: 1px; }
-
-.gallery .gallery-items .gallery-item .project-picture { width: 14em; height: 8em; }
+.gallery .gallery-items .gallery-item .project-picture { height: 9em; width: 14em; }
 
 .gallery .gallery_items:hover .gallery-item { display: block; }
 
@@ -281,204 +279,131 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
 
 .wrap.blur { filter: blur(3px); height: 100vh; }
 
-.modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
+.modal-bg.active { background-color: rgba(0, 0, 0, 0.6); display: block; height: 100%; left: 0; position: fixed; top: 0; width: 100%; }
 
-.modal-bg.active .modal { position: absolute; top: 25%; left: 3%; width: 15%; height: 15%; }
+.modal-bg.active .modal { height: 15%; left: 3%; position: absolute; top: 25%; width: 15%; }
 
-.modal-bg.active .modal .top { position: relative; bottom: 150%; left: 12%; }
+.modal-bg.active .modal .top { bottom: 150%; left: 12%; position: relative; }
 
-.modal-bg.active .modal .top i.fa-times { position: absolute; top: 0; left: 560%; line-height: 24px; color: lightgrey; font-size: 35px; cursor: pointer; }
+.modal-bg.active .modal .top i.fa-times { color: lightgrey; cursor: pointer; font-size: 35px; left: 560%; line-height: 24px; position: absolute; top: 0; }
 
 .modal-bg.active .modal .top i.fa-times:hover { color: #fff; }
 
 .modal-bg.active .modal .middle { position: relative; }
 
-.modal-bg.active .modal .middle img { width: 18.8em; height: 12em; }
+.modal-bg.active .modal .middle img { height: 12em; width: 18.8em; }
 
 .modal-bg.active .modal .middle:hover .icon { display: block; }
 
-@media (orientation: landscape) and (min-width: 533px) { .gallery { margin-top: 40em; }
-  .gallery h2 { margin-bottom: 1.2em; }
-  .gallery .title-line2 { top: 63em; margin-left: 1em; width: 10%; height: .6%; }
-  .gallery .gallery-items .gallery-item { width: 10em; height: 7em; left: 1%; top: 0; margin-left: 1.1%; margin-right: 1%; }
-  .gallery .gallery-items .gallery-item p { padding: 5px; width: 14.3em; height: 9.7em; font-size: 10.5px; }
-  .gallery .gallery-items .gallery-item .project-picture { width: 10em; height: 7em; }
-  .modal-bg.active .modal { top: 12%; left: 8%; }
-  .modal-bg.active .modal .top { bottom: 55%; }
-  .modal-bg.active .modal .middle img { width: 28em; height: 15em; } }
+@media (orientation: landscape) and (min-width: 533px) { .gallery .title-line2 { margin: 1.3em 0 2.4em 15.3em; }
+  .gallery .gallery-items .gallery-item { float: left; height: 7em; margin: .8em 0 0 .8em; width: 10em; }
+  .gallery .gallery-items .gallery-item p { font-size: 10.8px; height: 10.2em; padding: 6px; width: 14.7em; }
+  .gallery .gallery-items .gallery-item p .code-button .fa-code-branch, .gallery .gallery-items .gallery-item p .code-button .fa-search-plus, .gallery .gallery-items .gallery-item p .code-button .fa-eye, .gallery .gallery-items .gallery-item p .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item p .zoom-button .fa-search-plus, .gallery .gallery-items .gallery-item p .zoom-button .fa-eye, .gallery .gallery-items .gallery-item p .github-button .fa-code-branch, .gallery .gallery-items .gallery-item p .github-button .fa-search-plus, .gallery .gallery-items .gallery-item p .github-button .fa-eye { font-size: 14px; }
+  .gallery .gallery-items .gallery-item p .code-button { width: 34%; }
+  .gallery .gallery-items .gallery-item p .zoom-button { left: 33.4%; }
+  .gallery .gallery-items .gallery-item p .github-button { left: 66.4%; }
+  .gallery .gallery-items .gallery-item .project-picture { height: 7em; width: 10em; }
+  .modal-bg.active .modal { height: 1em; left: 14%; top: 12%; }
+  .modal-bg.active .modal .top { bottom: 1.6em; left: -1.5em; }
+  .modal-bg.active .modal .middle img { height: 15em; width: 24em; } }
 
-@media (orientation: portrait) and (min-width: 360px) { .gallery { margin-top: 63.5em; }
-  .gallery h2 { margin-bottom: 2.2em; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 30px; }
-  .gallery h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-  .gallery .title-line2 { position: absolute; top: 107.5em; left: 43%; width: 15%; height: .3%; background-color: gray; }
-  .gallery .gallery-items { list-style-type: none; }
-  .gallery .gallery-items .gallery-item { position: relative; left: 18%; top: 0; width: 14em; height: 8em; border: 1px solid gray; float: left; margin-top: 5%; overflow: hidden; }
-  .gallery .gallery-items .gallery-item:hover p { top: 0; }
-  .gallery .gallery-items .gallery-item p { position: absolute; top: 100%; left: 0; padding: 12px; width: 16.7em; height: 8.7em; color: #fff; background-color: rgba(255, 69, 0, 0.8); transition: .6s; text-shadow: 2px 1px 1px black; font-size: 12px; font-family: 'Montserrat', sans-serif; }
-  .gallery .gallery-items .gallery-item .project-picture { width: 14em; height: 8em; }
-  .gallery .gallery_items:hover .gallery-item { display: block; }
-  .modal-bg { display: none; }
-  .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
-  .modal-bg.active .modal { position: absolute; top: 30%; left: 2%; width: 15%; height: 15%; }
-  .modal-bg.active .modal .top { position: relative; bottom: 185%; }
-  .modal-bg.active .modal .top i.fa-times { left: 570%; }
-  .modal-bg.active .modal .middle img { width: 21.6em; height: 13em; }
-  .modal-bg.active .modal .middle:hover .icon { display: block; } }
+@media (orientation: portrait) and (min-width: 360px) { .gallery .title-line2 { margin: 1.3em 0 3.5em 9.7em; }
+  .gallery .gallery-items .gallery-item { margin: 1em 0 0 4.2em; }
+  .modal-bg.active .modal { left: 5%; top: 29%; }
+  .modal-bg.active .modal .top { bottom: 11em; }
+  .modal-bg.active .modal .middle img { height: 13.5em; width: 20.2em; } }
 
-@media (orientation: landscape) and (min-width: 640px) { .gallery { margin-top: 45.5em; }
-  .gallery h2 { margin-bottom: 1.4em; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 30px; }
-  .gallery h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-  .gallery .title-line2 { position: absolute; top: 71.2em; left: 45%; width: 10%; height: .4%; background-color: gray; }
-  .gallery .gallery-items { list-style-type: none; }
-  .gallery .gallery-items .gallery-item { position: relative; left: 1.4%; top: 0; width: 12em; height: 8em; border: 1px solid gray; float: left; margin-top: 5%; overflow: hidden; }
-  .gallery .gallery-items .gallery-item:hover p { top: 0; }
-  .gallery .gallery-items .gallery-item p { position: absolute; top: 100%; left: 0; padding: 5px; width: 15.2em; height: 9.8em; color: #fff; background-color: rgba(255, 69, 0, 0.8); transition: .6s; text-shadow: 2px 1px 1px black; font-size: 12px; font-family: 'Montserrat', sans-serif; }
-  .gallery .gallery-items .gallery-item .project-picture { width: 12em; height: 8em; }
-  .gallery .gallery_items:hover .gallery-item { display: block; }
-  .modal-bg { display: none; }
-  .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
-  .modal-bg.active .modal { position: absolute; top: 10%; left: 8%; width: 15%; height: 15%; }
-  .modal-bg.active .modal .top { position: relative; bottom: 50%; left: 8%; }
-  .modal-bg.active .modal .top i.fa-times { left: 570%; }
-  .modal-bg.active .modal .middle img { width: 33.6em; height: 18em; }
-  .modal-bg.active .modal .middle:hover .icon { display: block; } }
+@media (orientation: landscape) and (min-width: 640px) { .gallery .title-line2 { margin: 1.3em 0 2.4em 18.5em; }
+  .gallery .gallery-items .gallery-item { height: 8em; margin: .8em 0 0 1em; width: 12em; }
+  .gallery .gallery-items .gallery-item p { font-size: 12.8px; height: 9.9em; width: 14.9em; }
+  .gallery .gallery-items .gallery-item p .code-button .fa-code-branch, .gallery .gallery-items .gallery-item p .code-button .fa-search-plus, .gallery .gallery-items .gallery-item p .code-button .fa-eye, .gallery .gallery-items .gallery-item p .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item p .zoom-button .fa-search-plus, .gallery .gallery-items .gallery-item p .zoom-button .fa-eye, .gallery .gallery-items .gallery-item p .github-button .fa-code-branch, .gallery .gallery-items .gallery-item p .github-button .fa-search-plus, .gallery .gallery-items .gallery-item p .github-button .fa-eye { font-size: 17px; }
+  .gallery .gallery-items .gallery-item .project-picture { height: 8em; width: 12em; }
+  .modal-bg.active .modal .top { bottom: 1.9em; }
+  .modal-bg.active .modal .middle img { height: 17em; width: 28em; } }
 
-@media (orientation: portrait) and (min-width: 411px) { .gallery { margin-top: 70.5em; }
-  .gallery h2 { margin-bottom: 2.6em; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 30px; }
-  .gallery .title-line2 { position: absolute; top: 119.8em; left: 43%; width: 15%; height: .3%; background-color: gray; }
-  .gallery .gallery-items .gallery-item { position: relative; left: 22.5%; top: 0; width: 14em; height: 8em; border: 1px solid gray; float: left; margin-top: 5%; overflow: hidden; }
-  .gallery .gallery-items .gallery-item:hover p { top: 0; }
-  .gallery .gallery-items .gallery-item p { position: absolute; top: 100%; left: 0; padding: 12px; width: 16.7em; height: 8.7em; color: #fff; background-color: rgba(255, 69, 0, 0.8); transition: .6s; text-shadow: 2px 1px 1px black; font-size: 12px; font-family: 'Montserrat', sans-serif; }
-  .gallery .gallery-items .gallery-item .project-picture { width: 14em; height: 8em; }
-  .gallery .gallery_items:hover .gallery-item { display: block; }
-  .modal-bg { display: none; }
-  .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
-  .modal-bg.active .modal { position: absolute; top: 30%; left: 2%; width: 15%; height: 15%; }
-  .modal-bg.active .modal .top { position: relative; bottom: 185%; }
-  .modal-bg.active .modal .top i.fa-times { left: 570%; }
-  .modal-bg.active .modal .middle img { width: 24.7em; height: 15em; }
-  .modal-bg.active .modal .middle:hover .icon { display: block; } }
+@media (orientation: portrait) and (min-width: 411px) { .gallery .title-line2 { margin: 1.3em 0 3.5em 11.3em; }
+  .gallery .gallery-items .gallery-item { margin: 1em 0 0 5.5em; }
+  .modal-bg.active .modal { top: 15em; }
+  .modal-bg.active .modal .top { bottom: 14em; }
+  .modal-bg.active .modal .middle img { height: 14.5em; width: 23em; } }
 
-@media (orientation: landscape) and (min-width: 731px) { .gallery { margin-top: 51.5em; }
-  .gallery h2 { margin-bottom: 1.4em; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 30px; }
-  .gallery .title-line2 { position: absolute; top: 80.3em; left: 45%; width: 10%; height: .5%; background-color: gray; }
-  .gallery .gallery-items .gallery-item { position: relative; left: 7%; top: 0; width: 12em; height: 8em; border: 1px solid gray; float: left; margin-top: 5%; overflow: hidden; }
-  .gallery .gallery-items .gallery-item:hover p { top: 0; }
-  .gallery .gallery-items .gallery-item p { position: absolute; top: 100%; left: 0; padding: 5px; width: 15.2em; height: 9.8em; color: #fff; background-color: rgba(255, 69, 0, 0.8); transition: .6s; text-shadow: 2px 1px 1px black; font-size: 12px; font-family: 'Montserrat', sans-serif; }
-  .gallery .gallery-items .gallery-item .project-picture { width: 12em; height: 8em; }
-  .gallery .gallery_items:hover .gallery-item { display: block; }
-  .modal-bg { display: none; }
-  .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
-  .modal-bg.active .modal { position: absolute; top: 15%; left: 14%; width: 15%; height: 15%; }
-  .modal-bg.active .modal .top { position: relative; bottom: 80%; left: -30%; }
-  .modal-bg.active .modal .top i.fa-times { left: 570%; }
-  .modal-bg.active .modal .middle img { width: 33.6em; height: 18em; }
-  .modal-bg.active .modal .middle:hover .icon { display: block; } }
+@media (orientation: landscape) and (min-width: 731px) { .gallery .title-line2 { margin: 1.3em 0 2.4em 21.5em; }
+  .gallery .gallery-items .gallery-item { height: 10em; margin: .8em 0 0 .9em; width: 14em; }
+  .gallery .gallery-items .gallery-item p { font-size: 13.8px; height: 11.5em; padding: 16px; width: 16.1em; }
+  .gallery .gallery-items .gallery-item p .code-button .fa-code-branch, .gallery .gallery-items .gallery-item p .code-button .fa-search-plus, .gallery .gallery-items .gallery-item p .code-button .fa-eye, .gallery .gallery-items .gallery-item p .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item p .zoom-button .fa-search-plus, .gallery .gallery-items .gallery-item p .zoom-button .fa-eye, .gallery .gallery-items .gallery-item p .github-button .fa-code-branch, .gallery .gallery-items .gallery-item p .github-button .fa-search-plus, .gallery .gallery-items .gallery-item p .github-button .fa-eye { font-size: 21px; }
+  .gallery .gallery-items .gallery-item .project-picture { height: 10em; width: 14em; }
+  .modal-bg.active .modal { left: 7.7em; top: 3.5em; }
+  .modal-bg.active .modal .top { bottom: 2.5em; left: -2.8em; }
+  .modal-bg.active .modal .middle img { height: 19em; width: 30em; } }
 
-@media (orientation: portrait) and (min-width: 375px) and (min-height: 812px) { .gallery { margin-top: 77.5em; }
-  .gallery h2 { margin-bottom: 2.6em; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 30px; }
-  .gallery .title-line2 { position: absolute; top: 132.6em; left: 43%; width: 15%; height: .3%; }
-  .gallery .gallery-items .gallery-item { position: relative; width: 14em; height: 8em; border: 1px solid gray; float: left; top: 0; left: 19%; overflow: hidden; }
-  .gallery .gallery-items .gallery-item:hover p { top: 0; }
-  .gallery .gallery-items .gallery-item p { position: absolute; top: 100%; left: 0; padding: 12px; width: 16.7em; height: 8.7em; color: #fff; background-color: rgba(255, 69, 0, 0.8); transition: .6s; text-shadow: 2px 1px 1px black; font-size: 12px; font-family: 'Montserrat', sans-serif; }
-  .gallery .gallery-items .gallery-item .project-picture { width: 14em; height: 8em; }
-  .gallery .gallery_items:hover .gallery-item { display: block; }
-  .wrap.blur { position: absolute; filter: blur(2px); height: 100%; }
-  .modal-bg { display: none; }
-  .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
-  .modal-bg.active .modal { position: absolute; top: 30%; left: 4%; width: 15%; height: 15%; }
-  .modal-bg.active .modal .top { position: relative; bottom: 190%; }
-  .modal-bg.active .modal .top i.fa-times { left: 570%; }
-  .modal-bg.active .modal .middle img { width: 21.6em; height: 13em; }
-  .modal-bg.active .modal .middle:hover .icon { display: block; } }
+@media (orientation: portrait) and (min-width: 375px) and (min-height: 812px) { .gallery .title-line2 { margin: 1.3em 0 3.5em 10.3em; }
+  .gallery .gallery-items .gallery-item { margin: 1em 0 0 4.6em; }
+  .modal-bg.active .modal { top: 17em; left: .7em; }
+  .modal-bg.active .modal .top { bottom: 15.8em; }
+  .modal-bg.active .modal .middle img { height: 13.5em; width: 22em; } }
 
-@media (orientation: landscape) and (min-width: 812px) { .gallery { margin-top: 47.2em; }
-  .gallery h2 { margin-bottom: 1.2em; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 30px; }
-  .gallery .title-line2 { position: absolute; top: 74.3em; left: 45%; width: 10%; height: .9%; background-color: gray; }
-  .gallery .gallery-items .gallery-item { position: relative; left: 10.5%; top: 0; width: 12em; height: 8em; border: 1px solid gray; float: left; margin-top: 5%; overflow: hidden; }
-  .gallery .gallery-items .gallery-item:hover p { top: 0; }
-  .gallery .gallery-items .gallery-item p { position: absolute; top: 100%; left: 0; padding: 5px; width: 15.2em; height: 9.8em; color: #fff; background-color: rgba(255, 69, 0, 0.8); transition: .6s; text-shadow: 2px 1px 1px black; font-size: 12px; font-family: 'Montserrat', sans-serif; }
-  .gallery .gallery-items .gallery-item .project-picture { width: 12em; height: 8em; }
-  .gallery .gallery_items:hover .gallery-item { display: block; }
-  .modal-bg { display: none; }
-  .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
-  .modal-bg.active .modal { position: absolute; top: 15%; left: 14%; width: 15%; height: 15%; }
-  .modal-bg.active .modal .top { position: relative; bottom: 80%; left: -30%; }
-  .modal-bg.active .modal .top i.fa-times { left: 570%; }
-  .modal-bg.active .modal .middle img { width: 33.6em; height: 18em; }
-  .modal-bg.active .modal .middle:hover .icon { display: block; } }
+@media (orientation: landscape) and (min-width: 812px) { .gallery .title-line2 { margin: 1.3em 0 2.4em 24em; }
+  .gallery .gallery-items .gallery-item { height: 10em; margin: .8em 0 0 1em; width: 15.5em; }
+  .gallery .gallery-items .gallery-item p { font-size: 15.8px; height: 10.1em; }
+  .gallery .gallery-items .gallery-item .project-picture { height: 10em; width: 15.5em; }
+  .modal-bg.active .modal { left: 10.7em; top: 2em; }
+  .modal-bg.active .modal .top { bottom: 1.3em; left: -4.8em; } }
 
-@media (orientation: portrait) and (min-width: 768px) { .gallery { margin-top: 97.8em; }
-  .gallery h2 { margin-bottom: 2.4em; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 40px; }
-  .gallery .title-line2 { position: absolute; top: 167.5em; left: 45%; width: 10%; height: .3%; background-color: gray; }
-  .gallery .gallery-items { list-style-type: none; }
-  .gallery .gallery-items .gallery-item { position: relative; width: 14em; height: 8em; border: 1px solid gray; float: left; top: 0; left: 2%; margin-left: 2%; }
-  .gallery .gallery-items .gallery-item:hover p { top: 0; }
-  .gallery .gallery-items .gallery-item p { position: absolute; top: 100%; left: 0; padding: 12px; width: 16.7em; height: 8.7em; color: #fff; background-color: rgba(255, 69, 0, 0.8); transition: .6s; text-shadow: 2px 1px 1px black; font-size: 12px; font-family: 'Montserrat', sans-serif; }
-  .gallery .gallery-items .gallery-item .project-picture { width: 14em; height: 8em; }
-  .gallery .gallery_items:hover .gallery-item { display: block; }
-  .wrap.blur { position: absolute; filter: blur(2px); height: 100%; }
-  .modal-bg { display: none; }
-  .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
-  .modal-bg.active .modal { position: absolute; top: 30%; left: 2.5%; width: 15%; height: 15%; }
-  .modal-bg.active .modal .top { position: relative; bottom: 185%; left: 35%; }
-  .modal-bg.active .modal .top i.fa-times { left: 570%; font-size: 50px; }
-  .modal-bg.active .modal .middle img { width: 45.7em; height: 25em; }
-  .modal-bg.active .modal .middle:hover .icon { display: block; } }
+@media (orientation: portrait) and (min-width: 768px) { .gallery h2 { font-size: 40px; }
+  .gallery .title-line2 { margin: 1.3em 0 2.5em 22.5em; }
+  .gallery .gallery-items .gallery-item { margin: 1em 0 0 1.5em; float: left; }
+  .gallery .gallery-items .gallery-item p .code-button .fa-code-branch, .gallery .gallery-items .gallery-item p .code-button .fa-search-plus, .gallery .gallery-items .gallery-item p .code-button .fa-eye, .gallery .gallery-items .gallery-item p .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item p .zoom-button .fa-search-plus, .gallery .gallery-items .gallery-item p .zoom-button .fa-eye, .gallery .gallery-items .gallery-item p .github-button .fa-code-branch, .gallery .gallery-items .gallery-item p .github-button .fa-search-plus, .gallery .gallery-items .gallery-item p .github-button .fa-eye { font-size: 21px; }
+  .modal-bg.active .modal { top: 18em; left: 1.5em; }
+  .modal-bg.active .modal .top { bottom: 16.6em; left: 3em; }
+  .modal-bg.active .modal .top i.fa-times { font-size: 50px; }
+  .modal-bg.active .modal .middle img { height: 25.5em; width: 45em; } }
 
-@media (orientation: landscape) and (min-width: 1024px) { .gallery { margin-top: 54.2em; }
-  .gallery h2 { margin-bottom: 1.6em; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 40px; }
-  .gallery .title-line2 { position: absolute; top: 106.4em; left: 46.5%; width: 8%; height: .2%; background-color: gray; }
-  .gallery .gallery-items .gallery-item { position: relative; left: 10.5%; top: 0; width: 16em; height: 11em; border: 1px solid gray; float: left; top: 0; left: 8.8%; overflow: hidden; }
-  .gallery .gallery-items .gallery-item:hover p { top: 0; }
-  .gallery .gallery-items .gallery-item p { position: absolute; top: 100%; left: 0; padding: 5px; width: 15.2em; height: 10.2em; color: #fff; background-color: rgba(255, 69, 0, 0.8); transition: .6s; text-shadow: 2px 1px 1px black; font-size: 16.2px; font-family: 'Montserrat', sans-serif; }
-  .gallery .gallery-items .gallery-item .project-picture { width: 16em; height: 11em; }
-  .gallery .gallery_items:hover .gallery-item { display: block; }
-  .modal-bg { display: none; }
-  .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
-  .modal-bg.active .modal { position: absolute; top: 16.2%; left: 6.4%; width: 15%; height: 15%; }
-  .modal-bg.active .modal .top { position: relative; bottom: 90%; left: 25%; }
+@media (orientation: landscape) and (min-width: 1024px) { .gallery .title-line2 { margin: 1.3em 0 2.4em 30.5em; }
+  .gallery .gallery-items .gallery-item { height: 13em; margin: .8em 0 0 1.2em; width: 19.5em; left: .3em; }
+  .gallery .gallery-items .gallery-item p { font-size: 19.3px; height: 10.7em; }
+  .gallery .gallery-items .gallery-item p .code-button .fa-code-branch, .gallery .gallery-items .gallery-item p .code-button .fa-search-plus, .gallery .gallery-items .gallery-item p .code-button .fa-eye, .gallery .gallery-items .gallery-item p .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item p .zoom-button .fa-search-plus, .gallery .gallery-items .gallery-item p .zoom-button .fa-eye, .gallery .gallery-items .gallery-item p .github-button .fa-code-branch, .gallery .gallery-items .gallery-item p .github-button .fa-search-plus, .gallery .gallery-items .gallery-item p .github-button .fa-eye { font-size: 26px; }
+  .gallery .gallery-items .gallery-item .project-picture { height: 13em; width: 19.5em; }
+  .modal-bg.active .modal { left: 2em; top: 6em; }
+  .modal-bg.active .modal .top { bottom: 4.3em; left: 4.8em; }
   .modal-bg.active .modal .top i.fa-times { font-size: 45px; }
-  .modal-bg.active .modal .middle img { width: 56em; height: 32em; }
-  .modal-bg.active .modal .middle:hover .icon { display: block; } }
+  .modal-bg.active .modal .middle img { height: 35em; width: 60em; } }
 
-@media (orientation: landscape) and (min-width: 1366px) { .gallery { margin-top: 54.2em; }
-  .gallery h2 { margin-bottom: 1.6em; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 40px; }
-  .gallery .title-line2 { position: absolute; top: 106.4em; left: 46.5%; width: 8%; height: .2%; background-color: gray; }
-  .gallery .gallery-items .gallery-item { position: relative; width: 16em; height: 11em; border: 1px solid gray; float: left; top: 0; left: 17%; overflow: hidden; }
-  .gallery .gallery-items .gallery-item:hover p { top: 0; }
-  .gallery .gallery-items .gallery-item p { position: absolute; top: 100%; left: 0; padding: 5px; width: 15.2em; height: 10.2em; color: #fff; background-color: rgba(255, 69, 0, 0.8); transition: .6s; text-shadow: 2px 1px 1px black; font-size: 16.2px; font-family: 'Montserrat', sans-serif; }
-  .gallery .gallery-items .gallery-item .project-picture { width: 16em; height: 11em; }
-  .gallery .gallery_items:hover .gallery-item { display: block; }
-  .modal-bg { display: none; }
-  .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
-  .modal-bg.active .modal { position: absolute; top: 16.5%; left: 17.4%; width: 15%; height: 15%; }
-  .modal-bg.active .modal .top { position: relative; bottom: 92%; left: -42%; }
-  .modal-bg.active .modal .top i.fa-times { font-size: 45px; }
-  .modal-bg.active .modal .middle img { width: 56em; height: 32em; }
-  .modal-bg.active .modal .middle:hover .icon { display: block; } }
+@media (orientation: portrait) and (min-width: 1024px) and (min-height: 1366px) { .gallery .title-line2 { margin: 1.3em 0 3em 30.5em; }
+  .gallery .gallery-items .gallery-item { margin: 1em 0 0 1.5em; height: 12em; width: 19em; }
+  .gallery .gallery-items .gallery-item p { font-size: 16.3px; height: 11.6em; padding: 16px; }
+  .gallery .gallery-items .gallery-item p .code-button .fa-code-branch, .gallery .gallery-items .gallery-item p .code-button .fa-search-plus, .gallery .gallery-items .gallery-item p .code-button .fa-eye, .gallery .gallery-items .gallery-item p .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item p .zoom-button .fa-search-plus, .gallery .gallery-items .gallery-item p .zoom-button .fa-eye, .gallery .gallery-items .gallery-item p .github-button .fa-code-branch, .gallery .gallery-items .gallery-item p .github-button .fa-search-plus, .gallery .gallery-items .gallery-item p .github-button .fa-eye { font-size: 26px; }
+  .gallery .gallery-items .gallery-item .project-picture { height: 12em; width: 19em; }
+  .modal-bg.active .modal { top: 24em; left: 2em; }
+  .modal-bg.active .modal .top { bottom: 21.8em; left: 4em; }
+  .modal-bg.active .modal .top i.fa-times { font-size: 65px; }
+  .modal-bg.active .modal .middle img { height: 34.5em; width: 60em; } }
 
-@media (orientation: landscape) and (min-width: 1920px) { .gallery { margin-top: 66em; }
-  .gallery h2 { margin-bottom: 1.2em; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 40px; }
-  .gallery .title-line2 { position: absolute; top: 129.2em; left: 47%; width: 6%; height: .3%; background-color: gray; }
-  .gallery .gallery-items .gallery-item { position: relative; left: 10.5%; top: 0; width: 25em; height: 17em; border: 1px solid gray; float: left; top: 0; left: 15%; overflow: hidden; }
-  .gallery .gallery-items .gallery-item:hover p { top: 0; }
-  .gallery .gallery-items .gallery-item p { position: absolute; top: 100%; left: -.6%; padding: 15px; width: 16.2em; height: 10.5em; color: #fff; background-color: rgba(255, 69, 0, 0.8); transition: .6s; text-shadow: 2px 1px 1px black; font-size: 23px; font-family: 'Montserrat', sans-serif; }
-  .gallery .gallery-items .gallery-item p .code-button { position: absolute; top: 80.1%; left: .5%; border-style: none; background-color: rgba(255, 69, 0, 0.7); border: 2px solid rgba(182, 25, 33, 0.6); width: 33.5%; height: 20%; cursor: pointer; }
-  .gallery .gallery-items .gallery-item p .code-button .fa-code-branch { color: rgba(245, 179, 118, 0.9); font-size: 28px; margin-top: 1px; }
-  .gallery .gallery-items .gallery-item p .zoom-button { position: absolute; top: 80.1%; left: 33.4%; border-style: none; background-color: rgba(255, 69, 0, 0.7); border: 2px solid rgba(182, 25, 33, 0.6); width: 33.5%; height: 20%; cursor: pointer; }
-  .gallery .gallery-items .gallery-item p .zoom-button .fa-search-plus { color: rgba(245, 179, 118, 0.9); font-size: 28px; margin-top: 1px; }
-  .gallery .gallery-items .gallery-item p .github-button { position: absolute; top: 80.1%; left: 66.2%; border-style: none; background-color: rgba(255, 69, 0, 0.7); border: 2px solid rgba(182, 25, 33, 0.6); width: 33.5%; height: 20%; cursor: pointer; }
-  .gallery .gallery-items .gallery-item p .github-button .fa-eye { color: rgba(245, 179, 118, 0.9); font-size: 28px; margin-top: 1px; }
-  .gallery .gallery-items .gallery-item .project-picture { width: 25em; height: 17em; }
-  .gallery .gallery_items:hover .gallery-item { display: block; }
-  .modal-bg { display: none; }
-  .modal-bg.active { position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
-  .modal-bg.active .modal { position: absolute; top: 7.2%; left: 13.4%; width: 15%; height: 15%; }
-  .modal-bg.active .modal .top { position: relative; top: -25%; left: -15%; }
-  .modal-bg.active .modal .top i.fa-times { font-size: 45px; }
-  .modal-bg.active .modal .middle img { width: 85em; height: 50em; }
-  .modal-bg.active .modal .middle:hover .icon { display: block; } }
+@media (orientation: landscape) and (min-width: 1366px) { .gallery h2 { font-size: 40px; }
+  .gallery .title-line2 { margin: 1.3em 0 2.4em 41.1em; }
+  .gallery .gallery-items .gallery-item { height: 17em; margin: .8em 0 0 1.5em; width: 25.5em; left: 1.5em; }
+  .gallery .gallery-items .gallery-item p { cursor: default; font-size: 25.2px; height: 10.7em; }
+  .gallery .gallery-items .gallery-item p .code-button, .gallery .gallery-items .gallery-item p .zoom-button, .gallery .gallery-items .gallery-item p .github-button { transition: .3s; cursor: pointer; }
+  .gallery .gallery-items .gallery-item p .code-button:hover, .gallery .gallery-items .gallery-item p .zoom-button:hover, .gallery .gallery-items .gallery-item p .github-button:hover { background-color: rgba(255, 255, 255, 0.3); }
+  .gallery .gallery-items .gallery-item p .code-button:hover .fa-code-branch, .gallery .gallery-items .gallery-item p .code-button:hover .fa-search-plus, .gallery .gallery-items .gallery-item p .code-button:hover .fa-eye, .gallery .gallery-items .gallery-item p .zoom-button:hover .fa-code-branch, .gallery .gallery-items .gallery-item p .zoom-button:hover .fa-search-plus, .gallery .gallery-items .gallery-item p .zoom-button:hover .fa-eye, .gallery .gallery-items .gallery-item p .github-button:hover .fa-code-branch, .gallery .gallery-items .gallery-item p .github-button:hover .fa-search-plus, .gallery .gallery-items .gallery-item p .github-button:hover .fa-eye { color: #333; }
+  .gallery .gallery-items .gallery-item p .code-button .fa-code-branch, .gallery .gallery-items .gallery-item p .code-button .fa-search-plus, .gallery .gallery-items .gallery-item p .code-button .fa-eye, .gallery .gallery-items .gallery-item p .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item p .zoom-button .fa-search-plus, .gallery .gallery-items .gallery-item p .zoom-button .fa-eye, .gallery .gallery-items .gallery-item p .github-button .fa-code-branch, .gallery .gallery-items .gallery-item p .github-button .fa-search-plus, .gallery .gallery-items .gallery-item p .github-button .fa-eye { font-size: 34px; }
+  .gallery .gallery-items .gallery-item .project-picture { height: 17em; width: 25.5em; }
+  .modal-bg.active .modal { left: 2.7em; top: 9.5em; }
+  .modal-bg.active .modal .top { bottom: 7.8em; left: 7.5em; }
+  .modal-bg.active .modal .top i.fa-times { font-size: 55px; }
+  .modal-bg.active .modal .middle img { height: 45em; width: 80em; } }
+
+@media (orientation: landscape) and (min-width: 1920px) { .gallery .title-line2 { margin: 1.3em 0 2.5em 73em; }
+  .gallery .gallery-items .gallery-item { height: 20em; margin: .8em 0 0 3.5em; width: 33.5em; left: 17em; }
+  .gallery .gallery-items .gallery-item p { cursor: default; font-size: 33.2px; height: 9.6em; }
+  .gallery .gallery-items .gallery-item p .code-button, .gallery .gallery-items .gallery-item p .zoom-button, .gallery .gallery-items .gallery-item p .github-button { cursor: pointer; transition: .3s; }
+  .gallery .gallery-items .gallery-item p .code-button:hover, .gallery .gallery-items .gallery-item p .zoom-button:hover, .gallery .gallery-items .gallery-item p .github-button:hover { background-color: rgba(255, 255, 255, 0.3); }
+  .gallery .gallery-items .gallery-item p .code-button:hover .fa-code-branch, .gallery .gallery-items .gallery-item p .code-button:hover .fa-search-plus, .gallery .gallery-items .gallery-item p .code-button:hover .fa-eye, .gallery .gallery-items .gallery-item p .zoom-button:hover .fa-code-branch, .gallery .gallery-items .gallery-item p .zoom-button:hover .fa-search-plus, .gallery .gallery-items .gallery-item p .zoom-button:hover .fa-eye, .gallery .gallery-items .gallery-item p .github-button:hover .fa-code-branch, .gallery .gallery-items .gallery-item p .github-button:hover .fa-search-plus, .gallery .gallery-items .gallery-item p .github-button:hover .fa-eye { color: #333; }
+  .gallery .gallery-items .gallery-item p .code-button .fa-code-branch, .gallery .gallery-items .gallery-item p .code-button .fa-search-plus, .gallery .gallery-items .gallery-item p .code-button .fa-eye, .gallery .gallery-items .gallery-item p .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item p .zoom-button .fa-search-plus, .gallery .gallery-items .gallery-item p .zoom-button .fa-eye, .gallery .gallery-items .gallery-item p .github-button .fa-code-branch, .gallery .gallery-items .gallery-item p .github-button .fa-search-plus, .gallery .gallery-items .gallery-item p .github-button .fa-eye { font-size: 40px; }
+  .gallery .gallery-items .gallery-item .project-picture { height: 20em; width: 33.5em; }
+  .modal-bg.active .modal { left: 14.2em; top: 4em; }
+  .modal-bg.active .modal .top { bottom: 1.5em; left: 4.5em; }
+  .modal-bg.active .modal .top i.fa-times { font-size: 65px; }
+  .modal-bg.active .modal .middle img { height: 65em; width: 120em; } }
 
 .contact { position: relative; }
 
