@@ -32,12 +32,12 @@
 			position: relative;
 			width: 14em;	
 
-			&:hover p {
+			&:hover .gallery-layout {
 				left: 0;
 				top: 0;
 			}
 
-			p {
+			.gallery-layout {
 				background-color: rgba(orangered, .8);
 				color: #fff;
 				font-size: 12px;
@@ -48,8 +48,11 @@
 				padding: 12px;
 				top: 100%;
 				transition: .6s;
-				text-shadow: 2px 1px 1px black;
-				width: 18.5em;	
+				width: 18.5em;
+				
+				p {
+					text-shadow: 2px 1px 1px black;
+				}
 
 				.code-button, .zoom-button, .github-button {
 					border-style: none;
@@ -63,7 +66,8 @@
 					.fa-code-branch, .fa-search-plus, .fa-eye {
 						color: rgba(rgb(245, 179, 118), .9);
 						font-size: 18px;
-						margin-top: 1px;
+						margin-top: 2px;//
+						margin-left: 1.4em;//
 					}
 				}
 
@@ -169,7 +173,7 @@
 				margin: .8em 0 0 .8em; 
 				width: 10em; 
 	
-				p {
+				.gallery-layout {
 					font-size: 10.8px; 
 					height: 10.2em; 
 					padding: 6px; 
@@ -238,6 +242,17 @@
 	
 			.gallery-item {
 				margin: 1em 0 0 4.2em;
+
+				.gallery-layout {
+
+					.code-button, .zoom-button, .github-button {
+
+						.fa-code-branch, .fa-search-plus, .fa-eye {
+							margin-top: .2em;//
+							margin-left: 1.4em;//
+						}
+					}
+				}
 			}
 		}
 	}
@@ -278,7 +293,7 @@
 				margin: .8em 0 0 1em;  
 				width: 12em;  
 	
-				p {
+				.gallery-layout {
 					font-size: 12.8px; 
 					height: 9.9em; 
 					width: 14.9em; 
@@ -368,7 +383,7 @@
 				margin: .8em 0 0 .9em;  
 				width: 14em;  
 	
-				p {
+				.gallery-layout {
 					font-size: 13.8px; 
 					height: 11.5em;
 					padding: 16px; 
@@ -378,6 +393,11 @@
 	
 						.fa-code-branch, .fa-search-plus, .fa-eye {
 							font-size: 21px;
+							margin-top: .2em;
+						}
+
+						.fa-eye {
+							margin-left: 1.2em;
 						}
 					}
 				}
@@ -463,9 +483,17 @@
 				margin: .8em 0 0 1em;  
 				width: 15.5em;  
 	
-				p {
+				.gallery-layout {
 					font-size: 15.8px; 
-					height: 10.1em;
+					height: 10.1em; 
+	
+					.code-button, .zoom-button, .github-button {
+		
+						.fa-code-branch, .fa-search-plus, .fa-eye {
+								font-size: 21px;
+								margin-top: 4px;
+						}
+					}
 				}
 	
 				.project-picture {
@@ -508,11 +536,16 @@
 				margin: 1em 0 0 1.5em;
 				float: left;
 
-				p {
+				.gallery-layout {
 					.code-button, .zoom-button, .github-button {
 	
 						.fa-code-branch, .fa-search-plus, .fa-eye {
 							font-size: 21px;
+							margin-top: .1em;
+						}
+
+						.fa-eye {
+							margin-left: 1.1em;
 						}
 					}
 				}
@@ -562,7 +595,7 @@
 				width: 19.5em;
 				left: .3em;  
 	
-				p {
+				.gallery-layout {
 					font-size: 19.3px; 
 					height: 10.7em;
 
@@ -570,9 +603,21 @@
 	
 						.fa-code-branch, .fa-search-plus, .fa-eye {
 							font-size: 26px;
+							margin-top: 6px;
+							margin-left: 1.5em;
+						}
+
+						.fa-code-branch {
+							margin-left: 1.6em;
+						}
+
+						.fa-eye {
+							margin-left: 1.4em;
 						}
 					}
 				}
+
+				
 	
 				.project-picture {
 					height: 13em;  
@@ -623,7 +668,7 @@
 				height: 12em;
 				width: 19em;
 
-				 p {
+				.gallery-layout {
 					font-size: 16.3px;
 					height: 11.6em;
 					padding: 16px;
@@ -632,6 +677,12 @@
 	
 						.fa-code-branch, .fa-search-plus, .fa-eye {
 							font-size: 26px;
+							margin-top: 4px;
+							margin-left: 1.5em;
+						}
+
+						.fa-eye {
+							margin-left: 1.3em;
 						}
 					}
 				 }
@@ -689,7 +740,7 @@
 				width: 25.5em;
 				left: 1.5em;  
 	
-				p {
+				.gallery-layout {
 					cursor: default;
 					font-size: 25.2px; 
 					height: 10.7em;
@@ -747,6 +798,84 @@
 	}
 }
 
+@media(orientation: landscape) AND (min-width: 1366px) AND (min-height: 768px) {
+	.gallery {
+
+		h2 {
+			font-size: 40px;
+		}
+	
+		.title-line2 {
+			margin: 1.3em 0 2.4em 41.1em; 
+		}
+	
+		.gallery-items {
+	
+			.gallery-item {
+				height: 17em; 
+				margin: .8em 0 0 1.5em;  
+				width: 25.5em;
+				left: 1.5em;  
+	
+				.gallery-layout {
+					cursor: default;
+					font-size: 25.2px; 
+					height: 10.8em;
+
+					.code-button, .zoom-button, .github-button {
+						transition: .3s;
+						cursor: pointer;
+						
+							&:hover {
+								
+								background-color: rgba(255, 255, 255, .3);
+								
+								.fa-code-branch, .fa-search-plus, .fa-eye {
+									color: #333;
+								}
+							}
+	
+						.fa-code-branch, .fa-search-plus, .fa-eye {
+							font-size: 34px;
+							margin-top: 8px;
+						}
+					}
+				}
+	
+				.project-picture {
+					height: 17em;  
+					width: 25.5em; 
+				}
+			}
+		}
+	}
+	
+	.modal-bg.active {
+	
+		.modal {
+			left: 2.7em;
+			top: 9.5em; 
+		
+			.top {
+				bottom: 7.8em;
+				left: 7.5em;
+				
+				i.fa-times {
+					font-size: 55px;
+				}
+			}
+
+			.middle {
+				
+				img {
+					height: 45em;
+					width: 80em;
+				}
+			}
+		}
+	}
+}
+
 // desktop: landscape
 @media(orientation: landscape) AND (min-width: 1920px) {
 	.gallery {
@@ -763,7 +892,7 @@
 				width: 33.5em;
 				left: 17em;  
 	
-				p {
+				.gallery-layout {
 					cursor: default;
 					font-size: 33.2px;
 					height: 9.6em;
@@ -782,6 +911,7 @@
 	
 						.fa-code-branch, .fa-search-plus, .fa-eye {
 							font-size: 40px;
+							margin-left: 1.7em;
 						}
 					}
 				}
