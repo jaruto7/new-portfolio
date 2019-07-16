@@ -159,92 +159,6 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
 
 .about-me .pointer-3 { top: 40.5em; }
 
-@media (orientation: landscape) and (min-width: 533px) { .about-me .title-line { margin: 1em 0 3.6em 15.2em; }
-  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 2.2em; }
-  .about-me .tech-right-1 { margin-left: 18.8em; } }
-
-@media (orientation: portrait) and (min-width: 360px) { .about-me .title-line { margin: 1em 0 3.6em 9.8em; }
-  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 1.4em; }
-  .about-me .tech-right-1 { margin-left: 12.8em; } }
-
-@media (orientation: landscape) and (min-width: 640px) { .about-me .title-line { margin: 1em 0 3.6em 18.5em; }
-  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 2.5em; }
-  .about-me .tech-right-1 { margin-left: 22.6em; } }
-
-@media (orientation: portrait) and (min-width: 411px) { .about-me .title-line { margin: 1em 0 3.6em 11.5em; }
-  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 1.6em; }
-  .about-me .tech-right-1 { margin-left: 14.5em; } }
-
-@media (orientation: landscape) and (min-width: 731px) { .about-me .title-line { margin: 1em 0 3.6em 21.5em; }
-  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 3em; }
-  .about-me .tech-right-1 { margin-left: 25.7em; } }
-
-@media (orientation: portrait) and (min-width: 375px) and (min-height: 812px) { .about-me .title-line { margin: 1em 0 3.6em 10.4em; }
-  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 1.5em; }
-  .about-me .tech-right-1 { margin-left: 13.2em; } }
-
-@media (orientation: landscape) and (min-width: 812px) { .about-me h6 { font-size: 20px; }
-  .about-me .description { font-size: 12px; }
-  .about-me .title-line { margin: 1em 0 3.6em 24em; }
-  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 3.2em; }
-  .about-me .tech-right-1 { margin-left: 28.6em; } }
-
-@media (orientation: portrait) and (min-width: 768px) { .about-me h2 { font-size: 40px; padding: 1.2em 0 0 0; }
-  .about-me .title-line { margin: 1em 0 3.6em 22.5em; }
-  .about-me h6 { font-size: 22px; }
-  .about-me .description { font-size: 15px; }
-  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 3.2em; }
-  .about-me .tech-right-1 { margin-left: 27.1em; }
-  .about-me .point-line { top: 10.7em; width: 4px; }
-  .about-me .pointer-1, .about-me .pointer-2, .about-me .pointer-3 { height: 30px; width: 30px; }
-  .about-me .pointer-1 { top: 16em; }
-  .about-me .pointer-2 { top: 28.5em; }
-  .about-me .pointer-3 { top: 41em; } }
-
-@media (orientation: landscape) and (min-width: 1024px) { .about-me .title-line { margin: 1em 0 3.6em 30.6em; }
-  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 3.9em; }
-  .about-me .tech-right-1 { margin-left: 36em; } }
-
-@media (orientation: portrait) and (min-width: 1024px) and (min-height: 1366px) { .about-me h2 { padding: 1.4em 0 0 0; }
-  .about-me .title-line { margin: 1em 0 3.6em 30.5em; }
-  .about-me h6 { font-size: 26px; }
-  .about-me .description { font-size: 17px; }
-  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 4em; }
-  .about-me .tech-right-1 { margin-left: 35.9em; }
-  .about-me .point-line { top: 11.2em; height: 37.3em; }
-  .about-me .pointer-1 { top: 16.5em; }
-  .about-me .pointer-2 { top: 29.5em; }
-  .about-me .pointer-3 { top: 41.5em; } }
-
-@media (orientation: landscape) and (min-width: 1366px) { .about-me h2 { font-size: 40px; }
-  .about-me .title-line { margin: 1em 0 3.6em 41.3em; }
-  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 5.4em; }
-  .about-me .tech-right-1 { margin-left: 48em; }
-  .about-me .point-line { top: 10.2em; height: 39.2em; }
-  .about-me .pointer-1, .about-me .pointer-2, .about-me .pointer-3 { height: 30px; width: 30px; }
-  .about-me .pointer-1 { top: 17.5em; }
-  .about-me .pointer-2 { top: 30.5em; }
-  .about-me .pointer-3 { top: 42.5em; } }
-
-@media (orientation: landscape) and (min-width: 1366px) and (min-height: 768px) { .about-me h2 { padding: 1.4em 0 0 0; }
-  .about-me .point-line { top: 11.2em; height: 37.5em; width: 4px; }
-  .about-me .pointer-1 { top: 16.5em; }
-  .about-me .pointer-2 { top: 29em; }
-  .about-me .pointer-3 { top: 41.5em; } }
-
-@media (orientation: landscape) and (min-width: 1920px) { .about-me h2 { font-size: 40px; }
-  .about-me .title-line { margin: 1em 0 5em 73em; border-bottom: 3px solid gray; }
-  .about-me h6 { font-size: 30px; }
-  .about-me .description { font-size: 19px; padding: 16px; }
-  .about-me .point-line { top: 12.8em; height: 76.2em; width: 5px; }
-  .about-me .tech-left-1, .about-me .tech-left-2, .about-me .tech-right-1 { height: 25.5em; padding: 16px; width: 37%; }
-  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 9.2em; }
-  .about-me .tech-right-1 { margin-left: 83.5em; }
-  .about-me .pointer-1, .about-me .pointer-2, .about-me .pointer-3 { height: 35px; width: 35px; }
-  .about-me .pointer-1 { top: 25.5em; }
-  .about-me .pointer-2 { top: 50.5em; }
-  .about-me .pointer-3 { top: 75.5em; } }
-
 .gallery { margin-top: 3em; }
 
 .gallery h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; text-align: center; }
@@ -297,153 +211,164 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
 
 .modal-bg.active .modal .middle:hover .icon { display: block; }
 
-@media (orientation: landscape) and (min-width: 533px) { .gallery .title-line2 { margin: 1.3em 0 2.4em 15.3em; }
-  .gallery .gallery-items .gallery-item { float: left; height: 7em; margin: .8em 0 0 .8em; width: 10em; }
-  .gallery .gallery-items .gallery-item .gallery-layout { font-size: 10.8px; height: 10.2em; padding: 6px; width: 14.7em; }
-  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-eye { font-size: 14px; }
-  .gallery .gallery-items .gallery-item .gallery-layout .code-button { width: 34%; }
-  .gallery .gallery-items .gallery-item .gallery-layout .zoom-button { left: 33.4%; }
-  .gallery .gallery-items .gallery-item .gallery-layout .github-button { left: 66.4%; }
-  .gallery .gallery-items .gallery-item .project-picture { height: 7em; width: 10em; }
-  .modal-bg.active .modal { height: 1em; left: 14%; top: 12%; }
-  .modal-bg.active .modal .top { bottom: 1.6em; left: -1.5em; }
-  .modal-bg.active .modal .middle img { height: 15em; width: 24em; } }
+.contact { margin-bottom: 5em; margin-top: 3em; position: relative; }
 
-@media (orientation: portrait) and (min-width: 360px) { .gallery .title-line2 { margin: 1.3em 0 3.5em 9.7em; }
-  .gallery .gallery-items .gallery-item { margin: 1em 0 0 4.2em; }
-  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-eye { margin-top: .2em; margin-left: 1.4em; }
-  .modal-bg.active .modal { left: 5%; top: 29%; }
-  .modal-bg.active .modal .top { bottom: 11em; }
-  .modal-bg.active .modal .middle img { height: 13.5em; width: 20.2em; } }
-
-@media (orientation: landscape) and (min-width: 640px) { .gallery .title-line2 { margin: 1.3em 0 2.4em 18.5em; }
-  .gallery .gallery-items .gallery-item { height: 8em; margin: .8em 0 0 1em; width: 12em; }
-  .gallery .gallery-items .gallery-item .gallery-layout { font-size: 12.8px; height: 9.9em; width: 14.9em; }
-  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-eye { font-size: 17px; }
-  .gallery .gallery-items .gallery-item .project-picture { height: 8em; width: 12em; }
-  .modal-bg.active .modal .top { bottom: 1.9em; }
-  .modal-bg.active .modal .middle img { height: 17em; width: 28em; } }
-
-@media (orientation: portrait) and (min-width: 411px) { .gallery .title-line2 { margin: 1.3em 0 3.5em 11.3em; }
-  .gallery .gallery-items .gallery-item { margin: 1em 0 0 5.5em; }
-  .modal-bg.active .modal { top: 15em; }
-  .modal-bg.active .modal .top { bottom: 14em; }
-  .modal-bg.active .modal .middle img { height: 14.5em; width: 23em; } }
-
-@media (orientation: landscape) and (min-width: 731px) { .gallery .title-line2 { margin: 1.3em 0 2.4em 21.5em; }
-  .gallery .gallery-items .gallery-item { height: 10em; margin: .8em 0 0 .9em; width: 14em; }
-  .gallery .gallery-items .gallery-item .gallery-layout { font-size: 13.8px; height: 11.5em; padding: 16px; width: 16.1em; }
-  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-eye { font-size: 21px; margin-top: .2em; }
-  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-eye { margin-left: 1.2em; }
-  .gallery .gallery-items .gallery-item .project-picture { height: 10em; width: 14em; }
-  .modal-bg.active .modal { left: 7.7em; top: 3.5em; }
-  .modal-bg.active .modal .top { bottom: 2.5em; left: -2.8em; }
-  .modal-bg.active .modal .middle img { height: 19em; width: 30em; } }
-
-@media (orientation: portrait) and (min-width: 375px) and (min-height: 812px) { .gallery .title-line2 { margin: 1.3em 0 3.5em 10.3em; }
-  .gallery .gallery-items .gallery-item { margin: 1em 0 0 4.6em; }
-  .modal-bg.active .modal { top: 17em; left: .7em; }
-  .modal-bg.active .modal .top { bottom: 15.8em; }
-  .modal-bg.active .modal .middle img { height: 13.5em; width: 22em; } }
-
-@media (orientation: landscape) and (min-width: 812px) { .gallery .title-line2 { margin: 1.3em 0 2.4em 24em; }
-  .gallery .gallery-items .gallery-item { height: 10em; margin: .8em 0 0 1em; width: 15.5em; }
-  .gallery .gallery-items .gallery-item .gallery-layout { font-size: 15.8px; height: 10.1em; }
-  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-eye { font-size: 21px; margin-top: 4px; }
-  .gallery .gallery-items .gallery-item .project-picture { height: 10em; width: 15.5em; }
-  .modal-bg.active .modal { left: 10.7em; top: 2em; }
-  .modal-bg.active .modal .top { bottom: 1.3em; left: -4.8em; } }
-
-@media (orientation: portrait) and (min-width: 768px) { .gallery h2 { font-size: 40px; }
-  .gallery .title-line2 { margin: 1.3em 0 2.5em 22.5em; }
-  .gallery .gallery-items .gallery-item { margin: 1em 0 0 1.5em; float: left; }
-  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-eye { font-size: 21px; margin-top: .1em; }
-  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-eye { margin-left: 1.1em; }
-  .modal-bg.active .modal { top: 18em; left: 1.5em; }
-  .modal-bg.active .modal .top { bottom: 16.6em; left: 3em; }
-  .modal-bg.active .modal .top i.fa-times { font-size: 50px; }
-  .modal-bg.active .modal .middle img { height: 25.5em; width: 45em; } }
-
-@media (orientation: landscape) and (min-width: 1024px) { .gallery .title-line2 { margin: 1.3em 0 2.4em 30.5em; }
-  .gallery .gallery-items .gallery-item { height: 13em; margin: .8em 0 0 1.2em; width: 19.5em; left: .3em; }
-  .gallery .gallery-items .gallery-item .gallery-layout { font-size: 19.3px; height: 10.7em; }
-  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-eye { font-size: 26px; margin-top: 6px; margin-left: 1.5em; }
-  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-code-branch { margin-left: 1.6em; }
-  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-eye { margin-left: 1.4em; }
-  .gallery .gallery-items .gallery-item .project-picture { height: 13em; width: 19.5em; }
-  .modal-bg.active .modal { left: 2em; top: 6em; }
-  .modal-bg.active .modal .top { bottom: 4.3em; left: 4.8em; }
-  .modal-bg.active .modal .top i.fa-times { font-size: 45px; }
-  .modal-bg.active .modal .middle img { height: 35em; width: 60em; } }
-
-@media (orientation: portrait) and (min-width: 1024px) and (min-height: 1366px) { .gallery .title-line2 { margin: 1.3em 0 3em 30.5em; }
-  .gallery .gallery-items .gallery-item { margin: 1em 0 0 1.5em; height: 12em; width: 19em; }
-  .gallery .gallery-items .gallery-item .gallery-layout { font-size: 16.3px; height: 11.6em; padding: 16px; }
-  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-eye { font-size: 26px; margin-top: 4px; margin-left: 1.5em; }
-  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-eye { margin-left: 1.3em; }
-  .gallery .gallery-items .gallery-item .project-picture { height: 12em; width: 19em; }
-  .modal-bg.active .modal { top: 24em; left: 2em; }
-  .modal-bg.active .modal .top { bottom: 21.8em; left: 4em; }
-  .modal-bg.active .modal .top i.fa-times { font-size: 65px; }
-  .modal-bg.active .modal .middle img { height: 34.5em; width: 60em; } }
-
-@media (orientation: landscape) and (min-width: 1366px) { .gallery h2 { font-size: 40px; }
-  .gallery .title-line2 { margin: 1.3em 0 2.4em 41.1em; }
-  .gallery .gallery-items .gallery-item { height: 17em; margin: .8em 0 0 1.5em; width: 25.5em; left: 1.5em; }
-  .gallery .gallery-items .gallery-item .gallery-layout { cursor: default; font-size: 25.2px; height: 10.7em; }
-  .gallery .gallery-items .gallery-item .gallery-layout .code-button, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button, .gallery .gallery-items .gallery-item .gallery-layout .github-button { transition: .3s; cursor: pointer; }
-  .gallery .gallery-items .gallery-item .gallery-layout .code-button:hover, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button:hover, .gallery .gallery-items .gallery-item .gallery-layout .github-button:hover { background-color: rgba(255, 255, 255, 0.3); }
-  .gallery .gallery-items .gallery-item .gallery-layout .code-button:hover .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .code-button:hover .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .code-button:hover .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button:hover .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button:hover .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button:hover .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button:hover .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .github-button:hover .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .github-button:hover .fa-eye { color: #333; }
-  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-eye { font-size: 34px; }
-  .gallery .gallery-items .gallery-item .project-picture { height: 17em; width: 25.5em; }
-  .modal-bg.active .modal { left: 2.7em; top: 9.5em; }
-  .modal-bg.active .modal .top { bottom: 7.8em; left: 7.5em; }
-  .modal-bg.active .modal .top i.fa-times { font-size: 55px; }
-  .modal-bg.active .modal .middle img { height: 45em; width: 80em; } }
-
-@media (orientation: landscape) and (min-width: 1366px) and (min-height: 768px) { .gallery h2 { font-size: 40px; }
-  .gallery .title-line2 { margin: 1.3em 0 2.4em 41.1em; }
-  .gallery .gallery-items .gallery-item { height: 17em; margin: .8em 0 0 1.5em; width: 25.5em; left: 1.5em; }
-  .gallery .gallery-items .gallery-item .gallery-layout { cursor: default; font-size: 25.2px; height: 10.8em; }
-  .gallery .gallery-items .gallery-item .gallery-layout .code-button, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button, .gallery .gallery-items .gallery-item .gallery-layout .github-button { transition: .3s; cursor: pointer; }
-  .gallery .gallery-items .gallery-item .gallery-layout .code-button:hover, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button:hover, .gallery .gallery-items .gallery-item .gallery-layout .github-button:hover { background-color: rgba(255, 255, 255, 0.3); }
-  .gallery .gallery-items .gallery-item .gallery-layout .code-button:hover .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .code-button:hover .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .code-button:hover .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button:hover .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button:hover .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button:hover .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button:hover .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .github-button:hover .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .github-button:hover .fa-eye { color: #333; }
-  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-eye { font-size: 34px; margin-top: 8px; }
-  .gallery .gallery-items .gallery-item .project-picture { height: 17em; width: 25.5em; }
-  .modal-bg.active .modal { left: 2.7em; top: 9.5em; }
-  .modal-bg.active .modal .top { bottom: 7.8em; left: 7.5em; }
-  .modal-bg.active .modal .top i.fa-times { font-size: 55px; }
-  .modal-bg.active .modal .middle img { height: 45em; width: 80em; } }
-
-@media (orientation: landscape) and (min-width: 1920px) { .gallery .title-line2 { margin: 1.3em 0 2.5em 73em; }
-  .gallery .gallery-items .gallery-item { height: 20em; margin: .8em 0 0 3.5em; width: 33.5em; left: 17em; }
-  .gallery .gallery-items .gallery-item .gallery-layout { cursor: default; font-size: 33.2px; height: 9.6em; }
-  .gallery .gallery-items .gallery-item .gallery-layout .code-button, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button, .gallery .gallery-items .gallery-item .gallery-layout .github-button { cursor: pointer; transition: .3s; }
-  .gallery .gallery-items .gallery-item .gallery-layout .code-button:hover, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button:hover, .gallery .gallery-items .gallery-item .gallery-layout .github-button:hover { background-color: rgba(255, 255, 255, 0.3); }
-  .gallery .gallery-items .gallery-item .gallery-layout .code-button:hover .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .code-button:hover .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .code-button:hover .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button:hover .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button:hover .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button:hover .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button:hover .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .github-button:hover .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .github-button:hover .fa-eye { color: #333; }
-  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-eye { font-size: 40px; margin-left: 1.7em; }
-  .gallery .gallery-items .gallery-item .project-picture { height: 20em; width: 33.5em; }
-  .modal-bg.active .modal { left: 14.2em; top: 4em; }
-  .modal-bg.active .modal .top { bottom: 1.5em; left: 4.5em; }
-  .modal-bg.active .modal .top i.fa-times { font-size: 65px; }
-  .modal-bg.active .modal .middle img { height: 65em; width: 120em; } }
-
-.contact { position: relative; }
-
-.contact h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; margin-top: 1.7em; text-align: center; }
+.contact h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; text-align: center; }
 
 .contact h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
-.contact .title-line3 { border-bottom: 2px solid gray; margin: 1em 0 3.6em 8.5em; width: 3em; }
+.contact .title-line3 { border-bottom: 2px solid gray; display: inline-block; position: absolute; top: 3.5em; left: 43%; width: 3em; }
 
-.footer { background-color: #222222; color: #fff; width: 100%; padding-top: 4px; }
+.footer { background-color: #222222; text-align: center; padding-top: 1.5em; color: #fff; }
 
-.footer .col-3 { padding-top: 20px; padding-left: 7.3em; }
+.footer .col-3 { float: left; width: 100%; cursor: default; }
 
-.footer .col-3 h3 { float: right; width: 87%; }
+.footer .col-3 .fab, .footer .col-3 .fas { font-size: 22px; }
 
-.footer .col-3 .fa-facebook, .footer .col-3 .fa-twitter-square, .footer .col-3 .fa-envelope, .footer .col-3 .fa-phone-square { display: inline-block; font-size: 25px; line-height: 20px; }
+.footer .col-3 h3 { display: inline-block; padding-bottom: 2px; padding-top: 1em; }
 
-.footer .social-title { display: inline-block; font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: normal; width: 90%; text-align: center; padding-left: 2.5em; padding-top: 8px; }
+.footer .col-3 a { color: #fff; }
 
-.footer-title { border-top: 1.5px solid #333333; color: #929292; line-height: 10em; margin: 2.5em 16px 0 16px; text-align: center; font-size: 16px; }
+.footer .col-3 a:hover { text-decoration: none; }
+
+.footer .col-3 a p .social-title { font-size: 14px; }
+
+.footer .footer-title { float: left; width: 100%; margin-top: 2em; }
+
+.footer .footer-title .paragraph-title { border-top: 1px solid #383838; margin: 0 1em; color: lightgray; padding-top: 4em; padding-bottom: 4em; }
+
+@media (orientation: landscape) and (min-width: 533px) { .contact { margin-bottom: 5em; margin-top: 3em; position: relative; }
+  .contact h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; text-align: center; }
+  .contact h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .contact .title-line3 { border-bottom: 2px solid gray; display: inline-block; position: absolute; top: 3.5em; left: 45%; width: 3em; }
+  .footer { background-color: #222222; text-align: center; padding-top: 1.5em; color: #fff; }
+  .footer .col-3 { float: left; width: 100%; cursor: default; }
+  .footer .col-3 .fab, .footer .col-3 .fas { font-size: 22px; }
+  .footer .col-3 h3 { display: inline-block; padding-bottom: 2px; padding-top: 1em; }
+  .footer .col-3 a { color: #fff; }
+  .footer .col-3 a p:hover { transform: scale(1.1, 1.1); }
+  .footer .col-3 a p .social-title { font-size: 14px; }
+  .footer .footer-title { float: left; width: 100%; margin-top: 2em; }
+  .footer .footer-title .paragraph-title { border-top: 1px solid #383838; margin: 0 1em; color: lightgray; padding-top: 4em; padding-bottom: 4em; } }
+
+@media (orientation: landscape) and (min-width: 640px) { .contact { margin-bottom: 5em; margin-top: 3em; position: relative; }
+  .contact h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; text-align: center; }
+  .contact h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .contact .title-line3 { border-bottom: 2px solid gray; display: inline-block; position: absolute; top: 3.5em; left: 45%; width: 3em; }
+  .footer { background-color: #222222; text-align: center; padding-top: 1.5em; color: #fff; }
+  .footer .col-3 { float: left; width: 50%; cursor: default; }
+  .footer .col-3 .fab, .footer .col-3 .fas { font-size: 22px; }
+  .footer .col-3 h3 { display: inline-block; padding-bottom: 2px; padding-top: 1em; }
+  .footer .col-3 a { color: #fff; }
+  .footer .col-3 a p:hover { transform: scale(1.1, 1.1); }
+  .footer .col-3 a p .social-title { font-size: 14px; }
+  .footer .footer-title { float: left; width: 100%; margin-top: 2em; }
+  .footer .footer-title .paragraph-title { border-top: 1px solid #383838; margin: 0 4em; color: lightgray; padding-top: 4em; padding-bottom: 4em; } }
+
+@media (orientation: landscape) and (min-width: 731px) { .contact { margin-bottom: 5em; margin-top: 3em; position: relative; }
+  .contact h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; text-align: center; }
+  .contact h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .contact .title-line3 { border-bottom: 2px solid gray; display: inline-block; position: absolute; top: 3.5em; left: 46%; width: 3em; }
+  .footer { background-color: #222222; text-align: center; padding-top: 1.5em; color: #fff; }
+  .footer .col-3 { float: left; width: 50%; cursor: default; }
+  .footer .col-3 .fab, .footer .col-3 .fas { font-size: 22px; }
+  .footer .col-3 h3 { display: inline-block; padding-bottom: 2px; padding-top: 1em; }
+  .footer .col-3 a { color: #fff; }
+  .footer .col-3 a p:hover { transform: scale(1.1, 1.1); }
+  .footer .col-3 a p .social-title { font-size: 14px; }
+  .footer .footer-title { float: left; width: 100%; margin-top: 3em; }
+  .footer .footer-title .paragraph-title { border-top: 1px solid #383838; margin: 0 4em; color: lightgray; padding-top: 4em; padding-bottom: 4em; } }
+
+@media (orientation: landscape) and (min-width: 812px) { .contact { margin-bottom: 5em; margin-top: 3em; }
+  .contact h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; text-align: center; }
+  .contact h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .contact .title-line3 { border-bottom: 2px solid gray; top: 3.5em; left: 47.5%; width: 3em; }
+  .footer { background-color: #222222; text-align: center; padding-top: 2.5em; color: #fff; position: relative; }
+  .footer .row { position: absolute; top: 2.5em; left: 8%; width: 85%; }
+  .footer .row .col-3 { float: left; width: 25%; }
+  .footer .row .col-3 .fab, .footer .row .col-3 .fas { font-size: 22px; }
+  .footer .row .col-3 h3 { display: inline-block; padding-bottom: 10px; }
+  .footer .row .col-3 p { font-size: 11px; }
+  .footer .row .col-3 p .social-title { font-size: 14px; }
+  .footer .footer-title { float: left; width: 100%; margin-top: 6em; }
+  .footer .footer-title .paragraph-title { border-top: 1px solid #383838; margin: 0 4.5em; color: lightgray; padding-top: 4em; } }
+
+@media (orientation: portrait) and (min-width: 768px) { .contact { margin-bottom: 5em; margin-top: 3em; }
+  .contact h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; text-align: center; }
+  .contact h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .contact .title-line3 { border-bottom: 2px solid gray; top: 3.5em; left: 47.5%; width: 3em; }
+  .footer { background-color: #222222; text-align: center; padding-top: 2.5em; color: #fff; position: relative; }
+  .footer .row { position: absolute; top: 2.5em; left: 8%; width: 85%; }
+  .footer .row .col-3 { float: left; width: 25%; }
+  .footer .row .col-3 .fab, .footer .row .col-3 .fas { font-size: 22px; }
+  .footer .row .col-3 h3 { display: inline-block; padding-bottom: 10px; }
+  .footer .row .col-3 p { font-size: 10px; }
+  .footer .row .col-3 p .social-title { font-size: 14px; }
+  .footer .footer-title { float: left; width: 100%; margin-top: 6em; }
+  .footer .footer-title .paragraph-title { border-top: 1px solid #383838; margin: 0 4.5em; color: lightgray; padding-top: 4em; } }
+
+@media (orientation: landscape) and (min-width: 1024px) { .contact { margin-bottom: 5em; margin-top: 3em; }
+  .contact h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; text-align: center; }
+  .contact h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .contact .title-line3 { border-bottom: 2px solid gray; top: 3.5em; left: 47.5%; width: 3em; }
+  .footer { background-color: #222222; text-align: center; padding-top: 2.5em; color: #fff; position: relative; }
+  .footer .row { position: absolute; top: 2.5em; left: 8%; width: 85%; }
+  .footer .row .col-3 { float: left; width: 25%; }
+  .footer .row .col-3 .fab, .footer .row .col-3 .fas { font-size: 22px; }
+  .footer .row .col-3 h3 { display: inline-block; padding-bottom: 10px; }
+  .footer .row .col-3 .social-title { font-size: 14px; }
+  .footer .footer-title { float: left; width: 100%; margin-top: 6em; }
+  .footer .footer-title .paragraph-title { border-top: 1px solid #383838; margin: 0 6em; color: lightgray; padding-top: 4em; } }
+
+@media (orientation: portrait) and (min-width: 1024px) and (min-height: 1366px) { .contact { margin-bottom: 5em; margin-top: 3em; }
+  .contact h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; text-align: center; }
+  .contact h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .contact .title-line3 { border-bottom: 2px solid gray; top: 3.5em; left: 47.5%; width: 3em; }
+  .footer { background-color: #222222; text-align: center; padding-top: 2.5em; color: #fff; position: relative; }
+  .footer .row { position: absolute; top: 2.5em; left: 8%; width: 85%; }
+  .footer .row .col-3 { float: left; width: 25%; }
+  .footer .row .col-3 .fab, .footer .row .col-3 .fas { font-size: 22px; }
+  .footer .row .col-3 h3 { display: inline-block; padding-bottom: 10px; }
+  .footer .row .col-3 .social-title { font-size: 14px; }
+  .footer .footer-title { float: left; width: 100%; margin-top: 6em; }
+  .footer .footer-title .paragraph-title { border-top: 1px solid #383838; margin: 0 6em; color: lightgray; padding-top: 4em; } }
+
+@media (orientation: landscape) and (min-width: 1366px) { .contact { margin-bottom: 5em; margin-top: 3em; }
+  .contact h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; text-align: center; }
+  .contact h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .contact .title-line3 { border-bottom: 2px solid gray; top: 3.5em; left: 48%; width: 3em; }
+  .footer { background-color: #222222; text-align: center; padding-top: 2.5em; color: #fff; position: relative; }
+  .footer .row { position: absolute; top: 2.5em; left: 8%; width: 85%; }
+  .footer .row .col-3 { float: left; width: 25%; }
+  .footer .row .col-3 .fab, .footer .row .col-3 .fas { font-size: 22px; }
+  .footer .row .col-3 h3 { display: inline-block; padding-bottom: 10px; }
+  .footer .row .col-3 p { font-size: 22px; }
+  .footer .row .col-3 p .social-title { font-size: 12px; }
+  .footer .footer-title { float: left; width: 100%; margin-top: 6em; }
+  .footer .footer-title .paragraph-title { border-top: 1px solid #383838; margin: 0 4.5em; color: lightgray; padding-top: 4em; } }
+
+@media (orientation: landscape) and (min-width: 1366px) and (min-height: 768px) { .contact { margin-bottom: 5em; margin-top: 3em; }
+  .contact h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; text-align: center; }
+  .contact h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .contact .title-line3 { border-bottom: 2px solid gray; top: 3.5em; left: 48%; width: 3em; }
+  .footer { background-color: #222222; text-align: center; padding-top: 2.5em; color: #fff; position: relative; }
+  .footer .row { position: absolute; top: 2.5em; left: 8%; width: 85%; }
+  .footer .row .col-3 { float: left; width: 25%; }
+  .footer .row .col-3 .fab, .footer .row .col-3 .fas { font-size: 22px; }
+  .footer .row .col-3 h3 { display: inline-block; padding-bottom: 10px; }
+  .footer .row .col-3 .social-title { font-size: 16px; }
+  .footer .footer-title { float: left; width: 100%; margin-top: 6em; }
+  .footer .footer-title .paragraph-title { border-top: 1px solid #383838; margin: 0 4.5em; color: lightgray; padding-top: 4em; } }
+
+@media (orientation: landscape) and (min-width: 1600px) { .contact { margin-bottom: 5em; margin-top: 3em; }
+  .contact h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; text-align: center; }
+  .contact h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .contact .title-line3 { border-bottom: 2px solid gray; top: 3.5em; left: 48.5%; width: 3em; }
+  .footer { background-color: #222222; text-align: center; padding-top: 2.5em; color: #fff; position: relative; }
+  .footer .row { position: absolute; top: 2.5em; left: 22.5%; width: 55%; }
+  .footer .row .col-3 { float: left; width: 25%; }
+  .footer .row .col-3 .fab, .footer .row .col-3 .fas { font-size: 22px; }
+  .footer .row .col-3 h3 { display: inline-block; padding-bottom: 10px; }
+  .footer .row .col-3 .social-title { font-size: 14px; }
+  .footer .footer-title { float: left; width: 100%; margin-top: 6em; }
+  .footer .footer-title .paragraph-title { border-top: 1px solid #383838; margin: 0 26em; color: lightgray; padding-top: 4em; } }
