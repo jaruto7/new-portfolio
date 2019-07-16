@@ -159,21 +159,21 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
 
 .about-me .pointer-3 { top: 40.5em; }
 
-.gallery { margin-top: 3em; }
+.gallery { margin-top: 3em; position: relative; }
 
 .gallery h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; text-align: center; }
 
 .gallery h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
-.gallery .title-line2 { border-bottom: 2px solid gray; margin: 1.3em 0 3.5em 8.5em; width: 3em; }
+.gallery .title-line2 { border-bottom: 2px solid gray; position: absolute; top: 10%; left: 42%; width: 3em; }
 
-.gallery .gallery-items { list-style-type: none; }
+.gallery .gallery-items { list-style-type: none; margin-top: 4.5em; }
 
 .gallery .gallery-items .gallery-item { border: 1px solid gray; height: 9em; margin: 1em 0 0 3em; overflow: hidden; position: relative; width: 14em; }
 
 .gallery .gallery-items .gallery-item:hover .gallery-layout { left: 0; top: 0; }
 
-.gallery .gallery-items .gallery-item .gallery-layout { background-color: rgba(255, 69, 0, 0.8); color: #fff; font-size: 12px; font-family: 'Montserrat', sans-serif; height: 11.8em; left: 0; position: absolute; padding: 12px; top: 100%; transition: .6s; width: 18.5em; }
+.gallery .gallery-items .gallery-item .gallery-layout { background-color: rgba(255, 69, 0, 0.8); color: #fff; font-size: 12px; font-family: 'Montserrat', sans-serif; height: 11.9em; left: 0; position: absolute; padding: 12px; top: 100%; transition: .6s; width: 18.5em; }
 
 .gallery .gallery-items .gallery-item .gallery-layout p { text-shadow: 2px 1px 1px black; }
 
@@ -210,6 +210,140 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
 .modal-bg.active .modal .middle img { height: 12em; width: 18.8em; }
 
 .modal-bg.active .modal .middle:hover .icon { display: block; }
+
+@media (orientation: landscape) and (min-width: 533px) { .gallery .title-line2 { top: 26.5%; left: 45%; }
+  .gallery .gallery-items { margin-top: 4em; }
+  .gallery .gallery-items .gallery-item { float: left; margin: 1em 0 0 .8em; width: 10em; height: 7em; }
+  .gallery .gallery-items .gallery-item .gallery-layout { font-size: 10.8px; height: 10.2em; padding: 6px; width: 14.7em; }
+  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-eye { font-size: 14px; }
+  .gallery .gallery-items .gallery-item .gallery-layout .code-button { width: 34%; }
+  .gallery .gallery-items .gallery-item .gallery-layout .zoom-button { left: 33.4%; }
+  .gallery .gallery-items .gallery-item .gallery-layout .github-button { left: 66.4%; }
+  .gallery .gallery-items .gallery-item .project-picture { height: 7em; width: 10em; }
+  .modal-bg.active .modal { height: 1em; left: 14%; top: 12%; }
+  .modal-bg.active .modal .top { bottom: 1.6em; left: -1.5em; }
+  .modal-bg.active .modal .middle img { height: 15em; width: 24em; } }
+
+@media (orientation: portrait) and (min-width: 360px) { .gallery .title-line2 { top: 10%; left: 43%; }
+  .gallery .gallery-items { margin-top: 5em; }
+  .gallery .gallery-items .gallery-item { margin: 1em 0 0 4.2em; }
+  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-eye { margin-top: .2em; margin-left: 1.4em; }
+  .modal-bg.active .modal { left: 5%; top: 29%; }
+  .modal-bg.active .modal .top { bottom: 11em; }
+  .modal-bg.active .modal .middle img { height: 13.5em; width: 20.2em; } }
+
+@media (orientation: landscape) and (min-width: 640px) { .gallery .title-line2 { top: 25%; left: 46%; }
+  .gallery .gallery-items .gallery-item { height: 8em; margin: .8em 0 0 1em; width: 12em; }
+  .gallery .gallery-items .gallery-item .gallery-layout { font-size: 12.8px; height: 9.9em; width: 14.9em; }
+  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-eye { font-size: 17px; }
+  .gallery .gallery-items .gallery-item .project-picture { height: 8em; width: 12em; }
+  .modal-bg.active .modal .top { bottom: 1.9em; }
+  .modal-bg.active .modal .middle img { height: 17em; width: 28em; } }
+
+@media (orientation: portrait) and (min-width: 411px) { .gallery .title-line2 { top: 10%; left: 44%; }
+  .gallery .gallery-items .gallery-item { margin: 1em 0 0 5.5em; }
+  .modal-bg.active .modal { top: 15em; }
+  .modal-bg.active .modal .top { bottom: 14em; }
+  .modal-bg.active .modal .middle img { height: 14.5em; width: 23em; } }
+
+@media (orientation: landscape) and (min-width: 731px) { .gallery .title-line2 { top: 20%; left: 46.5%; }
+  .gallery .gallery-items .gallery-item { height: 10em; margin: .8em 0 0 .9em; width: 14em; }
+  .gallery .gallery-items .gallery-item .gallery-layout { font-size: 13.8px; height: 11.4em; padding: 16px; width: 16.1em; }
+  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-eye { font-size: 21px; margin-top: .2em; }
+  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-eye { margin-left: 1.2em; }
+  .gallery .gallery-items .gallery-item .project-picture { height: 10em; width: 14em; }
+  .modal-bg.active .modal { left: 7.7em; top: 3.5em; }
+  .modal-bg.active .modal .top { bottom: 2.5em; left: -2.8em; }
+  .modal-bg.active .modal .middle img { height: 19em; width: 30em; } }
+
+@media (orientation: portrait) and (min-width: 375px) and (min-height: 812px) { .gallery .title-line2 { top: 10%; left: 43%; }
+  .gallery .gallery-items .gallery-item { margin: 1em 0 0 4.6em; }
+  .modal-bg.active .modal { top: 17em; left: .7em; }
+  .modal-bg.active .modal .top { bottom: 15.8em; }
+  .modal-bg.active .modal .middle img { height: 13.5em; width: 22em; } }
+
+@media (orientation: landscape) and (min-width: 812px) { .gallery .title-line2 { top: 20%; left: 47%; }
+  .gallery .gallery-items .gallery-item { height: 10em; margin: .8em 0 0 1em; width: 15.5em; }
+  .gallery .gallery-items .gallery-item .gallery-layout { font-size: 15.8px; height: 10.1em; }
+  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-eye { font-size: 21px; margin-top: 4px; }
+  .gallery .gallery-items .gallery-item .project-picture { height: 10em; width: 15.5em; }
+  .modal-bg.active .modal { left: 10.7em; top: 2em; }
+  .modal-bg.active .modal .top { bottom: 1.3em; left: -4.8em; } }
+
+@media (orientation: portrait) and (min-width: 768px) { .gallery h2 { font-size: 30px; }
+  .gallery .title-line2 { top: 22%; left: 47%; }
+  .gallery .gallery-items { margin-top: 4em; }
+  .gallery .gallery-items .gallery-item { margin: 1em 0 0 1.5em; float: left; }
+  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-eye { font-size: 21px; margin-top: .1em; }
+  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-eye { margin-left: 1.1em; }
+  .modal-bg.active .modal { top: 18em; left: 1.5em; }
+  .modal-bg.active .modal .top { bottom: 16.6em; left: 3em; }
+  .modal-bg.active .modal .top i.fa-times { font-size: 50px; }
+  .modal-bg.active .modal .middle img { height: 25.5em; width: 45em; } }
+
+@media (orientation: landscape) and (min-width: 1024px) { .gallery .title-line2 { top: 18%; left: 47.5%; }
+  .gallery .gallery-items .gallery-item { height: 13em; margin: .8em 0 0 1.2em; width: 19.5em; left: .3em; }
+  .gallery .gallery-items .gallery-item .gallery-layout { font-size: 19.3px; height: 10.7em; }
+  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-eye { font-size: 26px; margin-top: 6px; margin-left: 1.5em; }
+  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-code-branch { margin-left: 1.6em; }
+  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-eye { margin-left: 1.4em; }
+  .gallery .gallery-items .gallery-item .project-picture { height: 13em; width: 19.5em; }
+  .modal-bg.active .modal { left: 2em; top: 6em; }
+  .modal-bg.active .modal .top { bottom: 4.3em; left: 4.8em; }
+  .modal-bg.active .modal .top i.fa-times { font-size: 45px; }
+  .modal-bg.active .modal .middle img { height: 35em; width: 60em; } }
+
+@media (orientation: portrait) and (min-width: 1024px) and (min-height: 1366px) { .gallery .title-line2 { top: 20%; left: 47.5%; }
+  .gallery .gallery-items .gallery-item { margin: 1em 0 0 1.5em; height: 12em; width: 19em; }
+  .gallery .gallery-items .gallery-item .gallery-layout { font-size: 16.3px; height: 11.6em; padding: 16px; }
+  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-eye { font-size: 26px; margin-top: 4px; margin-left: 1.5em; }
+  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-eye { margin-left: 1.3em; }
+  .gallery .gallery-items .gallery-item .project-picture { height: 12em; width: 19em; }
+  .modal-bg.active .modal { top: 24em; left: 2em; }
+  .modal-bg.active .modal .top { bottom: 21.8em; left: 4em; }
+  .modal-bg.active .modal .top i.fa-times { font-size: 65px; }
+  .modal-bg.active .modal .middle img { height: 34.5em; width: 60em; } }
+
+@media (orientation: landscape) and (min-width: 1366px) { .gallery h2 { font-size: 40px; }
+  .gallery .title-line2 { top: 18%; left: 48.2%; }
+  .gallery .gallery-items .gallery-item { height: 17em; margin: .8em 0 0 1.5em; width: 25.5em; left: 1.5em; }
+  .gallery .gallery-items .gallery-item .gallery-layout { cursor: default; font-size: 25.2px; height: 10.7em; }
+  .gallery .gallery-items .gallery-item .gallery-layout .code-button, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button, .gallery .gallery-items .gallery-item .gallery-layout .github-button { transition: .3s; cursor: pointer; }
+  .gallery .gallery-items .gallery-item .gallery-layout .code-button:hover, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button:hover, .gallery .gallery-items .gallery-item .gallery-layout .github-button:hover { background-color: rgba(255, 255, 255, 0.3); }
+  .gallery .gallery-items .gallery-item .gallery-layout .code-button:hover .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .code-button:hover .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .code-button:hover .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button:hover .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button:hover .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button:hover .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button:hover .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .github-button:hover .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .github-button:hover .fa-eye { color: #333; }
+  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-eye { font-size: 34px; }
+  .gallery .gallery-items .gallery-item .project-picture { height: 17em; width: 25.5em; }
+  .modal-bg.active .modal { left: 2.7em; top: 9.5em; }
+  .modal-bg.active .modal .top { bottom: 7.8em; left: 7.5em; }
+  .modal-bg.active .modal .top i.fa-times { font-size: 55px; }
+  .modal-bg.active .modal .middle img { height: 45em; width: 80em; } }
+
+@media (orientation: landscape) and (min-width: 1366px) and (min-height: 768px) { .gallery h2 { font-size: 30px; }
+  .gallery .title-line2 { top: 15%; left: 48.2%; }
+  .gallery .gallery-items .gallery-item { height: 17em; margin: .8em 0 0 1.5em; width: 25.5em; left: 1.5em; }
+  .gallery .gallery-items .gallery-item .gallery-layout { cursor: default; font-size: 25.2px; height: 10.8em; }
+  .gallery .gallery-items .gallery-item .gallery-layout .code-button, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button, .gallery .gallery-items .gallery-item .gallery-layout .github-button { transition: .3s; cursor: pointer; }
+  .gallery .gallery-items .gallery-item .gallery-layout .code-button:hover, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button:hover, .gallery .gallery-items .gallery-item .gallery-layout .github-button:hover { background-color: rgba(255, 255, 255, 0.3); }
+  .gallery .gallery-items .gallery-item .gallery-layout .code-button:hover .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .code-button:hover .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .code-button:hover .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button:hover .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button:hover .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button:hover .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button:hover .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .github-button:hover .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .github-button:hover .fa-eye { color: #333; }
+  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-eye { font-size: 34px; margin-top: 8px; }
+  .gallery .gallery-items .gallery-item .project-picture { height: 17em; width: 25.5em; }
+  .modal-bg.active .modal { left: 2.7em; top: 9.5em; }
+  .modal-bg.active .modal .top { bottom: 7.8em; left: 7.5em; }
+  .modal-bg.active .modal .top i.fa-times { font-size: 55px; }
+  .modal-bg.active .modal .middle img { height: 45em; width: 80em; } }
+
+@media (min-width: 1600px) { .gallery .title-line2 { top: 13%; left: 48.7%; }
+  .gallery .gallery-items .gallery-item { height: 20em; margin: .8em 0 0 3em; width: 33.5em; left: 3.5em; }
+  .gallery .gallery-items .gallery-item .gallery-layout { cursor: default; font-size: 33.2px; height: 9.6em; }
+  .gallery .gallery-items .gallery-item .gallery-layout .code-button, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button, .gallery .gallery-items .gallery-item .gallery-layout .github-button { cursor: pointer; transition: .3s; }
+  .gallery .gallery-items .gallery-item .gallery-layout .code-button:hover, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button:hover, .gallery .gallery-items .gallery-item .gallery-layout .github-button:hover { background-color: rgba(255, 255, 255, 0.3); }
+  .gallery .gallery-items .gallery-item .gallery-layout .code-button:hover .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .code-button:hover .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .code-button:hover .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button:hover .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button:hover .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button:hover .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button:hover .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .github-button:hover .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .github-button:hover .fa-eye { color: #333; }
+  .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .code-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button .fa-eye, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-code-branch, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-search-plus, .gallery .gallery-items .gallery-item .gallery-layout .github-button .fa-eye { font-size: 40px; margin-left: 1.7em; }
+  .gallery .gallery-items .gallery-item .project-picture { height: 20em; width: 33.5em; }
+  .modal-bg.active .modal { left: 16.2em; top: 4.2em; }
+  .modal-bg.active .modal .top { bottom: 2.5em; left: -1em; }
+  .modal-bg.active .modal .top i.fa-times { font-size: 65px; }
+  .modal-bg.active .modal .middle img { height: 50em; width: 85em; } }
 
 .contact { margin-bottom: 5em; margin-top: 3em; position: relative; }
 

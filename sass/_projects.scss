@@ -1,6 +1,7 @@
 .gallery {
 	margin-top: 3em;
-	// max-width: 100%;
+	position: relative;
+
 
 	h2 {
 		font-family: 'Montserrat', sans-serif;
@@ -16,12 +17,15 @@
 
 	.title-line2 {
 		border-bottom: 2px solid gray;
-		margin: 1.3em 0 3.5em 8.5em;
+		position: absolute;
+		top: 10%;
+		left: 42%;
 		width: 3em;
 	}
 
 	.gallery-items {
 		list-style-type: none;
+		margin-top: 4.5em;
 
 		.gallery-item {
 			border: 1px solid gray;
@@ -42,7 +46,7 @@
 				color: #fff;
 				font-size: 12px;
 				font-family: 'Montserrat', sans-serif;
-				height: 11.8em;
+				height: 11.9em;
 				left: 0;
 				position: absolute;
 				padding: 12px;
@@ -157,795 +161,811 @@
 	}
 }
 
-// // Nokia Lumia: landscape
-// @media(orientation: landscape) AND (min-width: 533px) {
-// 	.gallery {
+// Nokia Lumia: landscape
+@media(orientation: landscape) AND (min-width: 533px) {
+	.gallery {
+
+		.title-line2 {
+			top: 26.5%;
+			left: 45%;
+		}
 	
-// 		.title-line2 {
-// 			margin: 1.3em 0 2.4em 15.3em; 
-// 		}
+		.gallery-items {
+			margin-top: 4em;
 	
-// 		.gallery-items {
+			.gallery-item {
+				float: left; 
+				margin: 1em 0 0 .8em; 
+				width: 10em;
+				height: 7em; 
 	
-// 			.gallery-item {
-// 				float: left; 
-// 				height: 7em; 
-// 				margin: .8em 0 0 .8em; 
-// 				width: 10em; 
+				.gallery-layout {
+					font-size: 10.8px; 
+					height: 10.2em; 
+					padding: 6px; 
+					width: 14.7em;	
 	
-// 				.gallery-layout {
-// 					font-size: 10.8px; 
-// 					height: 10.2em; 
-// 					padding: 6px; 
-// 					width: 14.7em;	
+					.code-button, .zoom-button, .github-button {
 	
-// 					.code-button, .zoom-button, .github-button {
+						.fa-code-branch, .fa-search-plus, .fa-eye {
+							font-size: 14px;
+						}
+					}
 	
-// 						.fa-code-branch, .fa-search-plus, .fa-eye {
-// 							font-size: 14px;
-// 						}
-// 					}
+					.code-button {
+						width: 34%; 
+					}
 	
-// 					.code-button {
-// 						width: 34%; 
-// 					}
+					.zoom-button {
+						left: 33.4%; 
+					}
 	
-// 					.zoom-button {
-// 						left: 33.4%; 
-// 					}
+					.github-button {
+						left: 66.4%; 
+					}
+				}
 	
-// 					.github-button {
-// 						left: 66.4%; 
-// 					}
-// 				}
+				.project-picture {
+					height: 7em; 
+					width: 10em; 
+				}
+			}
+		}
+	}
 	
-// 				.project-picture {
-// 					height: 7em; 
-// 					width: 10em; 
-// 				}
-// 			}
-// 		}
-// 	}
+	.modal-bg.active {
 	
-// 	.modal-bg.active {
-	
-// 		.modal {
-// 			height: 1em; 
-// 			left: 14%; 
-// 			top: 12%; 
+		.modal {
+			height: 1em; 
+			left: 14%; 
+			top: 12%; 
 		
-// 			.top {
-// 				bottom: 1.6em; 
-// 				left: -1.5em; 
-// 			}
+			.top {
+				bottom: 1.6em; 
+				left: -1.5em; 
+			}
 	
-// 			.middle {
+			.middle {
 				
-// 				img {
-// 					height: 15em; 
-// 					width: 24em;	
-// 				}
-// 			}
-// 		}
-// 	}
-// }
+				img {
+					height: 15em; 
+					width: 24em;	
+				}
+			}
+		}
+	}
+}
 
-// // Galaxy S5: portrait
-// @media(orientation: portrait) AND (min-width: 360px) {
-// 	.gallery {
+// Galaxy S5: portrait
+@media(orientation: portrait) AND (min-width: 360px) {
+	.gallery {
 
-// 		.title-line2 {
-// 			margin: 1.3em 0 3.5em 9.7em;
-// 		}
+		.title-line2 {
+			top: 10%;
+			left: 43%;
+		}
 	
-// 		.gallery-items {
+		.gallery-items {
+			margin-top: 5em;
 	
-// 			.gallery-item {
-// 				margin: 1em 0 0 4.2em;
+			.gallery-item {
+				margin: 1em 0 0 4.2em;
 
-// 				.gallery-layout {
+				.gallery-layout {
 
-// 					.code-button, .zoom-button, .github-button {
+					.code-button, .zoom-button, .github-button {
 
-// 						.fa-code-branch, .fa-search-plus, .fa-eye {
-// 							margin-top: .2em;//
-// 							margin-left: 1.4em;//
-// 						}
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
+						.fa-code-branch, .fa-search-plus, .fa-eye {
+							margin-top: .2em;//
+							margin-left: 1.4em;//
+						}
+					}
+				}
+			}
+		}
+	}
 	
-// 	.modal-bg.active {
+	.modal-bg.active {
 	
-// 		.modal {
-// 			left: 5%;
-// 			top: 29%;
+		.modal {
+			left: 5%;
+			top: 29%;
 		
-// 			.top {
-// 				bottom: 11em;
-// 			}
+			.top {
+				bottom: 11em;
+			}
 	
-// 			.middle {
+			.middle {
 				
-// 				img {
-// 					height: 13.5em;
-// 					width: 20.2em;	
-// 				}
-// 			}
-// 		}
-// 	}
-// }
+				img {
+					height: 13.5em;
+					width: 20.2em;	
+				}
+			}
+		}
+	}
+}
 
-// // Galaxy S5: landscape
-// @media(orientation: landscape) AND (min-width: 640px) {
-// 	.gallery {
+// Galaxy S5: landscape
+@media(orientation: landscape) AND (min-width: 640px) {
+	.gallery {
 	
-// 		.title-line2 {
-// 			margin: 1.3em 0 2.4em 18.5em; 
-// 		}
+		.title-line2 {
+			top: 25%;
+			left: 46%; 
+		}
 	
-// 		.gallery-items {
+		.gallery-items {
 	
-// 			.gallery-item {
-// 				height: 8em; 
-// 				margin: .8em 0 0 1em;  
-// 				width: 12em;  
+			.gallery-item {
+				height: 8em; 
+				margin: .8em 0 0 1em;  
+				width: 12em;  
 	
-// 				.gallery-layout {
-// 					font-size: 12.8px; 
-// 					height: 9.9em; 
-// 					width: 14.9em; 
+				.gallery-layout {
+					font-size: 12.8px; 
+					height: 9.9em; 
+					width: 14.9em; 
 
-// 					.code-button, .zoom-button, .github-button {
+					.code-button, .zoom-button, .github-button {
 	
-// 						.fa-code-branch, .fa-search-plus, .fa-eye {
-// 							font-size: 17px;
-// 						}
-// 					}
-// 				}
+						.fa-code-branch, .fa-search-plus, .fa-eye {
+							font-size: 17px;
+						}
+					}
+				}
 	
-// 				.project-picture {
-// 					height: 8em;  
-// 					width: 12em; 
-// 				}
-// 			}
-// 		}
-// 	}
+				.project-picture {
+					height: 8em;  
+					width: 12em; 
+				}
+			}
+		}
+	}
 	
-// 	.modal-bg.active {
+	.modal-bg.active {
 	
-// 		.modal { 
+		.modal { 
 		
-// 			.top {
-// 				bottom: 1.9em; 
-// 			}
+			.top {
+				bottom: 1.9em; 
+			}
 	
-// 			.middle {
+			.middle {
 				
-// 				img {
-// 					height: 17em;
-// 					width: 28em;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
+				img {
+					height: 17em;
+					width: 28em;
+				}
+			}
+		}
+	}
+}
 
-// // Pixel 2: portrait
-// @media(orientation: portrait) AND (min-width: 411px) {
-// 	.gallery {
+// Pixel 2: portrait
+@media(orientation: portrait) AND (min-width: 411px) {
+	.gallery {
 
-// 		.title-line2 {
-// 			margin: 1.3em 0 3.5em 11.3em; 
-// 		}
+		.title-line2 {
+			top: 10%;
+			left: 44%; 
+		}
 	
-// 		.gallery-items {
+		.gallery-items {
 	
-// 			.gallery-item {
-// 				margin: 1em 0 0 5.5em;
-// 			}
-// 		}
-// 	}
+			.gallery-item {
+				margin: 1em 0 0 5.5em;
+			}
+		}
+	}
 	
-// 	.modal-bg.active {
+	.modal-bg.active {
 	
-// 		.modal {
-// 			top: 15em;
+		.modal {
+			top: 15em;
 		
-// 			.top {
-// 				bottom: 14em;
-// 			}
+			.top {
+				bottom: 14em;
+			}
 	
-// 			.middle {
+			.middle {
 				
-// 				img {
-// 					height: 14.5em; 
-// 					width: 23em;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
+				img {
+					height: 14.5em; 
+					width: 23em;
+				}
+			}
+		}
+	}
+}
 
-// @media(orientation: landscape) AND (min-width: 731px) {
-// 	.gallery {
+@media(orientation: landscape) AND (min-width: 731px) {
+	.gallery {
 	
-// 		.title-line2 {
-// 			margin: 1.3em 0 2.4em 21.5em; 
-// 		}
+		.title-line2 {
+			top: 20%;
+			left: 46.5%;
+		}
 	
-// 		.gallery-items {
+		.gallery-items {
 	
-// 			.gallery-item {
-// 				height: 10em; 
-// 				margin: .8em 0 0 .9em;  
-// 				width: 14em;  
+			.gallery-item {
+				height: 10em; 
+				margin: .8em 0 0 .9em;  
+				width: 14em;  
 	
-// 				.gallery-layout {
-// 					font-size: 13.8px; 
-// 					height: 11.5em;
-// 					padding: 16px; 
-// 					width: 16.1em; 
+				.gallery-layout {
+					font-size: 13.8px; 
+					height: 11.4em;
+					padding: 16px; 
+					width: 16.1em; 
 
-// 					.code-button, .zoom-button, .github-button {
+					.code-button, .zoom-button, .github-button {
 	
-// 						.fa-code-branch, .fa-search-plus, .fa-eye {
-// 							font-size: 21px;
-// 							margin-top: .2em;
-// 						}
+						.fa-code-branch, .fa-search-plus, .fa-eye {
+							font-size: 21px;
+							margin-top: .2em;
+						}
 
-// 						.fa-eye {
-// 							margin-left: 1.2em;
-// 						}
-// 					}
-// 				}
+						.fa-eye {
+							margin-left: 1.2em;
+						}
+					}
+				}
 	
-// 				.project-picture {
-// 					height: 10em;  
-// 					width: 14em; 
-// 				}
-// 			}
-// 		}
-// 	}
+				.project-picture {
+					height: 10em;  
+					width: 14em; 
+				}
+			}
+		}
+	}
 	
-// 	.modal-bg.active {
+	.modal-bg.active {
 	
-// 		.modal {
-// 			left: 7.7em;
-// 			top: 3.5em; 
+		.modal {
+			left: 7.7em;
+			top: 3.5em; 
 		
-// 			.top {
-// 				bottom: 2.5em;
-// 				left: -2.8em; 
-// 			}
+			.top {
+				bottom: 2.5em;
+				left: -2.8em; 
+			}
 	
-// 			.middle {
+			.middle {
 				
-// 				img {
-// 					height: 19em;
-// 					width: 30em;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
+				img {
+					height: 19em;
+					width: 30em;
+				}
+			}
+		}
+	}
+}
 
-// // Iphone X: portrait
-// @media(orientation: portrait) AND (min-width: 375px) AND (min-height: 812px) {
-// 	.gallery {
+// Iphone X: portrait
+@media(orientation: portrait) AND (min-width: 375px) AND (min-height: 812px) {
+	.gallery {
 
-// 		.title-line2 {
-// 			margin: 1.3em 0 3.5em 10.3em;// 
-// 		}
+		.title-line2 {
+			top: 10%;
+			left: 43%; 
+		}
 	
-// 		.gallery-items {
+		.gallery-items {
 	
-// 			.gallery-item {
-// 				margin: 1em 0 0 4.6em;
-// 			}
-// 		}
-// 	}
+			.gallery-item {
+				margin: 1em 0 0 4.6em;
+			}
+		}
+	}
 	
-// 	.modal-bg.active {
+	.modal-bg.active {
 	
-// 		.modal {
-// 			top: 17em;
-// 			left: .7em;
+		.modal {
+			top: 17em;
+			left: .7em;
 		
-// 			.top {
-// 				bottom: 15.8em;
-// 			}
+			.top {
+				bottom: 15.8em;
+			}
 	
-// 			.middle {
+			.middle {
 				
-// 				img {
-// 					height: 13.5em; 
-// 					width: 22em;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
+				img {
+					height: 13.5em; 
+					width: 22em;
+				}
+			}
+		}
+	}
+}
 
-// @media(orientation: landscape) AND (min-width: 812px) {
-// 	.gallery {
+@media(orientation: landscape) AND (min-width: 812px) {
+	.gallery {
 	
-// 		.title-line2 {
-// 			margin: 1.3em 0 2.4em 24em; 
-// 		}
+		.title-line2 {
+			top: 20%;
+			left: 47%; 
+		}
 	
-// 		.gallery-items {
+		.gallery-items {
 	
-// 			.gallery-item {
-// 				height: 10em; 
-// 				margin: .8em 0 0 1em;  
-// 				width: 15.5em;  
+			.gallery-item {
+				height: 10em; 
+				margin: .8em 0 0 1em;  
+				width: 15.5em;  
 	
-// 				.gallery-layout {
-// 					font-size: 15.8px; 
-// 					height: 10.1em; 
+				.gallery-layout {
+					font-size: 15.8px; 
+					height: 10.1em; 
 	
-// 					.code-button, .zoom-button, .github-button {
+					.code-button, .zoom-button, .github-button {
 		
-// 						.fa-code-branch, .fa-search-plus, .fa-eye {
-// 								font-size: 21px;
-// 								margin-top: 4px;
-// 						}
-// 					}
-// 				}
+						.fa-code-branch, .fa-search-plus, .fa-eye {
+								font-size: 21px;
+								margin-top: 4px;
+						}
+					}
+				}
 	
-// 				.project-picture {
-// 					height: 10em;  
-// 					width: 15.5em; 
-// 				}
-// 			}
-// 		}
-// 	}
+				.project-picture {
+					height: 10em;  
+					width: 15.5em; 
+				}
+			}
+		}
+	}
 	
-// 	.modal-bg.active {
+	.modal-bg.active {
 	
-// 		.modal {
-// 			left: 10.7em;
-// 			top: 2em; 
+		.modal {
+			left: 10.7em;
+			top: 2em; 
 		
-// 			.top {
-// 				bottom: 1.3em;
-// 				left: -4.8em;
-// 			}
-// 		}
-// 	}
-// }
+			.top {
+				bottom: 1.3em;
+				left: -4.8em;
+			}
+		}
+	}
+}
 
-// // Ipad: portrait
-// @media(orientation: portrait) AND (min-width: 768px) {
-// 	.gallery {
+// Ipad: portrait
+@media(orientation: portrait) AND (min-width: 768px) {
+	.gallery {
 
-// 		h2 {
-// 			font-size: 40px;
-// 		}
+		h2 {
+			font-size: 30px;
+		}
 
-// 		.title-line2 {
-// 			margin: 1.3em 0 2.5em 22.5em;
-// 		}
+		.title-line2 {
+			top: 22%;
+			left: 47%;
+		}
 	
-// 		.gallery-items {
+		.gallery-items {
+			margin-top: 4em;
 	
-// 			.gallery-item {
-// 				margin: 1em 0 0 1.5em;
-// 				float: left;
+			.gallery-item {
+				margin: 1em 0 0 1.5em;
+				float: left;
 
-// 				.gallery-layout {
-// 					.code-button, .zoom-button, .github-button {
+				.gallery-layout {
+					.code-button, .zoom-button, .github-button {
 	
-// 						.fa-code-branch, .fa-search-plus, .fa-eye {
-// 							font-size: 21px;
-// 							margin-top: .1em;
-// 						}
+						.fa-code-branch, .fa-search-plus, .fa-eye {
+							font-size: 21px;
+							margin-top: .1em;
+						}
 
-// 						.fa-eye {
-// 							margin-left: 1.1em;
-// 						}
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
+						.fa-eye {
+							margin-left: 1.1em;
+						}
+					}
+				}
+			}
+		}
+	}
 	
-// 	.modal-bg.active {
+	.modal-bg.active {
 	
-// 		.modal {
-// 			top: 18em;
-// 			left: 1.5em;
+		.modal {
+			top: 18em;
+			left: 1.5em;
 		
-// 			.top {
-// 				bottom: 16.6em;
-// 				left: 3em;
+			.top {
+				bottom: 16.6em;
+				left: 3em;
 
-// 				i.fa-times {
-// 					font-size: 50px;
-// 				}
-// 			}
+				i.fa-times {
+					font-size: 50px;
+				}
+			}
 	
-// 			.middle {
+			.middle {
 				
-// 				img {
-// 					height: 25.5em; 
-// 					width: 45em;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
+				img {
+					height: 25.5em; 
+					width: 45em;
+				}
+			}
+		}
+	}
+}
 
-// //Ipad: landscape
-// @media(orientation: landscape) AND (min-width: 1024px) {
-// 	.gallery {
+//Ipad: landscape
+@media(orientation: landscape) AND (min-width: 1024px) {
+	.gallery {
 	
-// 		.title-line2 {
-// 			margin: 1.3em 0 2.4em 30.5em; 
-// 		}
+		.title-line2 {
+			top: 18%;
+			left: 47.5%;
+		}
 	
-// 		.gallery-items {
+		.gallery-items {
 	
-// 			.gallery-item {
-// 				height: 13em; 
-// 				margin: .8em 0 0 1.2em;  
-// 				width: 19.5em;
-// 				left: .3em;  
+			.gallery-item {
+				height: 13em; 
+				margin: .8em 0 0 1.2em;  
+				width: 19.5em;
+				left: .3em;  
 	
-// 				.gallery-layout {
-// 					font-size: 19.3px; 
-// 					height: 10.7em;
+				.gallery-layout {
+					font-size: 19.3px; 
+					height: 10.7em;
 
-// 					.code-button, .zoom-button, .github-button {
+					.code-button, .zoom-button, .github-button {
 	
-// 						.fa-code-branch, .fa-search-plus, .fa-eye {
-// 							font-size: 26px;
-// 							margin-top: 6px;
-// 							margin-left: 1.5em;
-// 						}
+						.fa-code-branch, .fa-search-plus, .fa-eye {
+							font-size: 26px;
+							margin-top: 6px;
+							margin-left: 1.5em;
+						}
 
-// 						.fa-code-branch {
-// 							margin-left: 1.6em;
-// 						}
+						.fa-code-branch {
+							margin-left: 1.6em;
+						}
 
-// 						.fa-eye {
-// 							margin-left: 1.4em;
-// 						}
-// 					}
-// 				}
+						.fa-eye {
+							margin-left: 1.4em;
+						}
+					}
+				}
 
 				
 	
-// 				.project-picture {
-// 					height: 13em;  
-// 					width: 19.5em; 
-// 				}
-// 			}
-// 		}
-// 	}
+				.project-picture {
+					height: 13em;  
+					width: 19.5em; 
+				}
+			}
+		}
+	}
 	
-// 	.modal-bg.active {
+	.modal-bg.active {
 	
-// 		.modal {
-// 			left: 2em;
-// 			top: 6em; 
+		.modal {
+			left: 2em;
+			top: 6em; 
 		
-// 			.top {
-// 				bottom: 4.3em;
-// 				left: 4.8em;
+			.top {
+				bottom: 4.3em;
+				left: 4.8em;
 				
-// 				i.fa-times {
-// 					font-size: 45px;
-// 				}
-// 			}
+				i.fa-times {
+					font-size: 45px;
+				}
+			}
 
-// 			.middle {
+			.middle {
 				
-// 				img {
-// 					height: 35em;
-// 					width: 60em;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
+				img {
+					height: 35em;
+					width: 60em;
+				}
+			}
+		}
+	}
+}
 
-// // Ipad Pro: portrait
-// @media(orientation: portrait) AND (min-width: 1024px) AND (min-height: 1366px) {
-// 	.gallery {
+// Ipad Pro: portrait
+@media(orientation: portrait) AND (min-width: 1024px) AND (min-height: 1366px) {
+	.gallery {
 
-// 		.title-line2 {
-// 			margin: 1.3em 0 3em 30.5em;
-// 		}
+		.title-line2 {
+			top: 20%;
+			left: 47.5%;
+		}
 	
-// 		.gallery-items {
+		.gallery-items {
 	
-// 			.gallery-item {
-// 				margin: 1em 0 0 1.5em;
-// 				height: 12em;
-// 				width: 19em;
+			.gallery-item {
+				margin: 1em 0 0 1.5em;
+				height: 12em;
+				width: 19em;
 
-// 				.gallery-layout {
-// 					font-size: 16.3px;
-// 					height: 11.6em;
-// 					padding: 16px;
+				.gallery-layout {
+					font-size: 16.3px;
+					height: 11.6em;
+					padding: 16px;
 
-// 					.code-button, .zoom-button, .github-button {
+					.code-button, .zoom-button, .github-button {
 	
-// 						.fa-code-branch, .fa-search-plus, .fa-eye {
-// 							font-size: 26px;
-// 							margin-top: 4px;
-// 							margin-left: 1.5em;
-// 						}
+						.fa-code-branch, .fa-search-plus, .fa-eye {
+							font-size: 26px;
+							margin-top: 4px;
+							margin-left: 1.5em;
+						}
 
-// 						.fa-eye {
-// 							margin-left: 1.3em;
-// 						}
-// 					}
-// 				 }
+						.fa-eye {
+							margin-left: 1.3em;
+						}
+					}
+				 }
 
-// 				.project-picture {
-// 					height: 12em;
-// 					width: 19em;
-// 				}
-// 			}
-// 		}
-// 	}
+				.project-picture {
+					height: 12em;
+					width: 19em;
+				}
+			}
+		}
+	}
 	
-// 	.modal-bg.active {
+	.modal-bg.active {
 	
-// 		.modal {
-// 			top: 24em;
-// 			left: 2em;
+		.modal {
+			top: 24em;
+			left: 2em;
 		
-// 			.top {
-// 				bottom: 21.8em;
-// 				left: 4em;
+			.top {
+				bottom: 21.8em;
+				left: 4em;
 
-// 				i.fa-times {
-// 					font-size: 65px;
-// 				}
-// 			}
+				i.fa-times {
+					font-size: 65px;
+				}
+			}
 	
-// 			.middle {
+			.middle {
 				
-// 				img {
-// 					height: 34.5em; 
-// 					width: 60em;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
+				img {
+					height: 34.5em; 
+					width: 60em;
+				}
+			}
+		}
+	}
+}
 
-// @media(orientation: landscape) AND (min-width: 1366px) {
-// 	.gallery {
+@media(orientation: landscape) AND (min-width: 1366px) {
+	.gallery {
 
-// 		h2 {
-// 			font-size: 40px;
-// 		}
+		h2 {
+			font-size: 40px;
+		}
 	
-// 		.title-line2 {
-// 			margin: 1.3em 0 2.4em 41.1em; 
-// 		}
+		.title-line2 {
+			top: 18%;
+			left: 48.2%;
+		}
 	
-// 		.gallery-items {
+		.gallery-items {
 	
-// 			.gallery-item {
-// 				height: 17em; 
-// 				margin: .8em 0 0 1.5em;  
-// 				width: 25.5em;
-// 				left: 1.5em;  
+			.gallery-item {
+				height: 17em; 
+				margin: .8em 0 0 1.5em;  
+				width: 25.5em;
+				left: 1.5em;  
 	
-// 				.gallery-layout {
-// 					cursor: default;
-// 					font-size: 25.2px; 
-// 					height: 10.7em;
+				.gallery-layout {
+					cursor: default;
+					font-size: 25.2px; 
+					height: 10.7em;
 
-// 					.code-button, .zoom-button, .github-button {
-// 						transition: .3s;
-// 						cursor: pointer;
+					.code-button, .zoom-button, .github-button {
+						transition: .3s;
+						cursor: pointer;
 						
-// 							&:hover {
+							&:hover {
 								
-// 								background-color: rgba(255, 255, 255, .3);
+								background-color: rgba(255, 255, 255, .3);
 								
-// 								.fa-code-branch, .fa-search-plus, .fa-eye {
-// 									color: #333;
-// 								}
-// 							}
+								.fa-code-branch, .fa-search-plus, .fa-eye {
+									color: #333;
+								}
+							}
 	
-// 						.fa-code-branch, .fa-search-plus, .fa-eye {
-// 							font-size: 34px;
-// 						}
-// 					}
-// 				}
+						.fa-code-branch, .fa-search-plus, .fa-eye {
+							font-size: 34px;
+						}
+					}
+				}
 	
-// 				.project-picture {
-// 					height: 17em;  
-// 					width: 25.5em; 
-// 				}
-// 			}
-// 		}
-// 	}
+				.project-picture {
+					height: 17em;  
+					width: 25.5em; 
+				}
+			}
+		}
+	}
 	
-// 	.modal-bg.active {
+	.modal-bg.active {
 	
-// 		.modal {
-// 			left: 2.7em;
-// 			top: 9.5em; 
+		.modal {
+			left: 2.7em;
+			top: 9.5em; 
 		
-// 			.top {
-// 				bottom: 7.8em;
-// 				left: 7.5em;
+			.top {
+				bottom: 7.8em;
+				left: 7.5em;
 				
-// 				i.fa-times {
-// 					font-size: 55px;
-// 				}
-// 			}
+				i.fa-times {
+					font-size: 55px;
+				}
+			}
 
-// 			.middle {
+			.middle {
 				
-// 				img {
-// 					height: 45em;
-// 					width: 80em;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
+				img {
+					height: 45em;
+					width: 80em;
+				}
+			}
+		}
+	}
+}
 
-// @media(orientation: landscape) AND (min-width: 1366px) AND (min-height: 768px) {
-// 	.gallery {
+@media(orientation: landscape) AND (min-width: 1366px) AND (min-height: 768px) {
+	.gallery {
 
-// 		h2 {
-// 			font-size: 40px;
-// 		}
+		h2 {
+			font-size: 30px;
+		}
 	
-// 		.title-line2 {
-// 			margin: 1.3em 0 2.4em 41.1em; 
-// 		}
+		.title-line2 {
+			top: 15%;
+			left: 48.2%;
+		}
 	
-// 		.gallery-items {
+		.gallery-items {
 	
-// 			.gallery-item {
-// 				height: 17em; 
-// 				margin: .8em 0 0 1.5em;  
-// 				width: 25.5em;
-// 				left: 1.5em;  
+			.gallery-item {
+				height: 17em; 
+				margin: .8em 0 0 1.5em;  
+				width: 25.5em;
+				left: 1.5em;  
 	
-// 				.gallery-layout {
-// 					cursor: default;
-// 					font-size: 25.2px; 
-// 					height: 10.8em;
+				.gallery-layout {
+					cursor: default;
+					font-size: 25.2px; 
+					height: 10.8em;
 
-// 					.code-button, .zoom-button, .github-button {
-// 						transition: .3s;
-// 						cursor: pointer;
+					.code-button, .zoom-button, .github-button {
+						transition: .3s;
+						cursor: pointer;
 						
-// 							&:hover {
+							&:hover {
 								
-// 								background-color: rgba(255, 255, 255, .3);
+								background-color: rgba(255, 255, 255, .3);
 								
-// 								.fa-code-branch, .fa-search-plus, .fa-eye {
-// 									color: #333;
-// 								}
-// 							}
+								.fa-code-branch, .fa-search-plus, .fa-eye {
+									color: #333;
+								}
+							}
 	
-// 						.fa-code-branch, .fa-search-plus, .fa-eye {
-// 							font-size: 34px;
-// 							margin-top: 8px;
-// 						}
-// 					}
-// 				}
+						.fa-code-branch, .fa-search-plus, .fa-eye {
+							font-size: 34px;
+							margin-top: 8px;
+						}
+					}
+				}
 	
-// 				.project-picture {
-// 					height: 17em;  
-// 					width: 25.5em; 
-// 				}
-// 			}
-// 		}
-// 	}
+				.project-picture {
+					height: 17em;  
+					width: 25.5em; 
+				}
+			}
+		}
+	}
 	
-// 	.modal-bg.active {
+	.modal-bg.active {
 	
-// 		.modal {
-// 			left: 2.7em;
-// 			top: 9.5em; 
+		.modal {
+			left: 2.7em;
+			top: 9.5em; 
 		
-// 			.top {
-// 				bottom: 7.8em;
-// 				left: 7.5em;
+			.top {
+				bottom: 7.8em;
+				left: 7.5em;
 				
-// 				i.fa-times {
-// 					font-size: 55px;
-// 				}
-// 			}
+				i.fa-times {
+					font-size: 55px;
+				}
+			}
 
-// 			.middle {
+			.middle {
 				
-// 				img {
-// 					height: 45em;
-// 					width: 80em;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
+				img {
+					height: 45em;
+					width: 80em;
+				}
+			}
+		}
+	}
+}
 
-// // desktop: landscape
-// @media (min-width: 1920px) {
-// 	.gallery {
+// desktop: landscape
+@media (min-width: 1600px) {
+	.gallery {
 	
-// 		.title-line2 {
-// 			margin: 1.3em 0 2.5em 73em; 
-// 		}
+		.title-line2 {
+			top: 13%;
+			left: 48.7%;
+		}
 	
-// 		.gallery-items {
+		.gallery-items {
 	
-// 			.gallery-item {
-// 				height: 20em;
-// 				margin: .8em 0 0 3.5em;  
-// 				width: 33.5em;
-// 				left: 17em;  
+			.gallery-item {
+				height: 20em;
+				margin: .8em 0 0 3em;  
+				width: 33.5em;
+				left: 3.5em;  
 	
-// 				.gallery-layout {
-// 					cursor: default;
-// 					font-size: 33.2px;
-// 					height: 9.6em;
+				.gallery-layout {
+					cursor: default;
+					font-size: 33.2px;
+					height: 9.6em;
 					
-// 					.code-button, .zoom-button, .github-button {
-// 						cursor: pointer;
-// 						transition: .3s;
+					.code-button, .zoom-button, .github-button {
+						cursor: pointer;
+						transition: .3s;
 
-// 							&:hover {
-// 								background-color: rgba(255, 255, 255, .3);
+							&:hover {
+								background-color: rgba(255, 255, 255, .3);
 								
-// 								.fa-code-branch, .fa-search-plus, .fa-eye {
-// 									color: #333;
-// 								}
-// 							}
+								.fa-code-branch, .fa-search-plus, .fa-eye {
+									color: #333;
+								}
+							}
 	
-// 						.fa-code-branch, .fa-search-plus, .fa-eye {
-// 							font-size: 40px;
-// 							margin-left: 1.7em;
-// 						}
-// 					}
-// 				}
+						.fa-code-branch, .fa-search-plus, .fa-eye {
+							font-size: 40px;
+							margin-left: 1.7em;
+						}
+					}
+				}
 				
-// 				.project-picture {
-// 					height: 20em;  
-// 					width: 33.5em; 
-// 				}
-// 			}
-// 		}
-// 	}
+				.project-picture {
+					height: 20em;  
+					width: 33.5em; 
+				}
+			}
+		}
+	}
 	
-// 	.modal-bg.active {
+	.modal-bg.active {
 	
-// 		.modal {
-// 			left: 14.2em;
-// 			top: 4em; 
+		.modal {
+			left: 16.2em;
+			top: 4.2em; 
 		
-// 			.top {
-// 				bottom: 1.5em;
-// 				left: 4.5em;
+			.top {
+				bottom: 2.5em;
+				left: -1em;
 				
-// 				i.fa-times {
-// 					font-size: 65px;
-// 				}
-// 			}
+				i.fa-times {
+					font-size: 65px;
+				}
+			}
 
-// 			.middle {
+			.middle {
 				
-// 				img {
-// 					height: 65em;
-// 					width: 120em;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
+				img {
+					height: 50em;
+					width: 85em;
+				}
+			}
+		}
+	}
+}
