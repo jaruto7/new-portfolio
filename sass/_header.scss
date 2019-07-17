@@ -1,4 +1,4 @@
-* {
+html, body {
  margin: 0;
  padding: 0;
  scroll-behavior: smooth;
@@ -14,8 +14,8 @@
 body {
 
  header {
-  position: relative;
-  height: 100vh;
+  // position: relative;
+  height: auto;
   background-image: url(../images/photo1.png);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -23,9 +23,11 @@ body {
   background-size: cover;
 
   .welcome {
-   position: absolute;
+   position: relative;
+  //  line-height: 2em;
    top: 12em;
    left: 0;
+   height: 100vh;
    width: 100%;
    text-align: left;
    text-transform: uppercase;
@@ -94,183 +96,181 @@ body {
  }
 }
 
-// Nokia Lumia: landscape
-@media(orientation: landscape) AND (min-width: 533px) {
- body {
+// // Nokia Lumia: landscape
+// @media(orientation: landscape) AND (min-width: 533px) {
+//  body {
 
-  .wrap {
-   header {
+//   .wrap {
+//    header {
 
-    .welcome {
-     font-size: 25px;
-    }
+//     .welcome {
+//      font-size: 25px;
+//      top: 22em;
+//     left: 0;
+//     }
 
-    p {
-     top: 40px;
-     margin-left: 1.8em;
-    }
+//     p {
+//      top: 40px;
+//      margin-left: 1.8em;
+//     }
 
-    .mouse {
-     width: 20px;
-     height: 32px;
+//     .mouse {
+//      width: 20px;
+//      height: 32px;
 
-     .scroll {
-      width: 3px;
-      height: 8px;
-     }
-    }
-   }
-  }
- }
-}
+//      .scroll {
+//       width: 3px;
+//       height: 8px;
+//      }
+//     }
+//    }
+//   }
+//  }
+// }
 
-// Galaxy S5: portrait
-@media(orientation: portrait) AND (min-width: 360px) {
- body {
-  .wrap {
-   header {
-    background-size: cover;
-    background-position: center;
+// // Galaxy S5: portrait
+// @media(orientation: portrait) AND (min-width: 360px) {
+//  body {
+//   .wrap {
+//    header {
 
-    .welcome {
-     font-size: 22px;
-    }
+//     .welcome {
+//      font-size: 22px;
+//     }
 
-    p {
-     margin-left: 2em;
-    }
-   }
-  }
- }
-}
+//     p {
+//      margin-left: 2em;
+//     }
+//    }
+//   }
+//  }
+// }
 
-@media(orientation: landscape) AND (min-width: 640px) {
- body {
-  .wrap {
-   header {
-    background-size: cover;
-    background-position: center;
+// @media(orientation: landscape) AND (min-width: 640px) {
+//  body {
+//   .wrap {
+//    header {
 
-    .welcome {
-     font-size: 29px;
-    }
+//     .welcome {
+//      font-size: 29px;
+//     }
 
-    p {
-     margin-left: 2em;
-    }
-   }
-  }
- }
-}
+//     p {
+//      margin-left: 2em;
+//     }
+//    }
+//   }
+//  }
+// }
 
-// Pixel 2: portrait
-@media(orientation: portrait) AND (min-width: 411px) {
- .wrap {
+// // Pixel 2: portrait
+// @media(orientation: portrait) AND (min-width: 411px) {
+//  .wrap {
 
-  .welcome {
-   font-size: 23px;
-  }
+//   .welcome {
+//    font-size: 23px;
+//   }
 
-  .mouse {
-   width: 35px;
-   height: 55px;
+//   .mouse {
+//    width: 35px;
+//    height: 55px;
 
-   .scroll {
-    width: 5px;
-    height: 10px;
-   }
-  }
- }
-}
+//    .scroll {
+//     width: 5px;
+//     height: 10px;
+//    }
+//   }
+//  }
+// }
 
-@media(orientation: landscape) AND (min-width: 731px) {
- .wrap {
-  header {
+// @media(orientation: landscape) AND (min-width: 731px) {
+//  .wrap {
+//   header {
 
-   .welcome {
-    font-size: 29px;
-   }
-  }
+//    .welcome {
+//     font-size: 29px;
+//    }
+//   }
 
-  .mouse {
-   width: 35px;
-   height: 55px;
+//   .mouse {
+//    width: 35px;
+//    height: 55px;
 
-   .scroll {
-    width: 5px;
-    height: 10px;
-   }
-  }
- }
-}
+//    .scroll {
+//     width: 5px;
+//     height: 10px;
+//    }
+//   }
+//  }
+// }
 
-// Ipad: portrait
-@media(orientation: portrait) AND (min-width: 768px) {
- body {
-  .wrap {
-   header {
+// // Ipad: portrait
+// @media(orientation: portrait) AND (min-width: 768px) {
+//  body {
+//   .wrap {
+//    header {
 
-    .welcome {
-     font-size: 36px;
-     margin-top: -114px;
+//     .welcome {
+//      font-size: 36px;
+     
 
-     .text {
-      margin-left: .2em;
-     }
+//      .text {
+//       margin-left: .2em;
+//      }
 
-     p {
-      margin-top: 23px;
-      font-size: 17px;
-     }
-    }
-   }
+//      p {
+//       margin-top: 23px;
+//       font-size: 17px;
+//      }
+//     }
+//    }
 
-   .mouse {
-    width: 45px;
-    height: 65px;
+//    .mouse {
+//     width: 45px;
+//     height: 65px;
 
 
-    .scroll {
-     width: 6px;
-     height: 13px;
-    }
-   }
-  }
- }
-}
+//     .scroll {
+//      width: 6px;
+//      height: 13px;
+//     }
+//    }
+//   }
+//  }
+// }
 
 
-@media(orientation: landscape) AND (min-width: 1024px) AND (min-height: 768px) {
- body {
-  .wrap {
-   header {
+// @media(orientation: landscape) AND (min-width: 1024px) AND (min-height: 768px) {
+//  body {
+//   .wrap {
+//    header {
 
-    .welcome {
-     font-size: 62px;
-     top: 6em;
-     left: 0;
-     text-align: left;
+//     .welcome {
+//      font-size: 62px;
+//      top: 6em;
+//      left: 0;
+//      text-align: left;
 
-     .text {
-      margin-left: .2em;
-     }
+//      .text {
+//       margin-left: .2em;
+//      }
 
-     p {
-      font-size: 14px;
-      margin: 49px 0 49px 5.2em;
-     }
-    }
+//      p {
+//       font-size: 14px;
+//       margin: 49px 0 49px 5.2em;
+//      }
+//     }
 
-    .mouse {
-     width: 35px;
-     height: 55px;
+//     .mouse {
+//      width: 35px;
+//      height: 55px;
 
-     .scroll {
-      width: 5px;
-      height: 10px;
-     }
-    }
-   }
-  }
- }
-}
+//      .scroll {
+//       width: 5px;
+//       height: 10px;
+//      }
+//     }
+//    }
+//   }
+//  }
+// }
