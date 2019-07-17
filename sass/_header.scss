@@ -1,4 +1,4 @@
-html, body {
+* {
  margin: 0;
  padding: 0;
  scroll-behavior: smooth;
@@ -15,6 +15,7 @@ body {
 
  header {
   // position: relative;
+  padding-top: 100vh;
   height: auto;
   background-image: url(../images/photo1.png);
   background-attachment: fixed;
@@ -25,9 +26,9 @@ body {
   .welcome {
    position: relative;
   //  line-height: 2em;
-   top: 12em;
+   bottom: 15em;
    left: 0;
-   height: 100vh;
+  //  height: 100vh;
    width: 100%;
    text-align: left;
    text-transform: uppercase;
@@ -47,7 +48,7 @@ body {
     left: 1.6em;
     font-size: 10px;
     letter-spacing: 2px;
-    margin: auto 1em;
+    // margin: auto 1em;
    }
 
    .cursor {

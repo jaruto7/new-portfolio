@@ -73,17 +73,17 @@ aside nav a { font-size: 13px; color: #fff; text-align: center; text-decoration:
   .active .nav-link { color: gray; }
   .active .nav-link:hover { color: black; } }
 
-html, body { margin: 0; padding: 0; scroll-behavior: smooth; box-sizing: border-box; }
+* { margin: 0; padding: 0; scroll-behavior: smooth; box-sizing: border-box; }
 
 .clearfix::after { content: ""; display: block; clear: both; }
 
-body header { height: auto; background-image: url(../images/photo1.png); background-attachment: fixed; background-repeat: no-repeat; background-position: center; background-size: cover; }
+body header { padding-top: 100vh; height: auto; background-image: url(../images/photo1.png); background-attachment: fixed; background-repeat: no-repeat; background-position: center; background-size: cover; }
 
-body header .welcome { position: relative; top: 12em; left: 0; height: 100vh; width: 100%; text-align: left; text-transform: uppercase; font-size: 20px; color: #fff; font-family: 'Open Sans', sans-serif; }
+body header .welcome { position: relative; bottom: 15em; left: 0; width: 100%; text-align: left; text-transform: uppercase; font-size: 20px; color: #fff; font-family: 'Open Sans', sans-serif; }
 
 body header .welcome .text { display: inline-block; padding-left: 1.3em; }
 
-body header .welcome p { text-shadow: 2px 2px 2px black; position: absolute; top: 35px; left: 1.6em; font-size: 10px; letter-spacing: 2px; margin: auto 1em; }
+body header .welcome p { text-shadow: 2px 2px 2px black; position: absolute; top: 35px; left: 1.6em; font-size: 10px; letter-spacing: 2px; }
 
 body header .welcome .cursor { opacity: 0; transition: .2s; color: #ccc; }
 
