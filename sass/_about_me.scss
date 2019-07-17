@@ -1,10 +1,11 @@
 .about-me {
 	font-family: 'Montserrat', sans-serif;
 	position: relative;
+	padding-top: 3em;
 
 	h2 {
 		font-size: 30px;
-		padding: 1.7em 0 2.7em 0;
+		margin-bottom: 3em;
 		text-align: center;
 
 		span {
@@ -16,7 +17,7 @@
 
 	.title-line {
 		border-bottom: 2px solid gray;
-		top: 13.8%;
+		top: 12.7%;
 		left: 43%;
 		position: absolute;
 		width: 3em;	
@@ -53,7 +54,7 @@
 
 	.point-line {
 		position: absolute;
-		top: 10.5em;
+		top: 10.8em;
 		left: 50%;
 		transform: translateX(-50%);
 		width: 3px;
@@ -89,7 +90,7 @@
 	.about-me {
 	
 		.title-line {
-			top: 14%;
+			// top: 14%;
 			left: 46%;
 		}
 	
@@ -109,7 +110,7 @@
 	.about-me {
 	
 		.title-line {
-			top: 14%;
+			// top: 14%;
 			left: 43.5%;
 		}
 	
@@ -129,7 +130,7 @@
 	.about-me {
 	
 		.title-line {
-			top: 14%;
+			// top: 14%;
 			left: 46.5%;
 		}
 	
@@ -149,7 +150,7 @@
 	.about-me {
 	
 		.title-line {
-			top: 14%;
+			// top: 14%;
 			left: 44.5%;
 		}
 	
@@ -168,7 +169,7 @@
 	.about-me {
 	
 		.title-line {
-			top: 14%;
+			// top: 14%;
 			left: 47%;
 		}
 	
@@ -188,7 +189,7 @@
 	.about-me {
 	
 		.title-line {
-			top: 14%;
+			// top: 14%;
 			left: 44.5%;
 		}
 	
@@ -215,7 +216,7 @@
 		}
 	
 		.title-line {
-			top: 14%;
+			// top: 14%;
 			left: 47.2%;
 		}
 	
@@ -233,13 +234,9 @@
 // Ipad: portrait
 @media(orientation: portrait) AND (min-width: 768px) {
 	.about-me {
-
-		h2 {
-			padding: 1.6em 0 2.7em 0;
-		}
 	
 		.title-line {
-			top: 13%;
+			// top: 23%;
 			left: 47%;
 		}
 
@@ -287,6 +284,11 @@
 //Ipad: landscape
 @media(orientation: landscape) AND (min-width: 1024px) {
 	.about-me {
+		padding-top: 3em;
+
+		h2 {
+			padding: 0;
+		}
 
 		.title-line {
 			top: 14%;
@@ -309,7 +311,7 @@
 	.about-me {
 
 		h2 {
-			padding: 1.8em 0 3.1em 0;
+			// padding: 1.8em 0 3.1em 0;
 		}
 	
 		.title-line {
@@ -395,46 +397,48 @@
 
 }
 
-// @media(orientation: landscape) AND (min-width: 1366px) AND (min-height: 768px) {
-// 	.about-me {
+@media(orientation: landscape) AND (min-width: 1366px) AND (min-height: 768px) {
+	.about-me {
 
-// 		h2 {
-// 			padding: 1.4em 0 0 0;
-// 		}
+		.title-line {
+			border-bottom: 2px solid gray;
+			top: 13%;
+			left: 48.2%;
+		}
 
-// 		.point-line {
-// 			top: 11.2em;
-// 			height: 37.5em;
-// 			width: 4px;
-// 		}
+		.point-line {
+			top: 11em;
+			height: 37em;
+			width: 4px;
+		}
 
-// 		.pointer-1 {
-// 			top: 16.5em;
-// 		}
+		.pointer-1 {
+			top: 16.5em;
+		}
 	
-// 		.pointer-2 {
-// 			top: 29em;
-// 		}
+		.pointer-2 {
+			top: 29em;
+		}
 	
-// 		.pointer-3 {
-// 			top: 41.5em;
-// 		}
-// 	}
+		.pointer-3 {
+			top: 41.5em;
+		}
+	}
 
-// }
+}
 
 // desktop: landscape
 @media(orientation: landscape) AND (min-width: 1600px) {
 	.about-me {
 	
 		h2 {
-			padding: 1.4em 0 2.2em 0;
 			font-size: 40px;
+			margin-bottom: 2em;
 		}
 
 		.title-line {
 			border-bottom: 2px solid gray;
-			top: 8.4%;
+			top: 7.5%;
 			left: 48.8%;
 		}
 
@@ -448,7 +452,7 @@
 		}
 
 		.point-line {
-			top: 11.8em;
+			top: 10.9em;
 			height: 76.5em;
 			width: 5px;
 		}
@@ -477,7 +481,7 @@
 		}
 	
 		.pointer-2 {
-			top: 49.5em;
+			top: 48.5em;
 		}
 	
 		.pointer-3 {

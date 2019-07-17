@@ -1,6 +1,6 @@
 .contact {
-  margin-bottom: 5em;
-  margin-top: 3em;
+  margin-bottom: 4.6em;
+  padding-top: 3em;
   position: relative;
 
   h2 {
@@ -19,7 +19,7 @@
     border-bottom: 2px solid gray;
     display: inline-block;
     position: absolute;
-    top: 3.5em;
+    top: 6.2em;
     left: 43%;
     width: 3em;
   }
@@ -55,7 +55,7 @@
       
       p { 
         .social-title {
-          font-size: 14px;
+          font-size: 11px;
         }
       }
     }
@@ -79,8 +79,6 @@
  // Nokia Lumia: landscape
 @media(orientation: landscape) AND (min-width: 533px) {
 	.contact {
-    margin-bottom: 5em;
-    margin-top: 3em;
     position: relative;
   
     h2 {
@@ -99,7 +97,7 @@
       border-bottom: 2px solid gray;
       display: inline-block;
       position: absolute;
-      top: 3.5em;
+      top: 6.2em;
       left: 45%;
       width: 3em;
     }
@@ -155,11 +153,9 @@
   }
 }
 
-// Galaxy S5: landscape
-@media(orientation: landscape) AND (min-width: 640px) {
-	.contact {
-    margin-bottom: 5em;
-    margin-top: 3em;
+// Galaxy S5: portrait
+@media(orientation: portrait) AND (min-width: 360px) {
+  .contact {
     position: relative;
   
     h2 {
@@ -178,8 +174,84 @@
       border-bottom: 2px solid gray;
       display: inline-block;
       position: absolute;
-      top: 3.5em;
-      left: 45%;
+      top: 6.2em;
+      left: 43.5%;
+      width: 3em;
+    }
+  }
+  
+  .footer {
+    background-color: #222222;
+    text-align: center;
+    padding-top: 1.5em;
+    color: #fff;
+  
+    .col-3 {
+      float: left;
+      width: 100%;
+      cursor: default;
+  
+      .fab, .fas {
+        font-size: 22px;
+      }
+  
+      h3 {
+        display: inline-block;
+        padding-bottom: 2px;
+        padding-top: 1em;
+      }
+  
+      a {
+        color: #fff;
+        p {
+          &:hover {
+            transform: scale(1.1, 1.1);
+          }
+          .social-title {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  
+    .footer-title {
+      float: left;
+      width: 100%;
+      margin-top: 2em;
+      
+      .paragraph-title {
+        border-top: 1px solid rgb(56, 56, 56);
+        margin: 0 1em;
+        color: lightgray;
+        padding-top: 4.5em;
+        padding-bottom: 6.5em;
+      }
+    }
+  }
+}
+
+
+@media(orientation: landscape) AND (min-width: 640px) {
+	.contact {
+    position: relative;
+  
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 30px;
+      text-align: center;
+  
+      span {
+        background: -webkit-linear-gradient(#eee, #333);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  
+    .title-line3 {
+      border-bottom: 2px solid gray;
+      display: inline-block;
+      position: absolute;
+      left: 46%;
       width: 3em;
     }
   }
@@ -234,10 +306,9 @@
   }
 }
 
-@media(orientation: landscape) AND (min-width: 731px) {
-	.contact {
-    margin-bottom: 5em;
-    margin-top: 3em;
+// Pixel 2: portrait
+@media(orientation: portrait) AND (min-width: 411px) {
+  .contact {
     position: relative;
   
     h2 {
@@ -256,8 +327,83 @@
       border-bottom: 2px solid gray;
       display: inline-block;
       position: absolute;
-      top: 3.5em;
-      left: 46%;
+      top: 6.2em;
+      left: 45%;
+      width: 3em;
+    }
+  }
+  
+  .footer {
+    background-color: #222222;
+    text-align: center;
+    padding-top: 1.5em;
+    color: #fff;
+  
+    .col-3 {
+      float: left;
+      width: 100%;
+      cursor: default;
+  
+      .fab, .fas {
+        font-size: 22px;
+      }
+  
+      h3 {
+        display: inline-block;
+        padding-bottom: 2px;
+        padding-top: 1em;
+      }
+  
+      a {
+        color: #fff;
+        p {
+          &:hover {
+            transform: scale(1.1, 1.1);
+          }
+          .social-title {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  
+    .footer-title {
+      float: left;
+      width: 100%;
+      margin-top: 3em;
+      
+      .paragraph-title {
+        border-top: 1px solid rgb(56, 56, 56);
+        margin: 0 1em;
+        color: lightgray;
+        padding-top: 9em;
+        padding-bottom: 10em;
+      }
+    }
+  }
+}
+
+@media(orientation: landscape) AND (min-width: 731px) {
+	.contact {
+    position: relative;
+  
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 30px;
+      text-align: center;
+  
+      span {
+        background: -webkit-linear-gradient(#eee, #333);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  
+    .title-line3 {
+      border-bottom: 2px solid gray;
+      display: inline-block;
+      position: absolute;
+      left: 46.5%;
       width: 3em;
     }
   }
@@ -312,10 +458,10 @@
   }
 }
 
-@media(orientation: landscape) AND (min-width: 812px) {
+// Iphone X: portrait
+@media(orientation: portrait) AND (min-width: 375px) {
   .contact {
-    margin-bottom: 5em;
-    margin-top: 3em;
+    position: relative;
   
     h2 {
       font-family: 'Montserrat', sans-serif;
@@ -331,7 +477,82 @@
   
     .title-line3 {
       border-bottom: 2px solid gray;
-      top: 3.5em;
+      display: inline-block;
+      position: absolute;
+      top: 6.2em;
+      left: 45%;
+      width: 3em;
+    }
+  }
+  
+  .footer {
+    background-color: #222222;
+    text-align: center;
+    padding-top: 1.5em;
+    color: #fff;
+  
+    .col-3 {
+      float: left;
+      width: 100%;
+      cursor: default;
+  
+      .fab, .fas {
+        font-size: 22px;
+      }
+  
+      h3 {
+        display: inline-block;
+        padding-bottom: 2px;
+        padding-top: 1em;
+      }
+  
+      a {
+        color: #fff;
+        p {
+          &:hover {
+            transform: scale(1.1, 1.1);
+          }
+          .social-title {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  
+    .footer-title {
+      float: left;
+      width: 100%;
+      margin-top: 3em;
+      
+      .paragraph-title {
+        border-top: 1px solid rgb(56, 56, 56);
+        margin: 0 1em;
+        color: lightgray;
+        padding-top: 9em;
+        padding-bottom: 11.2em;
+      }
+    }
+  }
+}
+
+@media(orientation: landscape) AND (min-width: 812px) {
+  .contact {
+  
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 30px;
+      text-align: center;
+  
+      span {
+        background: -webkit-linear-gradient(#eee, #333);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  
+    .title-line3 {
+      border-bottom: 2px solid gray;
+      // top: 3.5em;
       left: 47.5%;
       width: 3em;
     }
@@ -391,8 +612,6 @@
 // Ipad: portrait
 @media(orientation: portrait) AND (min-width: 768px) {
 	.contact {
-    margin-bottom: 5em;
-    margin-top: 3em;
   
     h2 {
       font-family: 'Montserrat', sans-serif;
@@ -408,7 +627,7 @@
   
     .title-line3 {
       border-bottom: 2px solid gray;
-      top: 3.5em;
+      // top: 3.5em;
       left: 47.5%;
       width: 3em;
     }
@@ -470,8 +689,6 @@
 //Ipad: landscape
 @media(orientation: landscape) AND (min-width: 1024px) {
   .contact {
-    margin-bottom: 5em;
-    margin-top: 3em;
   
     h2 {
       font-family: 'Montserrat', sans-serif;
@@ -487,7 +704,7 @@
   
     .title-line3 {
       border-bottom: 2px solid gray;
-      top: 3.5em;
+      // top: 3.5em;
       left: 47.5%;
       width: 3em;
     }
@@ -545,8 +762,6 @@
 // Ipad Pro: portrait
 @media(orientation: portrait) AND (min-width: 1024px) AND (min-height: 1366px) {
 	.contact {
-    margin-bottom: 5em;
-    margin-top: 3em;
   
     h2 {
       font-family: 'Montserrat', sans-serif;
@@ -562,7 +777,7 @@
   
     .title-line3 {
       border-bottom: 2px solid gray;
-      top: 3.5em;
+      // top: 3.5em;
       left: 47.5%;
       width: 3em;
     }
@@ -619,8 +834,6 @@
 
 @media(orientation: landscape) AND (min-width: 1366px) {
 	.contact {
-    margin-bottom: 5em;
-    margin-top: 3em;
   
     h2 {
       font-family: 'Montserrat', sans-serif;
@@ -636,7 +849,7 @@
   
     .title-line3 {
       border-bottom: 2px solid gray;
-      top: 3.5em;
+      top: 7.5%;
       left: 48%;
       width: 3em;
     }
@@ -696,8 +909,6 @@
 
 @media(orientation: landscape) AND (min-width: 1366px) AND (min-height: 768px) {
 	.contact {
-    margin-bottom: 5em;
-    margin-top: 3em;
   
     h2 {
       font-family: 'Montserrat', sans-serif;
@@ -713,7 +924,7 @@
   
     .title-line3 {
       border-bottom: 2px solid gray;
-      top: 3.5em;
+      top: 6em;
       left: 48%;
       width: 3em;
     }
@@ -769,7 +980,7 @@
 @media (orientation: landscape) AND (min-width: 1600px) {
   .contact {
     margin-bottom: 5.8em;
-    margin-top: 3.8em;
+    padding-top: 3.8em;
   
     h2 {
       font-family: 'Montserrat', sans-serif;
@@ -785,7 +996,7 @@
   
     .title-line3 {
       border-bottom: 2px solid gray;
-      top: 4em;
+      top: 7.5em;
       left: 48.5%;
       width: 3em;
     }

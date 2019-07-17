@@ -24,7 +24,7 @@ body {
 
   .welcome {
    position: absolute;
-   top: 50%;
+   top: 12em;
    left: 0;
    width: 100%;
    text-align: left;
@@ -42,10 +42,10 @@ body {
     text-shadow: 2px 2px 2px black;
     position: absolute;
     top: 35px;
-    left: 3%;
+    left: 1.6em;
     font-size: 10px;
     letter-spacing: 2px;
-    margin: auto 5%;
+    margin: auto 1em;
    }
 
    .cursor {
@@ -61,7 +61,7 @@ body {
 
   .mouse {
    position: absolute;
-   bottom: 2%;
+   bottom: 1em;
    left: 50%;
    width: 30px;
    height: 48px;
