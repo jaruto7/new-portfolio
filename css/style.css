@@ -420,7 +420,7 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
 
 @media (min-width: 1600px) { .gallery h2 { font-size: 40px; }
   .gallery .title-line2 { top: 24%; left: 48.7%; }
-  .gallery .gallery-items .gallery-item { height: 20em; margin: 1.5em 0 0 2em; width: 33.5em; left: 5.5em; top: 0; }
+  .gallery .gallery-items .gallery-item { height: 20em; margin: 1.5em 0 0 3.8em; width: 33.5em; }
   .gallery .gallery-items .gallery-item .gallery-layout { cursor: default; font-size: 33.2px; height: 9.6em; }
   .gallery .gallery-items .gallery-item .gallery-layout .code-button, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button, .gallery .gallery-items .gallery-item .gallery-layout .github-button { cursor: pointer; transition: .3s; }
   .gallery .gallery-items .gallery-item .gallery-layout .code-button:hover, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button:hover, .gallery .gallery-items .gallery-item .gallery-layout .github-button:hover { background-color: rgba(255, 255, 255, 0.3); }
