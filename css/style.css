@@ -123,9 +123,9 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   body .wrap .mouse { width: 45px; height: 65px; }
   body .wrap .mouse .scroll { width: 6px; height: 13px; } }
 
-@media (orientation: landscape) and (min-width: 1024px) and (min-height: 768px) { body .wrap header .welcome { font-size: 62px; top: 55%; left: 0; text-align: left; }
+@media (orientation: landscape) and (min-width: 1024px) and (min-height: 768px) { body .wrap header .welcome { font-size: 62px; top: 6em; left: 0; text-align: left; }
   body .wrap header .welcome .text { margin-left: .2em; }
-  body .wrap header .welcome p { font-size: 14px; margin: 49px 0 49px 3em; }
+  body .wrap header .welcome p { font-size: 14px; margin: 49px 0 49px 5.2em; }
   body .wrap header .mouse { width: 35px; height: 55px; }
   body .wrap header .mouse .scroll { width: 5px; height: 10px; } }
 
@@ -420,7 +420,7 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
 
 @media (min-width: 1600px) { .gallery h2 { font-size: 40px; }
   .gallery .title-line2 { top: 24%; left: 48.7%; }
-  .gallery .gallery-items .gallery-item { height: 20em; margin: 1.5em 0 0 2em; width: 33.5em; left: 5.5em; }
+  .gallery .gallery-items .gallery-item { height: 20em; margin: 1.5em 0 0 2em; width: 33.5em; left: 5.5em; top: 0; }
   .gallery .gallery-items .gallery-item .gallery-layout { cursor: default; font-size: 33.2px; height: 9.6em; }
   .gallery .gallery-items .gallery-item .gallery-layout .code-button, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button, .gallery .gallery-items .gallery-item .gallery-layout .github-button { cursor: pointer; transition: .3s; }
   .gallery .gallery-items .gallery-item .gallery-layout .code-button:hover, .gallery .gallery-items .gallery-item .gallery-layout .zoom-button:hover, .gallery .gallery-items .gallery-item .gallery-layout .github-button:hover { background-color: rgba(255, 255, 255, 0.3); }
