@@ -674,6 +674,7 @@
 	.gallery {
 
 		.title-line2 {
+			border-bottom: 3px solid gray;
 			top: 20%;
 			left: 47.5%;
 		}
@@ -898,9 +899,14 @@
 // desktop: landscape
 @media (min-width: 1600px) {
 	.gallery {
+		margin-top: 4em;
+
+		h2 {
+			font-size: 40px;
+		}
 	
 		.title-line2 {
-			top: 13%;
+			top: 14.4%;
 			left: 48.7%;
 		}
 	
@@ -908,7 +914,7 @@
 	
 			.gallery-item {
 				height: 20em;
-				margin: .8em 0 0 3em;  
+				margin: 1.5em 0 0 3em;  
 				width: 33.5em;
 				left: 3.5em;  
 	
