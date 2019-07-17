@@ -25,7 +25,7 @@ body {
   .welcome {
    position: relative;
   //  line-height: 2em;
-   top: 9em;
+   top: 10em;
    left: 0;
   //  height: 100vh;
    width: 100%;
@@ -96,181 +96,272 @@ body {
  }
 }
 
-// // Nokia Lumia: landscape
-// @media(orientation: landscape) AND (min-width: 533px) {
-//  body {
+// Nokia Lumia: landscape
+@media(orientation: landscape) AND (min-width: 533px) {
+ body {
 
-//   .wrap {
-//    header {
+  .wrap {
+   header {
 
-//     .welcome {
-//      font-size: 25px;
-//      top: 22em;
-//     left: 0;
-//     }
+    .welcome {
+     font-size: 25px;
+     top: 5em;
+     left: 0;
+    }
 
-//     p {
-//      top: 40px;
-//      margin-left: 1.8em;
-//     }
+    p {
+     top: 40px;
+     margin-left: 1.8em;
+    }
 
-//     .mouse {
-//      width: 20px;
-//      height: 32px;
+    .mouse {
+     width: 20px;
+     height: 32px;
 
-//      .scroll {
-//       width: 3px;
-//       height: 8px;
-//      }
-//     }
-//    }
-//   }
-//  }
-// }
+     .scroll {
+      width: 3px;
+      height: 8px;
+     }
+    }
+   }
+  }
+ }
+}
 
-// // Galaxy S5: portrait
-// @media(orientation: portrait) AND (min-width: 360px) {
-//  body {
-//   .wrap {
-//    header {
+// Galaxy S5: portrait
+@media(orientation: portrait) AND (min-width: 360px) {
+ body {
+  .wrap {
+   header {
 
-//     .welcome {
-//      font-size: 22px;
-//     }
+    .welcome {
+     top: 11em;
+     left: 0;
+     font-size: 22px;
+    }
 
-//     p {
-//      margin-left: 2em;
-//     }
-//    }
-//   }
-//  }
-// }
+    p {
+     margin-left: 1.2em;
+    }
+   }
+  }
+ }
+}
 
-// @media(orientation: landscape) AND (min-width: 640px) {
-//  body {
-//   .wrap {
-//    header {
+@media(orientation: landscape) AND (min-width: 640px) {
+ body {
+  .wrap {
+   header {
 
-//     .welcome {
-//      font-size: 29px;
-//     }
+    .welcome {
+     font-size: 29px;
+    }
 
-//     p {
-//      margin-left: 2em;
-//     }
-//    }
-//   }
-//  }
-// }
+    p {
+     margin-left: 2.4em;
+    }
+   }
+  }
+ }
+}
 
-// // Pixel 2: portrait
-// @media(orientation: portrait) AND (min-width: 411px) {
-//  .wrap {
+// Pixel 2: portrait
+@media(orientation: portrait) AND (min-width: 411px) {
+  body {
+    .wrap {
+     header {
+  
+      .welcome {
+       top: 12em;
+       left: 0;
+       font-size: 22px;
+      }
+  
+      p {
+       margin-left: 1.4em;
+      }
+     }
+    }
+   }
+}
 
-//   .welcome {
-//    font-size: 23px;
-//   }
+@media(orientation: landscape) AND (min-width: 731px) {
+ .wrap {
+  header {
 
-//   .mouse {
-//    width: 35px;
-//    height: 55px;
+   .welcome {
+    font-size: 29px;
+   }
+  }
 
-//    .scroll {
-//     width: 5px;
-//     height: 10px;
-//    }
-//   }
-//  }
-// }
+  .mouse {
+   width: 35px;
+   height: 55px;
 
-// @media(orientation: landscape) AND (min-width: 731px) {
-//  .wrap {
-//   header {
+   .scroll {
+    width: 5px;
+    height: 10px;
+   }
+  }
+ }
+}
 
-//    .welcome {
-//     font-size: 29px;
-//    }
-//   }
+@media(orientation: portrait) AND (min-width: 375px) {
+  body {
+    .wrap {
+     header {
+  
+      .welcome {
+       top: 15em;
+       left: 0;
+       font-size: 22px;
+      }
+  
+      p {
+      //  margin-left: 2em;
+      }
+     }
+    }
+   }
+}
 
-//   .mouse {
-//    width: 35px;
-//    height: 55px;
+// Ipad: portrait
+@media(orientation: portrait) AND (min-width: 768px) {
+ body {
+  .wrap {
+   header {
 
-//    .scroll {
-//     width: 5px;
-//     height: 10px;
-//    }
-//   }
-//  }
-// }
-
-// // Ipad: portrait
-// @media(orientation: portrait) AND (min-width: 768px) {
-//  body {
-//   .wrap {
-//    header {
-
-//     .welcome {
-//      font-size: 36px;
+    .welcome {
+     font-size: 36px;
      
+     .text {
+      margin-left: .2em;
+     }
 
-//      .text {
-//       margin-left: .2em;
-//      }
+     p {
+      margin-top: 23px;
+       margin-left: 1.7em;
+      font-size: 17px;
+     }
+    }
+   }
 
-//      p {
-//       margin-top: 23px;
-//       font-size: 17px;
-//      }
-//     }
-//    }
-
-//    .mouse {
-//     width: 45px;
-//     height: 65px;
-
-
-//     .scroll {
-//      width: 6px;
-//      height: 13px;
-//     }
-//    }
-//   }
-//  }
-// }
+   .mouse {
+    width: 45px;
+    height: 65px;
 
 
-// @media(orientation: landscape) AND (min-width: 1024px) AND (min-height: 768px) {
-//  body {
-//   .wrap {
-//    header {
+    .scroll {
+     width: 6px;
+     height: 13px;
+    }
+   }
+  }
+ }
+}
 
-//     .welcome {
-//      font-size: 62px;
-//      top: 6em;
-//      left: 0;
-//      text-align: left;
 
-//      .text {
-//       margin-left: .2em;
-//      }
+@media(orientation: landscape) AND (min-width: 1024px) AND (min-height: 768px) {
+ body {
+  .wrap {
+   header {
 
-//      p {
-//       font-size: 14px;
-//       margin: 49px 0 49px 5.2em;
-//      }
-//     }
+    .welcome {
+     font-size: 62px;
+     top: 5em;
+     left: 0;
+     text-align: left;
 
-//     .mouse {
-//      width: 35px;
-//      height: 55px;
+     .text {
+      margin-left: .2em;
+     }
 
-//      .scroll {
-//       width: 5px;
-//       height: 10px;
-//      }
-//     }
-//    }
-//   }
-//  }
-// }
+     p {
+      font-size: 14px;
+      margin: 49px 0 49px 5.2em;
+     }
+    }
+
+    .mouse {
+     width: 35px;
+     height: 55px;
+
+     .scroll {
+      width: 5px;
+      height: 10px;
+     }
+    }
+   }
+  }
+ }
+}
+
+// Ipad Pro: portrait
+@media(orientation: portrait) AND (min-width: 1024px) {
+  body {
+   .wrap {
+    header {
+ 
+     .welcome {
+      font-size: 42px;
+      
+      .text {
+       margin-left: .2em;
+      }
+ 
+      p {
+       margin-bottom: 123px;
+        margin-left: 1.7em;
+       font-size: 20px;
+      }
+     }
+    }
+ 
+    .mouse {
+     width: 45px;
+     height: 65px;
+ 
+ 
+     .scroll {
+      width: 6px;
+      height: 13px;
+     }
+    }
+   }
+  }
+ }
+
+ // Desktop
+ @media(orientation: portrait) AND (min-width: 1600px) {
+  body {
+   .wrap {
+    header {
+ 
+     .welcome {
+      font-size: 42px;
+      
+      .text {
+       margin-left: .2em;
+      }
+ 
+      p {
+       margin-bottom: 123px;
+        margin-left: 1.7em;
+       font-size: 20px;
+      }
+     }
+    }
+ 
+    .mouse {
+     width: 45px;
+     height: 65px;
+ 
+ 
+     .scroll {
+      width: 6px;
+      height: 13px;
+     }
+    }
+   }
+  }
+ }

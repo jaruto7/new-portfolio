@@ -79,7 +79,7 @@ aside nav a { font-size: 13px; color: #fff; text-align: center; text-decoration:
 
 body header { position: relative; height: 100vh; background-image: url(../images/photo1.png); background-attachment: fixed; background-repeat: no-repeat; background-position: center; background-size: cover; }
 
-body header .welcome { position: relative; top: 9em; left: 0; width: 100%; text-align: left; text-transform: uppercase; font-size: 20px; color: #fff; font-family: 'Open Sans', sans-serif; }
+body header .welcome { position: relative; top: 10em; left: 0; width: 100%; text-align: left; text-transform: uppercase; font-size: 20px; color: #fff; font-family: 'Open Sans', sans-serif; }
 
 body header .welcome .text { display: inline-block; padding-left: 1.3em; }
 
@@ -95,6 +95,50 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
 
 @keyframes move-scroll { 50% { top: 30%; }
   100% { top: 15%; } }
+
+@media (orientation: landscape) and (min-width: 533px) { body .wrap header .welcome { font-size: 25px; top: 5em; left: 0; }
+  body .wrap header p { top: 40px; margin-left: 1.8em; }
+  body .wrap header .mouse { width: 20px; height: 32px; }
+  body .wrap header .mouse .scroll { width: 3px; height: 8px; } }
+
+@media (orientation: portrait) and (min-width: 360px) { body .wrap header .welcome { top: 11em; left: 0; font-size: 22px; }
+  body .wrap header p { margin-left: 1.2em; } }
+
+@media (orientation: landscape) and (min-width: 640px) { body .wrap header .welcome { font-size: 29px; }
+  body .wrap header p { margin-left: 2.4em; } }
+
+@media (orientation: portrait) and (min-width: 411px) { body .wrap header .welcome { top: 12em; left: 0; font-size: 22px; }
+  body .wrap header p { margin-left: 1.4em; } }
+
+@media (orientation: landscape) and (min-width: 731px) { .wrap header .welcome { font-size: 29px; }
+  .wrap .mouse { width: 35px; height: 55px; }
+  .wrap .mouse .scroll { width: 5px; height: 10px; } }
+
+@media (orientation: portrait) and (min-width: 375px) { body .wrap header .welcome { top: 15em; left: 0; font-size: 22px; } }
+
+@media (orientation: portrait) and (min-width: 768px) { body .wrap header .welcome { font-size: 36px; }
+  body .wrap header .welcome .text { margin-left: .2em; }
+  body .wrap header .welcome p { margin-top: 23px; margin-left: 1.7em; font-size: 17px; }
+  body .wrap .mouse { width: 45px; height: 65px; }
+  body .wrap .mouse .scroll { width: 6px; height: 13px; } }
+
+@media (orientation: landscape) and (min-width: 1024px) and (min-height: 768px) { body .wrap header .welcome { font-size: 62px; top: 5em; left: 0; text-align: left; }
+  body .wrap header .welcome .text { margin-left: .2em; }
+  body .wrap header .welcome p { font-size: 14px; margin: 49px 0 49px 5.2em; }
+  body .wrap header .mouse { width: 35px; height: 55px; }
+  body .wrap header .mouse .scroll { width: 5px; height: 10px; } }
+
+@media (orientation: portrait) and (min-width: 1024px) { body .wrap header .welcome { font-size: 42px; }
+  body .wrap header .welcome .text { margin-left: .2em; }
+  body .wrap header .welcome p { margin-bottom: 123px; margin-left: 1.7em; font-size: 20px; }
+  body .wrap .mouse { width: 45px; height: 65px; }
+  body .wrap .mouse .scroll { width: 6px; height: 13px; } }
+
+@media (orientation: portrait) and (min-width: 1600px) { body .wrap header .welcome { font-size: 42px; }
+  body .wrap header .welcome .text { margin-left: .2em; }
+  body .wrap header .welcome p { margin-bottom: 123px; margin-left: 1.7em; font-size: 20px; }
+  body .wrap .mouse { width: 45px; height: 65px; }
+  body .wrap .mouse .scroll { width: 6px; height: 13px; } }
 
 .about-me { font-family: 'Montserrat', sans-serif; position: relative; padding-top: 3em; }
 
