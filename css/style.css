@@ -2,7 +2,7 @@
 
 .clearfix::after { content: ""; display: block; clear: both; }
 
-body header { padding-top: 50vh; height: auto; background-image: url(../images/photo1.png); background-attachment: fixed; background-repeat: no-repeat; background-position: center; background-size: cover; }
+body header { padding-top: 50%; height: auto; background-image: url(../images/photo1.png); }
 
 @keyframes move-scroll { 50% { }
   100% { } }
