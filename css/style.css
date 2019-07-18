@@ -146,46 +146,47 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   body .wrap .header .welcome .text { margin-left: .2em; }
   body .wrap .header .welcome p { font-size: 18px; margin-left: 1.8em; } }
 
-.about-me { font-family: 'Montserrat', sans-serif; position: relative; padding-top: 3em; }
+.about-me { font-family: 'Fira Mono', monospace; position: relative; padding-top: 3em; }
 
 .about-me h2 { font-size: 30px; margin-bottom: 3em; text-align: center; }
 
 .about-me h2 span { background: linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
-.about-me .title-line { border-bottom: 2px solid gray; top: 12.7%; left: 43%; position: absolute; width: 3em; }
+.about-me .title-line { border-bottom: 2px solid gray; top: 15%; left: 43%; position: absolute; width: 3em; }
 
-.about-me h6 { font-size: 18px; }
+.about-me h6 { font-family: 'Fira Sans', sans-serif; font-size: 17px; padding: 2px; }
 
-.about-me .description { color: grey; font-size: 11px; padding: 8px; }
+.about-me .description { font-family: 'Montserrat', sans-serif; color: grey; font-size: 11px; padding: 8px; }
 
 .about-me .description li { list-style-type: none; }
 
-.about-me .tech-left-1, .about-me .tech-left-2, .about-me .tech-right-1 { box-shadow: 1px 1px 15px 1px lightgray; height: 12.5em; padding: 3px; width: 37%; }
+.about-me .tech-left-1, .about-me .tech-left-2, .about-me .tech-right-1 { box-shadow: 1px 1px 15px 1px lightgray; height: 9.5em; padding: 3px; width: 37%; }
 
 .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 1.3em; }
 
 .about-me .tech-right-1 { margin-left: 11.3em; }
 
-.about-me .point-line { position: absolute; top: 10.8em; left: 50%; transform: translateX(-50%); width: 3px; height: 37.4em; background-color: #000; }
+.about-me .point-line { position: absolute; top: 10.8em; left: 50%; transform: translateX(-50%); width: 3px; height: 28.5em; background-color: #000; }
 
 .about-me .pointer-1, .about-me .pointer-2, .about-me .pointer-3 { border-radius: 50%; background-color: orangered; height: 25px; left: 50%; position: absolute; transform: translateX(-50%); width: 25px; }
 
-.about-me .pointer-1 { top: 15.5em; }
+.about-me .pointer-1 { top: 14.5em; }
 
-.about-me .pointer-2 { top: 28.5em; }
+.about-me .pointer-2 { top: 24em; }
 
-.about-me .pointer-3 { top: 40.5em; }
+.about-me .pointer-3 { top: 34em; }
 
 @media (orientation: landscape) and (min-width: 533px) { .about-me .title-line { left: 46%; }
-  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 2.2em; }
-  .about-me .tech-right-1 { margin-left: 18.8em; } }
+  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 6.2em; width: 25%; }
+  .about-me .tech-right-1 { margin-left: 18.8em; width: 25%; }
+  .about-me .point-line { top: 10.8em; height: 28.4em; } }
 
 @media (orientation: portrait) and (min-width: 360px) { .about-me .title-line { left: 43.5%; }
   .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 1.4em; }
   .about-me .tech-right-1 { margin-left: 12.8em; } }
 
 @media (orientation: landscape) and (min-width: 640px) { .about-me .title-line { left: 46.5%; }
-  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 2.5em; }
+  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 7.5em; }
   .about-me .tech-right-1 { margin-left: 22.6em; } }
 
 @media (orientation: portrait) and (min-width: 411px) { .about-me .title-line { left: 44.5%; }
@@ -193,7 +194,7 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   .about-me .tech-right-1 { margin-left: 14.5em; } }
 
 @media (orientation: landscape) and (min-width: 731px) { .about-me .title-line { left: 47%; }
-  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 3em; }
+  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 8.5em; }
   .about-me .tech-right-1 { margin-left: 25.7em; } }
 
 @media (orientation: portrait) and (min-width: 375px) and (min-height: 812px) { .about-me .title-line { left: 44.5%; }
@@ -203,67 +204,66 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
 @media (orientation: landscape) and (min-width: 812px) { .about-me h6 { font-size: 20px; }
   .about-me .description { font-size: 12px; }
   .about-me .title-line { left: 47.2%; }
-  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 3.2em; }
+  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 9.2em; }
   .about-me .tech-right-1 { margin-left: 28.6em; } }
 
-@media (orientation: portrait) and (min-width: 768px) { .about-me .title-line { left: 47%; }
+@media (orientation: portrait) and (min-width: 768px) { .about-me .title-line { top: 12%; left: 47%; }
   .about-me h6 { font-size: 22px; }
   .about-me .description { font-size: 15px; }
-  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 3.2em; }
-  .about-me .tech-right-1 { margin-left: 27.1em; }
-  .about-me .point-line { top: 10.2em; width: 4px; }
+  .about-me .tech-left-1, .about-me .tech-left-2 { height: 13em; margin-left: 9.2em; width: 24%; }
+  .about-me .tech-right-1 { height: 13em; margin-left: 27.1em; width: 24%; }
+  .about-me .point-line { top: 10.8em; width: 4px; height: 39em; }
   .about-me .pointer-1, .about-me .pointer-2, .about-me .pointer-3 { height: 30px; width: 30px; }
   .about-me .pointer-1 { top: 15.5em; }
   .about-me .pointer-2 { top: 28.5em; }
-  .about-me .pointer-3 { top: 40.5em; } }
+  .about-me .pointer-3 { top: 42.5em; } }
 
 @media (orientation: landscape) and (min-width: 1024px) { .about-me { padding-top: 3em; }
-  .about-me h2 { padding: 0; }
   .about-me .title-line { top: 14%; left: 47.8%; }
-  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 4.1em; }
-  .about-me .tech-right-1 { margin-left: 36em; } }
+  .about-me .tech-left-1, .about-me .tech-left-2 { width: 20%; margin-left: 15.1em; }
+  .about-me .tech-right-1 { margin-left: 36em; width: 20%; } }
 
-@media (orientation: portrait) and (min-width: 1024px) and (min-height: 1366px) { .about-me .title-line { top: 14.5%; left: 47.7%; }
+@media (orientation: portrait) and (min-width: 1024px) and (min-height: 1366px) { .about-me .title-line { top: 11.5%; left: 47.7%; }
   .about-me h6 { font-size: 26px; }
   .about-me .description { font-size: 17px; }
-  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 4em; }
-  .about-me .tech-right-1 { margin-left: 35.9em; }
-  .about-me .point-line { top: 11.3em; height: 37.4em; }
-  .about-me .pointer-1 { top: 16.5em; }
-  .about-me .pointer-2 { top: 29.5em; }
-  .about-me .pointer-3 { top: 41.5em; } }
+  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 12.5em; height: 14.5em; }
+  .about-me .tech-right-1 { margin-left: 35.9em; height: 14.5em; }
+  .about-me .point-line { top: 11em; height: 43.3em; }
+  .about-me .pointer-1 { top: 17.5em; }
+  .about-me .pointer-2 { top: 31.5em; }
+  .about-me .pointer-3 { top: 46.5em; } }
 
 @media (orientation: landscape) and (min-width: 1366px) { .about-me .title-line { top: 14%; left: 48.3%; }
-  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 5.4em; }
-  .about-me .tech-right-1 { margin-left: 48em; }
+  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 24.4em; width: 15%; }
+  .about-me .tech-right-1 { margin-left: 48em; width: 15%; }
   .about-me .point-line { top: 10.4em; height: 37.5em; }
   .about-me .pointer-1, .about-me .pointer-2, .about-me .pointer-3 { height: 30px; width: 30px; }
-  .about-me .pointer-1 { top: 15.5em; }
+  .about-me .pointer-1 { top: 10.5em; }
   .about-me .pointer-2 { top: 28.5em; }
   .about-me .pointer-3 { top: 40.5em; } }
 
-@media (orientation: landscape) and (min-width: 1366px) and (min-height: 768px) { .about-me .title-line { border-bottom: 2px solid gray; top: 13%; left: 48.2%; }
-  .about-me .point-line { top: 11em; height: 37em; width: 4px; }
-  .about-me .pointer-1 { top: 16.5em; }
-  .about-me .pointer-2 { top: 29em; }
-  .about-me .pointer-3 { top: 41.5em; } }
+@media (orientation: landscape) and (min-width: 1366px) and (min-height: 768px) { .about-me .title-line { border-bottom: 2px solid gray; top: 15.5%; left: 48.2%; }
+  .about-me .point-line { top: 11em; height: 28.2em; width: 4px; }
+  .about-me .pointer-1 { top: 14.5em; }
+  .about-me .pointer-2 { top: 24em; }
+  .about-me .pointer-3 { top: 33.5em; } }
 
-@media (orientation: landscape) and (min-width: 1600px) { .about-me h2 { font-size: 40px; margin-bottom: 2em; }
-  .about-me .title-line { border-bottom: 2px solid gray; top: 7.5%; left: 48.8%; }
+@media (min-width: 1600px) { .about-me h2 { font-size: 40px; margin-bottom: 2em; }
+  .about-me .title-line { border-bottom: 2px solid gray; top: 10.9%; left: 48.8%; }
   .about-me h6 { font-size: 30px; }
   .about-me .description { font-size: 19px; padding: 16px; }
-  .about-me .point-line { top: 10.9em; height: 76.5em; width: 5px; }
-  .about-me .tech-left-1, .about-me .tech-left-2, .about-me .tech-right-1 { height: 25.5em; padding: 16px; width: 37%; }
-  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 7.6em; }
+  .about-me .point-line { top: 10.9em; height: 50.9em; width: 5px; }
+  .about-me .tech-left-1, .about-me .tech-left-2, .about-me .tech-right-1 { height: 25.5em; padding: 16px; width: 18.5%; height: 17em; }
+  .about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 28.6em; }
   .about-me .tech-right-1 { margin-left: 67.5em; }
   .about-me .pointer-1, .about-me .pointer-2, .about-me .pointer-3 { height: 35px; width: 35px; }
-  .about-me .pointer-1 { top: 23.5em; }
-  .about-me .pointer-2 { top: 48.5em; }
-  .about-me .pointer-3 { top: 73.5em; } }
+  .about-me .pointer-1 { top: 18.5em; }
+  .about-me .pointer-2 { top: 35em; }
+  .about-me .pointer-3 { top: 52em; } }
 
 .gallery { padding-top: 3em; position: relative; }
 
-.gallery h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; text-align: center; }
+.gallery h2 { font-family: 'Fira Mono', monospace; font-size: 30px; text-align: center; }
 
 .gallery h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
