@@ -14,8 +14,8 @@
 body {
 
  header {
-  position: relative;
-  height: 100vh;
+  height: auto;
+  padding: 40vh 0 50vh;
   background-image: url(../images/photo1.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -23,11 +23,6 @@ body {
   background-size: cover;
 
   .welcome {
-   position: relative;
-  //  line-height: 2em;
-   top: 10em;
-   left: 0;
-  //  height: 100vh;
    width: 100%;
    text-align: left;
    text-transform: uppercase;
@@ -37,14 +32,12 @@ body {
 
    .text {
     display: inline-block;
-    padding-left: 1.3em;
+    padding-left: .5em;
    }
 
    p {
     text-shadow: 2px 2px 2px black;
-    position: absolute;
-    top: 35px;
-    left: 1.6em;
+    padding-top: .5em;
     font-size: 10px;
     letter-spacing: 2px;
     margin: auto 1em;
@@ -102,25 +95,25 @@ body {
 
   .wrap {
    header {
+    padding-bottom: 45vh;
 
     .welcome {
      font-size: 25px;
-     top: 5em;
-     left: 0;
+     
     }
 
     p {
-     top: 40px;
-     margin-left: 1.8em;
+     margin-left: 1.5em;
     }
 
     .mouse {
-     width: 20px;
      height: 32px;
+     width: 20px;
+     
 
      .scroll {
-      width: 3px;
       height: 8px;
+      width: 3px;
      }
     }
    }
@@ -133,10 +126,9 @@ body {
  body {
   .wrap {
    header {
+    padding-bottom: 52vh;
 
     .welcome {
-     top: 11em;
-     left: 0;
      font-size: 22px;
     }
 
@@ -152,13 +144,14 @@ body {
  body {
   .wrap {
    header {
+    padding-bottom: 45vh;
 
     .welcome {
      font-size: 29px;
     }
 
     p {
-     margin-left: 2.4em;
+     margin-left: 1.6em;
     }
    }
   }
@@ -170,15 +163,14 @@ body {
   body {
     .wrap {
      header {
+      padding-bottom: 53vh;
   
       .welcome {
-       top: 12em;
-       left: 0;
        font-size: 22px;
       }
   
       p {
-       margin-left: 1.4em;
+       margin-left: 1.2em;
       }
      }
     }
@@ -188,19 +180,14 @@ body {
 @media(orientation: landscape) AND (min-width: 731px) {
  .wrap {
   header {
+    padding-top: 45vh;
 
    .welcome {
-    font-size: 29px;
-   }
-  }
 
-  .mouse {
-   width: 35px;
-   height: 55px;
-
-   .scroll {
-    width: 5px;
-    height: 10px;
+    p {
+      font-size: 11px;
+      margin-left: 1.5em;
+     }
    }
   }
  }
@@ -210,19 +197,11 @@ body {
   body {
     .wrap {
      header {
-  
-      .welcome {
-       top: 15em;
-       left: 0;
-       font-size: 22px;
-      }
-  
-      p {
-      //  margin-left: 2em;
-      }
+       padding-bottom: 55vh; 
      }
     }
    }
+
 }
 
 // Ipad: portrait
@@ -230,6 +209,7 @@ body {
  body {
   .wrap {
    header {
+     padding-bottom: 53vh;
 
     .welcome {
      font-size: 36px;
@@ -239,21 +219,20 @@ body {
      }
 
      p {
-      margin-top: 23px;
-       margin-left: 1.7em;
-      font-size: 17px;
+      font-size: 16px;
+      margin-left: 1.7em;
      }
     }
    }
 
    .mouse {
-    width: 45px;
     height: 65px;
+    width: 45px;
 
 
     .scroll {
-     width: 6px;
      height: 13px;
+     width: 6px;
     }
    }
   }
@@ -265,6 +244,7 @@ body {
  body {
   .wrap {
    header {
+    padding-top: 43vh;
 
     .welcome {
      font-size: 62px;
@@ -277,8 +257,8 @@ body {
      }
 
      p {
-      font-size: 14px;
-      margin: 49px 0 49px 5.2em;
+      font-size: 16px;
+      margin-left: 3em;
      }
     }
 
@@ -301,41 +281,53 @@ body {
   body {
    .wrap {
     header {
+      padding: 43vh 0 44vh;
  
      .welcome {
-      font-size: 42px;
       
       .text {
        margin-left: .2em;
       }
  
       p {
-       margin-bottom: 123px;
-        margin-left: 1.7em;
-       font-size: 20px;
+       margin: 0 0 123px 1.7em;
       }
-     }
-    }
- 
-    .mouse {
-     width: 45px;
-     height: 65px;
- 
- 
-     .scroll {
-      width: 6px;
-      height: 13px;
      }
     }
    }
   }
- }
 
- // Desktop
- @media(orientation: portrait) AND (min-width: 1600px) {
+}
+
+@media(orientation: landscape) AND (min-width: 1366px) {
   body {
    .wrap {
-    header {
+    .header {
+      padding: 33vh 0 45vh;
+ 
+     .welcome {
+      
+      .text {
+       margin-left: .2em;
+      }
+ 
+      p {
+       margin: 0 0 123px 2.4em;
+       font-size: 20px;
+      }
+     }
+    }
+   }
+  }
+
+}
+
+ // Desktop
+ @media(min-width: 1600px) {
+  body {
+   .wrap {
+    .header {
+      padding: 37vh 0 43vh;
  
      .welcome {
       font-size: 42px;
@@ -345,23 +337,12 @@ body {
       }
  
       p {
-       margin-bottom: 123px;
-        margin-left: 1.7em;
-       font-size: 20px;
+       font-size: 18px;
+       margin-left: 1.8em;
       }
-     }
-    }
- 
-    .mouse {
-     width: 45px;
-     height: 65px;
- 
- 
-     .scroll {
-      width: 6px;
-      height: 13px;
      }
     }
    }
   }
+
  }
