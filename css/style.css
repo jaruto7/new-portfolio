@@ -77,7 +77,7 @@ aside nav a { font-size: 13px; color: #fff; text-align: center; text-decoration:
 
 .clearfix::after { content: ""; display: block; clear: both; }
 
-body header { height: auto; padding: 40vh 0 50vh; background-image: url(../images/photo1.jpg); background-attachment: fixed; background-repeat: no-repeat; background-position: center; background-size: cover; }
+body header { height: auto; padding: 40vh 0 49vh; background-image: url(../images/photo1.jpg); background-attachment: fixed; background-repeat: no-repeat; background-position: center; background-size: cover; }
 
 body header .welcome { width: 100%; text-align: left; text-transform: uppercase; font-size: 20px; color: #fff; font-family: 'Open Sans', sans-serif; }
 
@@ -102,7 +102,7 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   body .wrap header .mouse { height: 32px; width: 20px; }
   body .wrap header .mouse .scroll { height: 8px; width: 3px; } }
 
-@media (orientation: portrait) and (min-width: 360px) { body .wrap header { padding-bottom: 52vh; }
+@media (orientation: portrait) and (min-width: 360px) { body .wrap header { padding-bottom: 51vh; }
   body .wrap header .welcome { font-size: 22px; }
   body .wrap header p { margin-left: 1.2em; } }
 
@@ -146,7 +146,7 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   body .wrap .header .welcome .text { margin-left: .2em; }
   body .wrap .header .welcome p { font-size: 18px; margin-left: 1.8em; } }
 
-.about-me { font-family: 'Fira Mono', monospace; position: relative; padding-top: 3em; }
+.about-me { font-family: 'Fira Mono', monospace; position: relative; }
 
 .about-me h2 { font-size: 30px; margin-bottom: 3em; text-align: center; }
 
@@ -249,7 +249,7 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   .about-me .pointer-3 { top: 33.5em; } }
 
 @media (min-width: 1600px) { .about-me h2 { font-size: 40px; margin-bottom: 2em; }
-  .about-me .title-line { border-bottom: 2px solid gray; top: 10.9%; left: 48.8%; }
+  .about-me .title-line { border-bottom: 2px solid gray; top: 10.8%; left: 48.8%; }
   .about-me h6 { font-size: 30px; }
   .about-me .description { font-size: 19px; padding: 16px; }
   .about-me .point-line { top: 10.9em; height: 50.9em; width: 5px; }
@@ -261,7 +261,7 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   .about-me .pointer-2 { top: 35em; }
   .about-me .pointer-3 { top: 52em; } }
 
-.gallery { padding-top: 3em; position: relative; }
+.gallery { padding-top: 3em; margin-bottom: 5.8em; position: relative; }
 
 .gallery h2 { font-family: 'Fira Mono', monospace; font-size: 30px; text-align: center; }
 
@@ -448,14 +448,6 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   .modal-bg.active .modal .top { bottom: 2.5em; left: -1em; }
   .modal-bg.active .modal .top i.fa-times { font-size: 65px; }
   .modal-bg.active .modal .middle img { height: 50em; width: 85em; } }
-
-.contact { margin-bottom: 4.6em; padding-top: 3em; position: relative; }
-
-.contact h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; text-align: center; }
-
-.contact h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-
-.contact .title-line3 { border-bottom: 2px solid gray; display: inline-block; position: absolute; top: 6.2em; left: 43%; width: 3em; }
 
 .footer { background-color: #222222; text-align: center; padding-top: 1.5em; color: #fff; }
 
