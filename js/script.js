@@ -6,12 +6,41 @@ const spnCursor = document.querySelector('.cursor');
 const spnText = document.querySelector('.text');
 const zoomButton = document.querySelectorAll('.gallery-item .zoom-button');
 const rightModalIcons = document.querySelectorAll('.right');
-// const hrefUrl = document.querySelectorAll('hrefUrl');
 const iconX = document.querySelectorAll('.modal .top .fas');
 const imgModal = document.querySelector('.img-modal');
 // const projectRightIcons = document.querySelectorAll('.projectRightIcons');
 // Utwórz zmienną przechowującą tablicę z wartościami
 const txt = [`Welcome`, `I like challenges`, `I'm creative`, `I\'m Front-end Developer`];
+
+// Zadeklarowanie zmiennych dla elementów menu nawigacji
+const navigationItem = document.querySelectorAll('.nav-link--js');
+const navigationSections = document.querySelectorAll('.navigation-section');
+
+// Deklaracja funkcji która dodaje smooth behavior i odsuwa kliknięty element nagłówka krawędzi okna sekcji dodając górny offset
+function scrollIt(element) {
+  window.scrollTo({
+    'behavior': 'smooth',
+    'left': 0,
+    'top': element.offsetTop
+  });
+}
+
+// navigationItem.forEach(nav => nav.addEventListener('click', () => {
+//   scrollIt(navigationSections);
+// }))
+
+navigationItem[0].addEventListener('click', () => {
+  scrollIt(navigationSections[0]);
+});
+
+navigationItem[1].addEventListener('click', () => {
+  scrollIt(navigationSections[1]);
+});
+
+navigationItem[2].addEventListener('click', () => {
+  scrollIt(navigationSections[2]);
+});
+
 
 // Zadeklaruj funkcję anonimową która jest aktywna dopiero w momencie kliknięcia w ikonę lupy na hoverze obrazka danego projektu
 const clickModal = function () {
