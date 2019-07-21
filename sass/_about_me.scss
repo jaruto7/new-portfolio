@@ -1,8 +1,10 @@
 .about-me {
 	font-family: 'Fira Mono', monospace;
 	position: relative;
+	padding-top: 3em;
 
 	h2 {
+		
 		font-size: 30px;
 		margin-bottom: 3em;
 		text-align: center;
@@ -16,7 +18,7 @@
 
 	.title-line {
 		border-bottom: 2px solid gray;
-		top: 15%;
+		top: 17%;
 		left: 43%;
 		position: absolute;
 		width: 3em;	
@@ -41,13 +43,14 @@
 
 	.tech-left-1, .tech-left-2, .tech-right-1 {
 		box-shadow: 1px 1px 15px 1px lightgray;
-		height: 9.5em;
+		height: auto;
 		padding: 3px;
 		width: 37%;
 	}
 
 	.tech-left-1, .tech-left-2 {
 		margin-left: 1.3em;
+		text-align: right;
 	}
 
 	.tech-right-1 {
@@ -60,7 +63,7 @@
 		left: 50%;
 		transform: translateX(-50%);
 		width: 3px;
-		height: 28.5em;
+		height: 23.8em;
 		background-color: #000;
 	}
 
@@ -79,11 +82,11 @@
 	}
 
 	.pointer-2 {
-		top: 24em;
+		top: 23em;
 	}
 
 	.pointer-3 {
-		top: 34em;
+		top: 30em;
 	}
 }
 
@@ -92,7 +95,7 @@
 	.about-me {
 	
 		.title-line {
-			// top: 14%;
+			top: 18%;
 			left: 46%;
 		}
 	
@@ -108,7 +111,7 @@
 
 		.point-line {
 			top: 10.8em;
-			height: 28.4em;
+			height: 23.9em;
 		}
 	}
 
@@ -119,7 +122,7 @@
 	.about-me {
 	
 		.title-line {
-			// top: 14%;
+			top: 17.5%;
 			left: 43.5%;
 		}
 	
@@ -139,7 +142,7 @@
 	.about-me {
 	
 		.title-line {
-			// top: 14%;
+			top: 19%;
 			left: 46.5%;
 		}
 	
@@ -150,6 +153,23 @@
 		.tech-right-1 {
 			margin-left: 22.6em;
 		}
+
+		.point-line {
+			top: 10.8em;
+			height: 21.6em;
+		}
+
+		.pointer-1 {
+			top: 14.5em;
+		}
+	
+		.pointer-2 {
+			top: 23em;
+		}
+	
+		.pointer-3 {
+			top: 28.5em;
+		}
 	}
 
 }
@@ -159,7 +179,7 @@
 	.about-me {
 	
 		.title-line {
-			// top: 14%;
+			top: 19%;
 			left: 44.5%;
 		}
 	
@@ -170,9 +190,63 @@
 		.tech-right-1 {
 			margin-left: 14.5em;
 		}
+
+		.point-line {
+			top: 10.8em;
+			height: 21.6em;
+		}
+
+		.pointer-1 {
+			top: 14.5em;
+		}
+	
+		.pointer-2 {
+			top: 23em;
+		}
+
+		.pointer-3 {
+			top: 28.5em;
+		}
 	}
 
 }
+
+@media(orientation: landscape) AND (min-width: 736px) AND (min-height: 414px) {
+	.about-me {
+	
+		.title-line {
+			top: 20%;
+			left: 44.5%;
+		}
+	
+		.tech-left-1, .tech-left-2 {
+			margin-left: 1.6em;
+		}
+	
+		.tech-right-1 {
+			margin-left: 14.5em;
+		}
+
+		.point-line {
+			top: 10.8em;
+			height: 20.8em;
+		}
+
+		.pointer-1 {
+			top: 14.5em;
+		}
+	
+		.pointer-2 {
+			top: 22em;
+		}
+
+		.pointer-3 {
+			top: 28em;
+		}
+	}
+
+}
+
 
 @media(orientation: landscape) AND (min-width: 731px) {
 	.about-me {
@@ -198,7 +272,7 @@
 	.about-me {
 	
 		.title-line {
-			// top: 14%;
+			top: 18%;
 			left: 44.5%;
 		}
 	
@@ -208,6 +282,11 @@
 	
 		.tech-right-1 {
 			margin-left: 13.2em;
+		}
+
+		.point-line {
+			top: 10.8em;
+			height: 23.1em;
 		}
 	}
 
@@ -225,7 +304,7 @@
 		}
 	
 		.title-line {
-			// top: 14%;
+			top: 19%;
 			left: 47.2%;
 		}
 	
@@ -236,6 +315,15 @@
 		.tech-right-1 {
 			margin-left: 28.6em;
 		}
+
+		.point-line {
+			top: 10.8em;
+			height: 22.7em;
+		}
+
+		.pointer-3 {
+			top: 29em;
+		}
 	}
 
 }
@@ -245,7 +333,7 @@
 	.about-me {
 	
 		.title-line {
-			top: 12%;
+			top: 15.5%;
 			left: 47%;
 		}
 
@@ -258,13 +346,11 @@
 		}
 	
 		.tech-left-1, .tech-left-2 {
-			height: 13em;
 			margin-left: 9.2em;
 			width: 24%;
 		}
 	
 		.tech-right-1 {
-			height: 13em;
 			margin-left: 27.1em;
 			width: 24%;
 		}
@@ -272,7 +358,7 @@
 		.point-line {
 			top: 10.8em;
 			width: 4px;
-			height: 39em;
+			height: 29.1em;
 		}
 
 		.pointer-1, .pointer-2, .pointer-3 {
@@ -281,15 +367,15 @@
 		}
 	
 		.pointer-1 {
-			top: 15.5em;
+			top: 16.5em;
 		}
 	
 		.pointer-2 {
-			top: 28.5em;
+			top: 26.5em;
 		}
 	
 		.pointer-3 {
-			top: 42.5em;
+			top: 34.5em;
 		}
 	}
 
@@ -298,10 +384,10 @@
 //Ipad: landscape
 @media(orientation: landscape) AND (min-width: 1024px) {
 	.about-me {
-		padding-top: 3em;
+		// padding-top: 3em;
 
 		.title-line {
-			top: 14%;
+			top: 19%;
 			left: 47.8%;
 		}
 	
@@ -314,6 +400,16 @@
 			margin-left: 36em;
 			width: 20%;
 		}
+
+		.point-line {
+			top: 10.8em;
+			width: 4px;
+			height: 22.5em;
+		}
+
+		.pointer-2 {
+			top: 23em;
+		}
 	}
 
 }
@@ -323,8 +419,9 @@
 	.about-me {
 	
 		.title-line {
-			top: 11.5%;
+			top: 12%;
 			left: 47.7%;
+			border-bottom: 3px solid gray;
 		}
 
 		h6 {
@@ -337,12 +434,10 @@
 	
 		.tech-left-1, .tech-left-2 {
 			margin-left: 12.5em;
-			height: 14.5em;
 		}
 	
 		.tech-right-1 {
 			margin-left: 35.9em;
-			height: 14.5em;
 		}
 
 		.point-line {
@@ -385,7 +480,7 @@
 
 		.point-line {
 			top: 10.4em;
-			height: 37.5em;
+			height: 35.5em;
 		}
 
 		.pointer-1, .pointer-2, .pointer-3 {
@@ -450,7 +545,7 @@
 
 		.title-line {
 			border-bottom: 2px solid gray;
-			top: 10.8%;
+			top: 13%;
 			left: 48.8%;
 		}
 
@@ -465,15 +560,13 @@
 
 		.point-line {
 			top: 10.9em;
-			height: 50.9em;
+			height: 40.1em;
 			width: 5px;
 		}
 
 		.tech-left-1, .tech-left-2, .tech-right-1 {
-			height: 25.5em;
 			padding: 16px;
 			width: 18.5%;
-			height: 17em;
 		}
 	
 		.tech-left-1, .tech-left-2 {
@@ -494,11 +587,11 @@
 		}
 	
 		.pointer-2 {
-			top: 35em;
+			top: 33em;
 		}
 	
 		.pointer-3 {
-			top: 52em;
+			top: 44.5em;
 		}
 	}
 	
