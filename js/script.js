@@ -17,30 +17,18 @@ const navigationItem = document.querySelectorAll('.nav-link--js');
 const navigationSections = document.querySelectorAll('.navigation-section');
 
 // Deklaracja funkcji która dodaje smooth behavior i odsuwa kliknięty element nagłówka krawędzi okna sekcji dodając górny offset
-function scrollIt(element) {
+
+function scrollIt(item) {
   window.scrollTo({
     'behavior': 'smooth',
     'left': 0,
-    'top': element.offsetTop
+    'top': item.offsetTop
   });
 }
 
-// navigationItem.forEach(nav => nav.addEventListener('click', () => {
-//   scrollIt(navigationSections);
-// }))
-
-navigationItem[0].addEventListener('click', () => {
-  scrollIt(navigationSections[0]);
-});
-
-navigationItem[1].addEventListener('click', () => {
-  scrollIt(navigationSections[1]);
-});
-
-navigationItem[2].addEventListener('click', () => {
-  scrollIt(navigationSections[2]);
-});
-
+navigationItem.forEach(nav => nav.addEventListener('click', () => {
+  scrollIt(navigationSections);
+}));
 
 
 // Zadeklaruj funkcję anonimową która jest aktywna dopiero w momencie kliknięcia w ikonę lupy na hoverze obrazka danego projektu
