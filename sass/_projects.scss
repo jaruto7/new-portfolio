@@ -29,7 +29,8 @@
 
 		.gallery-item {
 			border: 1px solid gray;
-			// float: left;
+			display: flex;
+			flex-direction: column;
 			height: 9em;
 			margin: 1em 0 0 3em;
 			overflow: hidden;
@@ -117,6 +118,7 @@
 	position: fixed;
 	top: 0;
 	width: 100%;
+	
 
 	.modal {
 		height: 15%;
@@ -164,6 +166,7 @@
 // Nokia Lumia: landscape
 @media(orientation: landscape) AND (min-width: 533px) {
 	.gallery {
+		
 
 		.title-line2 {
 			top: 36.5%;
@@ -171,10 +174,10 @@
 		}
 	
 		.gallery-items {
+			display: flex;
 			margin-top: 4em;
 	
 			.gallery-item {
-				float: left; 
 				margin: 1em 0 0 .8em; 
 				width: 10em;
 				height: 7em; 
@@ -396,7 +399,7 @@
 	
 				.gallery-layout {
 					font-size: 13.8px; 
-					height: 11.4em;
+					height: 11.5em;
 					padding: 16px; 
 					width: 16.1em; 
 

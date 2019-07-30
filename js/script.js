@@ -42,6 +42,7 @@ navigationItem[2].addEventListener('click', () => {
 });
 
 
+
 // Zadeklaruj funkcję anonimową która jest aktywna dopiero w momencie kliknięcia w ikonę lupy na hoverze obrazka danego projektu
 const clickModal = function () {
  // Pobierz dany obrazek który kliknął użytkownik biorąc jego atrybut dataset
