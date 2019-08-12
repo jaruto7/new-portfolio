@@ -50,10 +50,10 @@ h6 {
 
 .point-line {
 	position: absolute;
-	top: 9em;
 	left: 50%;
 	transform: translateX(-50%);
 	width: 3px;
+	top: 9em;
 	height: 23.7em;
 	background-color: #000;
 }
@@ -107,6 +107,11 @@ h6 {
 		.tech-right-1 {
 			margin-left: 12.8em;
 		}
+
+		.point-line {
+			top: 9em;
+			height: 23.8em;
+		}
 }
 
 // Galaxy S5: landscape
@@ -121,6 +126,7 @@ h6 {
 		}
 
 		.point-line {
+			top: 9em;
 			height: 21.5em;
 		}
 	
@@ -142,16 +148,16 @@ h6 {
 		}
 
 		.point-line {
-			height: 21.6em;
+			height: 22.3em;
 		}
 
 		.pointer-3 {
-			top: 26.5em;
+			top: 27em;
 		}
 
 }
 
-// @media(orientation: landscape) AND (min-width: 736px) AND (min-height: 414px) {
+// @media(orientation: landscape) AND (min-width: 736px) {
 	
 // 		.tech-left-1, .tech-left-2 {
 // 			margin-left: 1.6em;
@@ -159,6 +165,11 @@ h6 {
 	
 // 		.tech-right-1 {
 // 			margin-left: 14.5em;
+// 		}
+
+// 		.point-line {
+// 			top: 9em;
+// 			height: 1em;
 // 		}
 
 // 		.pointer-1 {
@@ -170,7 +181,7 @@ h6 {
 // 		}
 
 // 		.pointer-3 {
-// 			top: 38em;
+// 			top: 26em;
 // 		}
 
 // }
@@ -184,6 +195,11 @@ h6 {
 	
 		.tech-right-1 {
 			margin-left: 25.7em;
+		}
+
+		.point-line {
+			height: 9em;
+			height: 21.5em;
 		}
 }
 
@@ -199,7 +215,8 @@ h6 {
 		}
 
 		.point-line {
-			height: 23.1em;
+			top: 9em;
+			height: 23.8em;
 		}
 }
 
@@ -222,7 +239,8 @@ h6 {
 		}
 
 		.point-line {
-			height: 22.4em;
+			top: 9em;
+			height: 22.5em;
 		}
 
 		.pointer-3 {
@@ -252,6 +270,7 @@ h6 {
 
 		.point-line {
 			width: 4px;
+			top: 9em;
 			height: 29em;
 		}
 
@@ -287,6 +306,7 @@ h6 {
 		}
 
 		.point-line {
+			top: 9em;
 			width: 4px;
 			height: 22.5em;
 		}
@@ -312,6 +332,7 @@ h6 {
 		}
 
 		.point-line {
+			top: 9em;
 			height: 31.9em;
 		}
 	
@@ -362,11 +383,12 @@ h6 {
 @media(orientation: landscape) AND (min-width: 1366px) AND (min-height: 768px) {
 
 	.tech-right-1 {
-		margin-left: 54em;
+		margin-left: 53em;
 		width: 20%;
 	}
 
 		.point-line {
+			top: 9em;
 			height: 20.8em;
 			width: 4px;
 		}
@@ -376,7 +398,7 @@ h6 {
 		}
 }
 
-// desktop: landscape
+//desktop: landscape
 @media(min-width: 1400px) {
 	
 		h2 {
