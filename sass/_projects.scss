@@ -65,7 +65,7 @@ h2 {
   width: 33.5%;
 }
 
-.fa-code-branch,
+.fa-github,
 .fa-search-plus,
 .fa-eye {
   color: rgba(rgb(245, 179, 118), 0.9);
@@ -175,7 +175,7 @@ img {
     width: 14.7em;
   }
 
-  .fa-code-branch,
+  .fa-github,
   .fa-search-plus,
   .fa-eye {
     font-size: 14px;
@@ -219,7 +219,7 @@ img {
 
 // Galaxy S5: portrait
 @media (orientation: portrait) AND (min-width: 360px) {
-  .fa-code-branch,
+  .fa-github,
   .fa-search-plus,
   .fa-eye {
     margin-top: 0.2em;
@@ -256,7 +256,7 @@ img {
     width: 14.9em;
   }
 
-  .fa-code-branch,
+  .fa-github,
   .fa-search-plus,
   .fa-eye {
     font-size: 17px;
@@ -312,7 +312,7 @@ img {
     width: 16.1em;
   }
 
-  .fa-code-branch,
+  .fa-github,
   .fa-search-plus,
   .fa-eye {
     font-size: 21px;
@@ -376,7 +376,7 @@ img {
     height: 10.1em;
   }
 
-  .fa-code-branch,
+  .fa-github,
   .fa-search-plus,
   .fa-eye {
     font-size: 21px;
@@ -408,7 +408,7 @@ img {
     display: flex;
   }
 
-  .fa-code-branch,
+  .fa-github,
   .fa-search-plus,
   .fa-eye {
     font-size: 20px;
@@ -455,7 +455,7 @@ img {
     width: 16.1em;
   }
 
-  .fa-code-branch,
+  .fa-github,
   .fa-search-plus,
   .fa-eye {
     font-size: 26px;
@@ -463,7 +463,7 @@ img {
     margin-left: 1.5em;
   }
 
-  .fa-code-branch {
+  .fa-github {
     margin-left: 1.6em;
   }
 
@@ -512,7 +512,7 @@ img {
 //     width: 15.9em;
 //   }
 
-//   .fa-code-branch,
+//   .fa-github,
 //   .fa-search-plus,
 //   .fa-eye {
 //     font-size: 26px;
@@ -580,14 +580,14 @@ img {
             &:hover {
               background-color: rgba(255, 255, 255, 0.3);
 
-              .fa-code-branch,
+              .fa-github,
               .fa-search-plus,
               .fa-eye {
                 color: #333;
               }
             }
 
-            .fa-code-branch,
+            .fa-github,
             .fa-search-plus,
             .fa-eye {
               font-size: 34px;
@@ -647,14 +647,14 @@ img {
             &:hover {
               background-color: rgba(255, 255, 255, 0.3);
 
-              .fa-code-branch,
+              .fa-github,
               .fa-search-plus,
               .fa-eye {
                 color: #333;
               }
             }
 
-            .fa-code-branch,
+            .fa-github,
             .fa-search-plus,
             .fa-eye {
               font-size: 34px;
@@ -721,18 +721,18 @@ img {
             &:hover {
               background-color: rgba(255, 255, 255, 0.3);
 
-              .fa-code-branch,
+              .fa-github,
               .fa-search-plus,
               .fa-eye {
                 color: #333;
               }
             }
 
-            .fa-code-branch,
+            .fa-github,
             .fa-search-plus,
             .fa-eye {
               font-size: 40px;
-              margin-left: 1.7em;
+              margin-left: 1.8em;
             }
           }
 

@@ -260,7 +260,7 @@ h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-cl
 
 .code-button, .zoom-button, .github-button { border-style: none; background-color: rgba(255, 69, 0, 0.7); border: 2px solid rgba(182, 25, 33, 0.6); height: 20%; position: absolute; top: 80.1%; width: 33.5%; }
 
-.fa-code-branch, .fa-search-plus, .fa-eye { color: rgba(245, 179, 118, 0.9); font-size: 18px; margin-top: 2px; margin-left: 1.4em; }
+.fa-github, .fa-search-plus, .fa-eye { color: rgba(245, 179, 118, 0.9); font-size: 18px; margin-top: 2px; margin-left: 1.4em; }
 
 .code-button { left: 0; }
 
@@ -295,7 +295,7 @@ img { height: 12em; width: 18.8em; }
 @media (orientation: landscape) and (min-width: 533px) { .gallery-items { display: -ms-flexbox; display: flex; }
   .gallery-item { width: 10em; height: 7em; margin: 0 auto 2em auto; }
   .gallery-layout { font-size: 10.8px; height: 10.2em; padding: 6px; width: 14.7em; }
-  .fa-code-branch, .fa-search-plus, .fa-eye { font-size: 14px; }
+  .fa-github, .fa-search-plus, .fa-eye { font-size: 14px; }
   .code-button { width: 34%; }
   .zoom-button { left: 33.4%; }
   .github-button { left: 66.4%; }
@@ -304,14 +304,14 @@ img { height: 12em; width: 18.8em; }
   .modal .top { bottom: 1.6em; left: -1.5em; }
   .modal .middle img { height: 15em; width: 24em; } }
 
-@media (orientation: portrait) and (min-width: 360px) { .fa-code-branch, .fa-search-plus, .fa-eye { margin-top: 0.2em; margin-left: 1.4em; }
+@media (orientation: portrait) and (min-width: 360px) { .fa-github, .fa-search-plus, .fa-eye { margin-top: 0.2em; margin-left: 1.4em; }
   .modal { left: 5%; top: 29%; }
   .modal .top { bottom: 11em; }
   .modal .middle img { height: 13.5em; width: 20.2em; } }
 
 @media (orientation: landscape) and (min-width: 640px) { .gallery-item { height: 8em; width: 12em; }
   .gallery-layout { font-size: 12.8px; height: 9.9em; width: 14.9em; }
-  .fa-code-branch, .fa-search-plus, .fa-eye { font-size: 17px; }
+  .fa-github, .fa-search-plus, .fa-eye { font-size: 17px; }
   .project-picture { height: 8em; width: 12em; }
   .modal .top { bottom: 1.9em; }
   .modal .middle img { height: 17em; width: 28em; } }
@@ -322,7 +322,7 @@ img { height: 12em; width: 18.8em; }
 
 @media (orientation: landscape) and (min-width: 731px) { .gallery-item { height: 10em; width: 14em; }
   .gallery-layout { font-size: 13.8px; height: 11.5em; padding: 16px; width: 16.1em; }
-  .fa-code-branch, .fa-search-plus, .fa-eye { font-size: 21px; margin-top: 0.2em; }
+  .fa-github, .fa-search-plus, .fa-eye { font-size: 21px; margin-top: 0.2em; }
   .fa-eye { margin-left: 1.2em; }
   .project-picture { height: 10em; width: 14em; }
   .modal { left: 7.7em; top: 3.5em; }
@@ -335,14 +335,14 @@ img { height: 12em; width: 18.8em; }
 
 @media (orientation: landscape) and (min-width: 812px) { .gallery-item { height: 10em; width: 15.5em; }
   .gallery-layout { font-size: 15.8px; height: 10.1em; }
-  .fa-code-branch, .fa-search-plus, .fa-eye { font-size: 21px; }
+  .fa-github, .fa-search-plus, .fa-eye { font-size: 21px; }
   .project-picture { height: 10em; width: 15.5em; }
   .modal { left: 10.7em; top: 2em; }
   .modal .top { bottom: 1.3em; left: -4.8em; } }
 
 @media (orientation: portrait) and (min-width: 768px) { h2 { font-size: 30px; }
   .gallery-items { display: -ms-flexbox; display: flex; }
-  .fa-code-branch, .fa-search-plus, .fa-eye { font-size: 20px; margin-top: 0.1em; }
+  .fa-github, .fa-search-plus, .fa-eye { font-size: 20px; margin-top: 0.1em; }
   .fa-eye { margin-left: 1.1em; }
   .modal { top: 18em; left: 1.5em; }
   .modal .top { bottom: 16.6em; left: 3em; }
@@ -351,8 +351,8 @@ img { height: 12em; width: 18.8em; }
 
 @media (orientation: landscape) and (min-width: 1024px) { .gallery-item { height: 13em; width: 19.5em; left: 0.3em; }
   .gallery-layout { font-size: 19.3px; height: 10.7em; width: 16.1em; }
-  .fa-code-branch, .fa-search-plus, .fa-eye { font-size: 26px; margin-top: 6px; margin-left: 1.5em; }
-  .fa-code-branch { margin-left: 1.6em; }
+  .fa-github, .fa-search-plus, .fa-eye { font-size: 26px; margin-top: 6px; margin-left: 1.5em; }
+  .fa-github { margin-left: 1.6em; }
   .fa-eye { margin-left: 1.4em; }
   .project-picture { height: 13em; width: 19.5em; }
   .modal { left: 2em; top: 6em; }
@@ -366,8 +366,8 @@ img { height: 12em; width: 18.8em; }
   .gallery-layout { cursor: default; font-size: 25.2px; height: 10.7em; }
   .code-button, .zoom-button, .github-button { transition: 0.3s; cursor: pointer; }
   .code-button:hover, .zoom-button:hover, .github-button:hover { background-color: rgba(255, 255, 255, 0.3); }
-  .code-button:hover .fa-code-branch, .code-button:hover .fa-search-plus, .code-button:hover .fa-eye, .zoom-button:hover .fa-code-branch, .zoom-button:hover .fa-search-plus, .zoom-button:hover .fa-eye, .github-button:hover .fa-code-branch, .github-button:hover .fa-search-plus, .github-button:hover .fa-eye { color: #333; }
-  .code-button .fa-code-branch, .code-button .fa-search-plus, .code-button .fa-eye, .zoom-button .fa-code-branch, .zoom-button .fa-search-plus, .zoom-button .fa-eye, .github-button .fa-code-branch, .github-button .fa-search-plus, .github-button .fa-eye { font-size: 34px; }
+  .code-button:hover .fa-github, .code-button:hover .fa-search-plus, .code-button:hover .fa-eye, .zoom-button:hover .fa-github, .zoom-button:hover .fa-search-plus, .zoom-button:hover .fa-eye, .github-button:hover .fa-github, .github-button:hover .fa-search-plus, .github-button:hover .fa-eye { color: #333; }
+  .code-button .fa-github, .code-button .fa-search-plus, .code-button .fa-eye, .zoom-button .fa-github, .zoom-button .fa-search-plus, .zoom-button .fa-eye, .github-button .fa-github, .github-button .fa-search-plus, .github-button .fa-eye { font-size: 34px; }
   .project-picture { height: 17em; width: 25.5em; }
   .modal { left: 2.7em; top: 9.5em; }
   .modal .top { bottom: 7.8em; left: 7.5em; }
@@ -379,8 +379,8 @@ img { height: 12em; width: 18.8em; }
   .gallery-layout { cursor: default; font-size: 25.2px; height: 10.8em; }
   .code-button, .zoom-button, .github-button { transition: 0.3s; cursor: pointer; }
   .code-button:hover, .zoom-button:hover, .github-button:hover { background-color: rgba(255, 255, 255, 0.3); }
-  .code-button:hover .fa-code-branch, .code-button:hover .fa-search-plus, .code-button:hover .fa-eye, .zoom-button:hover .fa-code-branch, .zoom-button:hover .fa-search-plus, .zoom-button:hover .fa-eye, .github-button:hover .fa-code-branch, .github-button:hover .fa-search-plus, .github-button:hover .fa-eye { color: #333; }
-  .code-button .fa-code-branch, .code-button .fa-search-plus, .code-button .fa-eye, .zoom-button .fa-code-branch, .zoom-button .fa-search-plus, .zoom-button .fa-eye, .github-button .fa-code-branch, .github-button .fa-search-plus, .github-button .fa-eye { font-size: 34px; margin-top: 8px; }
+  .code-button:hover .fa-github, .code-button:hover .fa-search-plus, .code-button:hover .fa-eye, .zoom-button:hover .fa-github, .zoom-button:hover .fa-search-plus, .zoom-button:hover .fa-eye, .github-button:hover .fa-github, .github-button:hover .fa-search-plus, .github-button:hover .fa-eye { color: #333; }
+  .code-button .fa-github, .code-button .fa-search-plus, .code-button .fa-eye, .zoom-button .fa-github, .zoom-button .fa-search-plus, .zoom-button .fa-eye, .github-button .fa-github, .github-button .fa-search-plus, .github-button .fa-eye { font-size: 34px; margin-top: 8px; }
   .project-picture { height: 17em; width: 25.5em; }
   .modal { left: 2.7em; top: 9.5em; }
   .modal .top { bottom: 7.8em; left: 7.5em; }
@@ -393,8 +393,8 @@ img { height: 12em; width: 18.8em; }
   .gallery-layout { cursor: default; font-size: 33.2px; height: 9.6em; }
   .code-button, .zoom-button, .github-button { cursor: pointer; transition: 0.3s; }
   .code-button:hover, .zoom-button:hover, .github-button:hover { background-color: rgba(255, 255, 255, 0.3); }
-  .code-button:hover .fa-code-branch, .code-button:hover .fa-search-plus, .code-button:hover .fa-eye, .zoom-button:hover .fa-code-branch, .zoom-button:hover .fa-search-plus, .zoom-button:hover .fa-eye, .github-button:hover .fa-code-branch, .github-button:hover .fa-search-plus, .github-button:hover .fa-eye { color: #333; }
-  .code-button .fa-code-branch, .code-button .fa-search-plus, .code-button .fa-eye, .zoom-button .fa-code-branch, .zoom-button .fa-search-plus, .zoom-button .fa-eye, .github-button .fa-code-branch, .github-button .fa-search-plus, .github-button .fa-eye { font-size: 40px; margin-left: 1.7em; }
+  .code-button:hover .fa-github, .code-button:hover .fa-search-plus, .code-button:hover .fa-eye, .zoom-button:hover .fa-github, .zoom-button:hover .fa-search-plus, .zoom-button:hover .fa-eye, .github-button:hover .fa-github, .github-button:hover .fa-search-plus, .github-button:hover .fa-eye { color: #333; }
+  .code-button .fa-github, .code-button .fa-search-plus, .code-button .fa-eye, .zoom-button .fa-github, .zoom-button .fa-search-plus, .zoom-button .fa-eye, .github-button .fa-github, .github-button .fa-search-plus, .github-button .fa-eye { font-size: 40px; margin-left: 1.8em; }
   .project-picture { height: 20em; width: 33.5em; }
   .modal { left: 16.2em; top: 4.2em; }
   .modal .top { bottom: 2.5em; left: -1em; }
