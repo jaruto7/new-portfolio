@@ -1,6 +1,5 @@
 .gallery {
-	margin-top: 1em;
-	margin-bottom: 5.8em;
+	padding-top: 3em;
 	position: relative;
 
 	h2 {
@@ -155,8 +154,6 @@
 
 // Nokia Lumia: landscape
 @media(orientation: landscape) AND (min-width: 533px) {
-	.gallery {
-		
 
 		.title-line2 {
 			top: 36.5%;
@@ -165,10 +162,10 @@
 	
 		.gallery-items {
 			display: flex;
-			margin-top: 4em;
+			margin-top: .2em;
 	
 			.gallery-item {
-				margin: 1em 0 0 .8em; 
+				margin-left: .8em; 
 				width: 10em;
 				height: 7em; 
 	
@@ -204,7 +201,6 @@
 				}
 			}
 		}
-	}
 	
 	.modal-bg.active {
 	
