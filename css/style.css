@@ -146,13 +146,11 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
   body .wrap .header .welcome .text { margin-left: .2em; }
   body .wrap .header .welcome p { font-size: 18px; margin-left: 1.8em; } }
 
-.about-me { font-family: 'Fira Mono', monospace; position: relative; padding-top: 3em; }
+.about-me { font-family: 'Fira Mono', monospace; position: relative; padding-top: 3.5em; }
 
 .about-me h2 { font-size: 30px; margin-bottom: 3em; text-align: center; }
 
 .about-me h2 span { background: linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-
-.about-me .title-line { border-bottom: 2px solid gray; top: 17%; left: 43%; position: absolute; width: 3em; }
 
 .about-me h6 { font-family: 'Fira Sans', sans-serif; font-size: 17px; padding: 2px; }
 

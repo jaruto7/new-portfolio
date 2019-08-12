@@ -1,7 +1,7 @@
 .about-me {
 	font-family: 'Fira Mono', monospace;
 	position: relative;
-	padding-top: 3em;
+	padding-top: 3.5em;
 
 	h2 {
 		font-size: 30px;
@@ -13,14 +13,6 @@
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 		}
-	}
-
-	.title-line {
-		border-bottom: 2px solid gray;
-		top: 17%;
-		left: 43%;
-		position: absolute;
-		width: 3em;	
 	}
 
 	h6 {
