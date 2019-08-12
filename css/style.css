@@ -160,7 +160,7 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
 
 .about-me .tech-left-1, .about-me .tech-left-2, .about-me .tech-right-1 { box-shadow: 1px 1px 15px 1px lightgray; height: auto; padding: 3px; width: 37%; }
 
-.about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 1.3em; text-align: right; }
+.about-me .tech-left-1, .about-me .tech-left-2 { margin-left: 1.3em; }
 
 .about-me .tech-right-1 { margin-left: 11.3em; }
 
