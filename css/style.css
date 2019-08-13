@@ -166,7 +166,7 @@ h6 { font-family: 'Fira Sans', sans-serif; font-size: 17px; padding: 2px; }
 
 .point-line { position: absolute; left: 50%; transform: translateX(-50%); width: 3px; top: 9em; height: 23.7em; background-color: #000; }
 
-.pointer-1, .pointer-2, .pointer-3 { border-radius: 50%; background-color: orangered; height: 25px; left: 50%; position: absolute; transform: translateX(-50%); width: 25px; }
+.pointer-1, .pointer-2, .pointer-3 { border-radius: 50%; background-color: #395E66; height: 25px; left: 50%; position: absolute; transform: translateX(-50%); width: 25px; }
 
 .pointer-1 { top: 13.2em; }
 
@@ -256,11 +256,11 @@ h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-cl
 
 .gallery-item:hover .gallery-layout { left: 0; top: 0; }
 
-.gallery-layout { background-color: rgba(255, 69, 0, 0.8); color: #fff; font-size: 12px; font-family: "Montserrat", sans-serif; height: 11.9em; left: 0; position: absolute; padding: 12px; top: 100%; transition: 0.6s; width: 18.5em; }
+.gallery-layout { background-color: rgba(57, 94, 102, 0.8); color: #fff; font-size: 12px; font-family: "Montserrat", sans-serif; height: 11.9em; left: 0; position: absolute; padding: 12px; top: 100%; transition: 0.6s; width: 18.5em; }
 
 .gallery-layout p { text-shadow: 2px 1px 1px black; }
 
-.code-button, .zoom-button, .github-button { border-style: none; background-color: rgba(255, 69, 0, 0.7); border: 2px solid rgba(182, 25, 33, 0.6); height: 20%; position: absolute; top: 80.1%; width: 33.5%; }
+.code-button, .zoom-button, .github-button { border-style: none; background-color: #395E66; border: 2px solid #2c4950; height: 20%; position: absolute; top: 80.1%; width: 33.5%; }
 
 .fa-github, .fa-search-plus, .fa-eye { color: rgba(245, 179, 118, 0.9); font-size: 18px; margin-top: 2px; margin-left: 1.4em; }
 
