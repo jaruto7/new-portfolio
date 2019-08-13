@@ -351,7 +351,7 @@ img { height: 12em; width: 18.8em; }
   .modal .top .fa-times { font-size: 50px; }
   .modal .middle img { height: 25.5em; width: 45em; } }
 
-@media (orientation: landscape) and (min-width: 1024px) { .gallery-item { height: 13em; width: 19.5em; left: 0.3em; }
+@media (orientation: landscape) and (min-width: 1024px) { .gallery-item { height: 13em; width: 19.5em; }
   .gallery-layout { font-size: 19.3px; height: 10.7em; width: 16.1em; }
   .fa-github, .fa-search-plus, .fa-eye { font-size: 26px; margin-top: 6px; margin-left: 1.5em; }
   .fa-github { margin-left: 1.6em; }
@@ -403,9 +403,9 @@ img { height: 12em; width: 18.8em; }
   .modal .top .fa-times { font-size: 65px; }
   .modal .middle img { height: 50em; width: 85em; } }
 
-.footer { background-color: #222222; text-align: center; padding-top: 1.5em; color: #fff; }
+.footer { background-color: #222222; text-align: center; padding: 1.5em 16px 0 16px; color: #fff; }
 
-.footer .col-3 { float: left; width: 100%; cursor: default; }
+.footer .col-3 { cursor: default; }
 
 .footer .col-3 .fab, .footer .col-3 .fas { font-size: 22px; }
 
@@ -417,7 +417,7 @@ img { height: 12em; width: 18.8em; }
 
 .footer .col-3 a p .social-title { font-size: 11px; }
 
-.footer .footer-title { float: left; width: 100%; margin-top: 2em; }
+.footer .footer-title { margin-top: 2em; }
 
 .footer .footer-title .paragraph-title { border-top: 1px solid #383838; margin: 0 1em; color: lightgray; padding-top: 4em; padding-bottom: 4em; }
 
@@ -425,22 +425,22 @@ img { height: 12em; width: 18.8em; }
   .contact h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; text-align: center; }
   .contact h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
   .contact .title-line3 { border-bottom: 2px solid gray; display: inline-block; position: absolute; top: 6.2em; left: 45%; width: 3em; }
-  .footer { background-color: #222222; text-align: center; padding-top: 1.5em; color: #fff; }
-  .footer .col-3 { float: left; width: 100%; cursor: default; }
+  .footer { background-color: #222222; text-align: center; color: #fff; }
+  .footer .col-3 { cursor: default; }
   .footer .col-3 .fab, .footer .col-3 .fas { font-size: 22px; }
   .footer .col-3 h3 { display: inline-block; padding-bottom: 2px; padding-top: 1em; }
   .footer .col-3 a { color: #fff; }
   .footer .col-3 a p:hover { transform: scale(1.1, 1.1); }
   .footer .col-3 a p .social-title { font-size: 14px; }
-  .footer .footer-title { float: left; width: 100%; margin-top: 2em; }
+  .footer .footer-title { width: 100%; margin-top: 2em; }
   .footer .footer-title .paragraph-title { border-top: 1px solid #383838; margin: 0 1em; color: lightgray; padding-top: 4em; padding-bottom: 4em; } }
 
 @media (orientation: portrait) and (min-width: 360px) { .contact { position: relative; }
   .contact h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; text-align: center; }
   .contact h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
   .contact .title-line3 { border-bottom: 2px solid gray; display: inline-block; position: absolute; top: 6.2em; left: 43.5%; width: 3em; }
-  .footer { background-color: #222222; text-align: center; padding-top: 1.5em; color: #fff; }
-  .footer .col-3 { float: left; width: 100%; cursor: default; }
+  .footer { background-color: #222222; text-align: center; color: #fff; }
+  .footer .col-3 { cursor: default; }
   .footer .col-3 .fab, .footer .col-3 .fas { font-size: 22px; }
   .footer .col-3 h3 { display: inline-block; padding-bottom: 2px; padding-top: 1em; }
   .footer .col-3 a { color: #fff; }
@@ -453,13 +453,14 @@ img { height: 12em; width: 18.8em; }
   .contact h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; text-align: center; }
   .contact h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
   .contact .title-line3 { border-bottom: 2px solid gray; display: inline-block; position: absolute; left: 46%; width: 3em; }
-  .footer { background-color: #222222; text-align: center; padding-top: 1.5em; color: #fff; }
-  .footer .col-3 { float: left; width: 50%; cursor: default; }
+  .footer { background-color: #222222; text-align: center; color: #fff; }
+  .footer .row { display: -ms-flexbox; display: flex; width: 100%; }
+  .footer .col-3 { width: 40%; cursor: default; }
   .footer .col-3 .fab, .footer .col-3 .fas { font-size: 22px; }
   .footer .col-3 h3 { display: inline-block; padding-bottom: 2px; padding-top: 1em; }
   .footer .col-3 a { color: #fff; }
   .footer .col-3 a p:hover { transform: scale(1.1, 1.1); }
-  .footer .col-3 a p .social-title { font-size: 14px; }
+  .footer .col-3 .social-title { font-size: 11px; }
   .footer .footer-title { float: left; width: 100%; margin-top: 2em; }
   .footer .footer-title .paragraph-title { border-top: 1px solid #383838; margin: 0 4em; color: lightgray; padding-top: 4em; padding-bottom: 4em; } }
 
@@ -467,28 +468,28 @@ img { height: 12em; width: 18.8em; }
   .contact h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; text-align: center; }
   .contact h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
   .contact .title-line3 { border-bottom: 2px solid gray; display: inline-block; position: absolute; top: 6.2em; left: 45%; width: 3em; }
-  .footer { background-color: #222222; text-align: center; padding-top: 1.5em; color: #fff; }
-  .footer .col-3 { float: left; width: 100%; cursor: default; }
+  .footer { background-color: #222222; text-align: center; color: #fff; }
+  .footer .col-3 { cursor: default; }
   .footer .col-3 .fab, .footer .col-3 .fas { font-size: 22px; }
   .footer .col-3 h3 { display: inline-block; padding-bottom: 2px; padding-top: 1em; }
   .footer .col-3 a { color: #fff; }
   .footer .col-3 a p:hover { transform: scale(1.1, 1.1); }
   .footer .col-3 a p .social-title { font-size: 13px; }
-  .footer .footer-title { float: left; width: 100%; margin-top: 3em; }
+  .footer .footer-title { width: 100%; margin-top: 3em; }
   .footer .footer-title .paragraph-title { border-top: 1px solid #383838; margin: 0 1em; color: lightgray; padding-top: 9em; padding-bottom: 10em; } }
 
 @media (orientation: landscape) and (min-width: 731px) { .contact { position: relative; }
   .contact h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; text-align: center; }
   .contact h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
   .contact .title-line3 { border-bottom: 2px solid gray; display: inline-block; position: absolute; left: 46.5%; width: 3em; }
-  .footer { background-color: #222222; text-align: center; padding-top: 1.5em; color: #fff; }
-  .footer .col-3 { float: left; width: 50%; cursor: default; }
+  .footer { background-color: #222222; text-align: center; color: #fff; }
+  .footer .col-3 { cursor: default; }
   .footer .col-3 .fab, .footer .col-3 .fas { font-size: 22px; }
   .footer .col-3 h3 { display: inline-block; padding-bottom: 2px; padding-top: 1em; }
   .footer .col-3 a { color: #fff; }
   .footer .col-3 a p:hover { transform: scale(1.1, 1.1); }
   .footer .col-3 a p .social-title { font-size: 14px; }
-  .footer .footer-title { float: left; width: 100%; margin-top: 3em; }
+  .footer .footer-title { width: 100%; margin-top: 3em; }
   .footer .footer-title .paragraph-title { border-top: 1px solid #383838; margin: 0 4em; color: lightgray; padding-top: 4em; padding-bottom: 4em; } }
 
 @media (orientation: portrait) and (min-width: 375px) { .contact { position: relative; }
@@ -496,99 +497,99 @@ img { height: 12em; width: 18.8em; }
   .contact h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
   .contact .title-line3 { border-bottom: 2px solid gray; display: inline-block; position: absolute; top: 6.2em; left: 45%; width: 3em; }
   .footer { background-color: #222222; text-align: center; padding-top: 1.5em; color: #fff; }
-  .footer .col-3 { float: left; width: 100%; cursor: default; }
+  .footer .col-3 { cursor: default; }
   .footer .col-3 .fab, .footer .col-3 .fas { font-size: 22px; }
   .footer .col-3 h3 { display: inline-block; padding-bottom: 2px; padding-top: 1em; }
   .footer .col-3 a { color: #fff; }
   .footer .col-3 a p:hover { transform: scale(1.1, 1.1); }
   .footer .col-3 a p .social-title { font-size: 13px; }
-  .footer .footer-title { float: left; width: 100%; margin-top: 3em; }
+  .footer .footer-title { width: 100%; margin-top: 3em; }
   .footer .footer-title .paragraph-title { border-top: 1px solid #383838; margin: 0 1em; color: lightgray; padding-top: 9em; padding-bottom: 11.2em; } }
 
 @media (orientation: landscape) and (min-width: 812px) { .contact h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; text-align: center; }
   .contact h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
   .contact .title-line3 { border-bottom: 2px solid gray; left: 47.5%; width: 3em; }
-  .footer { background-color: #222222; text-align: center; padding-top: 2.5em; color: #fff; position: relative; }
+  .footer { background-color: #222222; text-align: center; color: #fff; position: relative; }
   .footer .row { position: absolute; top: 2.5em; left: 8%; width: 85%; }
-  .footer .row .col-3 { float: left; width: 25%; }
+  .footer .row .col-3 { width: 40%; }
   .footer .row .col-3 .fab, .footer .row .col-3 .fas { font-size: 22px; }
   .footer .row .col-3 h3 { display: inline-block; padding-bottom: 10px; }
   .footer .row .col-3 p { font-size: 11px; }
   .footer .row .col-3 p .social-title { font-size: 14px; }
-  .footer .footer-title { float: left; width: 100%; margin-top: 6em; }
+  .footer .footer-title { margin-top: 6em; }
   .footer .footer-title .paragraph-title { border-top: 1px solid #383838; margin: 0 4.5em; color: lightgray; padding-top: 4em; } }
 
 @media (orientation: portrait) and (min-width: 768px) { .contact h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; text-align: center; }
   .contact h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
   .contact .title-line3 { border-bottom: 2px solid gray; left: 47.5%; width: 3em; }
-  .footer { background-color: #222222; text-align: center; padding-top: 2.5em; color: #fff; position: relative; }
-  .footer .row { position: absolute; top: 2.5em; left: 8%; width: 85%; }
-  .footer .row .col-3 { float: left; width: 25%; }
+  .footer { background-color: #222222; text-align: center; color: #fff; position: relative; }
+  .footer .row { display: -ms-flexbox; display: flex; position: absolute; top: 2.5em; left: 8%; width: 90%; }
+  .footer .row .col-3 { width: 31%; }
   .footer .row .col-3 .fab, .footer .row .col-3 .fas { font-size: 22px; }
   .footer .row .col-3 h3 { display: inline-block; padding-bottom: 10px; }
   .footer .row .col-3 p { font-size: 10px; }
   .footer .row .col-3 p .social-title { font-size: 14px; }
-  .footer .footer-title { float: left; width: 100%; margin-top: 6em; }
+  .footer .footer-title { margin-top: 6em; }
   .footer .footer-title .paragraph-title { border-top: 1px solid #383838; margin: 0 4.5em; color: lightgray; padding-top: 4em; } }
 
 @media (orientation: landscape) and (min-width: 1024px) { .contact h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; text-align: center; }
   .contact h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
   .contact .title-line3 { border-bottom: 2px solid gray; left: 47.5%; width: 3em; }
-  .footer { background-color: #222222; text-align: center; padding-top: 2.5em; color: #fff; position: relative; }
+  .footer { background-color: #222222; text-align: center; color: #fff; position: relative; }
   .footer .row { position: absolute; top: 2.5em; left: 8%; width: 85%; }
-  .footer .row .col-3 { float: left; width: 25%; }
+  .footer .row .col-3 { width: 32.5%; }
   .footer .row .col-3 .fab, .footer .row .col-3 .fas { font-size: 22px; }
   .footer .row .col-3 h3 { display: inline-block; padding-bottom: 10px; }
   .footer .row .col-3 .social-title { font-size: 14px; }
-  .footer .footer-title { float: left; width: 100%; margin-top: 6em; }
+  .footer .footer-title { margin-top: 6em; }
   .footer .footer-title .paragraph-title { border-top: 1px solid #383838; margin: 0 6em; color: lightgray; padding-top: 4em; } }
 
 @media (orientation: portrait) and (min-width: 1024px) and (min-height: 1366px) { .contact h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; text-align: center; }
   .contact h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
   .contact .title-line3 { border-bottom: 2px solid gray; left: 47.5%; width: 3em; }
-  .footer { background-color: #222222; text-align: center; padding-top: 2.5em; color: #fff; position: relative; }
+  .footer { background-color: #222222; text-align: center; color: #fff; position: relative; }
   .footer .row { position: absolute; top: 2.5em; left: 8%; width: 85%; }
-  .footer .row .col-3 { float: left; width: 25%; }
+  .footer .row .col-3 { float: left; width: 35%; }
   .footer .row .col-3 .fab, .footer .row .col-3 .fas { font-size: 22px; }
   .footer .row .col-3 h3 { display: inline-block; padding-bottom: 10px; }
   .footer .row .col-3 .social-title { font-size: 14px; }
-  .footer .footer-title { float: left; width: 100%; margin-top: 6em; }
+  .footer .footer-title { margin-top: 6em; }
   .footer .footer-title .paragraph-title { border-top: 1px solid #383838; margin: 0 6em; color: lightgray; padding-top: 4em; } }
 
 @media (orientation: landscape) and (min-width: 1366px) { .contact h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; text-align: center; }
   .contact h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
   .contact .title-line3 { border-bottom: 2px solid gray; top: 7.5%; left: 48%; width: 3em; }
-  .footer { background-color: #222222; text-align: center; padding-top: 2.5em; color: #fff; position: relative; }
-  .footer .row { position: absolute; top: 2.5em; left: 8%; width: 85%; }
-  .footer .row .col-3 { float: left; width: 25%; }
+  .footer { background-color: #222222; text-align: center; color: #fff; position: relative; }
+  .footer .row { position: absolute; top: 2.5em; left: 8%; width: 95%; }
+  .footer .row .col-3 { width: 85%; }
   .footer .row .col-3 .fab, .footer .row .col-3 .fas { font-size: 22px; }
   .footer .row .col-3 h3 { display: inline-block; padding-bottom: 10px; }
   .footer .row .col-3 p { font-size: 22px; }
   .footer .row .col-3 p .social-title { font-size: 12px; }
-  .footer .footer-title { float: left; width: 100%; margin-top: 6em; }
+  .footer .footer-title { margin-top: 6em; }
   .footer .footer-title .paragraph-title { border-top: 1px solid #383838; margin: 0 4.5em; color: lightgray; padding-top: 4em; } }
 
 @media (orientation: landscape) and (min-width: 1366px) and (min-height: 768px) { .contact h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; text-align: center; }
   .contact h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
   .contact .title-line3 { border-bottom: 2px solid gray; top: 6em; left: 48%; width: 3em; }
-  .footer { background-color: #222222; text-align: center; padding-top: 2.5em; color: #fff; position: relative; }
+  .footer { background-color: #222222; text-align: center; color: #fff; position: relative; }
   .footer .row { position: absolute; top: 2.5em; left: 8%; width: 85%; }
-  .footer .row .col-3 { float: left; width: 25%; }
+  .footer .row .col-3 { width: 45%; }
   .footer .row .col-3 .fab, .footer .row .col-3 .fas { font-size: 22px; }
   .footer .row .col-3 h3 { display: inline-block; padding-bottom: 10px; }
   .footer .row .col-3 .social-title { font-size: 16px; }
-  .footer .footer-title { float: left; width: 100%; margin-top: 6em; }
+  .footer .footer-title { margin-top: 6em; }
   .footer .footer-title .paragraph-title { border-top: 1px solid #383838; margin: 0 4.5em; color: lightgray; padding-top: 4em; } }
 
 @media (orientation: landscape) and (min-width: 1600px) { .contact { margin-bottom: 5.8em; padding-top: 3.8em; }
   .contact h2 { font-family: 'Montserrat', sans-serif; font-size: 40px; text-align: center; }
   .contact h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
   .contact .title-line3 { border-bottom: 2px solid gray; top: 7.5em; left: 48.5%; width: 3em; }
-  .footer { background-color: #222222; text-align: center; padding-top: 2.5em; color: #fff; position: relative; }
+  .footer { background-color: #222222; text-align: center; color: #fff; position: relative; }
   .footer .row { position: absolute; top: 2.5em; left: 22.5%; width: 75%; }
-  .footer .row .col-3 { float: left; width: 25%; }
+  .footer .row .col-3 { width: 25%; }
   .footer .row .col-3 .fab, .footer .row .col-3 .fas { font-size: 22px; }
   .footer .row .col-3 h3 { display: inline-block; padding-bottom: 10px; }
   .footer .row .col-3 .social-title { font-size: 14px; }
-  .footer .footer-title { float: left; width: 100%; margin-top: 6em; }
+  .footer .footer-title { margin-top: 6em; }
   .footer .footer-title .paragraph-title { border-top: 1px solid #383838; margin: 0 26em; color: lightgray; padding-top: 4em; } }

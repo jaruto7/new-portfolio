@@ -1,12 +1,10 @@
 .footer {
   background-color: #222222;
   text-align: center;
-  padding-top: 1.5em;
+  padding: 1.5em 16px 0 16px;
   color: #fff;
 
   .col-3 {
-    float: left;
-    width: 100%;
     cursor: default;
 
     .fab, .fas {
@@ -35,8 +33,6 @@
   }
 
   .footer-title {
-    float: left;
-    width: 100%;
     margin-top: 2em;
     
     .paragraph-title {
@@ -79,12 +75,9 @@
   .footer {
     background-color: #222222;
     text-align: center;
-    padding-top: 1.5em;
     color: #fff;
   
     .col-3 {
-      float: left;
-      width: 100%;
       cursor: default;
   
       .fab, .fas {
@@ -111,7 +104,6 @@
     }
   
     .footer-title {
-      float: left;
       width: 100%;
       margin-top: 2em;
       
@@ -156,12 +148,9 @@
   .footer {
     background-color: #222222;
     text-align: center;
-    padding-top: 1.5em;
     color: #fff;
   
     .col-3 {
-      float: left;
-      width: 100%;
       cursor: default;
   
       .fab, .fas {
@@ -232,12 +221,15 @@
   .footer {
     background-color: #222222;
     text-align: center;
-    padding-top: 1.5em;
     color: #fff;
+
+    .row {
+      display: flex;
+      width: 100%;
+    }
   
     .col-3 {
-      float: left;
-      width: 50%;
+      width: 40%;
       cursor: default;
   
       .fab, .fas {
@@ -256,12 +248,16 @@
           &:hover {
             transform: scale(1.1, 1.1);
           }
-          .social-title {
-            font-size: 14px;
-          }
+          
         }
       }
+
+      .social-title {
+        font-size: 11px;
+      }
     }
+
+    
   
     .footer-title {
       float: left;
@@ -309,12 +305,10 @@
   .footer {
     background-color: #222222;
     text-align: center;
-    padding-top: 1.5em;
     color: #fff;
+    
   
     .col-3 {
-      float: left;
-      width: 100%;
       cursor: default;
   
       .fab, .fas {
@@ -339,9 +333,8 @@
         }
       }
     }
-  
+
     .footer-title {
-      float: left;
       width: 100%;
       margin-top: 3em;
       
@@ -384,12 +377,10 @@
   .footer {
     background-color: #222222;
     text-align: center;
-    padding-top: 1.5em;
     color: #fff;
-  
+
+
     .col-3 {
-      float: left;
-      width: 50%;
       cursor: default;
   
       .fab, .fas {
@@ -416,7 +407,6 @@
     }
   
     .footer-title {
-      float: left;
       width: 100%;
       margin-top: 3em;
       
@@ -465,8 +455,6 @@
     color: #fff;
   
     .col-3 {
-      float: left;
-      width: 100%;
       cursor: default;
   
       .fab, .fas {
@@ -493,7 +481,6 @@
     }
   
     .footer-title {
-      float: left;
       width: 100%;
       margin-top: 3em;
       
@@ -534,7 +521,6 @@
   .footer {
     background-color: #222222;
     text-align: center;
-    padding-top: 2.5em;
     color: #fff;
     position: relative;
 
@@ -545,8 +531,7 @@
       width: 85%;
     
     .col-3 {
-      float: left;
-      width: 25%;
+      width: 40%;
   
       .fab, .fas {
         font-size: 22px;
@@ -568,8 +553,6 @@
   }
 
     .footer-title {
-      float: left;
-      width: 100%;
       margin-top: 6em;
       
       .paragraph-title {
@@ -609,19 +592,18 @@
   .footer {
     background-color: #222222;
     text-align: center;
-    padding-top: 2.5em;
     color: #fff;
     position: relative;
 
     .row {
+      display: flex;
       position: absolute;
       top: 2.5em;
       left: 8%;
-      width: 85%;
+      width: 90%;
     
     .col-3 {
-      float: left;
-      width: 25%;
+      width: 31%;
   
       .fab, .fas {
         font-size: 22px;
@@ -645,8 +627,6 @@
  
   
     .footer-title {
-      float: left;
-      width: 100%;
       margin-top: 6em;
       
       .paragraph-title {
@@ -686,7 +666,6 @@
   .footer {
     background-color: #222222;
     text-align: center;
-    padding-top: 2.5em;
     color: #fff;
     position: relative;
 
@@ -697,8 +676,7 @@
       width: 85%;
     
     .col-3 {
-      float: left;
-      width: 25%;
+      width: 32.5%;
   
       .fab, .fas {
         font-size: 22px;
@@ -718,8 +696,6 @@
  
   
     .footer-title {
-      float: left;
-      width: 100%;
       margin-top: 6em;
       
       .paragraph-title {
@@ -759,7 +735,6 @@
   .footer {
     background-color: #222222;
     text-align: center;
-    padding-top: 2.5em;
     color: #fff;
     position: relative;
 
@@ -771,7 +746,7 @@
     
     .col-3 {
       float: left;
-      width: 25%;
+      width: 35%;
   
       .fab, .fas {
         font-size: 22px;
@@ -791,8 +766,6 @@
  
   
     .footer-title {
-      float: left;
-      width: 100%;
       margin-top: 6em;
       
       .paragraph-title {
@@ -831,7 +804,6 @@
   .footer {
     background-color: #222222;
     text-align: center;
-    padding-top: 2.5em;
     color: #fff;
     position: relative;
 
@@ -839,11 +811,10 @@
       position: absolute;
       top: 2.5em;
       left: 8%;
-      width: 85%;
+      width: 95%;
     
     .col-3 {
-      float: left;
-      width: 25%;
+      width: 85%;
   
       .fab, .fas {
         font-size: 22px;
@@ -866,8 +837,6 @@
  
   
     .footer-title {
-      float: left;
-      width: 100%;
       margin-top: 6em;
       
       .paragraph-title {
@@ -906,7 +875,6 @@
   .footer {
     background-color: #222222;
     text-align: center;
-    padding-top: 2.5em;
     color: #fff;
     position: relative;
 
@@ -917,8 +885,7 @@
       width: 85%;
     
     .col-3 {
-      float: left;
-      width: 25%;
+      width: 45%;
   
       .fab, .fas {
         font-size: 22px;
@@ -936,8 +903,6 @@
   }
 
     .footer-title {
-      float: left;
-      width: 100%;
       margin-top: 6em;
       
       .paragraph-title {
@@ -978,7 +943,6 @@
   .footer {
     background-color: #222222;
     text-align: center;
-    padding-top: 2.5em;
     color: #fff;
     position: relative;
 
@@ -989,7 +953,6 @@
       width: 75%;
     
     .col-3 {
-      float: left;
       width: 25%;
   
       .fab, .fas {
@@ -1008,8 +971,6 @@
   }
 
     .footer-title {
-      float: left;
-      width: 100%;
       margin-top: 6em;
       
       .paragraph-title {
