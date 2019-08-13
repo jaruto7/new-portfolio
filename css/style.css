@@ -391,7 +391,7 @@ img { height: 12em; width: 18.8em; }
 
 @media (min-width: 1400px) { .gallery { margin-top: 1.5em; }
   h2 { font-size: 40px; }
-  .gallery-item { height: 20em; width: 33.5em; left: 5.5em; top: 0; }
+  .gallery-item { height: 20em; width: 33.5em; left: 6.5em; top: 0; }
   .gallery-layout { cursor: default; font-size: 33.2px; height: 9.6em; }
   .code-button, .zoom-button, .github-button { cursor: pointer; transition: 0.3s; }
   .code-button:hover, .zoom-button:hover, .github-button:hover { background-color: rgba(255, 255, 255, 0.3); }
@@ -585,7 +585,7 @@ img { height: 12em; width: 18.8em; }
   .contact h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
   .contact .title-line3 { border-bottom: 2px solid gray; top: 7.5em; left: 48.5%; width: 3em; }
   .footer { background-color: #222222; text-align: center; padding-top: 2.5em; color: #fff; position: relative; }
-  .footer .row { position: absolute; top: 2.5em; left: 22.5%; width: 55%; }
+  .footer .row { position: absolute; top: 2.5em; left: 22.5%; width: 75%; }
   .footer .row .col-3 { float: left; width: 25%; }
   .footer .row .col-3 .fab, .footer .row .col-3 .fas { font-size: 22px; }
   .footer .row .col-3 h3 { display: inline-block; padding-bottom: 10px; }
