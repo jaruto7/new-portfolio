@@ -13,22 +13,35 @@ const imgModal = document.querySelector('.img-modal');
 const txt = [`Welcome`, `I like challenges`, `I'm creative`, `I\'m Front-end Developer`];
 
 // Zadeklarowanie zmiennych dla elementów menu nawigacji
-const navigationItem = document.querySelectorAll('.nav-link--js');
+
 const navigationSections = document.querySelectorAll('.navigation-section');
 
 // Deklaracja funkcji która dodaje smooth behavior i odsuwa kliknięty element nagłówka krawędzi okna sekcji dodając górny offset
 
-function scrollIt(item) {
-  window.scrollTo({
-    'behavior': 'smooth',
-    'left': 0,
-    'top': item.offsetTop
-  });
-}
+const navigationItems = document.querySelectorAll('.nav-link--js');
 
-navigationItem.forEach(nav => nav.addEventListener('click', () => {
-  scrollIt(navigationSections);
-}));
+Array.from(navigationItems).forEach(navigationItem => {
+  const href = navigationItem.getAttribute('href');
+  const section = document.querySelector(href);
+  const offset = 45 + 20; // nav and offset
+  
+  navigationItem.addEventListener('click', e => {
+    // get body position
+    const bodyRect = document.body.getBoundingClientRect().top; 
+    // get section position relative
+    const sectionRect = section.getBoundingClientRect().top; 
+    // subtract the section from body
+    const sectionPosition = sectionRect - bodyRect; 
+    // subtract offset
+    const offsetPosition = sectionPosition - offset; 
+    
+    e.preventDefault();
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
+  })
+})
 
 
 // Zadeklaruj funkcję anonimową która jest aktywna dopiero w momencie kliknięcia w ikonę lupy na hoverze obrazka danego projektu
