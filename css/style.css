@@ -51,19 +51,19 @@ aside nav a { font-size: 13px; color: #fff; text-align: center; text-decoration:
   .active .nav-link { color: gray; }
   .active .nav-link:hover { color: black; } }
 
-* { margin: 0; padding: 0; scroll-behavior: smooth; box-sizing: border-box; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 .clearfix::after { content: ""; display: block; clear: both; }
 
 body header { height: auto; padding: 40vh 0 49vh; background-image: url(../images/photo1.jpg); background-attachment: fixed; background-repeat: no-repeat; background-position: center; background-size: cover; }
 
-body header .welcome { width: 100%; text-align: left; text-transform: uppercase; font-size: 20px; color: #fff; font-family: 'Open Sans', sans-serif; }
+body header .welcome { width: 100%; text-align: left; text-transform: uppercase; font-size: 20px; color: #fff; font-family: "Open Sans", sans-serif; }
 
-body header .welcome .text { display: inline-block; padding-left: .5em; }
+body header .welcome .text { display: inline-block; padding-left: 21px; }
 
-body header .welcome p { text-shadow: 2px 2px 2px black; padding-top: .5em; font-size: 10px; letter-spacing: 2px; margin: auto 1em; }
+body header .welcome p { text-shadow: 2px 2px 2px black; padding-top: 10px; font-size: 10px; letter-spacing: 2px; margin: auto 1em; }
 
-body header .welcome .cursor { opacity: 0; transition: .2s; color: #ccc; }
+body header .welcome .cursor { opacity: 0; transition: 0.2s; color: #ccc; }
 
 body header .welcome .cursor.active { opacity: 1; }
 
@@ -74,55 +74,27 @@ body header .mouse .scroll { position: relative; width: 5px; height: 10px; top: 
 @keyframes move-scroll { 50% { top: 30%; }
   100% { top: 15%; } }
 
-@media (orientation: landscape) and (min-width: 533px) { body .wrap header { padding-bottom: 45vh; }
-  body .wrap header .welcome { font-size: 25px; }
-  body .wrap header p { margin-left: 1.5em; }
-  body .wrap header .mouse { height: 32px; width: 20px; }
-  body .wrap header .mouse .scroll { height: 8px; width: 3px; } }
+@media (max-width: 469px) { body .wrap .header { padding: 33vh 0 47.9vh; }
+  body .wrap .header .welcome { font-size: 16px; }
+  body .wrap .header .welcome .text { margin-left: 0; }
+  body .wrap .header .welcome p { margin: 0 0 135px 2.3em; font-size: 9px; }
+  body .wrap .mouse { width: 25px; height: 38px; }
+  body .wrap .mouse .scroll { width: 2px; height: 7px; } }
 
-@media (orientation: portrait) and (min-width: 360px) { body .wrap header { padding-bottom: 51vh; }
-  body .wrap header .welcome { font-size: 22px; }
-  body .wrap header p { margin-left: 1.2em; } }
+@media (min-width: 470px) and (max-width: 991px) { body .wrap .header { padding: 33vh 0 47.9vh; }
+  body .wrap .header .welcome { font-size: 30px; }
+  body .wrap .header .welcome .text { margin-left: 2px; }
+  body .wrap .header .welcome p { margin: 0 0 125px 2.3em; font-size: 11px; } }
 
-@media (orientation: landscape) and (min-width: 640px) { body .wrap header { padding-bottom: 45vh; }
-  body .wrap header .welcome { font-size: 29px; }
-  body .wrap header p { margin-left: 1.6em; } }
+@media (min-width: 992px) and (max-width: 1199px) { body .wrap .header { padding: 33vh 0 47.9vh; }
+  body .wrap .header .welcome { font-size: 35px; }
+  body .wrap .header .welcome .text { margin-left: 12px; }
+  body .wrap .header .welcome p { margin: 0 0 112px 2.3em; font-size: 15px; } }
 
-@media (orientation: portrait) and (min-width: 411px) { body .wrap header { padding-bottom: 53vh; }
-  body .wrap header .welcome { font-size: 22px; }
-  body .wrap header p { margin-left: 1.2em; } }
-
-@media (orientation: landscape) and (min-width: 731px) { .wrap header { padding-top: 45vh; }
-  .wrap header .welcome p { font-size: 11px; margin-left: 1.5em; } }
-
-@media (orientation: portrait) and (min-width: 375px) { body .wrap header { padding-bottom: 55vh; } }
-
-@media (orientation: portrait) and (min-width: 768px) { body .wrap header { padding-bottom: 53vh; }
-  body .wrap header .welcome { font-size: 36px; }
-  body .wrap header .welcome .text { margin-left: .2em; }
-  body .wrap header .welcome p { font-size: 16px; margin-left: 1.7em; }
-  body .wrap .mouse { height: 65px; width: 45px; }
-  body .wrap .mouse .scroll { height: 13px; width: 6px; } }
-
-@media (orientation: landscape) and (min-width: 1024px) and (min-height: 768px) { body .wrap header { padding-top: 43vh; }
-  body .wrap header .welcome { font-size: 62px; top: 5em; left: 0; text-align: left; }
-  body .wrap header .welcome .text { margin-left: .2em; }
-  body .wrap header .welcome p { font-size: 16px; margin-left: 3em; }
-  body .wrap header .mouse { width: 35px; height: 55px; }
-  body .wrap header .mouse .scroll { width: 5px; height: 10px; } }
-
-@media (orientation: portrait) and (min-width: 1024px) { body .wrap header { padding: 43vh 0 44vh; }
-  body .wrap header .welcome .text { margin-left: .2em; }
-  body .wrap header .welcome p { margin: 0 0 123px 1.7em; } }
-
-@media (orientation: landscape) and (min-width: 1366px) { body .wrap .header { padding: 33vh 0 45vh; }
-  body .wrap .header .welcome .text { margin-left: .2em; }
-  body .wrap .header .welcome p { margin: 0 0 123px 2.4em; font-size: 20px; } }
-
-@media (min-width: 1600px) { body .wrap .header { padding: 37vh 0 41.5vh; }
+@media (min-width: 1200px) { body .wrap .header { padding: 37vh 0 55vh; }
   body .wrap .header .welcome { font-size: 42px; }
-  body .wrap .header .welcome .text { margin-left: .2em; }
-  body .wrap .header .welcome p { font-size: 18px; margin-left: 1.8em; } }
+  body .wrap .header .welcome .text { margin-left: 0.2em; }
+  body .wrap .header .welcome p { font-size: 18px; margin-left: 32px; } }
 
 .about-me { font-family: 'Fira Mono', monospace; position: relative; padding-top: 3em; }
 

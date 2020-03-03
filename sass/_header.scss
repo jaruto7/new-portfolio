@@ -1,348 +1,194 @@
 * {
- margin: 0;
- padding: 0;
- scroll-behavior: smooth;
- box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .clearfix::after {
- content: "";
- display: block;
- clear: both;
+  content: "";
+  display: block;
+  clear: both;
 }
 
 body {
-
- header {
-  height: auto;
-  padding: 40vh 0 49vh;
-  background-image: url(../images/photo1.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  .welcome {
-   width: 100%;
-   text-align: left;
-   text-transform: uppercase;
-   font-size: 20px;
-   color: #fff;
-   font-family: 'Open Sans', sans-serif;
-
-   .text {
-    display: inline-block;
-    padding-left: .5em;
-   }
-
-   p {
-    text-shadow: 2px 2px 2px black;
-    padding-top: .5em;
-    font-size: 10px;
-    letter-spacing: 2px;
-    margin: auto 1em;
-   }
-
-   .cursor {
-    opacity: 0;
-    transition: .2s;
-    color: #ccc;
-   }
-
-   .cursor.active {
-    opacity: 1;
-   }
-  }
-
-  .mouse {
-   position: absolute;
-   bottom: 1em;
-   left: 50%;
-   width: 30px;
-   height: 48px;
-   border: 2px solid #fff;
-   border-radius: 40%;
-   transform: translateX(-50%);
-
-   .scroll {
-    position: relative;
-    width: 5px;
-    height: 10px;
-    top: 15%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #fff;
-    border-radius: 30%;
-    animation: move-scroll 1.5s linear infinite;
-   }
-  }
-
-  @keyframes move-scroll {
-   50% {
-    top: 30%;
-   }
-
-   100% {
-    top: 15%;
-   }
-  }
- }
-}
-
-// Nokia Lumia: landscape
-@media(orientation: landscape) AND (min-width: 533px) {
- body {
-
-  .wrap {
-   header {
-    padding-bottom: 45vh;
-
-    .welcome {
-     font-size: 25px;
-     
-    }
-
-    p {
-     margin-left: 1.5em;
-    }
-
-    .mouse {
-     height: 32px;
-     width: 20px;
-     
-
-     .scroll {
-      height: 8px;
-      width: 3px;
-     }
-    }
-   }
-  }
- }
-}
-
-// Galaxy S5: portrait
-@media(orientation: portrait) AND (min-width: 360px) {
- body {
-  .wrap {
-   header {
-    padding-bottom: 51vh;
-
-    .welcome {
-     font-size: 22px;
-    }
-
-    p {
-     margin-left: 1.2em;
-    }
-   }
-  }
- }
-}
-
-@media(orientation: landscape) AND (min-width: 640px) {
- body {
-  .wrap {
-   header {
-    padding-bottom: 45vh;
-
-    .welcome {
-     font-size: 29px;
-    }
-
-    p {
-     margin-left: 1.6em;
-    }
-   }
-  }
- }
-}
-
-// Pixel 2: portrait
-@media(orientation: portrait) AND (min-width: 411px) {
-  body {
-    .wrap {
-     header {
-      padding-bottom: 53vh;
-  
-      .welcome {
-       font-size: 22px;
-      }
-  
-      p {
-       margin-left: 1.2em;
-      }
-     }
-    }
-   }
-}
-
-@media(orientation: landscape) AND (min-width: 731px) {
- .wrap {
   header {
-    padding-top: 45vh;
-
-   .welcome {
-
-    p {
-      font-size: 11px;
-      margin-left: 1.5em;
-     }
-   }
-  }
- }
-}
-
-@media(orientation: portrait) AND (min-width: 375px) {
-  body {
-    .wrap {
-     header {
-       padding-bottom: 55vh; 
-     }
-    }
-   }
-
-}
-
-// Ipad: portrait
-@media(orientation: portrait) AND (min-width: 768px) {
- body {
-  .wrap {
-   header {
-     padding-bottom: 53vh;
+    height: auto;
+    padding: 40vh 0 49vh;
+    background-image: url(../images/photo1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     .welcome {
-     font-size: 36px;
-     
-     .text {
-      margin-left: .2em;
-     }
+      width: 100%;
+      text-align: left;
+      text-transform: uppercase;
+      font-size: 20px;
+      color: #fff;
+      font-family: "Open Sans", sans-serif;
 
-     p {
-      font-size: 16px;
-      margin-left: 1.7em;
-     }
-    }
-   }
+      .text {
+        display: inline-block;
+        padding-left: 21px;
+      }
 
-   .mouse {
-    height: 65px;
-    width: 45px;
+      p {
+        text-shadow: 2px 2px 2px black;
+        padding-top: 10px;
+        font-size: 10px;
+        letter-spacing: 2px;
+        margin: auto 1em;
+      }
 
+      .cursor {
+        opacity: 0;
+        transition: 0.2s;
+        color: #ccc;
+      }
 
-    .scroll {
-     height: 13px;
-     width: 6px;
-    }
-   }
-  }
- }
-}
-
-
-@media(orientation: landscape) AND (min-width: 1024px) AND (min-height: 768px) {
- body {
-  .wrap {
-   header {
-    padding-top: 43vh;
-
-    .welcome {
-     font-size: 62px;
-     top: 5em;
-     left: 0;
-     text-align: left;
-
-     .text {
-      margin-left: .2em;
-     }
-
-     p {
-      font-size: 16px;
-      margin-left: 3em;
-     }
+      .cursor.active {
+        opacity: 1;
+      }
     }
 
     .mouse {
-     width: 35px;
-     height: 55px;
+      position: absolute;
+      bottom: 1em;
+      left: 50%;
+      width: 30px;
+      height: 48px;
+      border: 2px solid #fff;
+      border-radius: 40%;
+      transform: translateX(-50%);
 
-     .scroll {
-      width: 5px;
-      height: 10px;
-     }
+      .scroll {
+        position: relative;
+        width: 5px;
+        height: 10px;
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fff;
+        border-radius: 30%;
+        animation: move-scroll 1.5s linear infinite;
+      }
     }
-   }
+
+    @keyframes move-scroll {
+      50% {
+        top: 30%;
+      }
+
+      100% {
+        top: 15%;
+      }
+    }
   }
- }
 }
 
-// Ipad Pro: portrait
-@media(orientation: portrait) AND (min-width: 1024px) {
+// Very small device screen
+@media (max-width: 469px) {
   body {
-   .wrap {
-    header {
-      padding: 43vh 0 44vh;
- 
-     .welcome {
-      
-      .text {
-       margin-left: .2em;
-      }
- 
-      p {
-       margin: 0 0 123px 1.7em;
-      }
-     }
-    }
-   }
-  }
+    .wrap {
+      .header {
+        padding: 33vh 0 47.9vh;
 
+        .welcome {
+          font-size: 16px;
+
+          .text {
+            margin-left: 0;
+          }
+
+          p {
+            margin: 0 0 135px 2.3em;
+            font-size: 9px;
+          }
+        }
+      }
+
+      .mouse {
+        width: 25px;
+        height: 38px;
+
+        .scroll {
+          width: 2px;
+          height: 7px;
+        }
+      }
+    }
+  }
 }
 
-@media(orientation: landscape) AND (min-width: 1366px) {
+// Small device screen - tablets
+@media (min-width: 470px) AND (max-width: 991px) {
   body {
-   .wrap {
-    .header {
-      padding: 33vh 0 45vh;
- 
-     .welcome {
-      
-      .text {
-       margin-left: .2em;
-      }
- 
-      p {
-       margin: 0 0 123px 2.4em;
-       font-size: 20px;
-      }
-     }
-    }
-   }
-  }
+    .wrap {
+      .header {
+        padding: 33vh 0 47.9vh;
 
+        .welcome {
+          font-size: 30px;
+
+          .text {
+            margin-left: 2px;
+          }
+
+          p {
+            margin: 0 0 125px 2.3em;
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
 }
 
- // Desktop
- @media(min-width: 1600px) {
+// Medium device screen
+@media (min-width: 992px) AND (max-width: 1199px) {
   body {
-   .wrap {
-    .header {
-      padding: 37vh 0 41.5vh;
- 
-     .welcome {
-      font-size: 42px;
-      
-      .text {
-       margin-left: .2em;
-      }
- 
-      p {
-       font-size: 18px;
-       margin-left: 1.8em;
-      }
-     }
-    }
-   }
-  }
+    .wrap {
+      .header {
+        padding: 33vh 0 47.9vh;
 
- }
+        .welcome {
+          font-size: 35px;
+
+          .text {
+            margin-left: 12px;
+          }
+
+          p {
+            margin: 0 0 112px 2.3em;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Desktop
+@media (min-width: 1200px) {
+  body {
+    .wrap {
+      .header {
+        padding: 37vh 0 55vh;
+
+        .welcome {
+          font-size: 42px;
+
+          .text {
+            margin-left: 0.2em;
+          }
+
+          p {
+            font-size: 18px;
+            margin-left: 32px;
+          }
+        }
+      }
+    }
+  }
+}
