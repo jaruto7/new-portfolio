@@ -22,45 +22,23 @@ aside nav a { font-size: 13px; color: #fff; text-align: center; text-decoration:
 
 .nav-block.active { top: 0; background-color: #fff; }
 
-@media (orientation: landscape) and (min-width: 533px) { aside nav li { background-color: #333333; }
-  aside nav li:nth-child(1) a { padding: 13px 37.7em 13px 10px; }
-  aside nav li:nth-child(2) a { padding: 13px 35.9em 13px 10px; }
-  aside nav li:nth-child(3) a, aside nav li:nth-child(4) a { padding: 13px 37em 13px 10px; } }
+@media (max-width: 456px) { aside nav li:nth-child(1) a { padding: 13px 90% 13px 10px; }
+  aside nav li:nth-child(2) a { padding: 13px 75% 13px 10px; }
+  aside nav li:nth-child(3) a, aside nav li:nth-child(4) a { padding: 13px 86.3% 13px 10px; } }
 
-@media (orientation: portrait) and (min-width: 360px) { aside { top: 80px; left: 0; }
-  aside nav li:nth-child(1) a { padding: 13px 29.7em 13px 10px; }
-  aside nav li:nth-child(2) a { padding: 13px 22.5em 13px 10px; }
-  aside nav li:nth-child(3) a, aside nav li:nth-child(4) a { padding: 13px 37em 13px 10px; } }
+@media (min-width: 457px) and (max-width: 767px) { aside nav li:nth-child(1) a { padding: 13px 94.1% 13px 10px; }
+  aside nav li:nth-child(2) a { padding: 13px 85% 13px 10px; }
+  aside nav li:nth-child(3) a, aside nav li:nth-child(4) a { padding: 13px 92% 13px 10px; } }
 
-@media (orientation: landscape) and (min-width: 640px) { aside nav li:nth-child(1) a { padding: 13px 45.9em 13px 10px; }
-  aside nav li:nth-child(2) a { padding: 13px 44.1em 13px 10px; }
-  aside nav li:nth-child(3) a, aside nav li:nth-child(4) a { padding: 13px 44.6em 13px 10px; } }
+@media (min-width: 768px) and (max-width: 991px) { aside nav li:nth-child(1) a { padding: 13px 95.5% 13px 10px; }
+  aside nav li:nth-child(2) a { padding: 13px 91.2% 13px 10px; }
+  aside nav li:nth-child(3) a, aside nav li:nth-child(4) a { padding: 13px 93.9% 13px 10px; } }
 
-@media (orientation: portrait) and (min-width: 411px) and (min-height: 731px) { aside nav li:nth-child(1) a { padding: 13px 28.3em 13px 10px; }
-  aside nav li:nth-child(2) a { padding: 13px 26.5em 13px 10px; }
-  aside nav li:nth-child(3) a, aside nav li:nth-child(4) a { padding: 13px 44.6em 13px 10px; } }
+@media (min-width: 992px) and (max-width: 1199px) { aside nav li:nth-child(1) a { padding: 13px 96.2% 13px 10px; }
+  aside nav li:nth-child(2) a { padding: 13px 93.2% 13px 10px; }
+  aside nav li:nth-child(3) a, aside nav li:nth-child(4) a { padding: 13px 94.9% 13px 10px; } }
 
-@media (orientation: landscape) and (min-width: 731px) { aside nav li:nth-child(1) a { padding: 13px 52.9em 13px 10px; }
-  aside nav li:nth-child(2) a { padding: 13px 51.1em 13px 10px; }
-  aside nav li:nth-child(3) a, aside nav li:nth-child(4) a { padding: 13px 51.5em 13px 10px; } }
-
-@media (orientation: landscape) and (min-width: 823px) { aside nav li:nth-child(1) a { padding: 13px 60.3em 13px 10px; }
-  aside nav li:nth-child(2) a { padding: 13px 58.2em 13px 10px; }
-  aside nav li:nth-child(3) a, aside nav li:nth-child(4) a { padding: 13px 58.7em 13px 10px; } }
-
-@media (orientation: portrait) and (min-width: 768px) { .burger { top: 1.5%; width: 60px; height: 50px; font-size: 36px; }
-  aside { top: 80px; }
-  aside nav li { padding: 13px 0 13px 0; }
-  aside nav li:nth-child(1) a { padding: 20px 36.9em 20px 20px; }
-  aside nav li:nth-child(2) a { padding: 20px 28.2em 20px 20px; }
-  aside nav li:nth-child(3) a, aside nav li:nth-child(4) a { padding: 20px 28.7em 20px 20px; }
-  aside nav a { width: 100%; font-size: 23px; color: #fff; text-align: center; text-decoration: none; text-transform: uppercase; font-family: 'Alegreya Sans SC', sans-serif; } }
-
-@media (orientation: landscape) and (min-width: 812px) { aside nav li:nth-child(1) a { padding: 13px 59.2em 13px 10px; }
-  aside nav li:nth-child(2) a { padding: 13px 57.3em 13px 10px; }
-  aside nav li:nth-child(3) a, aside nav li:nth-child(4) a { padding: 13px 58.7em 13px 10px; } }
-
-@media (orientation: landscape) and (min-width: 1024px) { .nav-block { z-index: 1; position: fixed; left: 0; height: 67px; width: 100%; box-shadow: 0 0 65px 5px grey; top: -95px; transition: .7s; }
+@media (min-width: 1200px) { .nav-block { z-index: 1; position: fixed; left: 0; height: 67px; width: 100%; box-shadow: 0 0 65px 5px grey; top: -95px; transition: .7s; }
   .burger { display: none; }
   .burger.active { display: none; }
   aside { display: inline-block; top: 0; background-color: transparent; }
