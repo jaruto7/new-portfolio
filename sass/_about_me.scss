@@ -1,357 +1,331 @@
 .about-me {
-	font-family: 'Fira Mono', monospace;
-	position: relative;
-	padding-top: 3em;
+  font-family: "Fira Mono", monospace;
+  position: relative;
+  padding-top: 3em;
+
+  h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 2em;
+
+    span {
+      background: linear-gradient(#eee, #333);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  h6 {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 17px;
+    padding: 2px;
+  }
+
+  .description {
+    font-family: "Montserrat", sans-serif;
+    color: grey;
+    font-size: 11px;
+    padding: 8px;
+
+    li {
+      list-style-type: none;
+    }
+  }
+
+  .tech-left-1,
+  .tech-left-2,
+  .tech-right-1 {
+    box-shadow: 1px 1px 15px 1px lightgray;
+    height: auto;
+    padding: 3px;
+    width: 37%;
+  }
+
+  .tech-left-1,
+  .tech-left-2 {
+    margin-left: 1.3em;
+  }
+
+  .tech-right-1 {
+    margin-left: 11.3em;
+  }
+
+  .point-line {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    top: 9em;
+    height: 23.7em;
+    background-color: #000;
+  }
+
+  .pointer-1,
+  .pointer-2,
+  .pointer-3 {
+    border-radius: 50%;
+    background-color: #395e66;
+    height: 25px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 25px;
+  }
+
+  .pointer-1 {
+    top: 10em;
+  }
+
+  .pointer-2 {
+    top: 30em;
+  }
+
+  .pointer-3 {
+    top: 48.4em;
+  }
 }
 
-h2 {
-	font-size: 30px;
-	text-align: center;
-	margin-bottom: 2em;
+// // Nokia Lumia: landscape
+// @media(orientation: landscape) AND (min-width: 533px) {
 
-	span {
-		background: linear-gradient(#eee, #333);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
-}
+// 		.tech-left-1, .tech-left-2 {
+// 			margin-left: 6.2em;
+// 			width: 25%;
+// 		}
 
-h6 {
-	font-family: 'Fira Sans', sans-serif;
-	font-size: 17px;
-	padding: 2px;
-}
+// 		.tech-right-1 {
+// 			margin-left: 18.8em;
+// 			width: 25%;
+// 		}
 
-.description {
-	font-family: 'Montserrat', sans-serif;
-	color: grey;
-	font-size: 11px;
-	padding: 8px;
+// 		.point-line {
+// 			top: 9em;
+// 			height: 23.8em;
+// 		}
 
-	li {
-		list-style-type: none;
-	}
-}
+// }
 
-.tech-left-1, .tech-left-2, .tech-right-1 {
-	box-shadow: 1px 1px 15px 1px lightgray;
-	height: auto;
-	padding: 3px;
-	width: 37%;
-}
+// // Galaxy S5: portrait
+// @media(orientation: portrait) AND (min-width: 360px) {
 
-.tech-left-1, .tech-left-2 {
-	margin-left: 1.3em;
-}
+// 		.tech-right-1 {
+// 			margin-left: 12.8em;
+// 		}
 
-.tech-right-1 {
-	margin-left: 11.3em;
-}
+// 		.point-line {
+// 			top: 9em;
+// 			height: 23.8em;
+// 		}
+// }
 
-.point-line {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 3px;
-	top: 9em;
-	height: 23.7em;
-	background-color: #000;
-}
+// // Galaxy S5: landscape
+// @media(orientation: landscape) AND (min-width: 640px) {
 
-.pointer-1, .pointer-2, .pointer-3 {
-	border-radius: 50%;
-	background-color: #395E66;
-	height: 25px;
-	left: 50%;
-	position: absolute;
-	transform: translateX(-50%);
-	width: 25px;
-}
+// 		.tech-left-1, .tech-left-2 {
+// 			margin-left: 7.5em;
+// 		}
 
-.pointer-1 {
-	top: 13.2em;
-}
+// 		.tech-right-1 {
+// 			margin-left: 22.6em;
+// 		}
 
-.pointer-2 {
-	top: 21.2em;
-}
+// 		.point-line {
+// 			top: 9em;
+// 			height: 21.5em;
+// 		}
 
-.pointer-3 {
-	top: 28.4em;
-}
+// 		.pointer-3 {
+// 			top: 26.8em;
+// 		}
 
+// }
 
-// Nokia Lumia: landscape
-@media(orientation: landscape) AND (min-width: 533px) {
-	
-		.tech-left-1, .tech-left-2 {
-			margin-left: 6.2em;
-			width: 25%;
-		}
-	
-		.tech-right-1 {
-			margin-left: 18.8em;
-			width: 25%;
-		}
+// // Pixel 2: portrait
+// @media(orientation: portrait) AND (min-width: 411px) {
 
-		.point-line {
-			top: 9em;
-			height: 23.8em;
-		}
-
-}
-
-// Galaxy S5: portrait
-@media(orientation: portrait) AND (min-width: 360px) {
-		
-		.tech-right-1 {
-			margin-left: 12.8em;
-		}
-
-		.point-line {
-			top: 9em;
-			height: 23.8em;
-		}
-}
-
-// Galaxy S5: landscape
-@media(orientation: landscape) AND (min-width: 640px) {
-
-		.tech-left-1, .tech-left-2 {
-			margin-left: 7.5em;
-		}
-	
-		.tech-right-1 {
-			margin-left: 22.6em;
-		}
-
-		.point-line {
-			top: 9em;
-			height: 21.5em;
-		}
-	
-		.pointer-3 {
-			top: 26.8em;
-		}
-
-}
-
-// Pixel 2: portrait
-@media(orientation: portrait) AND (min-width: 411px) {
-	
-		.tech-left-1, .tech-left-2 {
-			margin-left: 1.6em;
-		}
-	
-		.tech-right-1 {
-			margin-left: 14.5em;
-		}
-
-		.point-line {
-			height: 22.3em;
-		}
-
-		.pointer-3 {
-			top: 27em;
-		}
-
-}
-
-// @media(orientation: landscape) AND (min-width: 736px) {
-	
 // 		.tech-left-1, .tech-left-2 {
 // 			margin-left: 1.6em;
 // 		}
-	
+
 // 		.tech-right-1 {
 // 			margin-left: 14.5em;
 // 		}
 
 // 		.point-line {
-// 			top: 9em;
-// 			height: 1em;
-// 		}
-
-// 		.pointer-1 {
-// 			top: 14.5em;
-// 		}
-	
-// 		.pointer-2 {
-// 			top: 22em;
+// 			height: 22.3em;
 // 		}
 
 // 		.pointer-3 {
-// 			top: 26em;
+// 			top: 27em;
 // 		}
 
 // }
 
+// @media(orientation: landscape) AND (min-width: 731px) {
 
-@media(orientation: landscape) AND (min-width: 731px) {
-	
-		.tech-left-1, .tech-left-2 {
-			margin-left: 8.5em;
-		}
-	
-		.tech-right-1 {
-			margin-left: 25.7em;
-		}
+// 		.tech-left-1, .tech-left-2 {
+// 			margin-left: 8.5em;
+// 		}
 
-		.point-line {
-			height: 9em;
-			height: 21.5em;
-		}
-}
+// 		.tech-right-1 {
+// 			margin-left: 25.7em;
+// 		}
 
-// Iphone X: portrait
-@media(orientation: portrait) AND (min-width: 375px) AND (min-height: 812px) {
-	
-		.tech-left-1, .tech-left-2 {
-			margin-left: 1.5em;
-		}
-	
-		.tech-right-1 {
-			margin-left: 13.2em;
-		}
+// 		.point-line {
+// 			height: 9em;
+// 			height: 21.5em;
+// 		}
+// }
 
-		.point-line {
-			top: 9em;
-			height: 23.8em;
-		}
-}
+// // Iphone X: portrait
+// @media(orientation: portrait) AND (min-width: 375px) AND (min-height: 812px) {
 
-@media(orientation: landscape) AND (min-width: 812px) {
+// 		.tech-left-1, .tech-left-2 {
+// 			margin-left: 1.5em;
+// 		}
 
-		h6 {
-			font-size: 20px;
-		}
+// 		.tech-right-1 {
+// 			margin-left: 13.2em;
+// 		}
 
-		.description {
-			font-size: 12px;
-		}
-	
-		.tech-left-1, .tech-left-2 {
-			margin-left: 9.2em;
-		}
-	
-		.tech-right-1 {
-			margin-left: 28.8em;
-		}
+// 		.point-line {
+// 			top: 9em;
+// 			height: 23.8em;
+// 		}
+// }
 
-		.point-line {
-			top: 9em;
-			height: 22.5em;
-		}
+// @media(orientation: landscape) AND (min-width: 812px) {
 
-		.pointer-3 {
-			top: 27.2em;
-		}
-}
+// 		h6 {
+// 			font-size: 20px;
+// 		}
 
-// Ipad: portrait
-@media(orientation: portrait) AND (min-width: 768px) {
-		h6 {
-			font-size: 22px;
-		}
+// 		.description {
+// 			font-size: 12px;
+// 		}
 
-		.description {
-			font-size: 15px;
-		}
-	
-		.tech-left-1, .tech-left-2 {
-			margin-left: 9.2em;
-			width: 24%;
-		}
-	
-		.tech-right-1 {
-			margin-left: 27.1em;
-			width: 24%;
-		}
+// 		.tech-left-1, .tech-left-2 {
+// 			margin-left: 9.2em;
+// 		}
 
-		.point-line {
-			width: 4px;
-			top: 9em;
-			height: 29em;
-		}
+// 		.tech-right-1 {
+// 			margin-left: 28.8em;
+// 		}
 
-		.pointer-1, .pointer-2, .pointer-3 {
-			height: 30px;
-			width: 30px;
-		}
-	
-		.pointer-1 {
-			top: 14.7em;
-		}
-	
-		.pointer-2 {
-			top: 25em;
-		}
-	
-		.pointer-3 {
-			top: 33em;
-		}
-}
+// 		.point-line {
+// 			top: 9em;
+// 			height: 22.5em;
+// 		}
 
-//Ipad: landscape
-@media(orientation: landscape) AND (min-width: 1024px) {
-	
-		.tech-left-1, .tech-left-2 {
-			width: 20%;
-			margin-left: 15.1em;
-		}
-	
-		.tech-right-1 {
-			margin-left: 36em;
-			width: 20%;
-		}
+// 		.pointer-3 {
+// 			top: 27.2em;
+// 		}
+// }
 
-		.point-line {
-			top: 9em;
-			width: 4px;
-			height: 22.5em;
-		}
-}
+// // Ipad: portrait
+// @media(orientation: portrait) AND (min-width: 768px) {
+// 		h6 {
+// 			font-size: 22px;
+// 		}
 
-// Ipad Pro: portrait
-@media(orientation: portrait) AND (min-width: 1024px) AND (min-height: 1366px) {
+// 		.description {
+// 			font-size: 15px;
+// 		}
 
-		h6 {
-			font-size: 26px;
-		}
+// 		.tech-left-1, .tech-left-2 {
+// 			margin-left: 9.2em;
+// 			width: 24%;
+// 		}
 
-		.description {
-			font-size: 17px;
-		}
-	
-		.tech-left-1, .tech-left-2 {
-			margin-left: 12.5em;
-		}
-	
-		.tech-right-1 {
-			margin-left: 35.9em;
-		}
+// 		.tech-right-1 {
+// 			margin-left: 27.1em;
+// 			width: 24%;
+// 		}
 
-		.point-line {
-			top: 9em;
-			height: 31.9em;
-		}
-	
-		.pointer-2 {
-			top: 27.5em;
-		}
-	
-		.pointer-3 {
-			top: 35.5em;
-		}
-}
+// 		.point-line {
+// 			width: 4px;
+// 			top: 9em;
+// 			height: 29em;
+// 		}
+
+// 		.pointer-1, .pointer-2, .pointer-3 {
+// 			height: 30px;
+// 			width: 30px;
+// 		}
+
+// 		.pointer-1 {
+// 			top: 14.7em;
+// 		}
+
+// 		.pointer-2 {
+// 			top: 25em;
+// 		}
+
+// 		.pointer-3 {
+// 			top: 33em;
+// 		}
+// }
+
+// //Ipad: landscape
+// @media(orientation: landscape) AND (min-width: 1024px) {
+
+// 		.tech-left-1, .tech-left-2 {
+// 			width: 20%;
+// 			margin-left: 15.1em;
+// 		}
+
+// 		.tech-right-1 {
+// 			margin-left: 36em;
+// 			width: 20%;
+// 		}
+
+// 		.point-line {
+// 			top: 9em;
+// 			width: 4px;
+// 			height: 22.5em;
+// 		}
+// }
+
+// // Ipad Pro: portrait
+// @media(orientation: portrait) AND (min-width: 1024px) AND (min-height: 1366px) {
+
+// 		h6 {
+// 			font-size: 26px;
+// 		}
+
+// 		.description {
+// 			font-size: 17px;
+// 		}
+
+// 		.tech-left-1, .tech-left-2 {
+// 			margin-left: 12.5em;
+// 		}
+
+// 		.tech-right-1 {
+// 			margin-left: 35.9em;
+// 		}
+
+// 		.point-line {
+// 			top: 9em;
+// 			height: 31.9em;
+// 		}
+
+// 		.pointer-2 {
+// 			top: 27.5em;
+// 		}
+
+// 		.pointer-3 {
+// 			top: 35.5em;
+// 		}
+// }
 
 // @media(orientation: landscape) AND (min-width: 1366px) AND (min-height: 1024px) {
-	
+
 // 		.tech-left-1, .tech-left-2 {
 // 			margin-left: 24.4em;
 // 			width: 15%;
 // 		}
-	
+
 // 		.tech-right-1 {
 // 			margin-left: 48em;
 // 			width: 15%;
@@ -366,150 +340,710 @@ h6 {
 // 			height: 30px;
 // 			width: 30px;
 // 		}
-	
+
 // 		.pointer-1 {
 // 			top: 10.5em;
 // 		}
-	
+
 // 		.pointer-2 {
 // 			top: 28.5em;
 // 		}
-	
+
 // 		.pointer-3 {
 // 			top: 40.5em;
 // 		}
 // }
 
-@media(orientation: landscape) AND (min-width: 1366px) AND (min-height: 768px) {
+@media (max-width: 322px) {
+  .about-me {
+    .tech-right-1 {
+      margin-left: 58%;
+    }
 
-	.tech-right-1 {
-		margin-left: 53em;
-		width: 20%;
-	}
+    .point-line {
+      height: 73.5%;
+    }
 
-		.point-line {
-			top: 9em;
-			height: 20.8em;
-			width: 4px;
-		}
-				
-		.pointer-3 {
-			top: 26em;
-		}
+    .pointer-1,
+    .pointer-2,
+    .pointer-3 {
+      height: 20px;
+      width: 20px;
+    }
+
+    .pointer-1 {
+      top: 40%;
+    }
+
+    .pointer-2 {
+      top: 64%;
+    }
+
+    .pointer-3 {
+      top: 86%;
+    }
+  }
 }
 
-//desktop: landscape
-@media(min-width: 1400px) {
-	
-		h2 {
-			font-size: 40px;
-			margin-bottom: 2em;
-			
-		}
+@media (min-width: 323px) AND (max-width: 325px) {
+  .about-me {
+    .tech-left-1,
+    .tech-left-2 {
+      margin-left: 5%;
+    }
 
-		h6 {
-			font-size: 30px;
-		}
+    .tech-right-1 {
+      margin-left: 58%;
+    }
 
-		.description {
-			font-size: 19px;
-			padding: 16px;
-		}
+    .point-line {
+      height: 73%;
+    }
 
-		.point-line {
-			top: 10.9em;
-			height: 40.1em;
-			width: 5px;
-		}
+    .pointer-1,
+    .pointer-2,
+    .pointer-3 {
+      height: 20px;
+      width: 20px;
+    }
 
-		.tech-left-1, .tech-left-2, .tech-right-1 {
-			padding: 16px;
-			width: 18.5%;
-		}
-	
-		.tech-left-1, .tech-left-2 {
-			margin-left: 28.6em;
-		}
-	
-		.tech-right-1 {
-			margin-left: 67.5em;
-		}
+    .pointer-1 {
+      top: 40%;
+    }
 
-		.pointer-1, .pointer-2, .pointer-3 {
-			height: 35px;
-			width: 35px;
-		}
-	
-		.pointer-1 {
-			top: 18.5em;
-		}
-	
-		.pointer-2 {
-			top: 33em;
-		}
-	
-		.pointer-3 {
-			top: 44.5em;
-		}
+    .pointer-2 {
+      top: 64%;
+    }
+
+    .pointer-3 {
+      top: 86%;
+    }
+  }
 }
 
-// // // Nokia Lumia: landscape
-// // @media(orientation: landscape) AND (min-width: 533px) {
-	
-// // }
+@media (min-width: 326px) AND (max-width: 395px) {
+  .about-me {
+    .tech-right-1 {
+      margin-left: 58%;
+    }
 
-// // // Galaxy S5: portrait
-// // @media(orientation: portrait) AND (min-width: 360px) {
-	
-// // }
+    .point-line {
+      height: 72.3%;
+    }
 
-// // // Galaxy S5: landscape
-// // @media(orientation: landscape) AND (min-width: 640px) {
-	
-// // }
+    .pointer-1,
+    .pointer-2,
+    .pointer-3 {
+      height: 20px;
+      width: 20px;
+    }
 
-// // // Pixel 2: portrait
-// // @media(orientation: portrait) AND (min-width: 411px) {
+    .pointer-1 {
+      top: 41%;
+    }
 
-// // }
+    .pointer-2 {
+      top: 66%;
+    }
 
-// // @media(orientation: landscape) AND (min-width: 731px) {
-	
-// // }
+    .pointer-3 {
+      top: 87%;
+    }
+  }
+}
 
-// // // Iphone X: portrait
-// // @media(orientation: portrait) AND (min-width: 375px) AND (min-height: 812px) {
-	
-// // }
+@media (min-width: 396px) AND (max-width: 437px) {
+  .about-me {
+    .tech-right-1 {
+      margin-left: 58%;
+    }
 
-// // @media(orientation: landscape) AND (min-width: 812px) {
+    .point-line {
+      height: 71.3%;
+    }
 
-// // }
+    .pointer-1,
+    .pointer-2,
+    .pointer-3 {
+      height: 20px;
+      width: 20px;
+    }
 
-// // // Ipad: portrait
-// // @media(orientation: portrait) AND (min-width: 768px) {
-	
-// // }
+    .pointer-1 {
+      top: 43%;
+    }
 
-// // //Ipad: landscape
-// // @media(orientation: landscape) AND (min-width: 1024px) {
+    .pointer-2 {
+      top: 68%;
+    }
 
-// // }
+    .pointer-3 {
+      top: 88%;
+    }
+  }
+}
 
-// // // Ipad Pro: portrait
-// // @media(orientation: portrait) AND (min-width: 1024px) AND (min-height: 1366px) {
-	
-// // }
+@media (min-width: 438px) AND (max-width: 511px) {
+  .about-me {
+    .tech-right-1 {
+      margin-left: 58%;
+    }
 
-// // @media(orientation: landscape) AND (min-width: 1366px) {
-	
-// // }
+    .point-line {
+      height: 71%;
+    }
 
-// // @media(orientation: landscape) AND (min-width: 1366px) AND (min-height: 768px) {
-	
-// // }
+    .pointer-1,
+    .pointer-2,
+    .pointer-3 {
+      height: 20px;
+      width: 20px;
+    }
 
-// // // desktop: landscape
-// // @media(orientation: landscape) AND (min-width: 1920px) {
+    .pointer-1 {
+      top: 44%;
+    }
+
+    .pointer-2 {
+      top: 68%;
+    }
+
+    .pointer-3 {
+      top: 88%;
+    }
+  }
+}
+
+@media (min-width: 512px) AND (max-width: 557px) {
+  .about-me {
+    .tech-left-1,
+    .tech-left-2 {
+      margin-left: 5%;
+    }
+
+    .tech-right-1 {
+      margin-left: 58%;
+    }
+
+    .point-line {
+      height: 69.3%;
+    }
+
+    .pointer-1,
+    .pointer-2,
+    .pointer-3 {
+      height: 20px;
+      width: 20px;
+    }
+
+    .pointer-1 {
+      top: 45%;
+    }
+
+    .pointer-2 {
+      top: 70%;
+    }
+
+    .pointer-3 {
+      top: 87%;
+    }
+  }
+}
+
+@media (min-width: 558px) AND (max-width: 659px) {
+  .about-me {
+    .tech-left-1,
+    .tech-left-2 {
+      margin-left: 5%;
+    }
+
+    .tech-right-1 {
+      margin-left: 58%;
+    }
+
+    .point-line {
+      height: 67.9%;
+    }
+
+    .pointer-1,
+    .pointer-2,
+    .pointer-3 {
+      height: 20px;
+      width: 20px;
+    }
+
+    .pointer-1 {
+      top: 45%;
+    }
+
+    .pointer-2 {
+      top: 70%;
+    }
+
+    .pointer-3 {
+      top: 87%;
+    }
+  }
+}
+
+@media (min-width: 660px) AND (max-width: 767px) {
+  .about-me {
+    .tech-left-1,
+    .tech-left-2 {
+      margin-left: 5%;
+    }
+
+    .tech-right-1 {
+      margin-left: 58%;
+    }
+
+    .point-line {
+      height: 67.2%;
+    }
+
+    .pointer-1,
+    .pointer-2,
+    .pointer-3 {
+      height: 20px;
+      width: 20px;
+    }
+
+    .pointer-1 {
+      top: 46%;
+    }
+
+    .pointer-2 {
+      top: 71%;
+    }
+
+    .pointer-3 {
+      top: 88%;
+    }
+  }
+}
+
+@media (min-width: 768px) AND (max-width: 819px) {
+  .about-me {
+    h6 {
+      font-size: 26px;
+    }
+
+    .description {
+      font-size: 17px;
+    }
+
+    .tech-left-1,
+    .tech-left-2 {
+      margin-left: 7%;
+    }
+
+    .tech-right-1 {
+      margin-left: 56%;
+    }
+
+    .point-line {
+      top: 9em;
+      height: 76.6%;
+		}
 		
-// // }
+		.pointer-1 {
+      top: 39%;
+    }
+
+    .pointer-2 {
+      top: 66%;
+    }
+
+    .pointer-3 {
+      top: 86%;
+    }
+  }
+}
+
+@media (min-width: 820px) AND (max-width: 977px) {
+  .about-me {
+    h6 {
+      font-size: 26px;
+    }
+
+    .description {
+      font-size: 17px;
+    }
+
+    .tech-left-1,
+    .tech-left-2 {
+      margin-left: 7%;
+    }
+
+    .tech-right-1 {
+      margin-left: 56%;
+    }
+
+    .point-line {
+      top: 9em;
+      height: 75.6%;
+		}
+		
+		.pointer-1 {
+      top: 39%;
+    }
+
+    .pointer-2 {
+      top: 69%;
+    }
+
+    .pointer-3 {
+      top: 88%;
+    }
+  }
+}
+
+@media (min-width: 978px) AND (max-width: 991px) {
+  .about-me {
+    h6 {
+      font-size: 26px;
+    }
+
+    .description {
+      font-size: 17px;
+    }
+
+    .tech-left-1,
+    .tech-left-2 {
+      margin-left: 7%;
+    }
+
+    .tech-right-1 {
+      margin-left: 56%;
+    }
+
+    .point-line {
+      top: 9em;
+      height: 74.6%;
+		}
+		
+		.pointer-1 {
+      top: 43%;
+    }
+
+    .pointer-2 {
+      top: 70%;
+    }
+
+    .pointer-3 {
+      top: 88%;
+    }
+  }
+}
+
+@media (min-width: 992px) AND (max-width: 1178px) {
+  .about-me {
+    h6 {
+      font-size: 26px;
+    }
+
+    .description {
+      font-size: 17px;
+    }
+
+    .tech-left-1,
+    .tech-left-2 {
+      margin-left: 7%;
+    }
+
+    .tech-right-1 {
+      margin-left: 56%;
+    }
+
+    .point-line {
+      top: 9em;
+      height: 74.6%;
+		}
+		
+		.pointer-1 {
+      top: 43%;
+    }
+
+    .pointer-2 {
+      top: 70%;
+    }
+
+    .pointer-3 {
+      top: 88%;
+    }
+  }
+}
+
+@media (min-width: 1179px) AND (max-width: 1199px) {
+  .about-me {
+    h6 {
+      font-size: 26px;
+    }
+
+    .description {
+      font-size: 17px;
+    }
+
+    .tech-left-1,
+    .tech-left-2 {
+      margin-left: 7%;
+    }
+
+    .tech-right-1 {
+      margin-left: 56%;
+    }
+
+    .point-line {
+      height: 73.6%;
+		}
+		
+		.pointer-1 {
+      top: 43%;
+    }
+
+    .pointer-2 {
+      top: 72%;
+    }
+
+    .pointer-3 {
+      top: 88%;
+    }
+  }
+}
+
+//Big device screen - desktop
+@media (min-width: 1200px) AND (max-width: 1468px) {
+  .about-me {
+    h2 {
+      font-size: 40px;
+      margin-bottom: 2em;
+    }
+
+    h6 {
+      font-size: 30px;
+    }
+
+    .description {
+      font-size: 19px;
+      padding: 16px;
+    }
+
+    .point-line {
+      top: 18.6%;
+			height: 81%;
+      width: 5px;
+    }
+
+    .tech-left-1,
+    .tech-left-2,
+    .tech-right-1 {
+      padding: 16px;
+      width: 18.5%;
+    }
+
+    .tech-left-1,
+    .tech-left-2 {
+      margin-left: 20%;
+    }
+
+    .tech-right-1 {
+      margin-left: 60%;
+    }
+
+    .pointer-1,
+    .pointer-2,
+    .pointer-3 {
+      height: 35px;
+      width: 35px;
+    }
+
+    .pointer-1 {
+      top: 35%;
+    }
+
+    .pointer-2 {
+      top: 64%;
+    }
+
+    .pointer-3 {
+      top: 86%;
+    }
+  }
+}
+
+@media (min-width: 1469px) AND (max-width: 1612px) {
+  .about-me {
+    h2 {
+      font-size: 40px;
+      margin-bottom: 2em;
+    }
+
+    h6 {
+      font-size: 30px;
+    }
+
+    .description {
+      font-size: 19px;
+      padding: 16px;
+    }
+
+    .point-line {
+      top: 19.6%;
+			height: 80.5%;
+      width: 5px;
+    }
+
+    .tech-left-1,
+    .tech-left-2,
+    .tech-right-1 {
+      padding: 16px;
+      width: 18.5%;
+    }
+
+    .tech-left-1,
+    .tech-left-2 {
+      margin-left: 20%;
+    }
+
+    .tech-right-1 {
+      margin-left: 60%;
+    }
+
+    .pointer-1,
+    .pointer-2,
+    .pointer-3 {
+      height: 35px;
+      width: 35px;
+    }
+
+    .pointer-1 {
+      top: 36%;
+    }
+
+    .pointer-2 {
+      top: 64%;
+    }
+
+    .pointer-3 {
+      top: 86%;
+    }
+  }
+}
+
+@media (min-width: 1613px) AND (max-width: 1679px) {
+  .about-me {
+    h2 {
+      font-size: 40px;
+      margin-bottom: 2em;
+    }
+
+    h6 {
+      font-size: 30px;
+    }
+
+    .description {
+      font-size: 19px;
+      padding: 16px;
+    }
+
+    .point-line {
+      top: 21%;
+			height: 79%;
+      width: 5px;
+    }
+
+    .tech-left-1,
+    .tech-left-2,
+    .tech-right-1 {
+      padding: 16px;
+      width: 18.5%;
+    }
+
+    .tech-left-1,
+    .tech-left-2 {
+      margin-left: 20%;
+    }
+
+    .tech-right-1 {
+      margin-left: 60%;
+    }
+
+    .pointer-1,
+    .pointer-2,
+    .pointer-3 {
+      height: 35px;
+      width: 35px;
+    }
+
+    .pointer-1 {
+      top: 37%;
+    }
+
+    .pointer-2 {
+      top: 65%;
+    }
+
+    .pointer-3 {
+      top: 87%;
+    }
+  }
+}
+
+@media (min-width: 1680px) {
+  .about-me {
+    h2 {
+      font-size: 40px;
+      margin-bottom: 2em;
+    }
+
+    h6 {
+      font-size: 30px;
+    }
+
+    .description {
+      font-size: 19px;
+      padding: 16px;
+    }
+
+    .point-line {
+      top: 21.6%;
+      height: 78%;
+      width: 5px;
+    }
+
+    .tech-left-1,
+    .tech-left-2,
+    .tech-right-1 {
+      padding: 16px;
+      width: 18.5%;
+    }
+
+    .tech-left-1,
+    .tech-left-2 {
+      margin-left: 20%;
+    }
+
+    .tech-right-1 {
+      margin-left: 60%;
+    }
+
+    .pointer-1,
+    .pointer-2,
+    .pointer-3 {
+      height: 35px;
+      width: 35px;
+    }
+
+    .pointer-1 {
+      top: 33%;
+    }
+
+    .pointer-2 {
+      top: 64%;
+    }
+
+    .pointer-3 {
+      top: 86%;
+    }
+  }
+}
