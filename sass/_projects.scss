@@ -17,6 +17,9 @@ h2 {
 
 .gallery-items {
   list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .gallery-item {
@@ -25,13 +28,11 @@ h2 {
   overflow: hidden;
   position: relative;
   width: 14em;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto 2em auto;
 
   &:hover .gallery-layout {
     left: 0;
     top: 0;
+    width: 100%;
   }
 }
 
@@ -63,6 +64,9 @@ h2 {
   position: absolute;
   top: 80.1%;
   width: 33.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fa-github,
@@ -70,8 +74,6 @@ h2 {
 .fa-eye {
   color: rgba(rgb(245, 179, 118), 0.9);
   font-size: 18px;
-  margin-top: 2px;
-  margin-left: 1.4em;
 }
 
 .code-button {
@@ -79,7 +81,7 @@ h2 {
 }
 
 .zoom-button {
-  left: 33%;
+  left: 33.2%;
 }
 
 .github-button {
@@ -97,6 +99,59 @@ h2 {
 
 .modal-bg {
   display: none;
+
+  &.active {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: block;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .modal {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+  }
+}
+
+.top {
+  position: relative;
+  top: 6%;
+  left: 30em;
+  height: 100%;
+
+  // close icon for modal
+  .fa-times {
+    color: lightgrey;
+    cursor: pointer;
+    font-size: 35px;
+    left: 15em;
+    position: absolute;
+    top: 1.5%;
+    z-index: 1;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.middle {
+  position: relative;
+
+  &:hover .icon {
+    display: block;
+  }
+
+  .img-modal {
+    height: 50em;
+    width: 85em;
+  }
 }
 
 .wrap.blur {
@@ -104,531 +159,154 @@ h2 {
   height: 100vh;
 }
 
-.modal-bg.active {
-  background-color: rgba(0, 0, 0, 0.6);
-  display: block;
-  height: 100%;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.modal {
-  height: 15%;
-  left: 3%;
-  position: absolute;
-  top: 25%;
-  width: 15%;
-}
-
-.top {
-  bottom: 150%;
-  left: 12%;
-  position: relative;
-}
-
-// close icon for modal
-.fa-times {
-  color: lightgrey;
-  cursor: pointer;
-  font-size: 35px;
-  left: 560%;
-  line-height: 24px;
-  position: absolute;
-  top: 0;
-}
-
-.fa-times:hover {
-  color: #fff;
-}
-
-.middle {
-  position: relative;
-}
-
-.middle:hover .icon {
-  display: block;
-}
-
-img {
-  height: 12em;
-  width: 18.8em;
-}
-
-// Nokia Lumia: landscape
-@media (orientation: landscape) AND (min-width: 533px) {
-  .gallery-items {
-    display: flex;
+// Very small device screen
+@media(max-width: 768px) {
+  h2 {
+    font-size: 30px;
+    margin-bottom: 80px;
   }
+    .gallery-item {
+      height: 17em;
+      width: 25.5em;
+      margin: 0 16px 80px;
+    }
 
-  .gallery-item {
-    width: 10em;
-    height: 7em;
-    margin: 0 auto 2em auto;
-  }
+      .gallery-layout {
+        cursor: default;
+        font-size: 25.2px;
+        height: 10.8em;
+      }
 
-  .gallery-layout {
-    font-size: 10.8px;
-    height: 10.2em;
-    padding: 6px;
-    width: 14.7em;
-  }
+        .code-button,
+        .zoom-button,
+        .github-button {
+          transition: 0.3s;
+          cursor: pointer;
 
-  .fa-github,
-  .fa-search-plus,
-  .fa-eye {
-    font-size: 14px;
-  }
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.3);
 
-  .code-button {
-    width: 34%;
-  }
+            .fa-github,
+            .fa-search-plus,
+            .fa-eye {
+              color: #333;
+            }
+          }
 
-  .zoom-button {
-    left: 33.4%;
-  }
+          .fa-github,
+          .fa-search-plus,
+          .fa-eye {
+            font-size: 34px;
+            // margin-top: 8px;
+          }
+        }
 
-  .github-button {
-    left: 66.4%;
-  }
-
-  .project-picture {
-    height: 7em;
-    width: 10em;
-  }
-
+      .project-picture {
+        height: 17em;
+        width: 25.5em;
+      }
+      
   .modal {
-    height: 1em;
-    left: 14%;
-    top: 12%;
+    left: 2.7em;
+    top: 9.5em;
 
     .top {
-      bottom: 1.6em;
-      left: -1.5em;
+      
+
+      .fa-times {
+        font-size: 20px;
+        top: 31%;
+        left: -3.2em;
+      }
     }
 
     .middle {
       img {
         height: 15em;
-        width: 24em;
+        width: 27em;
       }
     }
   }
 }
 
-// Galaxy S5: portrait
-@media (orientation: portrait) AND (min-width: 360px) {
-  .fa-github,
-  .fa-search-plus,
-  .fa-eye {
-    margin-top: 0.2em;
-    margin-left: 1.4em;
-  }
-
-  .modal {
-    left: 5%;
-    top: 29%;
-
-    .top {
-      bottom: 11em;
-    }
-
-    .middle {
-      img {
-        height: 13.5em;
-        width: 20.2em;
-      }
-    }
-  }
-}
-
-// Galaxy S5: landscape
-@media (orientation: landscape) AND (min-width: 640px) {
-  .gallery-item {
-    height: 8em;
-    width: 12em;
-  }
-
-  .gallery-layout {
-    font-size: 12.8px;
-    height: 9.9em;
-    width: 14.9em;
-  }
-
-  .fa-github,
-  .fa-search-plus,
-  .fa-eye {
-    font-size: 17px;
-  }
-
-  .project-picture {
-    height: 8em;
-    width: 12em;
-  }
-
-  .modal {
-    .top {
-      bottom: 1.9em;
-    }
-
-    .middle {
-      img {
-        height: 17em;
-        width: 28em;
-      }
-    }
-  }
-}
-
-// Pixel 2: portrait
-@media (orientation: portrait) AND (min-width: 411px) {
-  .modal {
-    top: 15em;
-
-    .top {
-      bottom: 14em;
-    }
-
-    .middle {
-      img {
-        height: 14.5em;
-        width: 23em;
-      }
-    }
-  }
-}
-
-@media (orientation: landscape) AND (min-width: 731px) {
-  .gallery-item {
-    height: 10em;
-    width: 14em;
-  }
-
-  .gallery-layout {
-    font-size: 13.8px;
-    height: 11.5em;
-    padding: 16px;
-    width: 16.1em;
-  }
-
-  .fa-github,
-  .fa-search-plus,
-  .fa-eye {
-    font-size: 21px;
-    margin-top: 0.2em;
-  }
-
-  .fa-eye {
-    margin-left: 1.2em;
-  }
-
-  .project-picture {
-    height: 10em;
-    width: 14em;
-  }
-
-  .modal {
-    left: 7.7em;
-    top: 3.5em;
-
-    .top {
-      bottom: 2.5em;
-      left: -2.8em;
-    }
-
-    .middle {
-      img {
-        height: 19em;
-        width: 30em;
-      }
-    }
-  }
-}
-
-// Iphone X: portrait
-@media (orientation: portrait) AND (min-width: 375px) AND (min-height: 812px) {
-  .modal {
-    top: 17em;
-    left: 0.7em;
-
-    .top {
-      bottom: 15.8em;
-    }
-
-    .middle {
-      img {
-        height: 13.5em;
-        width: 22em;
-      }
-    }
-  }
-}
-
-@media (orientation: landscape) AND (min-width: 812px) {
-  .gallery-item {
-    height: 10em;
-    width: 15.5em;
-  }
-
-  .gallery-layout {
-    font-size: 15.8px;
-    height: 10.1em;
-  }
-
-  .fa-github,
-  .fa-search-plus,
-  .fa-eye {
-    font-size: 21px;
-  }
-
-  .project-picture {
-    height: 10em;
-    width: 15.5em;
-  }
-
-  .modal {
-    left: 10.7em;
-    top: 2em;
-
-    .top {
-      bottom: 1.3em;
-      left: -4.8em;
-    }
-  }
-}
-
-// Ipad: portrait
-@media (orientation: portrait) AND (min-width: 768px) {
+// Small device screen
+@media(min-width: 768px) AND (max-width: 1224px) {
   h2 {
     font-size: 30px;
+    margin-bottom: 80px;
   }
+    .gallery-item {
+      height: 17em;
+      width: 25.5em;
+      margin: 0 16px 80px;
+    }
 
-  .gallery-items {
-    display: flex;
-  }
-
-  .fa-github,
-  .fa-search-plus,
-  .fa-eye {
-    font-size: 20px;
-    margin-top: 0.1em;
-  }
-
-  .fa-eye {
-    margin-left: 1.1em;
-  }
-
-  .modal {
-    top: 18em;
-    left: 1.5em;
-
-    .top {
-      bottom: 16.6em;
-      left: 3em;
-
-      .fa-times {
-        font-size: 50px;
+      .gallery-layout {
+        cursor: default;
+        font-size: 25.2px;
+        height: 10.8em;
       }
-    }
 
-    .middle {
-      img {
-        height: 25.5em;
-        width: 45em;
-      }
-    }
-  }
-}
+        .code-button,
+        .zoom-button,
+        .github-button {
+          transition: 0.3s;
+          cursor: pointer;
 
-//Ipad: landscape
-@media (orientation: landscape) AND (min-width: 1024px) {
-  .gallery-item {
-    height: 13em;
-    width: 19.5em;
-  }
-
-  .gallery-layout {
-    font-size: 19.3px;
-    height: 10.7em;
-    width: 16.1em;
-  }
-
-  .fa-github,
-  .fa-search-plus,
-  .fa-eye {
-    font-size: 26px;
-    margin-top: 6px;
-    margin-left: 1.5em;
-  }
-
-  .fa-github {
-    margin-left: 1.6em;
-  }
-
-  .fa-eye {
-    margin-left: 1.4em;
-  }
-
-  .project-picture {
-    height: 13em;
-    width: 19.5em;
-  }
-
-  .modal {
-    left: 2em;
-    top: 6em;
-
-    .top {
-      bottom: 4.3em;
-      left: 4.8em;
-
-      .fa-times {
-        font-size: 45px;
-      }
-    }
-
-    .middle {
-      img {
-        height: 35em;
-        width: 60em;
-      }
-    }
-  }
-}
-
-// Ipad Pro: portrait
-// @media (orientation: portrait) AND (min-width: 1024px) AND (min-height: 1366px) {
-//   .gallery-item {
-//     height: 12em;
-//     width: 19em;
-//   }
-
-//   .gallery-layout {
-//     font-size: 19px;
-//     height: 10em;
-//     padding: 16px;
-//     width: 15.9em;
-//   }
-
-//   .fa-github,
-//   .fa-search-plus,
-//   .fa-eye {
-//     font-size: 26px;
-//     margin-top: 4px;
-//     margin-left: 1.5em;
-//   }
-
-//   .fa-eye {
-//     margin-left: 1.3em;
-//   }
-
-//   .project-picture {
-//     height: 12em;
-//     width: 19em;
-//   }
-
-//   .modal {
-//     top: 24em;
-//     left: 2em;
-
-//     .top {
-//       bottom: 21.8em;
-//       left: 4em;
-
-//       .fa-times {
-//         font-size: 65px;
-//       }
-//     }
-
-//     .middle {
-//       img {
-//         height: 34.5em;
-//         width: 60em;
-//       }
-//     }
-//   }
-// }
-
-@media (orientation: landscape) AND (min-width: 1366px) {
-    h2 {
-      font-size: 40px;
-    }
-
-    .gallery-items {
-			margin: 0 auto 2em auto;
-		}
-      .gallery-item {
-        height: 17em;
-        width: 25.5em;
-				left: 1.5em;
-			}
-
-        .gallery-layout {
-          cursor: default;
-          font-size: 25.2px;
-					height: 10.7em;
-				}
-
-          .code-button,
-          .zoom-button,
-          .github-button {
-            transition: 0.3s;
-            cursor: pointer;
-
-            &:hover {
-              background-color: rgba(255, 255, 255, 0.3);
-
-              .fa-github,
-              .fa-search-plus,
-              .fa-eye {
-                color: #333;
-              }
-            }
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.3);
 
             .fa-github,
             .fa-search-plus,
             .fa-eye {
-              font-size: 34px;
+              color: #333;
             }
           }
 
-        .project-picture {
-          height: 17em;
-          width: 25.5em;
-				}
-				
-    .modal {
-      left: 2.7em;
-      top: 9.5em;
-
-      .top {
-        bottom: 7.8em;
-        left: 7.5em;
-
-        .fa-times {
-          font-size: 55px;
+          .fa-github,
+          .fa-search-plus,
+          .fa-eye {
+            font-size: 34px;
+          }
         }
+
+      .project-picture {
+        height: 17em;
+        width: 25.5em;
       }
+      
+  .modal {
+    left: 2.7em;
+    top: 9.5em;
 
-      .middle {
-        img {
-          height: 45em;
-          width: 80em;
-        }
+    .top {
+      .fa-times {
+        font-size: 25px;
+        top: 23%;
+        left: 5.4em;
       }
     }
+
+    .middle {
+      .img-modal {
+        height: 25em;
+        width: 40em;
+      }
+    }
+  }
 }
 
-@media (orientation: landscape) AND (min-width: 1366px) AND (min-height: 768px) {
+// Medium device screen
+@media(min-width: 1225px) AND (max-width: 1449px) {
     h2 {
-      font-size: 30px;
+      font-size: 40px;
+      margin-bottom: 80px;
     }
       .gallery-item {
         height: 17em;
-        margin: 0.8em 0 0 1.5em;
+        margin: 0.8em 0;
         width: 25.5em;
-				left: 1.5em;
+        margin: 0 16px 86px;
 			}
 
         .gallery-layout {
@@ -657,7 +335,6 @@ img {
             .fa-search-plus,
             .fa-eye {
               font-size: 34px;
-              margin-top: 8px;
             }
           }
 
@@ -671,45 +348,45 @@ img {
       top: 9.5em;
 
       .top {
-        bottom: 7.8em;
-        left: 7.5em;
-
         .fa-times {
-          font-size: 55px;
+          font-size: 45px;
+          top: 14%;
+          left: 9.8em;
         }
       }
 
       .middle {
         img {
-          height: 45em;
-          width: 80em;
+          height: 35em;
+          width: 60em;
         }
       }
     }
 }
 
-// desktop: landscape
-@media (min-width: 1400px) {
-	.gallery {
-		margin-top: 1.5em;
-	}
+// desktop device screen 
+@media (min-width: 1450px) {
 
     h2 {
       font-size: 40px;
+      margin-bottom: 80px;
 		}
 		
       .gallery-item {
         height: 20em;
         width: 33.5em;
-        left: 6.5em;
-				top: 0;
-			}
+        margin: 0 16px 86px;
+      }
 
+      .project-picture {
+        height: 20em;
+        width: 33.5em;
+      }
+      
         .gallery-layout {
           cursor: default;
           font-size: 33.2px;
-					height: 9.6em;
-				}
+          height: 9.6em;
 
           .code-button,
           .zoom-button,
@@ -731,33 +408,20 @@ img {
             .fa-search-plus,
             .fa-eye {
               font-size: 40px;
-              margin-left: 1.8em;
             }
           }
-
-        .project-picture {
-          height: 20em;
-          width: 33.5em;
 				}
-				
-    .modal {
-      left: 16.2em;
-      top: 4.2em;
-
-      .top {
-        bottom: 2.5em;
-        left: -1em;
-
-        .fa-times {
-          font-size: 65px;
-        }
+    
+    .top {
+      .fa-times {
+        font-size: 55px;
       }
+    }
 
-      .middle {
-        img {
-          height: 50em;
-          width: 85em;
-        }
+    .middle {
+      .img-modal {
+        height: 50em;
+        width: 85em;
       }
     }
 }
