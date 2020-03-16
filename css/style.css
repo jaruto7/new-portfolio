@@ -289,7 +289,7 @@ h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-cl
 
 .gallery-item:hover .gallery-layout { left: 0; top: 0; width: 100%; }
 
-.gallery-layout { background-color: rgba(57, 94, 102, 0.8); color: #fff; font-size: 12px; font-family: "Montserrat", sans-serif; height: 11.9em; left: 0; position: absolute; padding: 12px; top: 100%; transition: 0.6s; width: 18.5em; }
+.gallery-layout { background-color: rgba(57, 94, 102, 0.8); color: #fff; font-size: 12px; font-family: "Montserrat", sans-serif; height: 11.9em; left: 0; position: absolute; padding: 12px; top: 100%; transition: 0.6s; width: 18.5em; max-width: 100%; }
 
 .gallery-layout p { text-shadow: 2px 1px 1px black; }
 
@@ -327,17 +327,29 @@ h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-cl
 
 .wrap.blur { filter: blur(3px); height: 100vh; }
 
-@media (max-width: 768px) { h2 { font-size: 30px; margin-bottom: 80px; }
+@media (max-width: 511px) { h2 { font-size: 30px; margin-bottom: 80px; }
   .gallery-item { height: 17em; width: 25.5em; margin: 0 16px 80px; }
   .gallery-layout { cursor: default; font-size: 25.2px; height: 10.8em; }
   .code-button, .zoom-button, .github-button { transition: 0.3s; cursor: pointer; }
   .code-button:hover, .zoom-button:hover, .github-button:hover { background-color: rgba(255, 255, 255, 0.3); }
   .code-button:hover .fa-github, .code-button:hover .fa-search-plus, .code-button:hover .fa-eye, .zoom-button:hover .fa-github, .zoom-button:hover .fa-search-plus, .zoom-button:hover .fa-eye, .github-button:hover .fa-github, .github-button:hover .fa-search-plus, .github-button:hover .fa-eye { color: #333; }
   .code-button .fa-github, .code-button .fa-search-plus, .code-button .fa-eye, .zoom-button .fa-github, .zoom-button .fa-search-plus, .zoom-button .fa-eye, .github-button .fa-github, .github-button .fa-search-plus, .github-button .fa-eye { font-size: 34px; }
-  .project-picture { height: 17em; width: 25.5em; }
+  .project-picture { height: 17em; width: 100%; }
   .modal { left: 2.7em; top: 9.5em; }
-  .modal .top .fa-times { font-size: 20px; top: 31%; left: -3.2em; }
-  .modal .middle img { height: 15em; width: 27em; } }
+  .modal .top .fa-times { font-size: 20px; top: 31.3%; left: -8.9em; }
+  .modal .middle img { height: 15em; width: 20em; } }
+
+@media (min-width: 512px) and (max-width: 768px) { h2 { font-size: 30px; margin-bottom: 80px; }
+  .gallery-item { height: 17em; width: 25.5em; margin: 0 16px 80px; }
+  .gallery-layout { cursor: default; font-size: 25.2px; height: 10.8em; }
+  .code-button, .zoom-button, .github-button { transition: 0.3s; cursor: pointer; }
+  .code-button:hover, .zoom-button:hover, .github-button:hover { background-color: rgba(255, 255, 255, 0.3); }
+  .code-button:hover .fa-github, .code-button:hover .fa-search-plus, .code-button:hover .fa-eye, .zoom-button:hover .fa-github, .zoom-button:hover .fa-search-plus, .zoom-button:hover .fa-eye, .github-button:hover .fa-github, .github-button:hover .fa-search-plus, .github-button:hover .fa-eye { color: #333; }
+  .code-button .fa-github, .code-button .fa-search-plus, .code-button .fa-eye, .zoom-button .fa-github, .zoom-button .fa-search-plus, .zoom-button .fa-eye, .github-button .fa-github, .github-button .fa-search-plus, .github-button .fa-eye { font-size: 34px; }
+  .project-picture { height: 17em; width: 100%; }
+  .modal { left: 2.7em; top: 9.5em; }
+  .modal .top .fa-times { font-size: 20px; top: 27.2%; left: -1em; }
+  .modal .middle img { height: 20em; width: 30em; } }
 
 @media (min-width: 768px) and (max-width: 1224px) { h2 { font-size: 30px; margin-bottom: 80px; }
   .gallery-item { height: 17em; width: 25.5em; margin: 0 16px 80px; }
@@ -348,7 +360,7 @@ h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-cl
   .code-button .fa-github, .code-button .fa-search-plus, .code-button .fa-eye, .zoom-button .fa-github, .zoom-button .fa-search-plus, .zoom-button .fa-eye, .github-button .fa-github, .github-button .fa-search-plus, .github-button .fa-eye { font-size: 34px; }
   .project-picture { height: 17em; width: 25.5em; }
   .modal { left: 2.7em; top: 9.5em; }
-  .modal .top .fa-times { font-size: 25px; top: 23%; left: 5.4em; }
+  .modal .top .fa-times { font-size: 25px; top: 22.6%; left: 5.5em; }
   .modal .middle .img-modal { height: 25em; width: 40em; } }
 
 @media (min-width: 1225px) and (max-width: 1449px) { h2 { font-size: 40px; margin-bottom: 80px; }
@@ -371,7 +383,7 @@ h2 span { background: -webkit-linear-gradient(#eee, #333); -webkit-background-cl
   .gallery-layout .code-button:hover, .gallery-layout .zoom-button:hover, .gallery-layout .github-button:hover { background-color: rgba(255, 255, 255, 0.3); }
   .gallery-layout .code-button:hover .fa-github, .gallery-layout .code-button:hover .fa-search-plus, .gallery-layout .code-button:hover .fa-eye, .gallery-layout .zoom-button:hover .fa-github, .gallery-layout .zoom-button:hover .fa-search-plus, .gallery-layout .zoom-button:hover .fa-eye, .gallery-layout .github-button:hover .fa-github, .gallery-layout .github-button:hover .fa-search-plus, .gallery-layout .github-button:hover .fa-eye { color: #333; }
   .gallery-layout .code-button .fa-github, .gallery-layout .code-button .fa-search-plus, .gallery-layout .code-button .fa-eye, .gallery-layout .zoom-button .fa-github, .gallery-layout .zoom-button .fa-search-plus, .gallery-layout .zoom-button .fa-eye, .gallery-layout .github-button .fa-github, .gallery-layout .github-button .fa-search-plus, .gallery-layout .github-button .fa-eye { font-size: 40px; }
-  .top .fa-times { font-size: 55px; }
+  .top .fa-times { font-size: 55px; left: 15.1em; top: 1%; }
   .middle .img-modal { height: 50em; width: 85em; } }
 
 .footer { background-color: #222222; text-align: center; padding: 1.5em 16px 0 16px; color: #fff; }
